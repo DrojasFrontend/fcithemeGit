@@ -1,0 +1,592 @@
+.fw-400 {
+	font-weight: 400;
+}
+
+.visibleDesktop {
+	display: none !important;
+}
+
+.visibleMobile {
+	display: block !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.visibleDesktop {
+		display: block !important;
+	}
+	.visibleMobile {
+		display: none !important;
+	}
+}
+
+/* conveniosHero */
+.conveniosHero {
+	position: relative;
+}
+
+.conveniosHero .container--large {
+	padding: 0;
+}
+
+.conveniosHero__fondo {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.conveniosHero__fondo img {
+	border-radius: 0 60px 0 0;
+}
+
+.conveniosHero__fondo div:nth-child(2) {
+	position: relative;
+}
+
+.conveniosHero__fondo div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
+}
+
+.conveniosHero__grid {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.conveniosHero__text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 30px 24px 50px;
+	background-color: var(--002D72);
+}
+
+.conveniosHero__text:before {
+	display: none;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--002D72);
+}
+
+.conveniosHero__img img {
+	border-radius: 0 60px 0 0;
+}
+
+.conveniosHero__text .boton-v2 {
+	margin-top: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.conveniosHero .container--large {
+		padding: 0 24px;
+	}
+
+	.conveniosHero__fondo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.conveniosHero__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.conveniosHero__text {
+		row-gap: 18px;
+		padding: 100px 100px 100px 0;
+		border-radius: 0 0 60px 0;
+		min-height: 444px;
+	}
+
+	.paginaOtorrino .conveniosHero__text {
+		padding: 100px 60px 100px 0;
+	}
+
+	.conveniosHero__text:before {
+		display: block;
+	}
+
+	.conveniosHero__text .boton-v2 {
+		margin-top: 24px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.conveniosHero__fondo {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 237px;
+	}
+
+	.conveniosHero__grid {
+		grid-template-columns: 3fr 2fr;
+	}
+}
+
+/* conveniosTextoImagenCTA */
+.conveniosTextoImagenCTA {
+	padding: 54px 0 0;
+}
+
+.conveniosTextoImagenCTA .container--large {
+	padding: 0;
+}
+
+.conveniosTextoImagenCTA__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.conveniosTextoImagenCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.conveniosTextoImagenCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.conveniosTextoImagenCTA__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+	line-height: 24px;
+}
+
+.conveniosTextoImagenCTA__info li {
+	margin-bottom: 0 !important;
+}
+
+.conveniosTextoImagenCTA__img {
+	text-align: right;
+}
+
+.estilo-2 .conveniosTextoImagenCTA__img {
+	text-align: right;
+}
+
+.conveniosTextoImagenCTA__info .heading--48 {
+	text-align: left;
+}
+
+.conveniosTextoImagenCTA__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.estilo-2 .conveniosTextoImagenCTA__img img {
+	border-radius: 60px 0 0 6px;
+}
+
+.conveniosTextoImagenCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.conveniosTextoImagenCTA {
+		padding: 84px 0 0;
+	}
+
+	.conveniosTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.estilo-2.conveniosTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.conveniosTextoImagenCTA__flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.estilo-2 .conveniosTextoImagenCTA__flex {
+		flex-direction: row-reverse;
+	}
+
+	.conveniosTextoImagenCTA .wrapper {
+		padding: 0 24px;
+	}
+
+	.conveniosTextoImagenCTA__col {
+		width: 50%;
+	}
+
+	.conveniosTextoImagenCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.estilo-2 .conveniosTextoImagenCTA__info {
+		padding: 0 0 0 20px;
+	}
+
+	.conveniosTextoImagenCTA__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.estilo-2 .conveniosTextoImagenCTA__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.conveniosTextoImagenCTA__img {
+		padding: 0 0 0 84px;
+	}
+
+	.conveniosTextoImagenCTA__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.estilo-2 .conveniosTextoImagenCTA__img {
+		padding: 0 84px 0 0;
+	}
+
+	.estilo-2 .conveniosTextoImagenCTA__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}
+
+/* convenios */
+.convenios .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+.convenios {
+	padding: 40px 0 0;
+}
+
+.convenios__title {
+	text-align: center;
+	padding-bottom: 42px;
+}
+
+.convenios__title .subheading {
+	margin-bottom: 14px;
+}
+
+.convenios__title + .container--large {
+	padding: 0;
+}
+
+.tarjetas__wrapper {
+	border-bottom: 1px solid #ffabc4;
+}
+
+.tarjetas__wrapper + .container--large {
+	padding: 0;
+}
+
+.tarjetas__wrapper ul.tab-links {
+	display: flex;
+	column-gap: 6px;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+	overflow-x: scroll;
+}
+
+.tarjetas__wrapper li {
+	list-style: none;
+	margin-bottom: 0 !important;
+}
+
+.tarjetas__wrapper li a {
+	font-family: var(--ff-sans);
+	display: block;
+	padding: 16px 18px;
+	color: var(--e40046);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	border-radius: 6px 6px 0px 0px;
+	background-color: rgb(255 171 196 / 30%);
+	text-decoration: none;
+}
+
+.tarjetas__wrapper li.active a {
+	color: var(--fff);
+	background-color: var(--e40046);
+}
+
+.tarjeta {
+	margin: 30px;
+	padding: 30px;
+	border-radius: 6px;
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+}
+
+.tarjeta__logo {
+	margin-bottom: 6px;
+}
+
+.tarjeta__logo img {
+	width: 150px;
+}
+
+.cita {
+	border-bottom: 1px solid #d5dbe7;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.tarjeta__lineas a {
+	position: relative;
+	font-family: var(--ff-sans);
+	display: grid;
+	text-decoration: none;
+	color: var(--E40046);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	width: max-content;
+}
+
+.tarjeta__lineas a:hover:before,
+.tarjeta__lineas + a span:hover:before {
+	width: 100%;
+}
+
+.tarjeta__lineas a:before,
+.tarjeta__lineas + a span:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	border-bottom: 1px solid;
+	transition: all 0.4s ease;
+}
+
+.tarjeta__lineas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid #d5dbe7;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.tarjeta__lineas + a {
+	position: relative;
+	font-family: var(--ff-sans);
+	color: var(--677283);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.tarjeta__lineas + a span {
+	position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+	.convenios {
+		padding: 84px 0 0;
+	}
+
+	.convenios__title {
+		padding-bottom: 66px;
+	}
+
+	.convenios__title + .container--large {
+		padding: 0 24px;
+	}
+
+	.tarjetas__wrapper + .container--large {
+		padding: 0 24px;
+	}
+
+	.tarjetas__wrapper ul.tab-links {
+		width: auto;
+		overflow-x: inherit;
+	}
+
+	.tarjeta__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 36px;
+		row-gap: 30px;
+		padding: 60px 0;
+	}
+
+	.tarjeta {
+		margin: 0;
+	}
+
+	.tarjeta__lineas + a,
+	.tarjeta__lineas a {
+		font-size: 18px;
+	}
+}
+
+/* conveniosImagenTexto */
+.conveniosImagenTexto {
+	padding: 40px 0;
+}
+
+.paginaPancreas.conveniosImagenTexto {
+	padding: 40px 0;
+}
+
+.conveniosImagenTexto .container--large {
+	padding: 0;
+}
+
+.conveniosImagenTexto__flex {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.conveniosImagenTexto__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.conveniosImagenTexto__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.conveniosImagenTexto__info ul {
+	margin: 0;
+	padding: 0 0 0 32px;
+	line-height: 24px;
+}
+
+.conveniosImagenTexto__info li {
+	margin-bottom: 0 !important;
+	color: var(--263956);
+	font-family: var(--ff-sans);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.conveniosImagenTexto__info p {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+	margin-bottom: 18px;
+}
+
+.conveniosImagenTexto__img {
+	text-align: right;
+}
+
+.conveniosImagenTexto__info .heading--48 {
+	text-align: left;
+}
+
+.conveniosImagenTexto__img img {
+	width: calc(100% - 20px);
+	border-radius: 60px 0 0 6px;
+}
+
+.conveniosImagenTexto .boton-v2 {
+	margin-top: 14px;
+	box-shadow: 0px 4px 4px 0px rgba(255, 171, 196, 0.50);
+}
+
+@media only screen and (min-width: 1024px) {
+	.conveniosImagenTexto {
+		padding: 84px 0;
+	}
+
+	.paginaPancreas.conveniosImagenTexto {
+		padding: 84px 0;
+	}
+
+	.conveniosImagenTexto .container--large {
+		padding: 0 24px;
+	}
+
+	.conveniosImagenTexto__flex {
+		flex-direction: row;
+	}
+
+	.conveniosImagenTexto .wrapper {
+		padding: 0 24px;
+	}
+
+	.conveniosImagenTexto__col {
+		width: 50%;
+	}
+
+	.conveniosImagenTexto__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.conveniosImagenTexto__info {
+		padding: 0 0 0 20px;
+	}
+
+	.conveniosImagenTexto__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.conveniosImagenTexto__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.paginaCirugia.conveniosImagenTexto__info .heading--48 {
+		margin-bottom: 0;
+		padding-right: 0;
+	}
+
+	.conveniosImagenTexto__img {
+		padding: 0 0 0 84px;
+	}
+
+	.conveniosImagenTexto__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.conveniosImagenTexto__img {
+		padding: 0 84px 0 0;
+	}
+
+	.conveniosImagenTexto__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}

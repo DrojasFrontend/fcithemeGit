@@ -1,0 +1,928 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+iframe {
+	width: 100%;
+}
+
+.paginaMesCorazonHero {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.paginaMesCorazonHero__fondo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.paginaMesCorazonHero__fondo .desktop {
+	display: none;
+}
+
+.paginaMesCorazonHero__fondo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.paginaMesCorazonHero__contenido {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	row-gap: 20px;
+	padding: 0 0 24px;
+}
+
+.paginaMesCorazonHero__corazon {
+	max-width: 180px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonHero {
+		height: 600px;
+	}
+
+	.paginaMesCorazonHero__fondo .desktop {
+		display: block;
+	}
+
+	.paginaMesCorazonHero__fondo .mobile {
+		display: none;
+	}
+
+	.paginaMesCorazonHero__contenido {
+		align-items: center;
+		padding: 0;
+	}
+
+	.paginaMesCorazonHero__corazon {
+		max-width: 412px;
+	}
+}
+
+/* Menu */
+
+.paginaMesCorazonMenu {
+	background-color: #da71ba;
+}
+
+.paginaMesCorazonMenu .container--large {
+	max-width: 1200px;
+	padding: 0;
+}
+
+.paginaMesCorazonMenu__fondo {
+	position: relative;
+}
+
+.paginaMesCorazonMenu__icons {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.paginaMesCorazonMenu__icons .left {
+	position: relative;
+	display: block;
+	background: url(/wp-content/uploads/2024/09/corazon-1.png);
+	background-repeat: repeat;
+}
+
+.paginaMesCorazonMenu__icons .right {
+	position: relative;
+	display: block;
+	background: url(/wp-content/uploads/2024/09/corazon-2.png);
+	background-repeat: repeat;
+}
+
+.paginaMesCorazonMenu__width {
+	max-width: 1028px;
+	margin: 0 auto;
+	overflow: scroll;
+}
+
+.paginaMesCorazonMenu__grid {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 1028px;
+	height: 120px;
+	margin: 0 0 0 auto;
+	padding: 0;
+}
+
+.paginaMesCorazonMenu__grid .heading--24 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 12px;
+	padding: 0 74px;
+	color: var(--fff);
+	font-weight: 500;
+	background-color: var(--002D72);
+	text-decoration: none;
+}
+
+.paginaMesCorazonMenu__grid .heading--24 span::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--fff);
+	transition: all 0.4s ease;
+}
+
+.paginaMesCorazonMenu__grid .heading--24:hover {
+	font-weight: 700;
+}
+
+.paginaMesCorazonMenu__grid .heading--24:hover span:before {
+	width: 100%;
+}
+
+.paginaMesCorazonMenu__grid .heading--24:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 16px;
+	right: 0;
+	width: 1px;
+	height: calc(100% - 36px);
+	border-right: 1px solid rgba(170, 204, 255, 0.3);
+}
+
+.paginaMesCorazonMenu__grid .heading--24:last-child:after {
+	border-right: 0;
+}
+
+.paginaMesCorazonMenu__grid span {
+	position: relative;
+	overflow: hidden;
+}
+
+.paginaMesCorazonMenu__grid span img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right;
+}
+
+@media only screen and (min-width: 1200px) {
+	.paginaMesCorazonMenu__width {
+		max-width: 1028px;
+		margin: 0 0 0 auto;
+		overflow: inherit;
+	}
+
+	.paginaMesCorazonMenu__grid {
+		grid-template-columns: 283px 261px 232px 252px;
+		width: auto;
+		height: 165px;
+	}
+
+	.paginaMesCorazonMenu__icons {
+		display: grid;
+	}
+}
+
+/* Multimedia */
+.paginaMesCorazonVideo__fondo {
+	position: relative;
+	padding: 42px 0;
+	background-color: var(--002D72);
+	overflow: hidden;
+}
+
+.paginaMesCorazonVideo__fondo .emojis {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.paginaMesCorazonVideo__fondo .heading--48 {
+	margin-bottom: 42px;
+	text-align: left;
+}
+
+.paginaMesCorazonVideo__grid {
+	position: relative;
+	display: grid;
+	row-gap: 24px;
+}
+
+.paginaMesCorazonVideo__video:hover img {
+	transform: scale(1.1);
+}
+
+.paginaMesCorazonVideo__img {
+	height: 210px;
+	border-radius: 6px 6px 0 0;
+	overflow: hidden;
+}
+
+.paginaMesCorazonVideo__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+.paginaMesCorazonVideo__info {
+	padding: 24px 30px;
+	border-radius: 0 0 6px 6px;
+	background-color: var(--E40046);
+}
+
+.paginaMesCorazonVideo__info .heading--24 {
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.paginaMesCorazonVideo__info button {
+	font-family: var(--font-sans);
+	padding: 0;
+	color: var(--fff);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	border: 0;
+	background-color: transparent;
+}
+
+.paginaMesCorazonModal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+.paginaMesCorazonModal button {
+	padding: 0;
+	color: var(--fff);
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.paginaMesCorazonModal__contenido {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 20px;
+	width: 100%;
+	height: 100%;
+	padding: 0 24px;
+	text-align: center;
+}
+
+.paginaMesCorazonModal__video {
+	width: 100%;
+	max-width: 700px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonVideo__fondo {
+		padding: 84px 0;
+	}
+
+	.paginaMesCorazonVideo__grid {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 36px;
+	}
+}
+
+/* Dona ahora */
+.paginaMesCorazonDona {
+	position: relative;
+}
+
+.paginaMesCorazonDona .container--large {
+	padding: 0;
+}
+
+.paginaMesCorazonDona__grid-fondo {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr 2fr;
+}
+
+.paginaMesCorazonDona__grid-fondo div:first-child {
+	/* background-image: url(/wp-content/uploads/2024/09/fondo-corazon-1.svg); */
+}
+
+.paginaMesCorazonDona__grid {
+	position: relative;
+	display: grid;
+	background-color: #e7966b;
+}
+
+.paginaMesCorazonVideo__video {
+	cursor: pointer;
+}
+
+.paginaMesCorazonDona__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
+}
+
+.paginaMesCorazonDona__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	padding: 36px 24px;
+}
+
+.paginaMesCorazonDona__info .heading--48 {
+	text-align: left;
+}
+
+.paginaMesCorazonDona__info a {
+	margin-top: 16px;
+}
+
+.paginaMesCorazonVideo__video:hover .link-hover span:before {
+	width: 100%;
+	background-color: var(--fff);
+}
+
+.corazones-container {
+	display: none;
+	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
+}
+
+.corazones {
+	width: 150px;
+	height: 150px;
+	background-color: #e40046;
+	clip-path: polygon(
+		81.422% 16.322%,
+		81.422% 16.322%,
+		77.229% 15.1%,
+		73.29% 14.584%,
+		69.65% 14.638%,
+		66.351% 15.127%,
+		63.438% 15.915%,
+		60.953% 16.866%,
+		58.94% 17.845%,
+		57.443% 18.715%,
+		56.506% 19.342%,
+		56.171% 19.59%,
+		56.171% 19.59%,
+		55.344% 17.364%,
+		54.302% 15.162%,
+		53.052% 13.011%,
+		51.601% 10.936%,
+		49.956% 8.965%,
+		48.122% 7.123%,
+		46.106% 5.438%,
+		43.916% 3.935%,
+		41.557% 2.641%,
+		39.036% 1.582%,
+		39.036% 1.582%,
+		35.274% 0.531%,
+		31.492% 0.043%,
+		27.738% 0.096%,
+		24.061% 0.669%,
+		20.51% 1.74%,
+		17.133% 3.288%,
+		13.978% 5.292%,
+		11.095% 7.729%,
+		8.53% 10.577%,
+		6.334% 13.817%,
+		6.334% 13.817%,
+		3.941% 17.931%,
+		2.118% 22.382%,
+		0.86% 27.104%,
+		0.161% 32.029%,
+		0.015% 37.093%,
+		0.417% 42.228%,
+		1.361% 47.369%,
+		2.841% 52.45%,
+		4.853% 57.405%,
+		7.389% 62.168%,
+		7.389% 62.168%,
+		12.047% 69.081%,
+		17.053% 75.079%,
+		22.323% 80.239%,
+		27.769% 84.642%,
+		33.307% 88.366%,
+		38.851% 91.49%,
+		44.315% 94.094%,
+		49.613% 96.256%,
+		54.661% 98.057%,
+		59.372% 99.575%,
+		59.372% 99.564%,
+		59.372% 99.564%,
+		59.658% 99.623%,
+		59.943% 99.636%,
+		60.223% 99.605%,
+		60.492% 99.531%,
+		60.746% 99.418%,
+		60.982% 99.267%,
+		61.194% 99.081%,
+		61.379% 98.862%,
+		61.531% 98.611%,
+		61.646% 98.332%,
+		61.646% 98.332%,
+		61.698% 98.14%,
+		61.73% 97.947%,
+		61.742% 97.755%,
+		61.736% 97.565%,
+		61.712% 97.378%,
+		61.671% 97.195%,
+		61.613% 97.018%,
+		61.538% 96.847%,
+		61.448% 96.685%,
+		61.343% 96.531%,
+		61.343% 96.531%,
+		61.344% 96.531%,
+		61.346% 96.531%,
+		61.347% 96.531%,
+		61.349% 96.53%,
+		61.35% 96.53%,
+		61.352% 96.529%,
+		61.353% 96.527%,
+		61.355% 96.525%,
+		61.356% 96.523%,
+		61.358% 96.52%,
+		61.358% 96.52%,
+		60.994% 95.968%,
+		60.574% 95.253%,
+		60.132% 94.392%,
+		59.703% 93.403%,
+		59.321% 92.305%,
+		59.021% 91.115%,
+		58.836% 89.853%,
+		58.803% 88.536%,
+		58.954% 87.182%,
+		59.325% 85.81%,
+		59.325% 85.81%,
+		59.997% 84.204%,
+		60.76% 82.817%,
+		61.588% 81.632%,
+		62.454% 80.631%,
+		63.333% 79.794%,
+		64.197% 79.105%,
+		65.022% 78.545%,
+		65.78% 78.096%,
+		66.446% 77.739%,
+		66.993% 77.457%,
+		66.993% 77.457%,
+		68.216% 76.825%,
+		69.549% 76.157%,
+		70.98% 75.452%,
+		72.498% 74.712%,
+		74.091% 73.939%,
+		75.747% 73.133%,
+		77.457% 72.297%,
+		79.208% 71.429%,
+		80.99% 70.533%,
+		82.79% 69.61%,
+		82.79% 69.61%,
+		85.171% 68.268%,
+		87.351% 66.824%,
+		89.336% 65.283%,
+		91.131% 63.652%,
+		92.74% 61.936%,
+		94.167% 60.14%,
+		95.419% 58.271%,
+		96.5% 56.334%,
+		97.414% 54.335%,
+		98.166% 52.279%,
+		98.166% 52.279%,
+		99.231% 47.828%,
+		99.588% 43.375%,
+		99.274% 38.991%,
+		98.327% 34.749%,
+		96.784% 30.721%,
+		94.681% 26.978%,
+		92.057% 23.594%,
+		88.949% 20.64%,
+		85.393% 18.189%,
+		81.426% 16.312%
+	);
+
+	margin: 5px;
+	animation: heartbeat 1s ease-in-out infinite;
+	transform-origin: center;
+}
+
+@keyframes heartbeat {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonDona .container--large {
+		padding: 0 24px;
+	}
+
+	.paginaMesCorazonDona__grid-fondo {
+		display: grid;
+		background-color: #e7966b;
+	}
+
+	.paginaMesCorazonDona__grid {
+		grid-template-columns: 9fr 8fr;
+		column-gap: 36px;
+	}
+
+	.paginaMesCorazonDona__info {
+		justify-content: center;
+		row-gap: 14px;
+		padding: 48px 48px 48px 12px;
+	}
+
+	.corazones-container {
+		display: flex;
+	}
+}
+
+/* Socios */
+.paginaMesCorazonSocios {
+	padding: 50px 0;
+}
+
+.paginaMesCorazonSocios .heading--48 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.paginaMesCorazonSocios .container--large {
+	position: relative;
+}
+
+.paginaMesCorazonSocios .swiper {
+	width: 100%;
+	height: auto;
+}
+
+.paginamesCorazonSocios__slide {
+	width: 170px;
+	height: 170px;
+}
+
+.paginamesCorazonSocios__slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.paginaMesCorazonSocios .swiper-pagination {
+	position: relative;
+	margin-top: 20px;
+}
+
+.paginaMesCorazonSocios .swiper-button-prev,
+.paginaMesCorazonSocios .swiper-button-next {
+	top: 56%;
+	width: 42px;
+	height: 42px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonSocios {
+		padding: 84px 60px 70px;
+	}
+}
+
+/* Base Swiper */
+.swiper-button-lock {
+	display: block !important;
+}
+
+.swiper-wrapper {
+	height: auto !important;
+}
+
+.swiper-custom-button {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+}
+
+[class*="swiper-button-prev"],
+[class*="swiper-button-next"] {
+	display: none !important;
+	position: absolute;
+	top: 52%;
+}
+
+[class*="swiper-button-prev"] {
+	left: -40px !important;
+	background: url(../assets/img/ico-chevron-rojo-redondo-ant.svg);
+}
+
+[class*="swiper-button-next"] {
+	right: -40px !important;
+	background: url(../assets/img/ico-chevron-rojo-redondo-sig.svg);
+}
+
+[class*="swiper-pagination"] {
+	display: flex;
+	justify-content: center;
+	position: relative !important;
+	bottom: inherit !important;
+	top: inherit !important;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.swiper-slide {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+.swiper-pagination-bullet {
+	background: rgb(228 0 70 / 30%) !important;
+}
+
+.swiper-pagination-bullet-active {
+	width: 24px !important;
+	border-radius: 6px !important;
+	opacity: 1 !important;
+	background: #e40046 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: none !important;
+}
+
+.swiper .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: flex !important;
+	}
+
+	[class*="swiper-button-prev"],
+	[class*="swiper-button-next"] {
+		display: inline-block !important;
+	}
+}
+
+/* Noticias */
+.paginaMesCorazonNoticias .container--large {
+	position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonNoticias.hiden .swiper-custom-button,
+	.paginaMesCorazonNoticias.hiden .swiper-pagination-noti {
+		display: none !important;
+	}
+}
+
+.paginaMesCorazonNoticias__fondo {
+	padding: 42px 0;
+	background-color: rgba(199, 218, 239, 0.3);
+}
+
+.paginaMesCorazonNoticias__titulo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.paginaMesCorazonNoticias__titulo div {
+	display: grid;
+	row-gap: 14px;
+}
+
+.paginaMesCorazonNoticias__titulo .heading--48 {
+	text-align: left;
+	font-weight: 300;
+}
+
+.paginaMesCorazonNoticias__titulo .boton-v2 {
+	display: none;
+}
+
+.paginaMesCorazonNoticias__slide {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	cursor: pointer;
+}
+
+.paginaMesCorazonNoticias__slide:hover .link-hover span:before {
+	width: 100%;
+}
+
+.paginaMesCorazonNoticias__img {
+	height: 210px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.paginaMesCorazonNoticias__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.4s ease;
+}
+
+.paginaMesCorazonNoticias__slide:hover img {
+	transform: scale(1.1);
+}
+
+.paginaMesCorazonNoticias__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+
+.paginaMesCorazonNoticias__info .heading--24 {
+	font-weight: 500;
+}
+
+.paginaMesCorazonNoticias__info .heading--12 {
+	font-family: var(--ff-sans);
+	margin: 12px 0;
+	font-weight: 400;
+}
+
+.paginaMesCorazonNoticias__info .link-hover {
+	font-family: var(--ff-sans);
+	color: var(--E40046);
+	margin-top: 12px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.paginaMesCorazonNoticias__bottom {
+	display: block;
+	margin-top: 40px;
+	padding: 0 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonNoticias__fondo {
+		padding: 84px 50px;
+	}
+
+	.paginaMesCorazonNoticias__titulo {
+		margin-bottom: 40px;
+	}
+
+	.paginaMesCorazonNoticias__titulo .boton-v2 {
+		display: flex;
+	}
+
+	.paginaMesCorazonNoticias__bottom {
+		display: none;
+	}
+}
+
+/* Expertos */
+.paginaMesCorazonExpertos .container--large {
+	position: relative;
+}
+
+.paginaMesCorazonExpertos__fondo {
+	padding: 40px 0;
+	background-color: rgb(199 218 239 / 15%);
+}
+
+.paginaMesCorazonExpertos__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.paginaMesCorazonExpertos__titulo .heading--14,
+.paginaMesCorazonExpertos__titulo .heading--48 {
+	text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaMesCorazonExpertos__fondo {
+		padding: 84px 50px;
+	}
+
+	.paginaMesCorazonExpertos__titulo .heading--14,
+	.paginaMesCorazonExpertos__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.paginaMesCorazonExpertos.hiden .swiper-custom-button,
+	.paginaMesCorazonExpertos.hiden .swiper-pagination-noti {
+		display: none !important;
+	}
+}
+
+.paginaMesCorazonExpertos__slide {
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.paginaMesCorazonExpertos__slide:hover .link-hover span:before {
+	width: 100%;
+}
+
+.paginaMesCorazonExpertos__img {
+	position: relative;
+	text-align: center;
+}
+
+.paginaMesCorazonExpertos__img:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 150px;
+	border-radius: 30px 0px 0px 0px;
+	background-color: #ffabc4;
+	overflow: hidden;
+	transition: color 0.4s ease;
+	z-index: -1;
+}
+
+.paginaMesCorazonExpertos__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 18px 24px 24px 24px;
+	background-color: var(--fff);
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide-active .paginaMesCorazonExpertos__info {
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+}
+
+.swiper-slide-active .paginaMesCorazonExpertos__img:before {
+	background-color: var(--E40046);
+}
+
+.paginaMesCorazonExpertos__info .link-hover {
+	font-family: var(--ff-sans);
+	color: var(--E40046);
+	margin-top: 12px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}

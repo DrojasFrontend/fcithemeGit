@@ -1,0 +1,1578 @@
+iframe {
+    border: 0;
+    width: 100%;
+}
+
+.swiper .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+/* Base Swiper */
+.swiper-button-lock {
+	display: block !important;
+}
+
+.swiper-wrapper {
+	height: auto !important;
+	justify-content: center;
+}
+
+.swiper-custom-button {
+	display: inline-block !important;
+	width: 42px !important;
+	height: 42px !important;
+}
+
+[class*="swiper-button-prev"],
+[class*="swiper-button-next"] {
+	display: none !important;
+	position: absolute;
+	top: 60% !important;
+}
+
+[class*="swiper-button-prev"] {
+	left: -40px !important;
+	background: url(../assets/images/ico-chevron-rojo-redondo-ant.svg);
+}
+
+[class*="swiper-button-next"] {
+	right: -40px !important;
+	background: url(../assets/images/ico-chevron-rojo-redondo-sig.svg);
+}
+
+[class*="swiper-pagination"] {
+	display: flex;
+	justify-content: center;
+	position: relative !important;
+	bottom: inherit !important;
+	top: inherit !important;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.swiper-slide {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+.swiper-pagination-bullet {
+	background: rgb(228 0 70 / 30%) !important;
+}
+
+.swiper-pagination-bullet-active {
+	width: 24px !important;
+	border-radius: 6px !important;
+	opacity: 1 !important;
+	background: #e40046 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: none !important;
+}
+
+.swiper .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: flex !important;
+	}
+
+	[class*="swiper-button-prev"],
+	[class*="swiper-button-next"] {
+		display: inline-block !important;
+	}
+}
+
+.heading--18 {
+	font-size: var(--18);
+	line-height: 24px; /* 133.333% */
+	letter-spacing: 0.27px;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.desktop {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
+}
+
+.paginaTrasplante {
+	display: flex;
+	flex-direction: column;
+}
+
+.link--hover {
+	position: relative;
+}
+
+.link--hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--E40046);
+	transition: width 0.4s ease;
+}
+
+li::marker {
+	font-size: 10px;
+}
+
+/* paginaTrasplanteHero */
+.paginaTrasplanteHero {
+	position: relative;
+}
+
+.paginaTrasplanteHero .container--large {
+	padding: 0;
+}
+
+.paginaTrasplanteHero__fondo {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.paginaTrasplanteHero__fondo img {
+	border-radius: 0 60px 0 0;
+}
+
+.paginaTrasplanteHero__fondo div:nth-child(2) {
+	position: relative;
+}
+
+.paginaTrasplanteHero__fondo div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.paginaTrasplanteHero__grid {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.paginaTrasplanteHero__text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 30px 24px 50px;
+	background-color: var(--002D72);
+}
+
+.paginaTrasplanteHero__text:before {
+	display: none;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--002D72);
+}
+
+.paginaTrasplanteHero__img img {
+	border-radius: 0 60px 0 0;
+}
+
+.paginaTrasplanteHero__text .boton-v2 {
+	margin-top: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteHero .container--large {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplanteHero__fondo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.paginaTrasplanteHero__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.paginaTrasplanteHero__text {
+		row-gap: 18px;
+		padding: 100px 100px 100px 0;
+		border-radius: 0 0 60px 0;
+		min-height: 444px;
+	}
+
+	.paginaTrasplanteHero__text:before {
+		display: block;
+	}
+
+	.paginaTrasplanteHero__text .boton-v2 {
+		margin-top: 24px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.paginaTrasplanteHero__fondo {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 229px;
+	}
+
+	.paginaTrasplanteHero__grid {
+		grid-template-columns: 3fr 2fr;
+	}
+}
+
+/* paginaTrasplanteTextoImagen */
+.paginaTrasplanteTextoImagen {
+	padding: 40px 0 0;
+}
+
+.paginaPancreas.paginaTrasplanteTextoImagen,
+.paginaHigado.paginaTrasplanteTextoImagen {
+	padding: 40px 0;
+}
+
+.paginaTrasplanteTextoImagen .container--large {
+	padding: 0;
+}
+
+.paginaTrasplanteTextoImagen__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.paginaTrasplanteTextoImagen__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.paginaTrasplanteTextoImagen__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.paginaTrasplanteTextoImagen__info ul {
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+
+.paginaTrasplanteTextoImagen__info .heading--18 {
+	line-height: 24px;
+}
+
+.paginaTrasplanteTextoImagen__info li {
+	margin-bottom: 0 !important;
+}
+
+.paginaTrasplanteTextoImagen__info .copy {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	font-family: var(--ff-sans);
+	color: #263956;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.paginaTrasplanteTextoImagen__img {
+	text-align: right;
+}
+
+.paginaTrasplanteTextoImagen__info .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteTextoImagen__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.paginaTrasplanteTextoImagen__items {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.paginaTrasplanteTextoImagen__item .heading--14 {
+	font-family: var(--ff-sans);
+	font-size: 13px;
+	letter-spacing: 0.21px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteTextoImagen {
+		padding: 84px 0 0;
+	}
+
+	.paginaPancreas.paginaTrasplanteTextoImagen,
+	.paginaHigado.paginaTrasplanteTextoImagen {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplanteTextoImagen .container--large {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplanteTextoImagen__flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.paginaTrasplanteTextoImagen .wrapper {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplanteTextoImagen__col {
+		width: 50%;
+	}
+
+	.paginaTrasplanteTextoImagen__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0;
+	}
+
+	.paginaTrasplanteTextoImagen__info .heading--48 {
+		padding: 0 10px 0 0;
+	}
+
+	.paginaTrasplanteTextoImagen__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.paginaTrasplanteTextoImagen__img {
+		padding: 0 0 0 84px;
+	}
+
+	.paginaTrasplanteTextoImagen__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.paginaTrasplanteTextoImagen__items {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 24px;
+		row-gap: 30px;
+	}
+
+	.paginaTrasplanteTextoImagen__item .heading--48 {
+		padding: 0;
+	}
+}
+
+/* paginaTrasplanteTarjetas */
+.paginaTrasplanteTarjetas__fondo {
+	padding: 40px 0;
+}
+
+.paginaTrasplanteTarjetas__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.paginaTrasplanteTarjetas__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteTarjetas__grid {
+	display: grid;
+	row-gap: 24px;
+}
+
+.paginaTrasplanteTarjetas__col img {
+	width: 100%;
+	height: 203px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 6px;
+}
+
+.paginaTrasplanteTarjetas__info {
+	display: grid;
+	row-gap: 12px;
+	padding: 18px 0 0;
+}
+
+.paginaTrasplanteTarjetas__info .heading--24 {
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteTarjetas__fondo {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplanteTarjetas__titulo,
+	.paginaTrasplanteTarjetas__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.paginaTrasplanteTarjetas__grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 36px;
+	}
+
+	.paginaTrasplanteTarjetas__info {
+		padding: 18px 30px 0;
+	}
+
+	.paginaTrasplanteTarjetas__col img {
+		height: 203px;
+	}
+}
+
+/* paginaTrasplanteTarjetaCarusel */
+
+.paginaTrasplanteTarjetaCarusel__fondo {
+	padding: 40px 0;
+	border-radius: 0px 0px 0px 60px;
+}
+
+.paginaPancreas .paginaTrasplanteTarjetaCarusel__fondo {
+	padding: 40px 0;
+	border-radius: 0;
+}
+
+.si-border .paginaTrasplanteTarjetaCarusel__fondo {
+	padding: 40px 0;
+}
+
+.paginaTrasplanteTarjetaCarusel__fondo .container--large {
+	position: relative;
+}
+
+.paginaTrasplanteTarjetaCarusel__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 36px;
+}
+
+.paginaTrasplanteTarjetaCarusel__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteTarjetaCarusel__grid {
+	display: flex !important;
+}
+
+.paginaTrasplanteTarjetaCarusel__grid.swiper-wrapper {
+    justify-content: normal;
+}
+
+.paginaTrasplanteTarjetaCarusel__col {
+	border-radius: 6px;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.paginaTrasplanteTarjetaCarusel__col img {
+	width: 100%;
+	height: auto;
+}
+
+.paginaTrasplanteTarjetaCarusel__info {
+	display: grid;
+	row-gap: 12px;
+	padding: 24px 18px;
+	border-radius: 0px 0px 6px 6px;
+	background-color: var(--fff);
+}
+
+.paginaPancreas .paginaTrasplanteTarjetaCarusel__info {
+	background-color: transparent;
+}
+
+.paginaRinon .paginaTrasplanteTarjetaCarusel__info,
+.paginaHigado .paginaTrasplanteTarjetaCarusel__info,
+.paginaPulmon .paginaTrasplanteTarjetaCarusel__info,
+.paginaCorazon .paginaTrasplanteTarjetaCarusel__info {
+	border: 1px solid var(--D5DBE7);
+}
+
+.si-border .paginaTrasplanteTarjetaCarusel__info {
+	border: 1px solid var(--D5DBE7) !important;
+}
+
+.paginaPancreas .paginaTrasplanteTarjetaCarusel__info {
+	border: 0;
+}
+
+.paginaTrasplanteTarjetaCarusel__info h3 {
+	color: var(--002D72);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+.paginaTrasplanteTarjetaCarusel__info p {
+	font-family: var(--ff-sans);
+	color: var(--677283);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.color .paginaTrasplanteTarjetaCarusel__info p {
+	color: var(--263956);
+}
+
+.paginaTrasplanteTarjetaCarusel__info img {
+	width: auto;
+}
+
+.paginaTrasplanteTarjetaCarusel__info:hover .link--hover:after {
+	width: 100%;
+}
+
+.hide.swiper-button-prev-ins,
+.hide.swiper-button-next-ins {
+	display: none !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteTarjetaCarusel__fondo {
+		padding: 84px 50px;
+	}
+
+	.paginaPancreas .paginaTrasplanteTarjetaCarusel__fondo {
+		padding: 84px 0 60px;
+	}
+
+	.si-border .paginaTrasplanteTarjetaCarusel__fondo {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplanteTarjetaCarusel__titulo,
+	.paginaTrasplanteTarjetaCarusel__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.paginaTrasplanteTarjetaCarusel__info {
+		padding: 24px 30px;
+	}
+
+	.paginaTrasplanteTarjetaCarusel .swiper-slide {
+		width: calc((100% - 74px) / 2) !important;
+		box-sizing: border-box;
+		margin: 0;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteTarjetaCarusel .swiper-slide {
+		width: calc((100% - 74px) / 3) !important;
+	}
+}
+
+/* paginaTrasplantes */
+.paginaTrasplantes__wrapper {
+	padding: 40px 0 0;
+}
+
+.paginaTrasplantes__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 36px;
+}
+
+.paginaTrasplantes__titulo,
+.paginaTrasplantes__titulo .heading--48 {
+	text-align: center;
+}
+
+.paginaTrasplantes__iconos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10px;
+	row-gap: 24px;
+}
+
+.paginaTrasplantes__icono {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	row-gap: 12px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.paginaTrasplantes__icono .heading--36 {
+	font-family: var(--ff-prompt);
+	font-size: var(--24);
+	line-height: 34px;
+	font-weight: 500;
+}
+
+.paginaTrasplantes__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 12px;
+	height: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplantes__wrapper {
+		padding: 84px 0 0;
+	}
+
+	.paginaTrasplantes__iconos {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 20px;
+	}
+
+	.paginaTrasplantes__icono .heading--36 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		font-size: var(--36);
+		line-height: 46px;
+	}
+}
+
+/* paginaTrasplantesImagenTexto */
+.paginaTrasplantesImagenTexto {
+	padding: 40px 0 0;
+}
+
+.paginaPancreas.paginaTrasplantesImagenTexto {
+	padding: 40px 0;
+}
+
+.paginaTrasplantesImagenTexto .container--large {
+	padding: 0;
+}
+
+.paginaTrasplantesImagenTexto__flex {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.paginaTrasplantesImagenTexto__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.paginaTrasplantesImagenTexto__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.paginaTrasplantesImagenTexto__info ul {
+	margin: 0;
+	padding: 0 0 0 32px;
+	line-height: 24px;
+}
+
+.paginaTrasplantesImagenTexto__info li {
+	margin-bottom: 0 !important;
+	color: var(--263956);
+	font-family: var(--ff-sans);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.paginaTrasplantesImagenTexto__info p {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+	margin-bottom: 18px;
+}
+
+.paginaTrasplantesImagenTexto__img {
+	text-align: right;
+}
+
+.paginaTrasplantesImagenTexto__info .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplantesImagenTexto__img img {
+	width: calc(100% - 20px);
+	border-radius: 60px 0 0 6px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplantesImagenTexto {
+		padding: 84px 0 0;
+	}
+
+	.paginaPancreas.paginaTrasplantesImagenTexto {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplantesImagenTexto .container--large {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplantesImagenTexto__flex {
+		flex-direction: row;
+	}
+
+	.paginaTrasplantesImagenTexto .wrapper {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplantesImagenTexto__col {
+		width: 50%;
+	}
+
+	.paginaTrasplantesImagenTexto__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.paginaTrasplantesImagenTexto__info {
+		padding: 0 0 0 20px;
+	}
+
+	.paginaTrasplantesImagenTexto__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.paginaTrasplantesImagenTexto__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.paginaCirugia.paginaTrasplantesImagenTexto__info .heading--48 {
+		margin-bottom: 0;
+		padding-right: 0;
+	}
+
+	.paginaTrasplantesImagenTexto__img {
+		padding: 0 0 0 84px;
+	}
+
+	.paginaTrasplantesImagenTexto__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.paginaTrasplantesImagenTexto__img {
+		padding: 0 84px 0 0;
+	}
+
+	.paginaTrasplantesImagenTexto__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}
+
+/* paginaTrasplanteImagenCTA */
+.paginaTrasplanteImagenCTA {
+	padding: 40px 0;
+}
+
+.paginaRinon.paginaTrasplanteImagenCTA,
+.paginaHigado.paginaTrasplanteImagenCTA,
+.paginaPulmon.paginaTrasplanteImagenCTA,
+.paginaCorazon.paginaTrasplanteImagenCTA,
+.paginaPancreas.paginaTrasplanteImagenCTA {
+	padding: 0 0 40px 0;
+}
+
+.paginaTrasplanteImagenCTA__grid {
+	display: grid;
+	row-gap: 36px;
+}
+
+.paginaTrasplanteImagenCTA__item {
+	position: relative;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.paginaTrasplanteImagenCTA__item img {
+	width: 100%;
+}
+
+.paginaTrasplanteImagenCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	row-gap: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+	text-decoration: none;
+}
+
+.paginaTrasplanteImagenCTA__info .heading--36 {
+	font-family: var(--ff-prompt);
+	width: 100%;
+	max-width: 200px;
+	font-size: var(--24);
+	line-height: 34px;
+	font-weight: 500;
+	text-transform: none;
+}
+
+.paginaTrasplanteImagenCTA__info .boton-v2 {
+	height: 42px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteImagenCTA {
+		padding: 84px 0;
+	}
+
+	.paginaRinon.paginaTrasplanteImagenCTA,
+	.paginaHigado.paginaTrasplanteImagenCTA,
+	.paginaPulmon.paginaTrasplanteImagenCTA,
+	.paginaCorazon.paginaTrasplanteImagenCTA,
+	.paginaPancreas.paginaTrasplanteImagenCTA {
+		padding: 0 0 84px 0;
+	}
+
+	.paginaTrasplanteImagenCTA__grid {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 36px;
+	}
+
+	.paginaTrasplanteImagenCTA__info {
+		justify-content: center;
+		row-gap: 30px;
+		padding: 40px;
+	}
+
+	.paginaTrasplanteImagenCTA__info .heading--36 {
+		font-size: var(--36);
+		line-height: 46px;
+		max-width: 300px;
+	}
+
+	.paginaTrasplanteImagenCTA__info .boton-v2 {
+		height: 56px;
+	}
+}
+
+/* paginaTrasplanteDirectorio */
+.paginaTrasplanteDirectorio__grid {
+	display: flex;
+	flex-direction: column-reverse;
+	row-gap: 24px;
+}
+
+.paginaTrasplanteDirectorio__fondo {
+	padding: 40px 0 0;
+}
+
+.paginaTrasplanteDirectorio__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 36px;
+}
+
+.paginaTrasplanteDirectorio__titulo .heading--48 {
+	text-align: left;
+}
+
+ul.paginaTrasplanteDirectorio__items {
+	margin: 0;
+	padding: 0;
+}
+
+.paginaTrasplanteDirectorio__items li {
+	margin-bottom: 0 !important;
+	list-style: none;
+}
+
+.paginaTrasplanteDirectorio__items li a {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	column-gap: 4px;
+	padding: 12px 40px 12px 0;
+	border-bottom: 1px solid #d5dbe7;
+	text-decoration: none;
+}
+
+.paginaTrasplanteDirectorio__items li:first-child a {
+	padding-top: 0;
+}
+
+.paginaTrasplanteDirectorio__items li img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -12px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteDirectorio__fondo {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplanteDirectorio__grid {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+	}
+
+	.paginaTrasplanteDirectorio__info {
+		padding-left: 36px;
+	}
+
+	.paginaTrasplanteDirectorio__items li a {
+		flex-direction: row;
+		align-items: center;
+		column-gap: 4px;
+		padding: 18px 40px 18px 0;
+	}
+}
+
+/* paginaTrasplantesFaqs */
+.paginaTrasplantesFaqs {
+	padding: 40px 0;
+}
+
+.paginaTrasplantesFaqs__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 36px;
+}
+
+.paginaTrasplantesFaqs__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplantesFaqs__faqs ul {
+	margin: 0;
+	padding: 0;
+}
+
+.paginaTrasplantesFaqs__faqs li {
+	margin-bottom: 0 !important;
+	list-style: none;
+}
+
+.paginaTrasplantesFaqs__faqs li:first-child a {
+	padding-top: 0;
+}
+
+.paginaTrasplantesFaqs__faqs a {
+	position: relative;
+	display: block;
+	padding: 12px 30px 12px 0;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: 1px solid var(--D5DBE7);
+}
+
+.paginaTrasplantesFaqs__faqs li.active a {
+	border-bottom: 2px solid var(--E40046);
+}
+
+.paginaTrasplantesFaqs__faqs a img {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -6px;
+	transform: rotate(90deg);
+	transition: transform 0.4s ease;
+}
+
+.paginaTrasplantesFaqs__faqs .active img {
+	transform: rotate(-90deg);
+}
+
+.paginaTrasplantesFaqs .tab-content .active {
+	padding: 12px 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplantesFaqs {
+		padding: 84px 0;
+	}
+
+	.paginaTrasplantesFaqs__titulo,
+	.paginaTrasplantesFaqs__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.paginaTrasplantesFaqs__faqs {
+		padding: 0 100px;
+	}
+
+	.paginaTrasplantesFaqs__faqs a {
+		padding: 18px 30px 18px 0;
+	}
+
+	.paginaTrasplantesFaqs .tab-content .active {
+		padding: 30px 100px;
+	}
+}
+
+/* paginaTrasplanteSoluciones */
+.paginaTrasplanteSoluciones__fondo {
+	padding: 40px 0;
+	background-color: rgb(170 204 255 / 10%);
+}
+
+.paginaPulmon .paginaTrasplanteSoluciones__fondo,
+.paginaCorazon .paginaTrasplanteSoluciones__fondo,
+.paginaPancreas .paginaTrasplanteSoluciones__fondo {
+	padding: 40px 0 0;
+}
+
+.paginaTrasplanteSoluciones__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 0 0 30px;
+	text-align: left;
+}
+
+.paginaTrasplanteSoluciones__titulo .heading--48 {
+	text-align: left;
+}
+
+ul.paginaTrasplanteSoluciones__items {
+	display: grid;
+	row-gap: 16px;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+
+ul.paginaTrasplanteSoluciones__items li {
+	position: relative;
+	margin: 0;
+	list-style: none;
+}
+
+ul.paginaTrasplanteSoluciones__items li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -30px;
+	width: 24px;
+	height: 24px;
+	background: url(../assets/images/icon-check.svg);
+	background-size: contain;
+	margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteSoluciones__fondo {
+		padding: 80px 0;
+	}
+
+	.paginaPulmon .paginaTrasplanteSoluciones__fondo,
+	.paginaCorazon .paginaTrasplanteSoluciones__fondo,
+	.paginaPancreas .paginaTrasplanteSoluciones__fondo {
+		padding: 80px 0 0;
+	}
+
+	.paginaTrasplanteSoluciones__titulo {
+		row-gap: 18px;
+		padding: 0 100px 40px;
+		text-align: center;
+	}
+
+	.paginaTrasplanteSoluciones__titulo .heading--48 {
+		text-align: center;
+		margin-bottom: 12px;
+	}
+
+	ul.paginaTrasplanteSoluciones__items {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 104px;
+		row-gap: 30px;
+		padding: 0 0 0 24px;
+	}
+}
+
+/* paginaTrasplanteExpertos */
+.marginTop {
+	margin-top: 0 !important;
+}
+
+.paginaTrasplanteExpertos .container--large {
+	position: relative;
+}
+
+.paginaTrasplanteExpertos__fondo {
+	padding: 40px 0;
+	background-color: rgb(199 218 239 / 15%);
+}
+
+.paginaTrasplanteExpertos__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.paginaTrasplanteExpertos__titulo .heading--14,
+.paginaTrasplanteExpertos__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteExpertos__slide {
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.paginaTrasplanteExpertos__slide:hover .link-hover span:before {
+	width: 100%;
+}
+
+.paginaTrasplanteExpertos__img {
+	position: relative;
+	text-align: center;
+}
+.paginaTrasplanteExpertos__img:hover:before {
+	background-color: #aaccff;
+}
+
+.paginaTrasplanteExpertos__img:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 150px;
+	border-radius: 30px 0px 0px 0px;
+	background-color: rgb(170 204 255 / 40%);
+	overflow: hidden;
+	transition: color 0.4s ease;
+	z-index: -1;
+}
+
+.paginaTrasplanteExpertos__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 18px 24px 24px 24px;
+	background-color: var(--fff);
+}
+
+.paginaTrasplanteExpertos__info .link-hover {
+	font-family: var(--ff-sans);
+	color: var(--E40046);
+	margin-top: 12px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteExpertos__fondo {
+		padding: 84px 50px;
+	}
+
+	.paginaTrasplanteExpertos__titulo .heading--14,
+	.paginaTrasplanteExpertos__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.paginaTrasplanteExpertos .swiper-slide {
+		width: calc((100% - 72px) / 3) !important;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.paginaTrasplanteExpertos .swiper-slide {
+		width: calc((100% - 104px) / 4) !important;
+	}
+}
+
+/* paginaTrasplanteVideos */
+.paginaTrasplanteVideos__fondo {
+	position: relative;
+	margin-top: 40px;
+	padding: 40px 24px;
+}
+
+.paginaTrasplanteVideos__fondo .container--large {
+	padding: 0;
+}
+
+.paginaTrasplanteVideos__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 36px;
+}
+
+.paginaTrasplanteVideos__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteVideos [class*="swiper-button-prev"],
+.paginaTrasplanteVideos [class*="swiper-button-next"] {
+	top: 50% !important;
+	z-index: 2;
+}
+
+.paginaTrasplanteVideos [class*="swiper-button-prev"] {
+	left: 24px !important;
+}
+
+.paginaTrasplanteVideos [class*="swiper-button-next"] {
+	right: 24px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteVideos__fondo {
+		margin-top: 84px;
+		padding: 84px 0;
+	}
+
+	.paginaTrasplanteVideos__fondo .container--large {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplanteVideos__titulo,
+	.paginaTrasplanteVideos__titulo .heading--48 {
+		text-align: center;
+	}
+}
+
+/* paginaTrasplanteTextDescBanner */
+.paginaTrasplanteTextDescBanner {
+	padding: 40px 0;
+}
+
+.paginaGastroenterologia.paginaTrasplanteTextDescBanner {
+	padding: 40px 0 0;
+}
+
+.paginaTrasplanteTextDescBanner__container {
+	padding: 0 24px 0 0;
+}
+
+.paginaTrasplanteTextDescBanner__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 20px;
+	padding-bottom: 40px;
+}
+
+.paginaTrasplanteTextDescBanner .subheading {
+	margin-bottom: 18px;
+}
+
+.paginaTrasplanteTextDescBanner__title .heading--48 {
+	text-align: left;
+}
+
+.paginaTrasplanteTextDescBanner__img {
+	margin: 0 auto;
+	border-radius: 6px 60px 6px 6px;
+	overflow: hidden;
+}
+
+.paginaTrasplanteTextDescBanner__desc {
+	margin-top: 24px;
+}
+
+.paginaTrasplanteTextDescBanner__img {
+	height: 300px;
+}
+
+.paginaTrasplanteTextDescBanner__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaTrasplanteTextDescBanner {
+		padding: 84px 0;
+	}
+
+	.paginaGastroenterologia.paginaTrasplanteTextDescBanner {
+		padding: 84px 0 0;
+	}
+
+	.paginaTrasplanteTextDescBanner__container {
+		padding: 0 24px;
+	}
+
+	.paginaTrasplanteTextDescBanner__grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		padding-bottom: 60px;
+	}
+
+	.paginaCirugiaTorax .paginaTrasplanteTextDescBanner__info {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 20px;
+	}
+
+	.paginaTrasplanteTextDescBanner__img {
+		max-width: 990px;
+		height: auto;
+	}
+
+	.paginaTrasplanteTextDescBanner__desc {
+		margin-top: 60px;
+	}
+}
+
+ /* seccionTrasplanteFormularioContacto */
+    .seccionTrasplanteFormularioContacto__contenido {
+        padding: 40px 0 60px;
+    }
+
+    .seccionTrasplanteFormularioContacto__titulo {
+        display: grid;
+        row-gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    .seccionTrasplanteFormularioContacto__titulo .heading--64 {
+        font-weight: 400;
+    }
+
+    .seccionTrasplanteFormularioContacto__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .seccionTrasplanteFormularioContacto__form {
+        padding: 0;
+    }
+
+    .seccionCardioUFormularioContacto__img {
+        display: none;
+        text-align: right;
+    }
+
+    .seccionCardioUFormularioContacto__img img {
+        max-width: 479px;
+        margin: 0 0 0 auto;
+    }
+
+    .seccionTrasplanteFormularioContacto__form label {
+        display: none;
+    }
+
+    .seccionTrasplanteFormularioContacto__form input[type="text"],
+    .seccionTrasplanteFormularioContacto__form input[type="email"],
+    .seccionTrasplanteFormularioContacto__form select {
+        height: 56px;
+        border: 1px solid #d5dbe7;
+        box-shadow: none;
+        padding: 0 24px;
+
+        color: #677283;
+        font-family: var(--ff-sans);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: 0.27px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form select {
+        padding: 0 24px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form textarea {
+        border: 1px solid #d5dbe7;
+        border-radius: 6px;
+        padding: 24px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form .btn-guardar {
+        height: 56px;
+        border-radius: 6px !important;
+        font-family: var(--ff-sans) !important;
+        font-size: 18px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 24px;
+        margin: 0 !important;
+    }
+
+    .seccionTrasplanteFormularioContacto__form .formulario__lateral .mb-2.text-center p {
+        text-align: left;
+    }
+
+    .seccionTrasplanteFormularioContacto__form input[type="text"]::-webkit-input-placeholder,
+    /* Chrome/Opera/Safari */
+    .seccionTrasplanteFormularioContacto__form input[type="email"]::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #677283;
+        font-family: var(--ff-sans);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: 0.27px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form input[type="text"]::-moz-placeholder,
+    /* Firefox 19+ */
+    .seccionTrasplanteFormularioContacto__form input[type="email"]::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #677283;
+        font-family: var(--ff-sans);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: 0.27px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form input[type="text"]:-ms-input-placeholder,
+    /* IE 10+ */
+    .seccionTrasplanteFormularioContacto__form input[type="email"]:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #677283;
+        font-family: var(--ff-sans);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: 0.27px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form input[type="text"]:-moz-placeholder,
+    .seccionTrasplanteFormularioContacto__form input[type="email"]:-moz-placeholder {
+        /* Firefox 18- */
+        color: #677283;
+        font-family: var(--ff-sans);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+        letter-spacing: 0.27px;
+    }
+
+    .seccionTrasplanteFormularioContacto__form .wpcf7-response-output {
+        display: none;
+    }
+
+    .seccionTrasplanteFormularioContacto__modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--fff);
+        z-index: 999;
+        padding: 70px 0 0;
+        overflow: auto;
+    }
+
+    
+    .seccionTrasplanteFormularioContacto__close {
+        position: absolute;
+        top: 100px;
+        right: 24px;
+        color: var(--002D72);
+        border: 0;
+        background: transparent;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .seccionTrasplanteFormularioContacto__contenido {
+            padding: 66px 100px;
+        }
+
+        .seccionTrasplanteFormularioContacto__titulo {
+            row-gap: 12px;
+            padding-bottom: 40px;
+        }
+
+        .seccionTrasplanteFormularioContacto__grid {
+            grid-template-columns: 1fr;
+        }
+
+        .seccionCardioUFormularioContacto__img {
+            display: block;
+        }
+
+        .seccionTrasplanteFormularioContacto__modal .seccionTrasplanteFormularioContacto__contenido {
+            padding: 66px 95px;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .seccionTrasplanteFormularioContacto__form {
+            padding: 0;
+        }
+    }

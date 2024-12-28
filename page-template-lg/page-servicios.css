@@ -1,0 +1,106 @@
+/* paginaServiciosHero */
+.paginaServiciosHero {
+	position: relative;
+	height: 375px;
+	overflow: hidden;
+}
+
+.paginaServiciosHero__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.paginaServiciosHero__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.paginaServiciosHero__contenido {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.paginaServiciosHero__title {
+	display: grid;
+	row-gap: 18px;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.paginaServiciosHero__title .heading--64 {
+	font-weight: 400;
+	text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaServiciosHero {
+		height: 444px;
+		border-radius: 0px 0px 60px 0px;
+	}
+
+	.paginaServiciosHero__title {
+		row-gap: 18px;
+		max-width: 800px;
+		text-align: center;
+	}
+
+	.paginaServiciosHero__title .heading--64 {
+		text-align: center;
+	}
+}
+
+/* paginaServiciosCtas */
+.paginaServiciosCtas {
+	padding: 42px 0;
+}
+
+.paginaServiciosCtas__grid {
+	display: grid;
+  row-gap: 42px;
+}
+
+.paginaServiciosCtas__grid .heading--48 {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  text-align: left;
+  font-weight: 200;
+  border-bottom: 1px solid var(--002D72);
+}
+
+.paginaServiciosCtas__grid ul {
+  margin: 0;
+  padding: 0;
+}
+
+.paginaServiciosCtas__grid ul li{
+  list-style: none;
+  margin: 0
+}
+
+.paginaServiciosCtas__grid li a{
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.paginaServiciosCtas {
+		padding: 60px 0 120px;
+	}
+
+  .paginaServiciosCtas__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 36px;
+    row-gap: 62px;
+  }
+}

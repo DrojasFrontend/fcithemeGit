@@ -1,0 +1,1137 @@
+.fw-400 {
+	font-weight: 400;
+}
+
+.visibleDesktop {
+	display: none !important;
+}
+
+.visibleMobile {
+	display: block !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.visibleDesktop {
+		display: block !important;
+	}
+	.visibleMobile {
+		display: none !important;
+	}
+}
+
+/* citasMedicasHero */
+.citasMedicasHero {
+	position: relative;
+}
+
+.citasMedicasHero .container--large {
+	padding: 0;
+}
+
+.citasMedicasHero__fondo {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.citasMedicasHero__fondo img {
+	border-radius: 0 60px 0 0;
+}
+
+.citasMedicasHero__fondo div:nth-child(2) {
+	position: relative;
+}
+
+.citasMedicasHero__fondo div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 1 / 1;
+}
+
+.citasMedicasHero__grid {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.citasMedicasHero__text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 30px 24px 50px;
+	background-color: var(--002D72);
+}
+
+.citasMedicasHero__text:before {
+	display: none;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--002D72);
+}
+
+.citasMedicasHero__img img {
+	border-radius: 0 60px 0 0;
+}
+
+.citasMedicasHero__text .boton-v2 {
+	margin-top: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.citasMedicasHero .container--large {
+		padding: 0 24px;
+	}
+
+	.citasMedicasHero__fondo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.citasMedicasHero__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.citasMedicasHero__text {
+		row-gap: 18px;
+		padding: 100px 100px 100px 0;
+		border-radius: 0 0 60px 0;
+		min-height: 444px;
+	}
+
+	.paginaOtorrino .citasMedicasHero__text {
+		padding: 100px 60px 100px 0;
+	}
+
+	.citasMedicasHero__text:before {
+		display: block;
+	}
+
+	.citasMedicasHero__text .boton-v2 {
+		margin-top: 24px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.citasMedicasHero__fondo {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 237px;
+	}
+
+	.citasMedicasHero__grid {
+		grid-template-columns: 3fr 2fr;
+	}
+}
+
+/* citasMedicasTextoImagenCTA */
+.citasMedicasTextoImagenCTA {
+	padding: 54px 0;
+}
+
+.citasMedicasTextoImagenCTA .container--large {
+	padding: 0;
+}
+
+.citasMedicasTextoImagenCTA__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.citasMedicasTextoImagenCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.citasMedicasTextoImagenCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.citasMedicasTextoImagenCTA__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+	line-height: 24px;
+}
+
+.citasMedicasTextoImagenCTA__info li {
+	margin-bottom: 0 !important;
+}
+
+.citasMedicasTextoImagenCTA__img {
+	text-align: right;
+}
+
+.estilo-2 .citasMedicasTextoImagenCTA__img {
+	text-align: right;
+}
+
+.citasMedicasTextoImagenCTA__info .heading--48 {
+	text-align: left;
+}
+
+.citasMedicasTextoImagenCTA__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.estilo-2 .citasMedicasTextoImagenCTA__img img {
+	border-radius: 60px 0 0 6px;
+}
+
+.citasMedicasTextoImagenCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.citasMedicasTextoImagenCTA {
+		padding: 84px 0;
+	}
+
+	.citasMedicasTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.estilo-2.citasMedicasTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.citasMedicasTextoImagenCTA__flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.estilo-2 .citasMedicasTextoImagenCTA__flex {
+		flex-direction: row-reverse;
+	}
+
+	.citasMedicasTextoImagenCTA .wrapper {
+		padding: 0 24px;
+	}
+
+	.citasMedicasTextoImagenCTA__col {
+		width: 50%;
+	}
+
+	.citasMedicasTextoImagenCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.estilo-2 .citasMedicasTextoImagenCTA__info {
+		padding: 0 0 0 20px;
+	}
+
+	.citasMedicasTextoImagenCTA__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.estilo-2 .citasMedicasTextoImagenCTA__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.citasMedicasTextoImagenCTA__img {
+		padding: 0 0 0 84px;
+	}
+
+	.citasMedicasTextoImagenCTA__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.estilo-2 .citasMedicasTextoImagenCTA__img {
+		padding: 0 84px 0 0;
+	}
+
+	.estilo-2 .citasMedicasTextoImagenCTA__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}
+
+/* citasMedicasTargetaGrid */
+.citasMedicasTargetaGrid__fondo {
+	padding: 40px 0;
+}
+
+.citasMedicasTargetaGrid__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.citasMedicasTargetaGrid__titulo .heading--48 {
+	text-align: left;
+}
+
+.citasMedicasTargetaGrid__grid {
+	display: grid;
+	row-gap: 24px;
+}
+
+.citasMedicasTargetaGrid__col img {
+	width: 100%;
+	height: 203px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 6px;
+}
+
+.citasMedicasTargetaGrid__info {
+	display: grid;
+	row-gap: 12px;
+	padding: 18px 18px 0;
+}
+
+.citasMedicasTargetaGrid__info .heading--24 {
+	font-weight: 500;
+}
+
+.citasMedicasTargetaGrid__info p {
+	color: var(--263956);
+	font-family: var(--ff-sans);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.citasMedicasTargetaGrid__info ul {
+	margin-bottom: 0;
+}
+
+.citasMedicasTargetaGrid__info ul li {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.citasMedicasTargetaGrid__fondo {
+		padding: 84px 0;
+	}
+
+	.citasMedicasTargetaGrid__titulo .subheading,
+	.citasMedicasTargetaGrid__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.citasMedicasTargetaGrid__grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 36px;
+	}
+
+	.citasMedicasTargetaGrid__col img {
+		height: 203px;
+	}
+
+	.citasMedicasTargetaGrid__info {
+		padding: 18px 30px 0;
+	}
+}
+
+/* citasMedicasTextoImagenFondoCTA */
+.citasMedicasTextoImagenFondoCTA {
+	margin-bottom: 40px;
+	padding: 40px 0 0;
+}
+
+.citasMedicasTextoImagenFondoCTA .container--large {
+	padding: 0;
+}
+
+.citasMedicasTextoImagenFondoCTA__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+}
+
+.citasMedicasTextoImagenFondoCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.citasMedicasTextoImagenFondoCTA__col:nth-child(1) {
+	border-radius: 6px 0px 60px 6px;
+	overflow: hidden;
+}
+
+.citasMedicasTextoImagenFondoCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 30px 24px 42px;
+}
+
+.citasMedicasTextoImagenFondoCTA__info p {
+	font-family: var(--ff-sans);
+	font-size: var(--14);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.21px;
+	color: var(--263956);
+}
+
+.citasMedicasTextoImagenFondoCTA__info .heading--18 p {
+	margin: 0 0 12px;
+}
+
+.citasMedicasTextoImagenFondoCTA__info ul {
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+}
+
+.citasMedicasTextoImagenFondoCTA__info li {
+	position: relative;
+	display: inline-block;
+	margin: 30px 0 0 !important;
+	list-style: none;
+	text-decoration: underline;
+}
+
+.citasMedicasTextoImagenFondoCTA__info li:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -30px;
+	width: 24px;
+	height: 24px;
+	background: url(../assets/images/ico-chevron-right-blue.svg);
+}
+
+.citasMedicasTextoImagenFondoCTA__info li:last-child {
+	margin: 0;
+}
+
+.citasMedicasTextoImagenFondoCTA__img {
+	text-align: left;
+}
+
+.citasMedicasTextoImagenFondoCTA__info .heading--48 {
+	text-align: left;
+}
+
+.citasMedicasTextoImagenFondoCTA__img img {
+	border-radius: 0px 60px 6px 6px;
+}
+
+.citasMedicasTextoImagenFondoCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+.citasMedicasTextoImagenFondoCTA__info .heading--18 p:nth-child(2) {
+	margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.citasMedicasTextoImagenFondoCTA {
+		margin-bottom: 84px;
+		padding: 84px 0 0;
+	}
+
+	.citasMedicasTextoImagenFondoCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.citasMedicasTextoImagenFondoCTA__flex {
+		display: grid;
+		grid-template-columns: 51% 49%;
+	}
+
+	.citasMedicasTextoImagenFondoCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 52px 24px 54px 42px;
+	}
+
+	.citasMedicasTextoImagenFondoCTA__info p {
+		font-size: var(--18);
+		line-height: 24px;
+		letter-spacing: 0.27px;
+	}
+
+	.citasMedicasTextoImagenFondoCTA__img {
+		padding: 0;
+	}
+
+	.citasMedicasTextoImagenFondoCTA__img img {
+		width: auto;
+		border-radius: 0 60px 0 6px;
+	}
+}
+
+/* citasMedicasAlianzas */
+
+.citasMedicasAlianzas .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+.citasMedicasAlianzas {
+	padding: 40px 0 0;
+}
+
+.citasMedicasAlianzas__title {
+	text-align: center;
+	padding-bottom: 42px;
+}
+
+.citasMedicasAlianzas__title .subheading {
+	margin-bottom: 14px;
+}
+
+.citasMedicasAlianzas__title + .container--large {
+	padding: 0;
+}
+
+.tarjetas__wrapper {
+	border-bottom: 1px solid #ffabc4;
+}
+
+.tarjetas__wrapper + .container--large {
+	padding: 0;
+}
+
+.tarjetas__wrapper ul.tab-links {
+	display: flex;
+	column-gap: 6px;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+	overflow-x: scroll;
+}
+
+.tarjetas__wrapper li {
+	list-style: none;
+	margin-bottom: 0 !important;
+}
+
+.tarjetas__wrapper li a {
+	font-family: var(--ff-sans);
+	display: block;
+	padding: 16px 18px;
+	color: var(--e40046);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	border-radius: 6px 6px 0px 0px;
+	background-color: rgb(255 171 196 / 30%);
+	text-decoration: none;
+}
+
+.tarjetas__wrapper li.active a {
+	color: var(--fff);
+	background-color: var(--e40046);
+}
+
+.tarjeta {
+	margin: 30px;
+	padding: 30px;
+	border-radius: 6px;
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+}
+
+.tarjeta__logo {
+	margin-bottom: 6px;
+}
+
+.tarjeta__logo img {
+	width: 150px;
+}
+
+.cita {
+	border-bottom: 1px solid #d5dbe7;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.tarjeta__lineas a {
+	position: relative;
+	font-family: var(--ff-sans);
+	display: grid;
+	text-decoration: none;
+	color: var(--E40046);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	width: max-content;
+}
+
+.tarjeta__lineas a:hover:before,
+.tarjeta__lineas + a span:hover:before {
+	width: 100%;
+}
+
+.tarjeta__lineas a:before,
+.tarjeta__lineas + a span:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	border-bottom: 1px solid;
+	transition: all 0.4s ease;
+}
+
+.tarjeta__lineas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom: 1px solid #d5dbe7;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+}
+
+.tarjeta__lineas + a {
+	position: relative;
+	font-family: var(--ff-sans);
+	color: var(--677283);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.tarjeta__lineas + a span {
+	position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+	.citasMedicasAlianzas {
+		padding: 84px 0 0;
+	}
+
+	.citasMedicasAlianzas__title {
+		padding-bottom: 66px;
+	}
+
+	.citasMedicasAlianzas__title + .container--large {
+		padding: 0 24px;
+	}
+
+	.tarjetas__wrapper + .container--large {
+		padding: 0 24px;
+	}
+
+	.tarjetas__wrapper ul.tab-links {
+		width: auto;
+		overflow-x: inherit;
+	}
+
+	.tarjeta__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 36px;
+		row-gap: 30px;
+		padding: 60px 0 0;
+	}
+
+	.tarjeta {
+		margin: 0;
+	}
+
+	.tarjeta__lineas + a,
+	.tarjeta__lineas a {
+		font-size: 18px;
+	}
+}
+
+/* alianzasImagenTexto */
+.alianzasImagenTexto {
+	padding: 40px 0;
+}
+
+.paginaPancreas.alianzasImagenTexto {
+	padding: 40px 0;
+}
+
+.alianzasImagenTexto .container--large {
+	padding: 0;
+}
+
+.alianzasImagenTexto__flex {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}
+
+.alianzasImagenTexto__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.alianzasImagenTexto__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.alianzasImagenTexto__info ul {
+	margin: 0;
+	padding: 0 0 0 32px;
+	line-height: 24px;
+}
+
+.alianzasImagenTexto__info li {
+	margin-bottom: 0 !important;
+	color: var(--263956);
+	font-family: var(--ff-sans);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.alianzasImagenTexto__info p {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+	margin-bottom: 18px;
+}
+
+.alianzasImagenTexto__img {
+	text-align: right;
+}
+
+.alianzasImagenTexto__info .heading--48 {
+	text-align: left;
+}
+
+.alianzasImagenTexto__img img {
+	width: calc(100% - 20px);
+	border-radius: 60px 0 0 6px;
+}
+
+.alianzasImagenTexto .boton-v2 {
+	margin-top: 14px;
+	box-shadow: 0px 4px 4px 0px rgba(255, 171, 196, 0.50);
+}
+
+@media only screen and (min-width: 1024px) {
+	.alianzasImagenTexto {
+		padding: 84px 0;
+	}
+
+	.paginaPancreas.alianzasImagenTexto {
+		padding: 84px 0;
+	}
+
+	.alianzasImagenTexto .container--large {
+		padding: 0 24px;
+	}
+
+	.alianzasImagenTexto__flex {
+		flex-direction: row;
+	}
+
+	.alianzasImagenTexto .wrapper {
+		padding: 0 24px;
+	}
+
+	.alianzasImagenTexto__col {
+		width: 50%;
+	}
+
+	.alianzasImagenTexto__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.alianzasImagenTexto__info {
+		padding: 0 0 0 20px;
+	}
+
+	.alianzasImagenTexto__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.alianzasImagenTexto__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.paginaCirugia.alianzasImagenTexto__info .heading--48 {
+		margin-bottom: 0;
+		padding-right: 0;
+	}
+
+	.alianzasImagenTexto__img {
+		padding: 0 0 0 84px;
+	}
+
+	.alianzasImagenTexto__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.alianzasImagenTexto__img {
+		padding: 0 84px 0 0;
+	}
+
+	.alianzasImagenTexto__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}
+
+ /* seccionCitasFormularioContacto */
+
+  .seccionCitasFormularioContacto__form .boton-v2--rojo-rojo {
+
+    width: 212px;
+    height: 56px;
+    background: #E40046;
+    border-radius: 6px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    float: right;
+
+  }
+
+  .seccionCitasFormularioContacto__form .boton-v2--rojo-rojo:hover {
+    color: #FFFFFF !important;
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload {
+    position: relative;
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload input[type="file"] {
+    display: none;
+    /* Oculta el input original */
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload label {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px dashed #E40046;
+    box-shadow: 0px 4px 24px rgba(103, 114, 131, 0.15);
+    border-radius: 6px;
+    align-content: center;
+    justify-content: center;
+    color: #E40046;
+
+
+
+
+  }
+
+
+  .seccionCitasFormularioContacto__form .custom-file-upload .upload-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  .seccionCitasFormularioContacto__form .autorizacionDocSoporte {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: #263956;
+    margin-bottom: 20px;
+
+  }
+
+
+  .seccionCitasFormularioContacto__form .field.FieldCyT,
+  .seccionCitasFormularioContacto__form .field {
+    margin-bottom: 20px;
+  }
+
+
+  .seccionCitasFormularioContacto__contenido {
+    padding: 40px 0 60px;
+  }
+
+  .seccionCitasFormularioContacto__titulo {
+    text-align: center;
+    display: grid;
+    row-gap: 12px;
+    padding-bottom: 20px;
+  }
+
+  .seccionCitasFormularioContacto__titulo .heading--64 {
+    font-weight: 400;
+  }
+
+  .seccionCitasFormularioContacto__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .seccionCitasFormularioContacto__form {
+    padding: 0;
+  }
+
+  .seccionCitasFormularioContacto__img {
+    display: none;
+    text-align: right;
+  }
+
+  .seccionCitasFormularioContacto__img img {
+    max-width: 479px;
+    margin: 0 0 0 auto;
+  }
+
+  .seccionCitasFormularioContacto__form label {
+    display: block;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"],
+  .seccionCitasFormularioContacto__form input[type="email"],
+  .seccionCitasFormularioContacto__form input[type="tel"],
+  .seccionCitasFormularioContacto__form select {
+    height: 56px;
+    border: 1px solid #d5dbe7;
+    box-shadow: none;
+    padding: 0 24px;
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border-radius: 6px;
+
+
+
+  }
+
+  /* Para navegadores WebKit (Chrome, Safari) */
+  .seccionCitasFormularioContacto__form input[type="text"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form select::-webkit-input-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+  /* Para Mozilla Firefox */
+  .seccionCitasFormularioContacto__form input[type="text"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form select::-moz-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+  /* Para Microsoft Edge y IE */
+  .seccionCitasFormularioContacto__form input[type="text"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form select:-ms-input-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+
+  .seccionCitasFormularioContacto__form select {
+    padding: 0 24px;
+  }
+
+  .seccionCitasFormularioContacto__form textarea {
+    border: 1px solid #d5dbe7;
+    border-radius: 6px;
+    padding: 24px;
+  }
+
+  .seccionCitasFormularioContacto__form .btn-guardar {
+    height: 56px;
+    border-radius: 6px !important;
+    font-family: var(--ff-sans) !important;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 24px;
+    margin: 0 !important;
+  }
+
+  .seccionCitasFormularioContacto__form .formulario__lateral .mb-2.text-center p {
+    text-align: left;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]::-webkit-input-placeholder,
+  /* Chrome/Opera/Safari */
+  .seccionCitasFormularioContacto__form input[type="email"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]::-moz-placeholder,
+  /* Firefox 19+ */
+  .seccionCitasFormularioContacto__form input[type="email"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]:-ms-input-placeholder,
+  /* IE 10+ */
+  .seccionCitasFormularioContacto__form input[type="email"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]:-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form .wpcf7-response-output {
+    display: none;
+  }
+
+  .seccionCitasFormularioContacto__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fff);
+    z-index: 999;
+    padding: 70px 0 0;
+    overflow: auto;
+  }
+
+
+  .seccionCitasFormularioContacto__close {
+    position: absolute;
+    top: 100px;
+    right: 24px;
+    color: var(--002D72);
+    border: 0;
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .seccionCitasFormularioContacto__contenido {
+      padding: 66px 100px;
+    }
+
+    .seccionCitasFormularioContacto__titulo {
+      row-gap: 12px;
+      padding-bottom: 40px;
+    }
+
+    .seccionCitasFormularioContacto__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .seccionCitasFormularioContacto__img {
+      display: block;
+    }
+
+    .seccionCitasFormularioContacto__modal .seccionCitasFormularioContacto__contenido {
+      padding: 66px 95px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .seccionCitasFormularioContacto__form {
+      padding: 0;
+    }
+  }
