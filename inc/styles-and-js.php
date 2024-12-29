@@ -119,7 +119,6 @@ function enqueue_scripts() {
 'page-template-lg/page-fisiatria.php',
 'page-template-lg/page-gastroenterologia.php',
 'page-template-lg/page-ortopedia-trauma-reconstruccion.php',
-
 'page-template-lg/page-genetica.php',
 'page-template-lg/page-neurocirugia.php',
 'page-template-lg/page-neurologia.php',

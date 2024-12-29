@@ -23,7 +23,15 @@
 # Ignorar contenido específico de inc pero permitir styles-and-js.php
 !/inc/
 /inc/*
+!/inc/ajax.php
+!/inc/custom-postype.php
+!/inc/functions-custom.php
 !/inc/styles-and-js.php
+!/inc/theme-setup.php
+
+# ACF JSON
+!/acf-json/
+!/acf-json/*.json
 
 # Mantener el gitignore
 !.gitignore
