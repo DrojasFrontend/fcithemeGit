@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Gotham";
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://uc-fonts.uxpin.com/757021/203d6a3/Gotham-Bold.woff);
+  }
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://uc-fonts.uxpin.com/757021/662ccef/Gotham-Book.woff);
+}
+@font-face {
+    font-family: "Gotham";
+    font-display: swap;
+    font-weight: 300;
+    src: url(https://uc-fonts.uxpin.com/757021/32af956/Gotham-Light.woff);
+}

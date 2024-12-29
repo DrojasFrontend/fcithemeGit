@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-Bold.woff2') format('woff2'),
+        url('EYInterstate-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-BoldItalic.woff2') format('woff2'),
+        url('EYInterstate-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-Italic.woff2') format('woff2'),
+        url('EYInterstate-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-Light.woff2') format('woff2'),
+        url('EYInterstate-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-Regular.woff2') format('woff2'),
+        url('EYInterstate-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EYInterstate';
+    src: url('EYInterstate-LightItalic.woff2') format('woff2'),
+        url('EYInterstate-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

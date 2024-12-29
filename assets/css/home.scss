@@ -1,0 +1,383 @@
+@import 'scss/_variables.scss';
+.home{
+
+    &__splashbotones{
+        background-color: $color2;
+        color:#fff;
+        padding:rem(14) rem(10);
+        &__int{
+            display:flex;
+            justify-content: center;
+            a{
+                color:#fff;
+                display:block;
+                font-size: rem(24);
+                font-weight: 700;
+                text-decoration: none;
+                padding:rem(20) rem(26);
+                &:first-child{
+                    border-right:1px solid #d3d3d3;
+                }
+                &:hover{
+                    color:#fff;
+                    text-decoration: underline;
+                }
+                @media (max-width:$md){
+                    font-size: rem(18);
+                }
+            }
+        }
+    }
+    
+    &__porque{
+        padding: rem(50) 0;
+        h1{
+            @include titulo1;
+           
+        }
+        &__int{
+            margin: 0 auto;
+            max-width:1300px;
+        }
+        .porqueIndv{
+            &__int{
+                border: 1px solid #a0a0a0;
+                margin: rem(6);
+            }
+            &__img{
+                margin: 0 0 4px;
+            }
+            &__content{
+                padding:rem(14);
+                &__int{}
+                h3{
+                    font-size: rem(24);
+                    
+                    font-weight: bold;
+                    color: $color2;
+                    text-decoration: none solid $color2;
+                    line-height: 1.3em;
+                    margin: 0 0 0.4em;
+                }
+                hr{
+                    border:0;
+                    border-bottom: 1px solid #a0a0a0;
+                    margin: 0 0 6px;
+                }
+                p{
+                    color: $color2;
+                    font-size: rem(14);
+                    
+                    line-height: 2em;
+                    text-decoration: none solid $color2;
+                }
+            }
+
+            &.mod1{
+                .porqueIndv{
+                    &__int{
+                        background-color: $color3;
+                    }
+                    &__content{
+                        h3{
+                            color: #fff;
+                        }
+                        p{
+                            color: #fff;
+                        }
+                        .btn-principal{
+                            background-color: #fafafb;
+                            color: $color2;
+                            &:hover{
+                                background-color: $color2;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__serviciosesp{
+        padding:rem(50) 0;
+        h2{
+            @include titulo1;
+            margin-bottom:rem(30);
+        }
+        &__int{
+            margin: 0 auto;
+            max-width:750px;
+        }
+
+        
+    }
+
+    &__nuestrascifras{
+        padding:rem(50) 0;
+        &--int{
+            margin: 0 auto;
+            max-width:1300px;
+        }
+        h2{
+            @include titulo1;
+            margin-bottom:1em;
+        }
+        .home_cifras{
+            &__int{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: 0 auto rem(20);
+                width: calc(100% - 4px);
+            }
+            .cifraindv{
+                border-radius: 15px;
+                box-shadow: 0 3px rem(50) rgba(0, 0, 0, 0.1);
+                fill: #ffffff;
+                padding:30px;
+                width: calc(100% / 4 - 16px);
+                &--int{}
+                h3{
+                    
+                    font-size: rem(50);
+                    font-weight: bold;
+                    color: $color3;
+                    text-decoration: none solid $color3;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+                p{
+                    margin:0;
+                    
+                    font-size: rem(18);
+                    color: #454545;
+                    text-decoration: none solid rgb(69, 69, 69);
+                    line-height: 1.4em;
+                    text-align: center;
+                }
+
+                @media (max-width:$md){
+                    margin-bottom:rem(20);
+                    width: calc(100% / 2 - 16px);
+                }
+                @media (max-width:$sm){
+                    margin-bottom:rem(20);
+                    width: calc(100% - 16px);
+                }
+            }
+        }
+    }
+
+    &__blog{
+        h2{
+            @include titulo1;
+            margin-bottom:1em;
+        }
+        .blogrollslider{
+            &--slider{
+                &__paddingleft{
+                    padding-left:rem(80);
+                }
+                &__indv{
+                    padding:10px;
+                    &--relative{
+                        border-radius: rem(15);
+                        overflow: hidden;
+                        position:relative;
+                        z-index:1;
+                    }
+                    &__contenido{
+                        align-items: end;
+                        display: flex;
+                        height:100%;
+                        position: absolute;
+                        width:100%;
+                        z-index:2;
+                        &--cont{
+                            background-color: $primary;
+                            position: relative;
+                            width:100%;
+                            > div{
+                                padding:rem(20);
+                                position: relative;
+                            }
+                            &::before{
+                                background: rgb(0,38,110);
+                                background: -moz-linear-gradient(0deg, rgba(0,38,110,1) 20%, rgba(0,38,110,0) 100%);
+                                background: -webkit-linear-gradient(0deg, rgba(0,38,110,1) 20%, rgba(0,38,110,0) 100%);
+                                background: linear-gradient(0deg, rgba(0,38,110,1) 20%, rgba(0,38,110,0) 100%);
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00266e",endColorstr="#00266e",GradientType=1);
+    
+                                content:'';
+                                display:block;
+                                position: absolute;
+                                width:100%;
+                                height:30px;
+                                top:-30px;
+                            }
+                            h3{
+                                color: #fff;
+                                font-size: rem(20);
+                                font-weight: 700;
+                                margin:0 auto 0.5em;
+                                text-align: center;
+                            }
+                            h4{
+                                
+                                font-size: rem(16);
+                                color: #ffffff;
+                                text-decoration: none solid rgb(255, 255, 255);
+                                line-height: 1.2em;
+                                text-align: center;
+                            }
+                            p{
+                                color: #ffffff;
+                                font-size: rem(13);
+                            }
+                        }
+                    }
+                    &__bg{
+                        img{
+                            min-height: rem(550);
+                            object-fit: cover;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__eventos{
+        padding:rem(50) 0;
+        &__int{
+            margin: 0 auto;
+            max-width:1300px;
+        }
+        h2{
+            @include titulo1;
+            margin-bottom:1em;
+        }
+        .eventosHome{
+            box-shadow: 0 3px rem(50) rgba(0, 0, 0, 0.1);
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            &__col{}
+            &__capt{
+                background-color: $color2;
+                height:100%;
+                &--img{}
+                &--content{
+                    background-color: $color2;
+                    color:#fff;
+                    padding:rem(20);
+                    
+                    h3{
+                        
+                        font-size: rem(26);
+                        color: #ffffff;
+                        text-decoration: none solid rgb(255, 255, 255);
+                        line-height: 1.1em;
+                        strong{
+                            color:$color1;
+                            font-weight: bold;
+                        }
+                    }
+
+                    p{
+                        font-size: rem(14);
+                    }
+                }
+            }
+            &__calendario{
+                // margin-bottom:30px;
+                .mc-main .current-day{
+                    background-color: $primary;
+                    border:0;
+                    color:#fff;
+                    &::before{
+                        content:'';
+                    }
+                }
+                .mc-main td .event-title {
+                    font-size: 10px;
+                }
+                .mc-main td {
+                    // height: 3em;
+                }
+                .mc-main .event-title .has-image{
+                    svg{
+                        fill: $color2 !important;
+                    }
+                }
+                .mc-main .has-events .mc-date {
+                    background: $secondary;
+                    color: #fff;
+                }
+            }
+            @media (max-width:$md){
+                display:block;
+            }
+
+        }
+
+    }
+
+    &__talks{
+        padding:0 0 rem(50);
+        &__int{
+            display:flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width:1300px;
+            justify-content: space-between;
+            @media (max-width:$md){
+                justify-content: center;
+            }
+        }
+        .talk_indv{
+            // padding:12px;
+            width: calc(100% / 3 - 8px);
+            img{
+                box-shadow: 0 3px rem(50) rgba(0, 0, 0, 0.1);
+                display:block;
+                max-width:100%;
+            }
+            @media (max-width:$md){
+                margin-bottom:rem(10);
+                width: calc(100% / 1 - 8px);
+            }
+        }
+    }
+
+    &__instalaciones{
+        padding:rem(50) 0;
+        &__int{
+            align-items: center;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            margin:0 auto;
+            max-width:1300px;
+            @media (max-width:$md){
+                grid-template-columns: 1fr;
+            }
+        }
+        &__col{
+            &--int{
+                h2{
+                    
+                    font-size: rem(32);
+                    font-weight: bold;
+                    color: $color2;
+                    text-decoration: none solid $color2;
+                    line-height: 1.2em;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
