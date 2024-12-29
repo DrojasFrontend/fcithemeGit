@@ -75,6 +75,18 @@
 .etapaEspecialidadesHero__text .boton-v2 {
 	margin-top: 12px;
 }
+.paginaBancoSangre .etapaEspecialidadesHero__text .boton-v2 {
+	color: var(--E40046) !important;
+	border: 0;
+	background-color: var(--fff);
+}
+.paginaBancoSangre .etapaEspecialidadesHero__text .boton-v2:hover {
+	color: var(--fff) !important;
+	background-color: var(--E40046);
+}
+.paginaBancoSangre .etapaEspecialidadesHero__text .boton-v2 svg {
+	display: none;
+}
 @media only screen and (min-width: 1024px) {
 	.etapaEspecialidadesHero .container--large {
 		padding: 0 24px;
@@ -92,6 +104,9 @@
 		padding: 100px 100px 100px 0;
 		border-radius: 0 0 60px 0;
 		min-height: 444px;
+	}
+	.paginaNeurocirugia .etapaEspecialidadesHero__text {
+		padding: 100px 90px 100px 0;
 	}
 	.paginaOtorrino .etapaEspecialidadesHero__text {
 		padding: 100px 60px 100px 0;
@@ -141,7 +156,8 @@
 	padding: 40px 0 0;
 }
 .paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
-.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA {
+.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
+.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA {
 	padding: 40px 0;
 }
 .etapaEspecialidadesTextoImagenCTA .container--large {
@@ -208,7 +224,8 @@
 	.paginaMedicinaNuclear.etapaEspecialidadesTextoImagenCTA,
 	.paginaGastro.etapaEspecialidadesTextoImagenCTA,
 	.paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
-	.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA {
+	.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
+	.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0;
 	}
 	.etapaEspecialidadesTextoImagenCTA .container--large {
@@ -324,6 +341,9 @@
 .etapaEspecialidadesTextDescBanner {
 	padding: 40px 0;
 }
+.paginaBancoSangre.etapaEspecialidadesTextDescBanner {
+	background-color: rgba(213, 219, 231, 0.3);
+}
 .paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
 	padding: 40px 0 0;
 }
@@ -335,6 +355,9 @@
 	grid-template-columns: 1fr;
 	row-gap: 20px;
 	padding-bottom: 40px;
+}
+.paginaBancoSangre .etapaEspecialidadesTextDescBanner__grid {
+	padding-bottom: 0;
 }
 .paginaCardiologiasClinicas .etapaEspecialidadesTextDescBanner__grid {
 	margin-bottom: 40px;
@@ -636,6 +659,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 		row-gap: 30px;
 		padding: 0 0 0 24px;
 	}
+	.paginaInfectologia ul.etapaEspecialidadesItemsIconos__items {
+		column-gap: 90px;
+	}
 	.paginaMedicinaNuclear ul.etapaEspecialidadesItemsIconos__items,
 	.paginaGastroenterologia ul.etapaEspecialidadesItemsIconos__items {
 		column-gap: 60px;
@@ -647,6 +673,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 /* etapaEspecialidadesTextoImagenFondoCTA */
 .etapaEspecialidadesTextoImagenFondoCTA {
 	padding: 40px 0 0;
+}
+.paginaBancoSangre.etapaEspecialidadesTextoImagenFondoCTA {
+	padding: 40px 0;
 }
 .etapaEspecialidadesTextoImagenFondoCTA .container--large {
 	padding: 0;
@@ -672,6 +701,15 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	row-gap: 12px;
 	padding: 30px 24px 42px;
 }
+.paginaBancoSangre .etapaEspecialidadesTextoImagenFondoCTA__info .item p {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
 .etapaEspecialidadesTextoImagenFondoCTA__info ul {
 	margin: 0;
 	padding: 0 0 0 18px;
@@ -679,6 +717,11 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 .etapaEspecialidadesTextoImagenFondoCTA__info li {
 	margin-bottom: 0 !important;
+}
+.paginaBancoSangre .etapaEspecialidadesTextoImagenFondoCTA__info .item {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 12px;
 }
 .etapaEspecialidadesTextoImagenFondoCTA__img {
 	width: 100%;
@@ -700,6 +743,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 @media only screen and (min-width: 1024px) {
 	.etapaEspecialidadesTextoImagenFondoCTA {
 		padding: 84px 0 0;
+	}
+	.paginaBancoSangre.etapaEspecialidadesTextoImagenFondoCTA {
+		padding: 84px 0;
 	}
 	.etapaEspecialidadesTextoImagenFondoCTA .container--large {
 		padding: 0 24px;
@@ -744,6 +790,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .etapaEspecialidadesTargetaGrid__fondo {
 	padding: 40px 0;
 }
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__fondo {
+	padding: 0 0 40px;
+}
 .etapaEspecialidadesTargetaGrid__titulo {
 	display: grid;
 	row-gap: 12px;
@@ -769,6 +818,26 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	row-gap: 12px;
 	padding: 18px 18px 0;
 }
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__info {
+	padding: 18px 0 0;
+}
+.paginaBancoSangre .etapaEspecialidadesTargetaGrid__info {
+	padding: 18px 0 0;
+}
+.paginaBancoSangre .etapaEspecialidadesTargetaGrid__info .heading--24 br {
+	display: none;
+}
+.paginaBancoSangre .etapaEspecialidadesTargetaGrid__info ul {
+	padding-top: 18px;
+}
+.paginaBancoSangre .etapaEspecialidadesTargetaGrid__info li {
+	font-weight: 700;
+}
+.etapaEspecialidadesTargetaGrid__info ul {
+	width: 100% !important;
+	margin: 0 !important;
+	padding-left: 18px !important;
+}
 .etapaEspecialidadesTargetaGrid__info .heading--24 {
 	font-weight: 500;
 }
@@ -789,12 +858,33 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesTargetaGrid__fondo {
 		padding: 84px 0;
 	}
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__fondo {
+		padding: 0 0 84px;
+	}
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48,
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .descripcion,
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo,
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .heading--48,
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .descripcion {
+		text-align: center;
+	}
 	.etapaEspecialidadesTargetaGrid__grid {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 36px;
 	}
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 36px;
+	}
 	.etapaEspecialidadesTargetaGrid__info {
 		padding: 18px 30px 0;
+	}
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__info .heading--24 br {
+		display: block;
+	}
+	.etapaEspecialidadesTargetaGrid__info ul {
+		padding-left: 30px !important;
 	}
 	.etapaEspecialidadesTargetaGrid__col img {
 		height: 203px;
@@ -1497,6 +1587,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .etapaEspecialidadesImagenTextoCTA.estilo-invertido {
 	background-color: rgba(213, 219, 231, 0.1);
 }
+.paginaBancoSangre.etapaEspecialidadesImagenTextoCTA {
+	background-color: rgba(213, 219, 231, 0.3);
+}
 .etapaEspecialidadesImagenTextoCTA .container--large {
 	padding: 0;
 }
@@ -1524,8 +1617,24 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	padding: 18px 0 18px 18px;
 	line-height: 24px;
 }
+.paginaNeurocirugia .etapaEspecialidadesImagenTextoCTA__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+}
+.paginaNeurocirugia .etapaEspecialidadesImagenTextoCTA__info li {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
 .etapaEspecialidadesImagenTextoCTA__info li {
 	margin-bottom: 0 !important;
+}
+.etapaEspecialidadesImagenTextoCTA__info li::marker {
+	font-size: 10px;
 }
 .etapaEspecialidadesImagenTextoCTA__img {
 	text-align: right;
@@ -1576,6 +1685,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 		row-gap: 16px;
 		height: 100%;
 		padding: 0 10px 0 0;
+	}
+	.paginaBancoSangre .etapaEspecialidadesImagenTextoCTA__info ul {
+		padding: 18px 0 18px 30px;
 	}
 	.etapaEspecialidadesImagenTextoCTA__info .heading--48 {
 		margin-bottom: 14px;
@@ -1776,5 +1888,84 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesTabTarjetaTextoImagen__tab ul {
 		width: auto;
 		overflow-x: inherit;
+	}
+}
+
+/* etapaEspecialidadesAccordion */
+.etapaEspecialidadesAccordion {
+	padding: 0 0 40px;
+}
+
+.paginaNeurologiaPediatrica.etapaEspecialidadesAccordion {
+	padding: 0 0 40px;
+}
+
+.etapaEspecialidadesAccordion__titulo {
+	display: grid;
+	row-gap: 12px;
+	margin-bottom: 20px;
+}
+
+.etapaEspecialidadesAccordion__titulo .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesAccordion button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 24px 0;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #002d72;
+	cursor: pointer;
+}
+
+.etapaEspecialidadesAccordion button h3 {
+	font-weight: 500;
+}
+
+.etapaEspecialidadesAccordion .accordion__content ul {
+	margin: 0;
+	padding: 24px 0 0 18px;
+}
+
+.etapaEspecialidadesAccordion .accordion__content li {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+	margin: 0;
+}
+
+.etapaEspecialidadesAccordion .accordion__content li::marker {
+	font-size: 10px;
+}
+
+.etapaEspecialidadesAccordion .accordion__panel {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesAccordion {
+		padding: 0 0 84px;
+	}
+
+	.paginaNeurologiaPediatrica.etapaEspecialidadesAccordion {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesAccordion__titulo {
+		text-align: center;
+		padding: 0 120px;
+	}
+
+	.etapaEspecialidadesAccordion__titulo .heading--48 {
+		text-align: center;
+		margin-bottom: 18px;
 	}
 }

@@ -19,31 +19,32 @@ $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
 $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
+$mostrar_acordion                     = get_field('mostrar_acordion');
 
 ?>
 <!-- CONTENIDO -->
   <main class="paginaEtapaExpecialidades">
     <?php if($mostrar_hero) : ?>
       <!-- Hero -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaCardiologiasClinicas') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => '') );?>
       <!-- Fin Hero -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
      <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta_invertido) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
@@ -55,7 +56,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -73,7 +74,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_imagen_cta_2) : ?>
       <!-- Texto Imagen 2 -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>''));?>
       <!-- Fin Texto Imagen 2 -->
     <?php endif; ?>
 
@@ -100,11 +101,19 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
     <?php endif; ?>
+
     <?php if($mostrar_tarjetas_imagen_texto) : ?>
-      <!-- CTAS -->
+      <!-- Tarjeta imagen texto -->
         <?php get_template_part('template-parts/especialidades/seccion', 'tarjetas-imagen-texto');?>
-      <!-- Fin CTAS -->
+      <!-- Fin Tarjeta imagen texto -->
     <?php endif; ?>
+
+    <?php if($mostrar_acordion) : ?>
+      <!-- Accordion -->
+        <?php get_template_part('template-parts/especialidades/seccion', 'accordion');?>
+      <!-- Fin Accordion -->
+    <?php endif; ?>
+
   </main>
 <!-- CONTENIDO -->
 

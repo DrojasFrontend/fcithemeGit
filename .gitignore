@@ -1,0 +1,37 @@
+# Ignorar todo inicialmente
+*
+
+# Excepciones de carpetas y archivos específicos
+!/page-template-lg/
+!/page-template-lg/**
+!/page-template-lg/page-genetica.php
+!/page-template-lg/page-neurocirugia.php
+!/page-template-lg/page-neurologia.php
+!/page-template-lg/page-neurologia-pediatrica.php
+!/page-template-lg/page-infectologia.php
+!/page-template-lg/page-banco-sangre.php
+
+!/template-parts/
+!/template-parts/especialidades/
+!/template-parts/especialidades/seccion-accordion.php
+!/template-parts/especialidades/seccion-targetas-grid-3.php
+!/template-parts/especialidades/seccion-contacto.php
+!/template-parts/content-icono.php
+!/style.css
+!/functions.php
+
+# Ignorar contenido específico de inc pero permitir styles-and-js.php
+!/inc/
+/inc/*
+!/inc/styles-and-js.php
+
+# Mantener el gitignore
+!.gitignore
+
+# Ignorar explícitamente estas carpetas
+/assets/
+/blocks/
+/classes/
+/images/
+/page-templates/
+/ultimate-member/

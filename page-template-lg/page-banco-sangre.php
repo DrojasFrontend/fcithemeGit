@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Génetica
+Template Name: Plantilla Especialidad | Banco de Sangre
 */ 
 
 get_header();
@@ -16,28 +16,30 @@ $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
 $mostrar_texto_imagen_fondo           = get_field('mostrar_texto_imagen_fondo');
 $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
+$mostrar_targetas_grid_3              = get_field('mostrar_targetas_grid_3');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
 $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
+$mostrar_contacto                     = get_field('mostrar_contacto');
 
 ?>
 <!-- CONTENIDO -->
   <main class="paginaEtapaExpecialidades">
     <?php if($mostrar_hero) : ?>
       <!-- Hero -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => '') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaBancoSangre') );?>
       <!-- Fin Hero -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' => 'paginaBancoSangre') );?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
      <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaBancoSangre'));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
@@ -55,7 +57,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaBancoSangre'));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -67,7 +69,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_items_iconos) : ?>
       <!-- Items Iconos -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos', array('class' => 'paginaInfectologia') );?>
       <!-- Fin Items Iconos -->
     <?php endif; ?>
 
@@ -89,6 +91,12 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 
+    <?php if($mostrar_targetas_grid_3) : ?>
+      <!-- Targetas Grid 3 -->
+        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid-3', array('class' => 'paginaBancoSangre'));?>
+      <!-- Fin Targetas Grid 3 -->
+    <?php endif; ?>
+
     <?php if($mostrar_experto) : ?>
       <!-- Experto -->
         <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop"));?>
@@ -101,9 +109,15 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
       <!-- Fin CTAS -->
     <?php endif; ?>
     <?php if($mostrar_tarjetas_imagen_texto) : ?>
-      <!-- CTAS -->
+      <!-- Tarjetas imagen texto -->
         <?php get_template_part('template-parts/especialidades/seccion', 'tarjetas-imagen-texto');?>
-      <!-- Fin CTAS -->
+      <!-- Fin Tarjetas imagen texto -->
+    <?php endif; ?>
+
+    <?php if($mostrar_contacto) : ?>
+      <!-- Contacto -->
+        <?php get_template_part('template-parts/especialidades/seccion', 'contacto', array('class' => 'paginaBancoSangre'));?>
+      <!-- Fin Contacto -->
     <?php endif; ?>
   </main>
 <!-- CONTENIDO -->
