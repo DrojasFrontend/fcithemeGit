@@ -108,7 +108,8 @@
 	.paginaNeurocirugia .etapaEspecialidadesHero__text {
 		padding: 100px 90px 100px 0;
 	}
-	.paginaOtorrino .etapaEspecialidadesHero__text {
+	.paginaOtorrino .etapaEspecialidadesHero__text,
+	.paginaNeumologiaPediatrica .etapaEspecialidadesHero__text {
 		padding: 100px 60px 100px 0;
 	}
 	.paginaCirugiaGeneral .etapaEspecialidadesHero__text {
@@ -116,6 +117,11 @@
 	}
 	.paginaCardiopatia .etapaEspecialidadesHero__text {
 		padding: 76px 10px 76px 0;
+	}
+	.paginaHemodinamiaAdulto .etapaEspecialidadesHero__text,
+	.paginaMetodosInvasivos .etapaEspecialidadesHero__text,
+	.paginaNefrologiaPediatrica .etapaEspecialidadesHero__text {
+		padding: 100px 24px 100px 0;
 	}
 	.paginaCardiopatia .etapaEspecialidadesHero__text .heading--64 {
 		letter-spacing: normal;
@@ -157,7 +163,9 @@
 }
 .paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
 .paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
-.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA {
+.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
+.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
+.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA {
 	padding: 40px 0;
 }
 .etapaEspecialidadesTextoImagenCTA .container--large {
@@ -225,7 +233,9 @@
 	.paginaGastro.etapaEspecialidadesTextoImagenCTA,
 	.paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
 	.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
-	.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA {
+	.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
+	.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
+	.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0;
 	}
 	.etapaEspecialidadesTextoImagenCTA .container--large {
@@ -341,7 +351,8 @@
 .etapaEspecialidadesTextDescBanner {
 	padding: 40px 0;
 }
-.paginaBancoSangre.etapaEspecialidadesTextDescBanner {
+.paginaBancoSangre.etapaEspecialidadesTextDescBanner,
+.paginaNeumologiaPediatrica.etapaEspecialidadesTextDescBanner {
 	background-color: rgba(213, 219, 231, 0.3);
 }
 .paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
@@ -356,7 +367,8 @@
 	row-gap: 20px;
 	padding-bottom: 40px;
 }
-.paginaBancoSangre .etapaEspecialidadesTextDescBanner__grid {
+.paginaBancoSangre .etapaEspecialidadesTextDescBanner__grid,
+.paginaNeumologiaPediatrica .etapaEspecialidadesTextDescBanner__grid {
 	padding-bottom: 0;
 }
 .paginaCardiologiasClinicas .etapaEspecialidadesTextDescBanner__grid {
@@ -663,7 +675,11 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 		column-gap: 90px;
 	}
 	.paginaMedicinaNuclear ul.etapaEspecialidadesItemsIconos__items,
-	.paginaGastroenterologia ul.etapaEspecialidadesItemsIconos__items {
+	.paginaGastroenterologia ul.etapaEspecialidadesItemsIconos__items,
+	.paginaGerontologia ul.etapaEspecialidadesItemsIconos__items,
+	.paginaHemodinamiaAdulto ul.etapaEspecialidadesItemsIconos__items,
+	.paginaMetodosInvasivos ul.etapaEspecialidadesItemsIconos__items,
+	.paginaNefrologiaPediatrica ul.etapaEspecialidadesItemsIconos__items {
 		column-gap: 60px;
 	}
 	.etapaEspecialidadesItemsIconos__items ul {
@@ -866,7 +882,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .descripcion,
 	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo,
 	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .heading--48,
-	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .descripcion {
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .descripcion,
+	.paginaHemodinamiaAdulto .etapaEspecialidadesTargetaGrid__titulo,
+	.paginaHemodinamiaAdulto .etapaEspecialidadesTargetaGrid__titulo .heading--48,
+	.paginaHemodinamiaAdulto .etapaEspecialidadesTargetaGrid__titulo .descripcion {
 		text-align: center;
 	}
 	.etapaEspecialidadesTargetaGrid__grid {
@@ -1710,10 +1729,14 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .paginaCardiologiaClinicaPediatrica.etapaEspecialidadesTextDescBanner {
 	background-color: rgb(170 204 255 / 20%);
 }
+.paginaHematoOncologia.etapaEspecialidadesTextDescBanner {
+	background-color: rgb(170 204 255 / 10%);
+}
 .paginaOrtopediaRodilla.etapaEspecialidadesTextDescBanner {
 	background-color: #fff;
 }
-.paginaCardiologiaClinicaPediatrica .etapaEspecialidadesTextDescBanner__grid {
+.paginaCardiologiaClinicaPediatrica .etapaEspecialidadesTextDescBanner__grid,
+.paginaHematoOncologia .etapaEspecialidadesTextDescBanner__grid {
 	padding-bottom: 0px;
 }
 .paginaCardiologiaClinicaPediatrica.etapaEspecialidadesImagenTextoCTA__img img {

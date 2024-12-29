@@ -119,12 +119,20 @@ function enqueue_scripts() {
 'page-template-lg/page-fisiatria.php',
 'page-template-lg/page-gastroenterologia.php',
 'page-template-lg/page-ortopedia-trauma-reconstruccion.php',
+
 'page-template-lg/page-genetica.php',
 'page-template-lg/page-neurocirugia.php',
 'page-template-lg/page-neurologia.php',
 'page-template-lg/page-neurologia-pediatrica.php',
 'page-template-lg/page-infectologia.php',
 'page-template-lg/page-banco-sangre.php',
+
+'page-template-lg/page-gerontologia.php',
+'page-template-lg/page-hemato-oncologia.php',
+'page-template-lg/page-hemodinamia-adulto.php',
+'page-template-lg/page-metodos-invasivos.php',
+'page-template-lg/page-nefrologia-pediatrica.php',
+'page-template-lg/page-neumologia-pediatrica.php',
 
     );
 
