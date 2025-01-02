@@ -169,14 +169,15 @@ $departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_
 }
 
 .seccionDirectorio__departamento input[type="radio"] {
+    position: relative;
    margin-right: 10px;
    appearance: none;
    -webkit-appearance: none;
    width: 24px;
    height: 24px;
-   border: 1px solid #002D72;
+   border: 1px solid rgba(0, 46, 114, 0.30);
    border-radius: 50%;
-   position: relative;
+   cursor: pointer;
 }
 
 .seccionDirectorio__departamento input[type="radio"]:checked {
@@ -392,7 +393,7 @@ $departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_
     }
 
    .seccionDirectorio__especialidades-titulo {
-        padding: 0 24px;
+        padding: 18px 24px 0;
     }
 
    .mobile-header {
