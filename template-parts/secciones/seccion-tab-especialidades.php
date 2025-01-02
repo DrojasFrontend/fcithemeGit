@@ -1,151 +1,101 @@
 <?php
 $sitename               = get_bloginfo('name');
 $grupo_departamentos    = get_field('grupo_departamentos'); 
-$imagen_id              = !empty($grupo_departamentos["imagen"]['ID']) ? $grupo_departamentos["imagen"]['ID'] : '';
-$titulo                 = !empty($grupo_departamentos['texto']) ? esc_html($grupo_departamentos['texto']) : '';
-$cta                    = !empty($grupo_departamentos['cta']) ? $grupo_departamentos['cta'] : [];
-$cta_url                = !empty($cta['url']) ? esc_url($cta['url']) : '';
-$cta_titulo             = !empty($cta['title']) ? esc_html($cta['title']) : '';
-$cta_target             = !empty($cta['target']) ? $cta['target'] : '';
+$imagen_id             = !empty($grupo_departamentos["imagen"]['ID']) ? $grupo_departamentos["imagen"]['ID'] : '';
+$titulo                = !empty($grupo_departamentos['texto']) ? esc_html($grupo_departamentos['texto']) : '';
+$cta                   = !empty($grupo_departamentos['cta']) ? $grupo_departamentos['cta'] : [];
+$cta_url               = !empty($cta['url']) ? esc_url($cta['url']) : '';
+$cta_titulo            = !empty($cta['title']) ? esc_html($cta['title']) : '';
+$cta_target            = !empty($cta['target']) ? $cta['target'] : '';
+$departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_departamentos["departamentos"] : [];
 ?>
 
 <div class="seccionDirectorio">
-   <div class="container--large">
-       <div class="seccionDirectorio__titulo">
-           <p class="subheading color--002D72">NUESTRAS ESPECIALIDADES</p>
-           <h2 class="heading--48 color--002D72">Todo lo que necesitas en LaCardio</h2>
-       </div>
+    <div class="container--large">
+        <div class="seccionDirectorio__titulo">
+            <p class="subheading color--002D72">NUESTRAS ESPECIALIDADES</p>
+            <h2 class="heading--48 color--002D72">Todo lo que necesitas en LaCardio</h2>
+        </div>
    
-       <div class="seccionDirectorio__grid">
-           <div class="seccionDirectorio__departamentos">
+        <div class="seccionDirectorio__grid">
+            <div class="seccionDirectorio__departamentos">
                 <button class="visibleMobile seccionDirectorio__cerrar" onclick="cerrarMenuMobile()">
                     <?php 
                         get_template_part('template-parts/content', 'icono');
                         display_icon('ico-close'); 
                     ?>
                 </button>
-               <h4 class="subheading color--677283">Departamentos</h4>
-               <div class="">
-                   <?php
-                   $departamentos = get_terms(array(
-                       'taxonomy' => 'grupos',
-                       'hide_empty' => false
-                   ));
+                <h4 class="subheading color--677283">Departamentos</h4>
+                <div class="list-departamentos">
+                    <?php foreach ($departamentos as $index => $depto) : ?>
+                        <label class="seccionDirectorio__departamento">
+                            <input type="radio" name="departamento" value="<?php echo sanitize_title($depto['departamento']); ?>" onchange="filtrarEspecialidades('<?php echo sanitize_title($depto['departamento']); ?>', '<?php echo esc_js($depto['departamento']); ?>')">
+                            <span class="radio-label heading--18 color--002D72 font-sans"><?php echo $depto['departamento']; ?></span>
+                        </label>
+                    <?php endforeach; ?>
+                </div>
+            </div>
    
-                   foreach ($departamentos as $depto) {
-                       ?>
-                       <label class="seccionDirectorio__departamento">
-                           <input type="radio" name="departamento" value="<?php echo $depto->slug; ?>" onchange="filtrarEspecialidades('<?php echo $depto->slug; ?>', '<?php echo $depto->name; ?>')">
-                           <span class="radio-label heading--18 color--002D72 font-sans"><?php echo $depto->name; ?></span>
-                       </label>
-                       <?php
-                   }
-                   ?>
-               </div>
-               <?php if ($cta_url) : ?>
-                    <div class="visibleMobile">
-                        <a href="<?php echo $cta_url;?>" class="boton-v2 boton-v2--rojo-rojo" target="<?php echo $cta_target;?>">
-                        <?php echo $cta_titulo;?>
-                        </a>
-                    </div>
-                <?php endif; ?>
-           </div>
-   
-           <div class="seccionDirectorio__especialidades">
-                <div class="visibleDesktop">
-                    <div class="seccionDirectorio__especialidades-contenido" id="imagen-especialidades">
-                        <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?>
-                        <div class="seccionDirectorio__especialidades-titulo">
-                            <?php if($titulo) : ?>
-                                <h3 class="heading--30 color--002D72"><?php echo $titulo;?></h3>
-                            <?php endif; ?>
-                            <?php if ($cta_url) : ?>
-                                <div class="visibleDesktop">
-                                    <a href="<?php echo $cta_url;?>" class="boton-v2 boton-v2--rojo-rojo" target="<?php echo $cta_target;?>">
-                                    <?php echo $cta_titulo;?>
-                                    </a>
-                                </div>
-                            <?php endif; ?>
-                        </div>
+            <div class="seccionDirectorio__especialidades">
+                <div class="visibleDesktop" id="imagen-especialidades">
+                    <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?>
+                    <div class="seccionDirectorio__especialidades-titulo">
+                        <?php if($titulo) : ?>
+                            <h3 class="heading--30 color--002D72"><?php echo $titulo;?></h3>
+                        <?php endif; ?>
                     </div>
                 </div>
 
-               <div id="lista-especialidades" style="display: none;">
+                <div id="lista-especialidades" style="display: none;">
                     <button class="visibleMobile seccionDirectorio__cerrar" onclick="volverMenu()">
                         <?php 
                             get_template_part('template-parts/content', 'icono');
                             display_icon('ico-close'); 
                         ?>
                     </button>
-                   <div class="mobile-header">
-                       <button onclick="volverMenu()" class="boton-volver">
+                    <div class="mobile-header">
+                        <button onclick="volverMenu()" class="boton-volver">
                             <?php 
                                 get_template_part('template-parts/content', 'icono');
                                 display_icon('arrow-rojo'); 
                             ?>
                             <span class="departamento-titulo font--sans heading--16 color--E40046"></span>
-                       </button>
-                   </div>
-                   <h4 class="subheading color--677283 visibleDesktop">Especialidades</h4>
-                   <?php
-                   $args = array(
-                       'post_type' => 'servicios',
-                       'posts_per_page' => -1
-                   );
-                   $especialidades = new WP_Query($args);
-   
-                   if ($especialidades->have_posts()) : 
-                       while ($especialidades->have_posts()) : $especialidades->the_post();
-                           $grupos = get_the_terms(get_the_ID(), 'grupos');
-                           $grupo_slugs = array();
-                           if ($grupos) {
-                               foreach ($grupos as $grupo) {
-                                   $grupo_slugs[] = $grupo->slug;
-                               }
-                           }
-                           ?>
-                           <div class="seccionDirectorio__especialidad" data-grupos='<?php echo json_encode($grupo_slugs); ?>'>
-                               <label class="radio-container">
-                                   <span class="radio-label heading--18 color--002D72 font-sans"><?php echo get_the_title(); ?></span>
-                               </label>
-                               <a href="<?php echo get_permalink(); ?>" class="ver-link font-sans heading--14 color--E40046">
-                                   Ver
-                                   <?php 
-                                       get_template_part('template-parts/content', 'icono');
-                                       display_icon('arrow-rojo'); 
-                                   ?>
-                               </a>
-                           </div>
-                           <?php
-                       endwhile;
-                       wp_reset_postdata();
-                   endif;
-                   ?>
+                        </button>
+                    </div>
+                    <h4 class="subheading color--677283 visibleDesktop">Especialidades</h4>
 
-                    <?php if ($cta_url) : ?>
-                        <div class="visibleMobile">
-                            <a href="<?php echo $cta_url;?>" class="boton-v2 boton-v2--rojo-rojo" target="<?php echo $cta_target;?>">
-                            <?php echo $cta_titulo;?>
-                            </a>
+                    <?php foreach ($departamentos as $depto) : ?>
+                        <div class="list-especialidades" id="<?php echo sanitize_title($depto['departamento']); ?>" style="display: none;">
+                            <?php if (!empty($depto['especialidades'])) : 
+                                foreach ($depto['especialidades'] as $esp) : 
+                                    $cta = !empty($esp['especialidad']) ? $esp['especialidad'] : [];
+                                    $cta_url = !empty($cta['url']) ? esc_url($cta['url']) : '';
+                                    $cta_titulo = !empty($cta['title']) ? esc_html($cta['title']) : '';
+                            ?>
+                                <div class="seccionDirectorio__especialidad">
+                                    <label class="radio-container">
+                                        <span class="radio-label heading--18 color--002D72 font-sans"><?php echo $cta_titulo; ?></span>
+                                    </label>
+                                    <a href="<?php echo $cta_url; ?>" class="ver-link font-sans heading--14 color--E40046">
+                                        Ver
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('arrow-rojo'); 
+                                        ?>
+                                    </a>
+                                </div>
+                            <?php endforeach;
+                            endif; ?>
                         </div>
-                    <?php endif; ?>
-               </div>
-           </div>
-       </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
 
-       <div class="visibleMobile">
-            <div class="seccionDirectorio__especialidades-contenido" id="imagen-especialidades">
+            <div class="visibleMobile">
                 <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?>
                 <div class="seccionDirectorio__especialidades-titulo">
                     <?php if($titulo) : ?>
                         <h3 class="heading--30 color--002D72"><?php echo $titulo;?></h3>
-                    <?php endif; ?>
-                    <?php if ($cta_url) : ?>
-                        <div class="visibleDesktop">
-                            <a href="<?php echo $cta_url;?>" class="boton-v2 boton-v2--rojo-rojo" target="<?php echo $cta_target;?>">
-                            <?php echo $cta_titulo;?>
-                            </a>
-                        </div>
                     <?php endif; ?>
                     <button class="boton-v2 boton-v2--blanco-rojo" onclick="abrirMenuMobile()">
                         Conoce nuestros departamentos
@@ -153,7 +103,7 @@ $cta_target             = !empty($cta['target']) ? $cta['target'] : '';
                 </div>
             </div>
         </div>
-   </div>
+    </div>
 </div>
 
 <style>
@@ -162,10 +112,14 @@ $cta_target             = !empty($cta['target']) ? $cta['target'] : '';
    background-color: rgba(213, 219, 231, 0.20);
 }
 
+.seccionDirectorio img {
+    width: 100%;
+}
+
 .seccionDirectorio__titulo {
     display: grid;
     row-gap: 12px;
-   margin-bottom: 42px;
+   margin-bottom: 36px;
 }
 
 .seccionDirectorio__titulo h2 {
@@ -293,6 +247,7 @@ $cta_target             = !empty($cta['target']) ? $cta['target'] : '';
 .seccionDirectorio__especialidades-titulo {
    display: grid;
    row-gap: 36px;
+   padding: 18px 0 0
 }
 
 .mobile-header {
@@ -361,7 +316,11 @@ $cta_target             = !empty($cta['target']) ? $cta['target'] : '';
     width: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+
+    .seccionDirectorio__titulo {
+        margin-bottom: 42px;
+    }
 
     .seccionDirectorio {
         padding: 84px 0;
@@ -443,46 +402,42 @@ $cta_target             = !empty($cta['target']) ? $cta['target'] : '';
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-   const especialidades = document.querySelectorAll('.seccionDirectorio__especialidad');
-   especialidades.forEach(especialidad => {
-       especialidad.style.display = 'none';
-   });
-});
-
 function filtrarEspecialidades(departamentoSlug, departamentoNombre) {
-   const imagen = document.getElementById('imagen-especialidades');
-   const listaEspecialidades = document.getElementById('lista-especialidades');
-   const especialidades = document.querySelectorAll('.seccionDirectorio__especialidad');
-   const menuPrincipal = document.querySelector('.seccionDirectorio__departamentos');
-   const menuEspecialidades = document.querySelector('.seccionDirectorio__especialidades');
-   const departamentoTitulo = document.querySelector('.departamento-titulo');
-
-   if (window.innerWidth <= 768) {
-       menuPrincipal.style.transform = 'translateX(-100%)';
-       menuEspecialidades.style.transform = 'translateX(0)';
-       departamentoTitulo.textContent = departamentoNombre;
-   }
-
-   imagen.style.display = 'none';
-   listaEspecialidades.style.display = 'block';
-   
-   especialidades.forEach(especialidad => {
-       const grupos = JSON.parse(especialidad.dataset.grupos || '[]');
-       especialidad.style.display = grupos.includes(departamentoSlug) ? 'flex' : 'none';
-   });
-
-   document.querySelectorAll('.seccionDirectorio__departamento').forEach(item => {
-       item.classList.toggle('selected', item.querySelector(`input[value="${departamentoSlug}"]`).checked);
-   });
+    const imagen = document.getElementById('imagen-especialidades');
+    const listaEspecialidades = document.getElementById('lista-especialidades');
+    const menuPrincipal = document.querySelector('.seccionDirectorio__departamentos');
+    const menuEspecialidades = document.querySelector('.seccionDirectorio__especialidades');
+    const departamentoTitulo = document.querySelector('.departamento-titulo');
+    
+    // Ocultar imagen y mostrar lista
+    imagen.style.display = 'none';
+    listaEspecialidades.style.display = 'block';
+    
+    // Ocultar todas las listas de especialidades
+    document.querySelectorAll('.list-especialidades').forEach(lista => {
+        lista.style.display = 'none';
+    });
+    
+    // Mostrar lista correspondiente al departamento seleccionado
+    const listaActiva = document.getElementById(departamentoSlug);
+    if (listaActiva) {
+        listaActiva.style.display = 'block';
+    }
+    
+    // Lógica móvil
+    if (window.innerWidth <= 768) {
+        menuPrincipal.style.transform = 'translateX(-100%)';
+        menuEspecialidades.style.transform = 'translateX(0)';
+        departamentoTitulo.textContent = departamentoNombre;
+    }
 }
 
 function volverMenu() {
-   const menuPrincipal = document.querySelector('.seccionDirectorio__departamentos');
-   const menuEspecialidades = document.querySelector('.seccionDirectorio__especialidades');
-   
-   menuPrincipal.style.transform = 'translateX(0)';
-   menuEspecialidades.style.transform = 'translateX(100%)';
+    const menuPrincipal = document.querySelector('.seccionDirectorio__departamentos');
+    const menuEspecialidades = document.querySelector('.seccionDirectorio__especialidades');
+    
+    menuPrincipal.style.transform = 'translateX(0)';
+    menuEspecialidades.style.transform = 'translateX(100%)';
 }
 
 function abrirMenuMobile() {
