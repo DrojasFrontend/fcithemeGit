@@ -236,106 +236,134 @@ jQuery(document).ready(function ($) {
 		});
 	}
 
-	const $slickBannerSlide = $(".slickBannerSlide");
-	const slickBannerSlideSettings = {
-		fade: true,
-		cssEase: "linear",
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false,
-		touchMove: true,
-		dots: true,
-		arrows: false,
-		infinite: false,
-	};
-	$slickBannerSlide.slick(slickBannerSlideSettings);
+	var $sliderFullWidth = $(".sliderFullWidth");
+	var $progressBar = $(".progress");
+	var $progressBarLabel = $(".slider__label");
+	var $skeletonLoader = $(".skeleton-loader");
 
-	let $sliderContainer = $('#sliderEventos');
+	$progressBar.css("background-size", "20% 100%").attr("aria-valuenow", 20);
+	$progressBarLabel.text("20% completed");
 
-    if ($sliderContainer.length > 0) {
-		// Inicializa el carrusel de la información del evento
-        let $slickEventoInfo = $sliderContainer.find('.slickEventoInfo').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
-            fade: false,
-            asNavFor: $sliderContainer.find('.slickEventoDia'),
-            infinite: false,
-			responsive: [
-                {
-                    breakpoint: 768, // A partir de 768px y menos (dispositivos móviles)
-                    settings: {
-                        arrows: false
-                    }
-                }
-            ]
-        }).on('setPosition', function() {
-			setEqualHeight($(this));
+	$sliderFullWidth.on(
+		"beforeChange",
+		function (event, slick, currentSlide, nextSlide) {
+			var calc;
+			if (nextSlide === 0) {
+				calc = 20; // Mantiene 20% en el primer slide
+			} else {
+				calc = (nextSlide / (slick.slideCount - 1)) * 100;
+			}
+			$progressBar
+				.css("background-size", calc + "% 100%")
+				.attr("aria-valuenow", calc);
+			$progressBarLabel.text(calc + "% completed");
+		}
+	);
+
+	$sliderFullWidth.on("init", function () {
+		$skeletonLoader.hide();
+	});
+
+	$(window).on("load", function () {
+		$sliderFullWidth.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			speed: 400,
+			dots: true,
+			arrows: false,
+			adaptiveHeight: true,
 		});
+	});
 
-        // Inicializa el carrusel de los días con ajuste para móviles
-        var $slickEventoDia = $sliderContainer.find('.slickEventoDia').slick({
-            slidesToShow: 6, // Muestra 6 días en escritorio
-            slidesToScroll: 1,
-            asNavFor: $sliderContainer.find('.slickEventoInfo'),
-            dots: false,
-            centerMode: true,
-            focusOnSelect: true,
-            infinite: false,
-            variableWidth: false, // Elementos con ancho fijo
+	let $sliderContainer = $("#sliderEventos");
 
-            // Configuración responsive
-            responsive: [
-                {
-                    breakpoint: 768, // A partir de 768px y menos (dispositivos móviles)
-                    settings: {
-                        slidesToShow: 2, // Muestra 2 días en dispositivos móviles
-                        centerMode: false, // Desactiva el centrado en móviles
-                        variableWidth: false, // Mantén el ancho fijo
-						arrows: false
-                    }
-                }
-            ]
-        });
+	if ($sliderContainer.length > 0) {
+		// Inicializa el carrusel de la información del evento
+		let $slickEventoInfo = $sliderContainer
+			.find(".slickEventoInfo")
+			.slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				arrows: true,
+				fade: false,
+				asNavFor: $sliderContainer.find(".slickEventoDia"),
+				infinite: false,
+				responsive: [
+					{
+						breakpoint: 768, // A partir de 768px y menos (dispositivos móviles)
+						settings: {
+							arrows: false,
+						},
+					},
+				],
+			})
+			.on("setPosition", function () {
+				setEqualHeight($(this));
+			});
+
+		// Inicializa el carrusel de los días con ajuste para móviles
+		var $slickEventoDia = $sliderContainer.find(".slickEventoDia").slick({
+			slidesToShow: 6, // Muestra 6 días en escritorio
+			slidesToScroll: 1,
+			asNavFor: $sliderContainer.find(".slickEventoInfo"),
+			dots: false,
+			centerMode: true,
+			focusOnSelect: true,
+			infinite: false,
+			variableWidth: false, // Elementos con ancho fijo
+
+			// Configuración responsive
+			responsive: [
+				{
+					breakpoint: 768, // A partir de 768px y menos (dispositivos móviles)
+					settings: {
+						slidesToShow: 2, // Muestra 2 días en dispositivos móviles
+						centerMode: false, // Desactiva el centrado en móviles
+						variableWidth: false, // Mantén el ancho fijo
+						arrows: false,
+					},
+				},
+			],
+		});
 
 		// Función que ajusta el slider a la posición 0 si el evento más cercano es el primero
 		function ajustarPosicionSlider(closestEventIndex) {
 			if (closestEventIndex === 0) {
 				// Para escritorio y dispositivos móviles
-				$slickEventoDia.slick('slickSetOption', 'centerMode', false, true);
-				$slickEventoInfo.slick('slickSetOption', 'centerMode', false, true);
+				$slickEventoDia.slick("slickSetOption", "centerMode", false, true);
+				$slickEventoInfo.slick("slickSetOption", "centerMode", false, true);
 
 				// Reiniciar sliders a la posición inicial
-				$slickEventoDia.slick('slickGoTo', 0);
-				$slickEventoInfo.slick('slickGoTo', 0);
+				$slickEventoDia.slick("slickGoTo", 0);
+				$slickEventoInfo.slick("slickGoTo", 0);
 			} else {
 				// Si no es el primer evento, lo navega normalmente
-				$slickEventoInfo.slick('slickGoTo', closestEventIndex);
+				$slickEventoInfo.slick("slickGoTo", closestEventIndex);
 			}
 		}
 
-        // Verificar si el evento más cercano es el primero
-        if (closestEventIndex !== -1) {
-            ajustarPosicionSlider(closestEventIndex);
-        }
+		// Verificar si el evento más cercano es el primero
+		if (closestEventIndex !== -1) {
+			ajustarPosicionSlider(closestEventIndex);
+		}
 
-        // Detectar versión móvil y aplicar el ajuste para la versión mobile también
-        var mobileQuery = window.matchMedia('(max-width: 768px)'); // Ajusta el tamaño para dispositivos móviles
+		// Detectar versión móvil y aplicar el ajuste para la versión mobile también
+		var mobileQuery = window.matchMedia("(max-width: 768px)"); // Ajusta el tamaño para dispositivos móviles
 
-        // Si es móvil, aplicamos la misma lógica
-        if (mobileQuery.matches) {
-            ajustarPosicionSlider(closestEventIndex);
-        }
+		// Si es móvil, aplicamos la misma lógica
+		if (mobileQuery.matches) {
+			ajustarPosicionSlider(closestEventIndex);
+		}
 
-        // Escuchar cambios en el tamaño de la pantalla y ajustar cuando se pasa a móvil o desktop
-        mobileQuery.addEventListener('change', function(e) {
-            if (e.matches) {
-                // Si entra en el tamaño móvil
-                ajustarPosicionSlider(closestEventIndex);
-            }
-        });
-    }
+		// Escuchar cambios en el tamaño de la pantalla y ajustar cuando se pasa a móvil o desktop
+		mobileQuery.addEventListener("change", function (e) {
+			if (e.matches) {
+				// Si entra en el tamaño móvil
+				ajustarPosicionSlider(closestEventIndex);
+			}
+		});
+	}
 
 	const $slickTargetas = $("#sliderAtencionInvestigacion");
 	const slickTargetasSettings = {
@@ -364,7 +392,7 @@ jQuery(document).ready(function ($) {
 		],
 	};
 	if ($slickTargetas.length > 0) {
-		$slickTargetas.slick(slickTargetasSettings).on('setPosition', function() {
+		$slickTargetas.slick(slickTargetasSettings).on("setPosition", function () {
 			setEqualHeight($(this));
 		});
 	}
@@ -423,7 +451,7 @@ jQuery(document).ready(function ($) {
 			},
 		],
 	};
-	$slickNoticias.slick(slickNoticiasSettings).on('setPosition', function() {
+	$slickNoticias.slick(slickNoticiasSettings).on("setPosition", function () {
 		setEqualHeight($(this));
 	});
 
@@ -455,8 +483,8 @@ jQuery(document).ready(function ($) {
 	if ($slickProfesionalesUrg.length > 0) {
 		$slickProfesionalesUrg.slick(slickProfesionalesUrgSettings);
 	}
-    
-    $slickServiciosHome = $(".slickServiciosHome");
+
+	$slickServiciosHome = $(".slickServiciosHome");
 	slickServiciosHomeSettings = {
 		slidesToShow: 6,
 		slidesToScroll: 1,
@@ -498,7 +526,7 @@ jQuery(document).ready(function ($) {
 
 		$(".tab-links li").removeClass("active");
 		$(this).parent("li").addClass("active");
-		$('.slickMultimedia').slick('setPosition');
+		$(".slickMultimedia").slick("setPosition");
 		e.preventDefault();
 	});
 
@@ -551,13 +579,13 @@ jQuery(document).ready(function ($) {
 
 	function setEqualHeight(slider) {
 		let maxHeight = 0;
-		slider.find('.slick-slide').each(function () {
+		slider.find(".slick-slide").each(function () {
 			let slideHeight = $(this).outerHeight();
 			if (slideHeight > maxHeight) {
 				maxHeight = slideHeight;
 			}
 		});
-		slider.find('.slick-slide .seccion__alto').css('height', maxHeight + 'px');
+		slider.find(".slick-slide .seccion__alto").css("height", maxHeight + "px");
 	}
 
 	initSlick();
@@ -565,15 +593,12 @@ jQuery(document).ready(function ($) {
 		initSlick();
 	});
 
-	$(".slickPersonalizado article")
-		.closest("div")
-		.addClass("seccion__alto");
+	$(".slickPersonalizado article").closest("div").addClass("seccion__alto");
 
-	jQuery("#open-contact").on("click", function() {
+	jQuery("#open-contact").on("click", function () {
 		jQuery(this).parent().toggleClass("active");
 	});
-	
-	
+
 	// Buacador Blog Fellow
 	function realizarBusqueda() {
 		let author = $("#author_name").val();
@@ -675,7 +700,7 @@ jQuery(document).ready(function ($) {
 	$('button[type="reset"]').click(function () {
 		window.location.reload();
 	});
-	
+
 	//Slider Podcast Fellows
 
 	const $slickEventoPodcatsFellows = $(".slickEventoPodcatsFellows");
@@ -705,7 +730,6 @@ jQuery(document).ready(function ($) {
 	if ($slickEventoPodcatsFellows.length > 0) {
 		$slickEventoPodcatsFellows.slick(slickEventoPodcatsFellowsSettings);
 	}
-
 
 	//Slider Eventos Fellows
 
@@ -764,9 +788,11 @@ jQuery(document).ready(function ($) {
 		});
 
 		// Evento `afterChange` para actualizar los dots al deslizar
-		$slickEventoFellows.on("afterChange", function (event, slick, currentSlide) {
-			updateVisibleDots(slick, currentSlide);
-		});
+		$slickEventoFellows.on(
+			"afterChange",
+			function (event, slick, currentSlide) {
+				updateVisibleDots(slick, currentSlide);
+			}
+		);
 	}
-	
 });

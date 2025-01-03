@@ -18,7 +18,6 @@ $titulo_noticias            = !empty($grupo_noticias['titulo']) ? esc_html($grup
 $fondo_noticias             = !empty($grupo_noticias['fondo']) ? esc_html($grupo_noticias['fondo'] ) : '';
 $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_html($grupo_noticias['numero_entradas'] ) : '';
 
-
 ?>
 
 <!-- INICIO CONTENIDO -->

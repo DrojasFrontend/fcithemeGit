@@ -6005,6 +6005,14 @@ p {
 	font-size: var(--16);
 }
 
+.fw-300 {
+	font-weight: 300;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
 .fw-700 {
 	font-weight: 700;
 }
@@ -6482,6 +6490,14 @@ button.borrar-filtros {
 /* seccionServiciosSlider */
 .seccionServiciosSlider {
 	padding: 42px 20px;
+}
+
+.seccionServiciosSlider .slickServiciosHome {
+	display: none;
+}
+
+.seccionServiciosSlider .slickServiciosHome.slick-initialized {
+	display: block;
 }
 
 .seccionServiciosSlider__title {
