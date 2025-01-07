@@ -7,7 +7,7 @@ $cta                   = !empty($grupo_departamentos['cta']) ? $grupo_departamen
 $cta_url               = !empty($cta['url']) ? esc_url($cta['url']) : '';
 $cta_titulo            = !empty($cta['title']) ? esc_html($cta['title']) : '';
 $cta_target            = !empty($cta['target']) ? $cta['target'] : '';
-$departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_departamentos["departamentos"] : [];
+$departamentos         = !empty($grupo_departamentos["departamento"]) ? $grupo_departamentos["departamento"] : [];
 ?>
 
 <div class="seccionDirectorio">
@@ -27,7 +27,13 @@ $departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_
                 </button>
                 <h4 class="subheading color--677283">Departamentos</h4>
                 <div class="list-departamentos">
-                    <?php foreach ($departamentos as $index => $depto) : ?>
+                    <?php 
+                    usort($departamentos, function($a, $b) {
+                        return strcasecmp($a['departamento'], $b['departamento']);
+                    });
+                    
+                    foreach ($departamentos as $index => $depto) : 
+                    ?>
                         <label class="seccionDirectorio__departamento">
                             <input type="radio" name="departamento" value="<?php echo sanitize_title($depto['departamento']); ?>" onchange="filtrarEspecialidades('<?php echo sanitize_title($depto['departamento']); ?>', '<?php echo esc_js($depto['departamento']); ?>')">
                             <span class="radio-label heading--18 color--002D72 font-sans"><?php echo $depto['departamento']; ?></span>
@@ -66,8 +72,8 @@ $departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_
 
                     <?php foreach ($departamentos as $depto) : ?>
                         <div class="list-especialidades" id="<?php echo sanitize_title($depto['departamento']); ?>" style="display: none;">
-                            <?php if (!empty($depto['especialidades'])) : 
-                                foreach ($depto['especialidades'] as $esp) : 
+                            <?php if (!empty($depto['especialidad'])) : 
+                                foreach ($depto['especialidad'] as $esp) : 
                                     $cta = !empty($esp['especialidad']) ? $esp['especialidad'] : [];
                                     $cta_url = !empty($cta['url']) ? esc_url($cta['url']) : '';
                                     $cta_titulo = !empty($cta['title']) ? esc_html($cta['title']) : '';
@@ -325,7 +331,6 @@ $departamentos         = !empty($grupo_departamentos["departamentos"]) ? $grupo_
 
     .seccionDirectorio {
         padding: 84px 0;
-        margin-bottom: 84px;
     }
 
    .seccionDirectorio__grid {

@@ -115,7 +115,7 @@ get_header();
         <!-- Fin Texto boton imagen -->
         <?php endif; ?>
 
-        
+        <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
     </main>
     <!-- FIN CONTENIDO -->
 

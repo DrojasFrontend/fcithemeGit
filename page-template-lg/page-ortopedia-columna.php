@@ -101,6 +101,8 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
     <?php endif; ?>
     
     <?php get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', array('active' => 'Columna'));?>
+
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->
 

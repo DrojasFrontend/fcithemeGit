@@ -99,6 +99,8 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
     <?php endif; ?>
+
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->
 

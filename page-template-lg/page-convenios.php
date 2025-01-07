@@ -40,6 +40,8 @@ $mostrar_texto_imagen_fondo = get_field('mostrar_texto_imagen_fondo');
     <!-- Fin Texto Imagen Fondo -->
     <?php endif; ?>
 
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
+
   </main>
 <!-- FIN CONTENIDO -->
 <?php get_footer(); ?>

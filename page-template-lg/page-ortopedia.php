@@ -100,7 +100,9 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
       <!-- Fin CTAS -->
     <?php endif; ?>
 
-<?php get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', array('active' => ''));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', array('active' => ''));?>
+
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->
 

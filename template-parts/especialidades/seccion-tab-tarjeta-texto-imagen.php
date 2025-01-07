@@ -17,11 +17,11 @@ $imagen_id                          = !empty($grupo_tab_tarjeta_texto_imagen["im
         <div class="container--large">
             <ul class="">
                 <!-- <li><a href="#" class="<?php echo ($args['active'] === 'Cadera' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Cadera</a></li> -->
-                <li><a href="https://qa.lacardio.org/ortopedia-hombro-y-codo-legger/" class="<?php echo ($args['active'] === 'Hombro y codo' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Hombro y codo</a></li>
-                <li><a href="https://qa.lacardio.org/ortopedia-rodilla-legger/" class="<?php echo ($args['active'] === 'Rodilla' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Rodilla</a></li>
-                <li><a href="https://qa.lacardio.org/ortopedia-columna-legger/" class="<?php echo ($args['active'] === 'Columna' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Columna</a></li>
+                <li><a href="/servicio/cirugia-de-hombro-y-codo/" class="<?php echo ($args['active'] === 'Hombro y codo' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Hombro y codo</a></li>
+                <li><a href="/servicio/reemplazos-articulares-y-artroscopia-de-rodilla/" class="<?php echo ($args['active'] === 'Rodilla' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Rodilla</a></li>
+                <li><a href="/servicio/cirugia-de-columna/" class="<?php echo ($args['active'] === 'Columna' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Columna</a></li>
                 <!-- <li><a href="#" class="<?php echo ($args['active'] === 'Pie y tobillo' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Pie y tobillo</a></li> -->
-                <li><a href="https://qa.lacardio.org/ortopedia-pediatrica-legger/" class="<?php echo ($args['active'] === 'Infantil' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Infantil</a></li>
+                <li><a href="/servicio/ortopedia-infantil/" class="<?php echo ($args['active'] === 'Infantil' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Infantil</a></li>
                 <!--li><a href="#" class="<?php echo ($args['active'] === 'Trauma y recontstrucción' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Trauma y recontstrucción</a></li-->
             </ul>
         </div>

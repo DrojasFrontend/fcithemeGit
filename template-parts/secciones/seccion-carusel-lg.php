@@ -9,7 +9,7 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
 <style>
 .seccionSliderFullWidth {
     position: relative;
-    padding-top: 36px;
+    /* padding-top: 36px; */
 }
 
 .seccionSliderFullWidth a {
@@ -27,6 +27,7 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
 .seccionSliderFullWidth .slick-slide > div > a {
     position: relative;
     display: block !important;
+    text-decoration: none;
 }
 
 .seccionSliderFullWidth img {
@@ -42,12 +43,11 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
 .seccionSliderFullWidth__contenido {
     position: relative;
     width: 100%;
-    /* padding: 40px 0 80px; */
-    background-color: transparent;
+    padding: 40px 0 80px;
+    background-color: #000;
 }
 
 .seccionSliderFullWidth__contenido:before {
-    display: none;
     content: '';
     position: absolute;
     top: -60px;
@@ -67,6 +67,7 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
 
 .seccionSliderFullWidth__info .heading--64,
 .seccionSliderFullWidth__info .heading--18 {
+    text-align: left;
     color: var(--fff);
 }
 
@@ -128,6 +129,10 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
         max-width: 800px;
     }
 
+    .seccionSliderFullWidth__info .heading--64 {
+        font-size: 50px;
+    }
+
     .seccionSliderFullWidth .progress {
         display: block;
     }
@@ -171,6 +176,7 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
                 <div class="visibleMobile">
                     <img src="<?php echo $imagen_mobile; ?>" alt="mobile <?php echo $titulo; ?>" title="mobile mas sobre <?php echo $titulo; ?>">
                 </div>
+                <?php if($titulo) : ?>
                 <div class="seccionSliderFullWidth__contenido">
                     <div class="container--large">
                         <div class="seccionSliderFullWidth__info">
@@ -194,6 +200,7 @@ $slides              = !empty($grupo_banner_slider['slides']) ? $grupo_banner_sl
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
             </a>
         <?php } ?>
     </div>

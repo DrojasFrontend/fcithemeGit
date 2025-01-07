@@ -48,7 +48,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
     <?php if($mostrar_bloque_texto) : ?>
       <!-- Bloque Texto -->
-      <?php get_template_part('template-parts/especialidades/seccion', 'bloque-texto', array('class' => '') );?>
+      <?php get_template_part('template-parts/especialidades/seccion', 'bloque-texto', array('class' => 'paginaCirugiaGeneral') );?>
       <!-- Fin Bloque Texto -->
     <?php endif; ?>
 
@@ -99,11 +99,9 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
     <?php endif; ?>
+
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->
 
 <?php get_footer(); ?>
-
-
-
-

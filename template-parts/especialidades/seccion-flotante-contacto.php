@@ -19,7 +19,7 @@ $enlaces                  = !empty($grupo_contacto_flotante['enlaces']) ? $grupo
         $enlace_url    = $enlace['enlace']['url'];
         $enlace_target = $enlace['enlace']['target'];
       ?>
-        <a href="#">
+        <a href="<?php echo $enlace_url; ?>">
           <span class="flotanteContacto__img">
             <img src="<?php echo $enlace['imagen']?>" alt="">
           </span>

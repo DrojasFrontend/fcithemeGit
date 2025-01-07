@@ -112,7 +112,7 @@ $mostrar_experto            = get_field('mostrar_experto');
     <!-- Fin Experto -->
     <?php endif; ?>
    
-    <!-- <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?> -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
 
   </main>
 <!-- FIN CONTENIDO -->

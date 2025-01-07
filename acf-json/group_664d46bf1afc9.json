@@ -1824,8 +1824,8 @@
                 },
                 {
                     "key": "field_67768e2417f6f",
-                    "label": "Departamentos",
-                    "name": "departamentos",
+                    "label": "Departamento",
+                    "name": "departamento",
                     "aria-label": "",
                     "type": "repeater",
                     "instructions": "",
@@ -1867,8 +1867,8 @@
                         },
                         {
                             "key": "field_67768e5117f71",
-                            "label": "Especialidades",
-                            "name": "especialidades",
+                            "label": "Especialidad",
+                            "name": "especialidad",
                             "aria-label": "",
                             "type": "repeater",
                             "instructions": "",
@@ -1880,7 +1880,6 @@
                                 "id": ""
                             },
                             "layout": "table",
-                            "pagination": 0,
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -1930,5 +1929,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735911012
+    "modified": 1735960721
 }

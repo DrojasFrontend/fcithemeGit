@@ -119,7 +119,7 @@ $mostrar_bloque_texto       = get_field('mostrar_bloque_texto');
       <!-- Fin Bloque Texto -->
     <?php endif; ?>
    
-    <!-- <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?> -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
 
   </main>
 <!-- FIN CONTENIDO -->

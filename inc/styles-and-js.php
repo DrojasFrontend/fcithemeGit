@@ -187,6 +187,7 @@ function enqueue_scripts() {
         'page-template-lg/page-trasplantes-pulmon.php',
         'page-template-lg/page-trasplantes-corazon.php',
         'page-template-lg/page-trasplantes-pancreas.php',
+        'page-template-lg/page-trasplantes-renal.php',
     );
 
     if(is_page_template($pageTrasplante) ) {

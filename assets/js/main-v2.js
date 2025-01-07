@@ -271,7 +271,7 @@ jQuery(document).ready(function ($) {
 			speed: 400,
 			dots: true,
 			arrows: false,
-			adaptiveHeight: true,
+			adaptiveHeight: false,
 		});
 	});
 

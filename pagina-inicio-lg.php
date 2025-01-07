@@ -18,6 +18,7 @@ $titulo_noticias            = !empty($grupo_noticias['titulo']) ? esc_html($grup
 $fondo_noticias             = !empty($grupo_noticias['fondo']) ? esc_html($grupo_noticias['fondo'] ) : '';
 $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_html($grupo_noticias['numero_entradas'] ) : '';
 
+
 ?>
 
 <!-- INICIO CONTENIDO -->
@@ -27,12 +28,14 @@ $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_h
             <?php get_template_part('template-parts/secciones/seccion', 'carusel-lg'); ?>
             <!-- Fin Carusel -->
         <?php } ?>
-            
-        <?php if($mostrar_servicios_medicos) { ?>
+
+        <?php if($mostrar_somos_lacardio) { ?>
             <!-- Servicios medicos -->
-            <?php get_template_part('template-parts/secciones/seccion', 'servicios-medicos-lg'); ?>
+            <?php get_template_part('template-parts/secciones/seccion', 'somos-lacardio-lg'); ?>
             <!-- Fin Servicios medicos -->
         <?php } ?>
+
+        <?php get_template_part('template-parts/secciones/seccion', 'tab-especialidades'); ?>
 
         <?php if($mostrar_noticias) { ?>
             <!-- Noticias -->
@@ -45,12 +48,10 @@ $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_h
             ?>
             <!-- Fin Noticias -->
         <?php } ?>
-        
-        <?php get_template_part('template-parts/secciones/seccion', 'tab-especialidades'); ?>
 
-        <?php if($mostrar_somos_lacardio) { ?>
+        <?php if($mostrar_servicios_medicos) { ?>
             <!-- Servicios medicos -->
-            <?php get_template_part('template-parts/secciones/seccion', 'somos-lacardio-lg'); ?>
+            <?php get_template_part('template-parts/secciones/seccion', 'servicios-medicos-lg'); ?>
             <!-- Fin Servicios medicos -->
         <?php } ?>
 

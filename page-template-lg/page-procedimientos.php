@@ -37,6 +37,8 @@ $mostrar_info = get_field('mostrar_info');
         <!-- Fin Hero -->
       <?php endif; ?>
 
+      <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
+
     </main>
   <!-- FIN CONTENIDO -->
 <?php get_footer();
