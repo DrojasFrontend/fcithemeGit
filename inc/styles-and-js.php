@@ -134,6 +134,13 @@ function enqueue_scripts() {
         'page-template-lg/page-nefrologia-pediatrica.php',
         'page-template-lg/page-neumologia-pediatrica.php',
 
+        'page-template-lg/page-rehabilitacion-cardiaca.php',
+        'page-template-lg/page-neuroradiologia-intervencionista.php',
+        'page-template-lg/page-radiologia-imagenes-diagnosticas.php',
+        'page-template-lg/page-radiologia-intervencionista.php',
+        'page-template-lg/page-reumatologia.php',
+        'page-template-lg/page-neuroradiologia-intervencionista.php',
+
     );
 
     if(is_page_template($pageEspecialidades) ) {
