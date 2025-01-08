@@ -91,48 +91,48 @@ function enqueue_scripts() {
       // Etapas Especialidades
     $pageEspecialidades = array(
         'page-template-lg/page-urgencias.php',
-'page-template-lg/page-otorrino.php',
-'page-template-lg/page-ginecologia.php',
-'page-template-lg/page-cirugia-plastica.php',
-'page-template-lg/page-procedimientos.php',
-'page-template-lg/page-cirugia-torax.php',
-'page-template-lg/page-cirugia-general.php',
-'page-template-lg/page-cirugia-pediatrica.php',
-'page-template-lg/page-cardiopatias.php',
-'page-template-lg/page-medicina-nuclear.php',
-'page-template-lg/page-medicina-interna.php',
-'page-template-lg/page-gastro.php',
-'page-template-lg/page-electrofisiologia.php',
-'page-template-lg/page-gastroenterologia-pediatrica.php',
-'page-template-lg/page-cardiologia-clinica.php',
-'page-template-lg/page-cardiologia-clinica-pediatrica.php',
-'page-template-lg/page-electrofisiologia-adultos.php',
-'page-template-lg/page-endocrinologia-pediatrica.php',
-'page-template-lg/page-endocrinologia.php',
-'page-template-lg/page-enfermeria-atencion-quirurgica.php',
-'page-template-lg/page-falla-cardiaca.php',
-'page-template-lg/page-ortopedia.php',
-'page-template-lg/page-ortopedia-columna.php',
-'page-template-lg/page-ortopedia-hombro-codo.php',
-'page-template-lg/page-ortopedia-pediatrica.php',
-'page-template-lg/page-ortopedia-rodilla.php',
-'page-template-lg/page-fisiatria.php',
-'page-template-lg/page-gastroenterologia.php',
-'page-template-lg/page-ortopedia-trauma-reconstruccion.php',
+        'page-template-lg/page-otorrino.php',
+        'page-template-lg/page-ginecologia.php',
+        'page-template-lg/page-cirugia-plastica.php',
+        'page-template-lg/page-procedimientos.php',
+        'page-template-lg/page-cirugia-torax.php',
+        'page-template-lg/page-cirugia-general.php',
+        'page-template-lg/page-cirugia-pediatrica.php',
+        'page-template-lg/page-cardiopatias.php',
+        'page-template-lg/page-medicina-nuclear.php',
+        'page-template-lg/page-medicina-interna.php',
+        'page-template-lg/page-gastro.php',
+        'page-template-lg/page-electrofisiologia.php',
+        'page-template-lg/page-gastroenterologia-pediatrica.php',
+        'page-template-lg/page-cardiologia-clinica.php',
+        'page-template-lg/page-cardiologia-clinica-pediatrica.php',
+        'page-template-lg/page-electrofisiologia-adultos.php',
+        'page-template-lg/page-endocrinologia-pediatrica.php',
+        'page-template-lg/page-endocrinologia.php',
+        'page-template-lg/page-enfermeria-atencion-quirurgica.php',
+        'page-template-lg/page-falla-cardiaca.php',
+        'page-template-lg/page-ortopedia.php',
+        'page-template-lg/page-ortopedia-columna.php',
+        'page-template-lg/page-ortopedia-hombro-codo.php',
+        'page-template-lg/page-ortopedia-pediatrica.php',
+        'page-template-lg/page-ortopedia-rodilla.php',
+        'page-template-lg/page-fisiatria.php',
+        'page-template-lg/page-gastroenterologia.php',
+        'page-template-lg/page-ortopedia-trauma-reconstruccion.php',
 
-'page-template-lg/page-genetica.php',
-'page-template-lg/page-neurocirugia.php',
-'page-template-lg/page-neurologia.php',
-'page-template-lg/page-neurologia-pediatrica.php',
-'page-template-lg/page-infectologia.php',
-'page-template-lg/page-banco-sangre.php',
+        'page-template-lg/page-genetica.php',
+        'page-template-lg/page-neurocirugia.php',
+        'page-template-lg/page-neurologia.php',
+        'page-template-lg/page-neurologia-pediatrica.php',
+        'page-template-lg/page-infectologia.php',
+        'page-template-lg/page-banco-sangre.php',
 
-'page-template-lg/page-gerontologia.php',
-'page-template-lg/page-hemato-oncologia.php',
-'page-template-lg/page-hemodinamia-adulto.php',
-'page-template-lg/page-metodos-invasivos.php',
-'page-template-lg/page-nefrologia-pediatrica.php',
-'page-template-lg/page-neumologia-pediatrica.php',
+        'page-template-lg/page-gerontologia.php',
+        'page-template-lg/page-hemato-oncologia.php',
+        'page-template-lg/page-hemodinamia-adulto.php',
+        'page-template-lg/page-metodos-invasivos.php',
+        'page-template-lg/page-nefrologia-pediatrica.php',
+        'page-template-lg/page-neumologia-pediatrica.php',
 
     );
 
@@ -224,6 +224,22 @@ function enqueue_scripts() {
             'ajaxurl' => admin_url('admin-ajax.php'),
             'nonce' => wp_create_nonce('search_nonce')
         ));
+    }
+
+    // Centro internacional
+    $pageiInvestigacion = array(
+        'page-template-lg/page-centro-internacional.php',
+    );
+
+    if(is_page_template($pageiInvestigacion) ) {
+        $cardioInvestigacion = get_template_directory_uri() . '/page-template-lg/page-centro-internacional.css';
+        wp_enqueue_style('centro_investigacion_css', $cardioInvestigacion);
+        
+        enqueue_swiper_assets();
+
+        $investigacionJsFileURI = get_template_directory_uri() . '/page-template-lg/page-centro-internacional.js';
+        wp_register_script('centro_investigacion_js', $investigacionJsFileURI, array('jquery'), $version, true);
+        wp_enqueue_script('centro_investigacion_js');
     }
 
     // Localize Script
