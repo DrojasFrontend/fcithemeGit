@@ -37,9 +37,19 @@ $letras = generar_alfabeto(6);
 <style>
     .filter {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 30px;
+        grid-template-columns: 1fr;
         padding: 60px 0;
+    }
+
+    .filter-wrapper .container--large {
+        padding: 0 18px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .filter {
+            grid-template-columns: 1fr 2fr;
+            column-gap: 30px;
+        }
     }
 
     .filter h2 {
@@ -105,43 +115,45 @@ $letras = generar_alfabeto(6);
 </style>
 
 
-<div class="container--large">
-    <div class="filter">
-        <div class="filter-letras">
-            <h2>servicios y especialidades</h2>
-            <div class="alfabeto-grid">
-                <?php foreach($letras as $fila): ?>
-                    <div class="alfabeto-row">
-                        <?php foreach($fila as $letra): ?>
-                            <button class="letra-btn" data-letra="<?php echo esc_attr($letra); ?>">
-                                <?php echo esc_html($letra); ?>
-                            </button>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-
-        <div class="especialidades-container">
-            <div class="letra-actual"></div>
-            <?php
-            if($especialidades):
-                foreach($especialidades as $esp):
-                    if(!empty($esp['enlace'])):
-                        $nombre_especialidad = $esp['enlace']['title'];
-                        $url_especialidad = $esp['enlace']['url'];
-                        $primera_letra = strtoupper(substr($nombre_especialidad, 0, 1));
-            ?>
-                <div class="especialidad-item" data-letra="<?php echo esc_attr($primera_letra); ?>">
-                    <a href="<?php echo esc_url($url_especialidad); ?>">
-                        <?php echo esc_html($nombre_especialidad); ?>
-                    </a>
+<div class="filter-wrapper">
+    <div class="container--large">
+        <div class="filter">
+            <div class="filter-letras">
+                <h2>servicios y especialidades</h2>
+                <div class="alfabeto-grid">
+                    <?php foreach($letras as $fila): ?>
+                        <div class="alfabeto-row">
+                            <?php foreach($fila as $letra): ?>
+                                <button class="letra-btn" data-letra="<?php echo esc_attr($letra); ?>">
+                                    <?php echo esc_html($letra); ?>
+                                </button>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-            <?php 
-                    endif;
-                endforeach;
-            endif;
-            ?>
+            </div>
+    
+            <div class="especialidades-container">
+                <div class="letra-actual"></div>
+                <?php
+                if($especialidades):
+                    foreach($especialidades as $esp):
+                        if(!empty($esp['enlace'])):
+                            $nombre_especialidad = $esp['enlace']['title'];
+                            $url_especialidad = $esp['enlace']['url'];
+                            $primera_letra = strtoupper(substr($nombre_especialidad, 0, 1));
+                ?>
+                    <div class="especialidad-item" data-letra="<?php echo esc_attr($primera_letra); ?>">
+                        <a href="<?php echo esc_url($url_especialidad); ?>">
+                            <?php echo esc_html($nombre_especialidad); ?>
+                        </a>
+                    </div>
+                <?php 
+                        endif;
+                    endforeach;
+                endif;
+                ?>
+            </div>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Urgencias
+Template Name: Plantilla Especialidad | Spect CT
 */ 
 
 get_header();
