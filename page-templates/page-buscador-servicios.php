@@ -1,91 +1,176 @@
-<?php /*
-    Template Name: Plantilla: Buscador de servicios y especialidades
-    */
+<?php
+/*
+Template Name: Plantilla Buscador de servicios y especialidades
+*/
+
 get_header();
+$especialidades = get_field('especialidades');
 
-$letras = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "#");
-
-$argumentos = array(  
-    'post_type' => 'servicios',
-    'post_status' => 'publish',
-    'posts_per_page' => -1, 
-    'order' => 'ASC',
-    'orderby' => 'title',
-);
-
-$servicios = array();
-$query = new WP_Query($argumentos);
-$entrada_index = 0;
-if ($query->have_posts()) { while ($query->have_posts()) { $query->the_post();
-    foreach($letras as $letra){
-        $nombre = get_the_title();
-        if(strtoupper($letra) == $nombre[0]){
-            $id = get_the_ID();
-            $servicios[$letra][$entrada_index]["id"] = $entrada_index;
-            $servicios[$letra][$entrada_index]["slug"] = get_post_field('post_name', $id);
-            $servicios[$letra][$entrada_index]["nombre"] = get_the_title();
+function generar_alfabeto($letras_por_fila = 6) {
+    $alfabeto = range('A', 'Z');
+    $alfabeto[] = '#';
+    
+    $filas = [];
+    $fila_actual = [];
+    
+    foreach($alfabeto as $letra) {
+        $fila_actual[] = $letra;
+        if(count($fila_actual) == $letras_por_fila) {
+            $filas[] = $fila_actual;
+            $fila_actual = [];
         }
     }
-    $entrada_index++;
-
-    }/*while*/
-    wp_reset_postdata();
-}/*if*/
-
-$servicios = json_encode($servicios);
-$letra_x_defecto = isset($_GET["letra"]) ? strtolower($_GET["letra"]) : '';
-if(!(in_array($letra_x_defecto, $letras))){
-    $letra_x_defecto = "a";
+    
+    if(!empty($fila_actual)) {
+        $filas[] = $fila_actual;
+    }
+    
+    return $filas;
 }
 
+// Generar el array de letras
+$letras = generar_alfabeto(6);
+
 ?>
-<script>
-    let especialidades_x_letra = JSON.parse(`<?= $servicios ?>`);
-    let letra_x_defecto = "<?= $letra_x_defecto ?>";
-</script>
-<?php
 
 
-$resultados = array(
-    array("url" => '#',  "nombre" => 'Unidad De Cuidado Intensivo Cardiovascular Pediátrico'),
-    array("url" => '#',  "nombre" => 'Unidad de Cuidado Intensivo Cardiovascular y Posquirúrgica Adultos'),
-    array("url" => '#',  "nombre" => 'Unidad de Cuidado Intensivo Neonatal'),
-    array("url" => '#',  "nombre" => 'Unidad de Cuidado Intensivo Pediátrico Médica'),
-    array("url" => '#',  "nombre" => 'Unidad de Cuidados Coronarios'),
-    array("url" => '#',  "nombre" => 'Urgencias Adultos'),
-    array("url" => '#',  "nombre" => 'Urgencias Pediátricas'),
-    array("url" => '#',  "nombre" => 'Urología'),
-);
-?>
-<?php echo get_template_part('template-parts/content'); ?>
+<style>
+    .filter {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 30px;
+        padding: 60px 0;
+    }
 
-<div class="breadcrumbs">
-            <p id="breadcrumbs" class="claro">
-                            <span>
-                                <a style="text-decoration: none!important;" href="https://www.lacardio.org/" data-wpel-link="internal">LaCardio</a>
-                            </span> » 
-                            <span>
-                                <a style="text-decoration: none!important;" href="#" data-wpel-link="internal">Servicios y especialidades</a>
-                            </span> » 
-                           
-                            <span>
-                                <a style="text-decoration: none!important;" href="https://www.lacardio.org/buscador-servicios-y-especialidades/" data-wpel-link="internal">Especialidades</a>
-                            </span> 
-                        </p>
-        </div>
-<main class="buscaservicios">
-    <div class="buscaservicios__int">
-        <section class="buscador">
-            <h1>LaCardio servicios y especialidades</h1>
-            <div class="buscador__services">
-                <?php echo get_template_part('template-parts/content', 'buscador_de_letras'); ?>
+    .filter h2 {
+        color: #003876;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .alfabeto-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .alfabeto-row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .letra-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #E5E7EB;
+        background: white;
+        color: #666;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .letra-btn:hover {
+        background: #f5f5f5;
+    }
+
+    .letra-btn.active {
+        background: #003876;
+        color: white;
+        border-color: #003876;
+    }
+
+    .especialidades-container {
+        margin-top: 30px;
+    }
+
+    .especialidad-item {
+        display: none;
+    }
+
+    .especialidad-item.active {
+        display: block;
+    }
+
+    .letra-actual {
+        font-size: 32px;
+        color: #003876;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+</style>
+
+
+<div class="container--large">
+    <div class="filter">
+        <div class="filter-letras">
+            <h2>servicios y especialidades</h2>
+            <div class="alfabeto-grid">
+                <?php foreach($letras as $fila): ?>
+                    <div class="alfabeto-row">
+                        <?php foreach($fila as $letra): ?>
+                            <button class="letra-btn" data-letra="<?php echo esc_attr($letra); ?>">
+                                <?php echo esc_html($letra); ?>
+                            </button>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
             </div>
-        </section>
-        <section class="resultados">
-            <h2></h2>
-            <ul class="results">
-            </ul>
-        </section>
+        </div>
+
+        <div class="especialidades-container">
+            <div class="letra-actual"></div>
+            <?php
+            if($especialidades):
+                foreach($especialidades as $esp):
+                    if(!empty($esp['enlace'])):
+                        $nombre_especialidad = $esp['enlace']['title'];
+                        $url_especialidad = $esp['enlace']['url'];
+                        $primera_letra = strtoupper(substr($nombre_especialidad, 0, 1));
+            ?>
+                <div class="especialidad-item" data-letra="<?php echo esc_attr($primera_letra); ?>">
+                    <a href="<?php echo esc_url($url_especialidad); ?>">
+                        <?php echo esc_html($nombre_especialidad); ?>
+                    </a>
+                </div>
+            <?php 
+                    endif;
+                endforeach;
+            endif;
+            ?>
+        </div>
     </div>
-</main>
-<?php get_footer() ?>
+</div>
+
+
+
+<script>
+jQuery(document).ready(function($) {
+    // Activar la letra A por defecto
+    $('[data-letra="A"]').addClass('active');
+    $('.especialidad-item[data-letra="A"]').addClass('active');
+    $('.letra-actual').text('A');
+
+    // Click handler para las letras
+    $('.letra-btn').click(function() {
+        var letra = $(this).data('letra');
+        
+        // Actualizar botones
+        $('.letra-btn').removeClass('active');
+        $(this).addClass('active');
+        
+        // Actualizar especialidades
+        $('.especialidad-item').removeClass('active');
+        $('.especialidad-item[data-letra="' + letra + '"]').addClass('active');
+        
+        // Actualizar letra actual
+        $('.letra-actual').text(letra);
+    });
+});
+</script>
+
+<?php get_footer(); ?>
