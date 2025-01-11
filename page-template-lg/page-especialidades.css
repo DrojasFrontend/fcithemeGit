@@ -2287,11 +2287,15 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	font-weight: 500;
 }
 
+.etapaEspecialidadesAccordion {
+	padding: 0 0 74px;
+}
+
 .etapaEspecialidadesAccordion__titulo {
 	display: grid;
 	row-gap: 12px;
 	text-align: left;
-	margin-bottom: 42px;
+	margin-bottom: 24px;
 }
 
 .etapaEspecialidadesAccordion__titulo .heading--48 {
@@ -2316,5 +2320,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesAccordion__titulo,
 	.etapaEspecialidadesAccordion__titulo .heading--48 {
 		text-align: center;
+	}
+
+	.etapaEspecialidadesAccordion__titulo {
+		margin-bottom: 42px;
 	}
 }
