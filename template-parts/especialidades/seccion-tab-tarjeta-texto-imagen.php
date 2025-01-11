@@ -10,19 +10,53 @@ $cta_url                            = !empty($cta['url']) ? esc_url($cta['url'])
 $cta_titulo                         = !empty($cta['title']) ? esc_html($cta['title']) : '';
 $cta_target                         = !empty($cta['target']) ? $cta['target'] : '';
 $imagen_id                          = !empty($grupo_tab_tarjeta_texto_imagen["imagen"]['ID']) ? $grupo_tab_tarjeta_texto_imagen["imagen"]['ID'] : '';
+
+if (!isset($args['active']) || !isset($args['especialidad'])) return;
+$query = new WP_Query([
+    'post_type' => 'page',
+    'posts_per_page' => -1,
+    'meta_query' => [
+        [
+            'key' => 'grupo_tab_tarjeta_texto_imagen_especialidad',
+            'value' => $args['especialidad'],
+            'compare' => '='
+        ]
+    ]
+]);
+
+$tabs = [];
 ?>
 
 <section class="etapaEspecialidadesTabTarjetaTextoImagen <?php echo isset($args['class']) ? $args['class'] : ''; ?>" style="order: <?php echo $posicion; ?>">
     <div class="etapaEspecialidadesTabTarjetaTextoImagen__tab">
         <div class="container--large">
             <ul class="">
-                <!-- <li><a href="#" class="<?php echo ($args['active'] === 'Cadera' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Cadera</a></li> -->
-                <li><a href="/servicio/cirugia-de-hombro-y-codo/" class="<?php echo ($args['active'] === 'Hombro y codo' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Hombro y codo</a></li>
-                <li><a href="/servicio/reemplazos-articulares-y-artroscopia-de-rodilla/" class="<?php echo ($args['active'] === 'Rodilla' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Rodilla</a></li>
-                <li><a href="/servicio/cirugia-de-columna/" class="<?php echo ($args['active'] === 'Columna' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Columna</a></li>
-                <!-- <li><a href="#" class="<?php echo ($args['active'] === 'Pie y tobillo' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Pie y tobillo</a></li> -->
-                <li><a href="/servicio/ortopedia-infantil/" class="<?php echo ($args['active'] === 'Infantil' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Infantil</a></li>
-                <!--li><a href="#" class="<?php echo ($args['active'] === 'Trauma y recontstrucción' ? 'active ' : '') . (isset($args['class']) ? $args['class'] : ''); ?>">Trauma y recontstrucción</a></li-->
+                <?php 
+                    if ($query->have_posts()) {
+                        while ($query->have_posts()) {
+                        $query->the_post();
+                        $grupo = get_field('grupo_tab_tarjeta_texto_imagen');
+                        if (!empty($grupo['nombre_pagina'])) {
+                            $tabs[] = [
+                                'nombre' => $grupo['nombre_pagina'],
+                                'url' => get_permalink(),
+                                'active' => ($args['active'] === $grupo['nombre_pagina'])
+                            ];
+                        }
+                    }
+                }
+                wp_reset_postdata();
+               ?>
+               <ul class="tabs-especialidades">
+                    <?php foreach ($tabs as $tab): ?>
+                        <li>
+                            <a href="<?php echo $tab['url']; ?>" 
+                            class="<?php echo $tab['active'] ? 'active' : ''; ?>">
+                                <?php echo $tab['nombre']; ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </ul>
         </div>
     </div>

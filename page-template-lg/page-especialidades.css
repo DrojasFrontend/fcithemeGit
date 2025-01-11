@@ -2103,6 +2103,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	padding: 40px 0 0;
 }
 
+.paginaUCIPediatrica.etapaEspecialidadesTabTarjetaTextoImagen {
+	padding: 40px 0;
+}
+
 .etapaEspecialidadesTabTarjetaTextoImagen .container--large {
 	padding: 0;
 }
@@ -2159,6 +2163,14 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 @media only screen and (min-width: 1024px) {
 	.etapaEspecialidadesTabTarjetaTextoImagen {
 		padding: 84px 0 0;
+	}
+
+	.paginaUCIPediatrica.etapaEspecialidadesTabTarjetaTextoImagen,
+	.paginaUCINeonatal.etapaEspecialidadesTabTarjetaTextoImagen,
+	.paginaUCIPedCardiovascular.etapaEspecialidadesTabTarjetaTextoImagen,
+	.paginaUCIPediatrica.etapaEspecialidadesTabTarjetaTextoImagen,
+	.paginaUCIQuiCardiovascular.etapaEspecialidadesTabTarjetaTextoImagen {
+		padding: 84px 0;
 	}
 
 	.etapaEspecialidadesTabTarjetaTextoImagen .container--large {
