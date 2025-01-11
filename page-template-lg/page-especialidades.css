@@ -111,7 +111,12 @@
 		min-height: 444px;
 	}
 
-	.paginaOtorrino .etapaEspecialidadesHero__text {
+	.paginaOtorrino .etapaEspecialidadesHero__text,
+	.paginaUCIPedCoronaria .etapaEspecialidadesHero__text,
+	.paginaUCINeonatal .etapaEspecialidadesHero__text,
+	.paginaUCIPedCardiovascular .etapaEspecialidadesHero__text,
+	.paginaUCIPediatrica .etapaEspecialidadesHero__text,
+	.paginaUCIQuiCardiovascular .etapaEspecialidadesHero__text {
 		padding: 100px 60px 100px 0;
 	}
 
@@ -413,7 +418,8 @@
 	padding: 40px 0;
 }
 
-.paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
+.paginaGastroenterologia.etapaEspecialidadesTextDescBanner,
+.paginaUCIPediatrica.etapaEspecialidadesTextDescBanner {
 	padding: 40px 0 0;
 }
 
@@ -474,7 +480,8 @@
 		padding: 84px 0;
 	}
 
-	.paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
+	.paginaGastroenterologia.etapaEspecialidadesTextDescBanner,
+	.paginaUCIPediatrica.etapaEspecialidadesTextDescBanner {
 		padding: 84px 0 0;
 	}
 
