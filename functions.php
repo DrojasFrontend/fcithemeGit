@@ -384,7 +384,7 @@ function jw_customizar_template($wp_customize)
         'capability' => 'edit_theme_options',
     ));
 
-    $color = array();
+    $color = array('slug' => '#ffffff');
     $wp_customize->add_control(new WP_Customize_Color_Control(
         $wp_customize,
         'estilos_seccion_colorcentral1',
