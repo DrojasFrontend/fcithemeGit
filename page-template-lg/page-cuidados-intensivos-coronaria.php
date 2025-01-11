@@ -58,7 +58,7 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaUCIPedCoronaria'));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -88,7 +88,7 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
 
     <?php if($mostrar_targetas_grid) : ?>
       <!-- Targetas Grid -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid', array('class' => 'paginaUCIPedCoronaria'));?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 

@@ -350,6 +350,10 @@
 	margin-top: 40px;
 }
 
+.paginaUCINeonatal.etapaEspecialidadesBloqueTexto {
+	margin-top: 0;
+}
+
 .etapaEspecialidadesBloqueTexto__fondo {
 	background-color: rgb(170 204 255 / 20%);
 }
@@ -419,7 +423,10 @@
 }
 
 .paginaGastroenterologia.etapaEspecialidadesTextDescBanner,
-.paginaUCIPediatrica.etapaEspecialidadesTextDescBanner {
+.paginaUCIPediatrica.etapaEspecialidadesTextDescBanner,
+.paginaUCINeonatal.etapaEspecialidadesTextDescBanner,
+.paginaUCIPedCoronaria.etapaEspecialidadesTextDescBanner,
+.paginaUCIQuiCardiovascular.etapaEspecialidadesTextDescBanner {
 	padding: 40px 0 0;
 }
 
@@ -970,6 +977,17 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	row-gap: 12px;
 	text-align: left;
 	margin-bottom: 42px;
+}
+
+.paginaUCINeonatal.etapaEspecialidadesTargetaGrid .subheading,
+.paginaUCINeonatal.etapaEspecialidadesTargetaGrid .heading--48,
+.paginaUCINeonatal.etapaEspecialidadesTargetaGrid .heading--24,
+.paginaUCINeonatal.etapaEspecialidadesTargetaGrid .heading--18,
+.paginaUCIPedCoronaria.etapaEspecialidadesTargetaGrid .subheading,
+.paginaUCIPedCoronaria.etapaEspecialidadesTargetaGrid .heading--48,
+.paginaUCIPedCoronaria.etapaEspecialidadesTargetaGrid .heading--24,
+.paginaUCIPedCoronaria.etapaEspecialidadesTargetaGrid .heading--18 {
+	color: var(--fff);
 }
 
 .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
