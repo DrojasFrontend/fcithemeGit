@@ -141,6 +141,12 @@ function enqueue_scripts() {
         'page-template-lg/page-reumatologia.php',
         'page-template-lg/page-neuroradiologia-intervencionista.php',
 
+        'page-template-lg/page-cuidados-intensivos-coronaria.php',
+        'page-template-lg/page-cuidados-intensivos-neonatal.php',
+        'page-template-lg/page-cuidados-intensivos-pediatrica-cardiovascular.php',
+        'page-template-lg/page-cuidados-intensivos-pediatrica.php',
+        'page-template-lg/page-cuidados-intensivos-quirurgica-cardiovascular.php',
+
     );
 
     if(is_page_template($pageEspecialidades) ) {
