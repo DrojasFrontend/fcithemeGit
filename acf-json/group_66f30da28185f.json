@@ -3479,6 +3479,13 @@
             {
                 "param": "page_template",
                 "operator": "==",
+                "value": "page-template-lg\/page-genetica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
                 "value": "page-template-lg\/page-gerontologia.php"
             }
         ],
@@ -3500,28 +3507,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-template-lg\/page-hemodinamia-adulto.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
                 "value": "page-template-lg\/page-infectologia.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-medicina-interna.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-neumologia-pediatrica.php"
             }
         ],
         [
@@ -3536,13 +3522,6 @@
                 "param": "page_template",
                 "operator": "==",
                 "value": "page-template-lg\/page-neurologia-pediatrica.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-neuroradiologia-intervencionista.php"
             }
         ],
         [
@@ -3591,34 +3570,6 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-template-lg\/page-radiologia-imagenes-diagnosticas.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-radiologia-intervencionista.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-rehabilitacion-cardiaca.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-reumatologia.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
                 "value": "page-template-lg\/page-tecnologia-pet-ct.php"
             }
         ],
@@ -3626,14 +3577,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-template-lg\/page-tecnologia-spcet-ct.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-urgencias.php"
+                "value": "page-template-lg\/page-tecnologia-spect-ct.php"
             }
         ],
         [
@@ -3698,6 +3642,27 @@
                 "operator": "==",
                 "value": "page-template-lg\/page-urgencias.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-banco-sangre.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neumologia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neurologia-pediatrica.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -3709,5 +3674,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736633557
+    "modified": 1736641988
 }

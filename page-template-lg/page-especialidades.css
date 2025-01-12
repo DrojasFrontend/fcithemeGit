@@ -981,9 +981,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-bottom: 42px;
 }
 
-.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48,
-.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
 	text-align: left;
 }
@@ -1058,7 +1058,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 
 	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo,
 	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .heading--48,
-	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
 	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
 		text-align: center;
 	}
