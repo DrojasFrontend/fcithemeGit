@@ -173,7 +173,8 @@
 }
 
 /* etapaEspecialidadesTextoImagenCTA */
-.etapaEspecialidadesTextoImagenCTA {
+.etapaEspecialidadesTextoImagenCTA,
+.paginaInfectologia.etapaEspecialidadesTextoImagenCTA {
 	padding: 40px 0 0;
 }
 
@@ -259,7 +260,8 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	.etapaEspecialidadesTextoImagenCTA {
+	.etapaEspecialidadesTextoImagenCTA,
+	.paginaInfectologia.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0 0;
 	}
 
@@ -272,8 +274,7 @@
 	.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
 	.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
 	.paginaGinecologia.etapaEspecialidadesTextoImagenCTA,
-	.paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA,
-	.paginaInfectologia.etapaEspecialidadesTextoImagenCTA {
+	.paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0;
 	}
 
@@ -764,6 +765,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .etapaEspecialidadesItemsIconos__items ul {
 	width: 100%;
 	padding: 10px 0 0 24px;
+	margin: 0;
 }
 
 .etapaEspecialidadesItemsIconos__items ul li {
@@ -979,6 +981,13 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-bottom: 42px;
 }
 
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48,
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
+	text-align: left;
+}
+
 .paginaUCINeonatal.etapaEspecialidadesTargetaGrid .subheading,
 .paginaUCINeonatal.etapaEspecialidadesTargetaGrid .heading--48,
 .paginaUCINeonatal.etapaEspecialidadesTargetaGrid .heading--24,
@@ -1048,7 +1057,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	}
 
 	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo,
-	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
+	.paginaBancoSangre .etapaEspecialidadesTargetaGrid__titulo .heading--48,
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo, 
+	.paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
 		text-align: center;
 	}
 
@@ -1896,6 +1907,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	padding: 40px 0;
 }
 
+.paginaNeurocirugia.etapaEspecialidadesImagenTextoCTA {
+	padding: 40px 0 0;
+}
+
 .etapaEspecialidadesImagenTextoCTA.estilo-invertido {
 	background-color: rgba(213, 219, 231, 0.1);
 }
@@ -1973,6 +1988,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 @media only screen and (min-width: 1024px) {
 	.etapaEspecialidadesImagenTextoCTA {
 		padding: 84px 0;
+	}
+
+	.paginaNeurocirugia.etapaEspecialidadesImagenTextoCTA {
+		padding: 84px 0 0;
 	}
 
 	.etapaEspecialidadesImagenTextoCTA .container--large {

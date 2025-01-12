@@ -3696,35 +3696,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-template-lg\/page-cuidados-intensivos-coronaria.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-cuidados-intensivos-neonatal.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica-cardiovascular.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica.php"
-            }
-        ],
-        [
-            {
-                "param": "page_template",
-                "operator": "==",
-                "value": "page-template-lg\/page-cuidados-intensivos-quirurgica-cardiovascular.php"
+                "value": "page-template-lg\/page-urgencias.php"
             }
         ]
     ],
@@ -3737,5 +3709,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736626106
+    "modified": 1736633557
 }
