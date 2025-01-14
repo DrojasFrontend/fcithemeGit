@@ -25,7 +25,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
   <main class="paginaEtapaExpecialidades">
     <?php if($mostrar_hero) : ?>
       <!-- Hero -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaNeumologiaPediatrica') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => '') );?>
       <!-- Fin Hero -->
     <?php endif; ?>
 

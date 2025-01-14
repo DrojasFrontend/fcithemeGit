@@ -16,6 +16,7 @@ $mostrar_texto_imagen_fondo = get_field('mostrar_texto_imagen_fondo');
 $mostrar_targetas_grid      = get_field('mostrar_targetas_grid');
 $mostrar_experto            = get_field('mostrar_experto');
 $mostrar_ctas               = get_field('mostrar_ctas');
+$mostrar_acordion           = get_field('mostrar_acordion');
 
 ?>
 <!-- CONTENIDO -->
@@ -28,7 +29,7 @@ $mostrar_ctas               = get_field('mostrar_ctas');
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta' );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' => 'paginaNeurologiaPediatrica'));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
@@ -84,6 +85,12 @@ $mostrar_ctas               = get_field('mostrar_ctas');
       <!-- CTAS -->
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
+    <?php endif; ?>
+
+    <?php if($mostrar_acordion) : ?>
+      <!-- Accordion -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'accordion');?>
+    <!-- Fin Accordion -->
     <?php endif; ?>
 
     <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>

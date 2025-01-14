@@ -2583,6 +2583,46 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium"
+                },
+                {
+                    "key": "field_6782b4b047d62",
+                    "label": "Especialidad",
+                    "name": "especialidad",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6782b4c447d63",
+                    "label": "Nombre pagina",
+                    "name": "nombre_pagina",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -3311,233 +3351,317 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cardiologia-clinica-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17511"
+                "value": "page-template-lg\/page-cardiologia-clinica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17514"
+                "value": "page-template-lg\/page-cirugia-general.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17513"
+                "value": "page-template-lg\/page-cirugia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17834"
+                "value": "page-template-lg\/page-cirugia-plastica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "18619"
+                "value": "page-template-lg\/page-cirugia-torax.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "18630"
+                "value": "page-template-lg\/page-cuidados-intensivos-coronaria.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17842"
+                "value": "page-template-lg\/page-cuidados-intensivos-neonatal.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "17840"
+                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica-cardiovascular.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "20300"
+                "value": "page-template-lg\/page-cuidados-intensivos-quirurgica-cardiovascular.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-endocrinologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-endocrinologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-falla-cardiaca.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-fisiatria.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gastroenterologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gastroenterologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-genetica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-genetica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gerontologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "20472"
+                "value": "page-template-lg\/page-ginecologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22886"
+                "value": "page-template-lg\/page-hemato-oncologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "20459"
+                "value": "page-template-lg\/page-infectologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "20458"
+                "value": "page-template-lg\/page-neurocirugia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19678"
+                "value": "page-template-lg\/page-neurologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22928"
+                "value": "page-template-lg\/page-ortopedia-columna.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22932"
+                "value": "page-template-lg\/page-ortopedia-hombro-codo.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22981"
+                "value": "page-template-lg\/page-ortopedia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22986"
+                "value": "page-template-lg\/page-ortopedia-rodilla.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22991"
+                "value": "page-template-lg\/page-ortopedia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "22997"
+                "value": "page-template-lg\/page-otorrino.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "23001"
+                "value": "page-template-lg\/page-tecnologia-pet-ct.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "23005"
+                "value": "page-template-lg\/page-tecnologia-spect-ct.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplante-corazon.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplante-renal.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes-corazon.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes-higado.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes-pancreas.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes-pulmon.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes-rinon.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-trasplantes.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-urgencias.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-banco-sangre.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neumologia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neurologia-pediatrica.php"
             }
         ]
     ],
@@ -3550,5 +3674,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735519420
+    "modified": 1736641988
 }

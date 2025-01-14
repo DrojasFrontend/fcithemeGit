@@ -91,7 +91,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_experto) : ?>
       <!-- Experto -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop"));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaGerontologia"));?>
       <!-- Fin Experto -->
     <?php endif; ?>
 

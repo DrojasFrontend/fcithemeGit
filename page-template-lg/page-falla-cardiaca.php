@@ -66,7 +66,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
     <?php if($mostrar_items_iconos) : ?>
       <!-- Items Iconos -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos', array('class' => 'paginaFallaCardiaca') );?>
       <!-- Fin Items Iconos -->
     <?php endif; ?>
 

@@ -69,7 +69,7 @@ $mostrar_contacto                     = get_field('mostrar_contacto');
 
     <?php if($mostrar_items_iconos) : ?>
       <!-- Items Iconos -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos', array('class' => 'paginaInfectologia') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos', array('class' => '') );?>
       <!-- Fin Items Iconos -->
     <?php endif; ?>
 

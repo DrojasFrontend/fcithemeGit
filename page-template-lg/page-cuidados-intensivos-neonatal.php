@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Ortopedia-Padiatrica
+Template Name: Plantilla Especialidad | Cuidados Intensivos - Neonatal
 */ 
 
 get_header();
@@ -28,37 +28,37 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
   <main class="paginaEtapaExpecialidades">
     <?php if($mostrar_hero) : ?>
       <!-- Hero -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaCardiologiasClinicas') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaUCINeonatal') );?>
       <!-- Fin Hero -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
      <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta_invertido) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
     <?php if($mostrar_bloque_texto) : ?>
       <!-- Bloque Texto -->
-      <?php get_template_part('template-parts/especialidades/seccion', 'bloque-texto', array('class' => '') );?>
+      <?php get_template_part('template-parts/especialidades/seccion', 'bloque-texto', array('class' => 'paginaUCINeonatal') );?>
       <!-- Fin Bloque Texto -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaUCINeonatal'));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -76,7 +76,7 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
 
     <?php if($mostrar_texto_imagen_cta_2) : ?>
       <!-- Texto Imagen 2 -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>''));?>
       <!-- Fin Texto Imagen 2 -->
     <?php endif; ?>
 
@@ -88,7 +88,7 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
 
     <?php if($mostrar_targetas_grid) : ?>
       <!-- Targetas Grid -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid', array('class' => 'paginaUCINeonatal'));?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 
@@ -103,17 +103,17 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
     <?php endif; ?>
-    
+
     <?php 
       get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', 
         array(
-          'active' => 'Infantil',
+          'class' => 'paginaUCINeonatal',
+          'active' => 'UCI Neonatal',
           'especialidad' => $especialidad,
           'nombrePagina' => $nombrePagina
         )
       );
     ?>
-
     <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->

@@ -19,6 +19,10 @@ $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
 
+$grupo_tab_tarjeta_texto_imagen = get_field('grupo_tab_tarjeta_texto_imagen');
+$especialidad = !empty($grupo_tab_tarjeta_texto_imagen['especialidad']) ? esc_html($grupo_tab_tarjeta_texto_imagen['especialidad']) : '';
+$nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_html($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) : '';
+
 ?>
 <!-- CONTENIDO -->
   <main class="paginaEtapaExpecialidades">
@@ -99,9 +103,16 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
         <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
       <!-- Fin CTAS -->
     <?php endif; ?>
-    
-    <?php get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', array('active' => 'Hombro y codo'));?>
 
+    <?php 
+      get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', 
+        array(
+          'active' => 'Hombro y codo',
+          'especialidad' => $especialidad,
+          'nombrePagina' => $nombrePagina
+        )
+      );
+    ?>
     <?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
   </main>
 <!-- CONTENIDO -->

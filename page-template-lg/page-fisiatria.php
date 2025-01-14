@@ -90,7 +90,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
     <?php if($mostrar_experto) : ?>
       <!-- Experto -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "paginaFisiatria"));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "paginaFisiatria marginTop"));?>
       <!-- Fin Experto -->
     <?php endif; ?>
 
