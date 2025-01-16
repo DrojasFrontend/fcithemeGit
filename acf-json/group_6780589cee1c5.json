@@ -1,6 +1,6 @@
 {
     "key": "group_6780589cee1c5",
-    "title": "Chequeo Medico",
+    "title": "Chequeo Medico Home",
     "fields": [
         {
             "key": "field_678150abf5f5c",
@@ -629,6 +629,94 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_6788391d52d32",
+                    "label": "Servicios",
+                    "name": "servicios",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Agregar Fila",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_6788392d52d33",
+                            "label": "Imagen",
+                            "name": "imagen",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "parent_repeater": "field_6788391d52d32"
+                        },
+                        {
+                            "key": "field_678839eb52d34",
+                            "label": "Titulo",
+                            "name": "titulo",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6788391d52d32"
+                        },
+                        {
+                            "key": "field_678839f852d35",
+                            "label": "CTA",
+                            "name": "cta",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "parent_repeater": "field_6788391d52d32"
+                        }
+                    ]
                 }
             ]
         },
@@ -1152,7 +1240,6 @@
                             "collapsed": "",
                             "button_label": "Agregar Fila",
                             "rows_per_page": 20,
-                            "parent_repeater": "field_6785e6183d845",
                             "sub_fields": [
                                 {
                                     "key": "field_6785ee303d84c",
@@ -1196,7 +1283,8 @@
                                     "delay": 0,
                                     "parent_repeater": "field_6785ed0d3d84b"
                                 }
-                            ]
+                            ],
+                            "parent_repeater": "field_6785e6183d845"
                         },
                         {
                             "key": "field_6786b776f6cdb",
@@ -2103,9 +2191,51 @@
     "location": [
         [
             {
-                "param": "page_template",
+                "param": "page",
                 "operator": "==",
-                "value": "page-template-lg\/page-chequeo-medico.php"
+                "value": "23734"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23824"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23913"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23934"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23944"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23960"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "23968"
             }
         ]
     ],
@@ -2118,5 +2248,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736969175
+    "modified": 1736981008
 }

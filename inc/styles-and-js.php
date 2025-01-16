@@ -271,10 +271,33 @@ function enqueue_scripts() {
         wp_enqueue_script('chequeo_medico_js');
     }
 
+    // Chequeo Medico
+    $pageChequeoMedico = array(
+        'page-template-lg/page-chequeo-medico-home.php',
+    );
+
+    if(is_page_template($pageChequeoMedico) ) {
+        $chequeoMedico = get_template_directory_uri() . '/page-template-lg/page-chequeo-medico-home.css';
+        wp_enqueue_style('chequeo_medico_css', $chequeoMedico);
+
+        enqueue_swiper_assets();
+
+        $chequeoMedicoJS = get_template_directory_uri() . '/page-template-lg/page-chequeo-medico-home.js';
+        wp_register_script('chequeo_medico_js', $chequeoMedicoJS, array('jquery'), $version, true);
+        wp_enqueue_script('chequeo_medico_js');
+
+        $grupoCarrusel = get_field('grupo_carrusel');
+        $diapositivas = !empty($grupoCarrusel['diapositivas']) ? $grupoCarrusel['diapositivas'] : 1;
+
+        wp_localize_script('chequeo_medico_js', 'diapositivasConfig', [
+            'slidesPerView' => $diapositivas,
+        ]);
+    }
+
     // Localize Script
     wp_localize_script('main_js', 'lm_params', array(
         'ajaxurl' => admin_url('admin-ajax.php'),
     ));
 }
- 
+
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
