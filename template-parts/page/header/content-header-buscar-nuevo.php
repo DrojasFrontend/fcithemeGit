@@ -49,7 +49,7 @@
 
 @media only screen and (min-width: 1024px){
     .customHeader__buscar {
-        max-width: 480px;
+        max-width: 240px;
         box-shadow: 0px 0px 24px 0px rgba(103, 114, 131, 0);
     }
 
@@ -71,6 +71,18 @@
     .customHeader__buscar button i {
         font-size: 16px;
         font-weight: 100;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .customHeader__buscar {
+        max-width: 380px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .customHeader__buscar {
+        max-width: 480px;
     }
 }
 

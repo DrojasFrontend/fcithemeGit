@@ -183,7 +183,7 @@ body.is-active {
 
 @media only screen and (min-width: 1440px) {
 	.customHeader__wrapper {
-		width: 1240px;
+		width: 1440px;
 		padding: 0 24px;
 	}
 

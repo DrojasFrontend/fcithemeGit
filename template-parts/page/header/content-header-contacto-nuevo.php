@@ -1,6 +1,6 @@
 <div class="visibleDesktop">
   <div class="customHeader__contactos">
-    <a href="" class="heading--18 color--E40046">
+    <a href="https://www.lacardio.org/citas-y-teleconsultas" class="heading--18 color--E40046">
       <?php 
         get_template_part('template-parts/content', 'icono');
         display_icon('ico-calendario-rojo'); 
@@ -14,6 +14,7 @@
         display_icon('arrow-down'); 
       ?>
     </button>
+    <?php get_template_part('template-parts/page/header/content', 'header-logo-nuevo') ?>
     <div class="customHeader__contacto-info" style="display: none">
       <div class="triangulo-border">
         <div class="triangulo"></div>
@@ -21,14 +22,14 @@
       <p class="info">Línea de Atención</p>
       <a class="numero" href="tel:6017563426">(+601) 756 3426</a>
       <div class="customHeader__contacto-bottom">
-        <a href="#">
+        <a href="https://wa.me/+573178938441">
           <?php 
             get_template_part('template-parts/content', 'icono');
             display_icon('ico-whatsapp-rojo'); 
           ?>
           Chat en WhatsApp
         </a>
-        <a href="#">
+        <a href="mailto:fciquejas@lacardio.org" target="_blank">
           <?php 
             get_template_part('template-parts/content', 'icono');
             display_icon('ico-mensaje-rojo'); 
@@ -37,9 +38,9 @@
         </a>
       </div>
       <div class="customHeader__contacto-cta">
-        <a  class="info" href="">Preguntas frecuentes</a>
-        <a  class="info" href="">PQR Pacientes</a>
-        <a  class="info" href="">Ubicaciones</a>
+        <!-- <a  class="info" href="">Preguntas frecuentes</a> -->
+        <a  class="info" href="https://t.almeraim.com/form?data=eyJhcGlrZXkiOiJleHBlcGFjaWVudGUiLCJjb25uZWN0aW9uIjoic2dpZmNpIiwiZW5kcG9pbnQiOiJodHRwcyUzQSUyRiUyRnNnaS5hbG1lcmFpbS5jb20lMkZzZ2klMkZhcGklMkZ2MiUyRiIsImNvZGUiOiJFWFAifQ==">PQR Pacientes</a>
+        <a  class="info" href="https://www.lacardio.org/ubicacion-de-instalaciones-163/">Ubicaciones</a>
       </div>
     </div>
   </div>
@@ -49,6 +50,7 @@
   .customHeader__contactos {
     position: relative;
     display: flex;
+    align-items: center;
     column-gap: 42px;
   }
 
@@ -60,10 +62,14 @@
     padding: 0;
   }
 
+  .customHeader__contactos a:hover {
+    color: var(--e40046);
+  }
+
   .customHeader__contacto-info {
     position: absolute;
     top: 42px;
-    right: -20px;
+    left: -16px;
     width: max-content;
     padding: 12px 24px;
     text-align: center;
@@ -98,6 +104,8 @@
   .customHeader__contacto-cta {
     display: flex;
     column-gap: 20px;
+    justify-content: center;
+    padding-top: 6px;
   }
 
   .info {

@@ -36,18 +36,18 @@
             <span></span>
         </button>
         <!-- Menu Escritorio -->
-        <?php get_template_part('template-parts/page/header/content', 'header-mobile') ?>
+        <?php get_template_part('template-parts/page/header/content', 'header-mobile-nuevo') ?>
         <!-- Fin Menu Escritorio -->
 		<!-- Buscar -->
-        <?php get_template_part('template-parts/page/header/content', 'header-buscar') ?>
+        <?php get_template_part('template-parts/page/header/content', 'header-buscar-nuevo') ?>
         <!-- Fin Buscar -->
 
         <!-- Buscar -->
-        <?php get_template_part('template-parts/page/header/content', 'header-contacto') ?>
+        <?php get_template_part('template-parts/page/header/content', 'header-contacto-nuevo') ?>
         <!-- Fin Buscar -->
 
     </div>
     <!-- Menu Escritorio -->
-    <?php get_template_part('template-parts/page/header/content', 'header-escritorio') ?>
+    <?php get_template_part('template-parts/page/header/content', 'header-escritorio-nuevo') ?>
     <!-- Fin Menu Escritorio -->
 </header>

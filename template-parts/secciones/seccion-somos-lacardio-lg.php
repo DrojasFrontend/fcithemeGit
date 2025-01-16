@@ -55,7 +55,7 @@ if (!empty($grupo_somos_lacardio)) {
                         </ul>
                     <?php endif; ?>
                     
-                    <?php echo generar_cta_desde_array($cta, 'boton-v2 boton-v2--blanco-rojo'); ?>
+                    <?php echo generar_cta_desde_array($cta, 'boton-v2 boton-v2--rojo-rojo'); ?>
                 </div>
                 <div class="seccionSomosLacardio__img border-radius-5">
                     <?php 
