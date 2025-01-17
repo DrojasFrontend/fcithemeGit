@@ -55,7 +55,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaHematoOncologia'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
