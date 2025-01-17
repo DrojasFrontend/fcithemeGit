@@ -55,7 +55,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaElectroFisiologiaPediatrica'));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -85,7 +85,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_targetas_grid) : ?>
       <!-- Targetas Grid -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
+        <?php get_template_part('template-parts/especialidades/seccion', array("class" => ""));?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 

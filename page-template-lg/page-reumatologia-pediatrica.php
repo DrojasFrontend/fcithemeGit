@@ -31,13 +31,13 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaHematoOncologia'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaOftalmologia'));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
      <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaOftalmologia'));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
@@ -85,7 +85,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_targetas_grid) : ?>
       <!-- Targetas Grid -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid', array("class" => "paginaReumatologiaPediatrica"));?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 

@@ -178,6 +178,10 @@
 	padding: 40px 0 0;
 }
 
+.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
+	padding: 84px 0 84px;
+}
+
 .paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
 .paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
 .paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
@@ -796,6 +800,16 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 		padding: 0 0 80px;
 	}
 
+	.paginaElectroFisiologiaPediatrica .etapaEspecialidadesTextDescBanner {
+		padding: 60px 0px 0px 0px;
+	}
+
+	.paginaElectroFisiologiaPediatrica .etapaEspecialidadesTextDescBanner__grid  {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		padding: 60px;
+	}
+
 	.etapaEspecialidadesItemsIconos__titulo {
 		row-gap: 18px;
 		padding: 0 100px 40px;
@@ -981,11 +995,22 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-bottom: 42px;
 }
 
+.paginaReumatologiaPediatrica .etapaEspecialidadesTargetaGrid__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: center;
+	margin-bottom: 42px;
+}
+
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48,
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo,
 .paginaNeurocirugia .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
 	text-align: left;
+}
+
+.paginaReumatologiaPediatrica .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
+	text-align: center;
 }
 
 .paginaUCINeonatal.etapaEspecialidadesTargetaGrid .subheading,
@@ -1796,6 +1821,12 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	background-color: rgb(199 218 239 / 15%);
 }
 
+.paginaOftalmologia .especialidadesExpertos__fondo {
+	padding: 40px 0;
+	background-color: rgb(255, 255, 255);
+}
+
+
 .paginaFisiatria .especialidadesExpertos__fondo {
 	background-color: var(--fff);
 }
@@ -1911,8 +1942,12 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	padding: 40px 0 0;
 }
 
-.etapaEspecialidadesImagenTextoCTA.estilo-invertido {
-	background-color: rgba(213, 219, 231, 0.1);
+.paginaUrologia.estilo-invertido .etapaEspecialidadesImagenTextoCTA__flex {
+	flex-direction: row;
+}
+
+.paginaUrologia.etapaEspecialidadesImagenTextoCTA.estilo-invertido {
+	background-color: rgb(170, 204, 255, 0.1);
 }
 
 .paginaBancoSangre.etapaEspecialidadesImagenTextoCTA {
@@ -1983,6 +2018,16 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+.paginaUrologia .etapaEspecialidadesImagenTextoCTA__info ul {
+	padding: 0 0 0 30px;
+	font-family: var(--ff-sans);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	background-color: rgb(170 204 255 / 10%);
 }
 
 @media only screen and (min-width: 1024px) {
