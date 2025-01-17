@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Hemato Oncología
+Template Name: Plantilla Especialidad | Urología
 */ 
 
 get_header();
