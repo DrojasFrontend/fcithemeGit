@@ -20,6 +20,71 @@
             "endpoint": 0
         },
         {
+            "key": "field_678e427443c78",
+            "label": "Fondo",
+            "name": "fondo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_678e426043c77",
+            "label": "Subtitulo",
+            "name": "subtitulo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_678e425943c76",
+            "label": "Titulo",
+            "name": "titulo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_67804c0947ee5",
             "label": "Especialidades",
             "name": "especialidades",
@@ -41,6 +106,27 @@
             "button_label": "Agregar Fila",
             "rows_per_page": 20,
             "sub_fields": [
+                {
+                    "key": "field_678ae4cb42d8d",
+                    "label": "Departamento",
+                    "name": "departamento",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_67804c0947ee5"
+                },
                 {
                     "key": "field_67804c1347ee6",
                     "label": "Enlace",
@@ -79,5 +165,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1736461350
+    "modified": 1737376391
 }

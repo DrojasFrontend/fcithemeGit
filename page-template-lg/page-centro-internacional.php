@@ -35,6 +35,9 @@ get_header();
         <?php get_template_part('template-parts/centro-internacional/seccion', 'texto-imagen'); ?>
         <?php get_template_part('template-parts/centro-internacional/seccion', 'tab-alianzas'); ?>
         <?php get_template_part('template-parts/centro-internacional/seccion', 'contacto'); ?>
+
+        <?php get_template_part('template-parts/centro-internacional/seccion', 'formulario'); ?>
+        
     </main>
 <!-- FIN CONTENIDO -->
 

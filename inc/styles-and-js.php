@@ -300,6 +300,19 @@ function enqueue_scripts() {
         ]);
     }
 
+    $directorioEspecialidades = array(
+        'page-template-lg/page-buscador-servicios.php',
+    );
+
+    if(is_page_template($directorioEspecialidades) ) {
+        $directorioEspecialidades = get_template_directory_uri() . '/page-template-lg/page-buscador-servicios.css';
+        wp_enqueue_style('directorio_especialidades_css', $directorioEspecialidades);
+    
+        $directorioEspecialidadesJsFileURI = get_template_directory_uri() . '/page-template-lg/page-buscador-servicios.js';
+        wp_register_script('directorio_especialidades_js', $directorioEspecialidadesJsFileURI, array('jquery'), $version, true);
+        wp_enqueue_script('directorio_especialidades_js');
+    }
+
     // Localize Script
     wp_localize_script('main_js', 'lm_params', array(
         'ajaxurl' => admin_url('admin-ajax.php'),
