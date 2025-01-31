@@ -119,6 +119,7 @@ function enqueue_scripts() {
         'page-template-lg/page-fisiatria.php',
         'page-template-lg/page-gastroenterologia.php',
         'page-template-lg/page-ortopedia-trauma-reconstruccion.php',
+        'page-template-lg/page-laboratorios-clinicos.php',
 
         'page-template-lg/page-genetica.php',
         'page-template-lg/page-neurocirugia.php',
@@ -302,6 +303,7 @@ function enqueue_scripts() {
 
     $directorioEspecialidades = array(
         'page-template-lg/page-buscador-servicios.php',
+        'page-template-lg/page-buscador-servicios-resultados.php',
     );
 
     if(is_page_template($directorioEspecialidades) ) {

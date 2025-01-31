@@ -143,3 +143,51 @@ function search_blog_fellows() {
 add_action('wp_ajax_search_blog_fellows', 'search_blog_fellows');
 add_action('wp_ajax_nopriv_search_blog_fellows', 'search_blog_fellows');
 
+/* Laboratorio clinico */
+add_action('wp_ajax_filtrar_laboratorios', 'filtrar_laboratorios_callback');
+add_action('wp_ajax_nopriv_filtrar_laboratorios', 'filtrar_laboratorios_callback');
+
+function filtrar_laboratorios_callback() {
+  $area = isset($_POST['area']) ? sanitize_text_field($_POST['area']) : '';
+  $busqueda = isset($_POST['busqueda']) ? sanitize_text_field($_POST['busqueda']) : '';
+  
+  $args = array(
+    'post_type' => 'labs-clinicos',
+    'posts_per_page' => -1
+  );
+
+  if (!empty($area)) {
+    $args['meta_query'][] = array(
+      'key' => 'area',
+      'value' => $area,
+      'compare' => '='
+    );
+  }
+
+  if (!empty($busqueda)) {
+    $args['s'] = $busqueda;
+  }
+
+  $query = new WP_Query($args);
+
+  ob_start();
+  if ($query->have_posts()) : ?>
+    <div class="procedimientoFiltro__procedimientos">
+      <div id="procedimientos-lista">
+        <?php while ($query->have_posts()): $query->the_post(); ?>
+          <div class="procedimiento" data-id="<?php echo get_the_ID(); ?>">
+            <h3 class="heading--18 color--002D72"><?php the_title(); ?></h3>
+          </div>
+        <?php endwhile; ?>
+      </div>
+      <div id="procedimiento-detalle"></div>
+    </div>
+  <?php else: ?>
+    <p class="resultados heading--24 color--263956">No se encontraron laboratorios clínicos.</p>
+  <?php endif;
+  
+  wp_reset_postdata();
+  $html = ob_get_clean();
+  echo $html;
+  die();
+}

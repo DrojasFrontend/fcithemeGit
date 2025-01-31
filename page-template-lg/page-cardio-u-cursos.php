@@ -48,7 +48,13 @@ $detalle                    = !empty($grupo_informcion_adicional['detalle']) ? e
 $enlace                     = !empty($grupo_informcion_adicional['enlace']) ? $grupo_informcion_adicional['enlace'] : '';
 $imagen_id_targeta          = !empty($grupo_informcion_adicional["imagen"]['ID']) ? $grupo_informcion_adicional["imagen"]['ID'] : '';
 
-$cursosIDPagina      = get_page_by_path('cardio-u-inicio')->ID;
+$cta_financiar              = !empty($grupo_informcion_adicional['financiar']) ? $grupo_informcion_adicional['financiar'] : '';
+$titulo_financiar           = !empty($grupo_informcion_adicional['titulo_financiar']) ? $grupo_informcion_adicional['titulo_financiar'] : '';
+$descripcion_financiar      = !empty($grupo_informcion_adicional['descripcion_financiar']) ? $grupo_informcion_adicional['descripcion_financiar'] : '';
+$fondo_financiar            = !empty($grupo_informcion_adicional['fondo_financiar']) ? $grupo_informcion_adicional['fondo_financiar'] : '';
+$imagen_financiar           = !empty($grupo_informcion_adicional['imagen_financiar']) ? $grupo_informcion_adicional['imagen_financiar'] : '';
+
+$cursosIDPagina      = get_page_by_path('cardio-u')->ID;
 $grupo_cursos        = ($cursosIDPagina) ? get_field('grupo_cursos', $cursosIDPagina) : null;
 set_query_var('grupo_cursos', $grupo_cursos);
 
@@ -152,6 +158,37 @@ set_query_var('grupo_cursos', $grupo_cursos);
                             </p>
                         </section>
                         <?php endif; ?>
+
+                        <?php if($cta_financiar) { ?>
+                        <section class="seccionCardioUInternaCurso__financiar">
+                            <?php if($fondo_financiar) { ?>
+                            <img class="seccionCardioUInternaCurso__financiar-banner" class="" src="<?php echo $fondo_financiar; ?>" alt="">
+                            <?php } ?>
+                            <div class="seccionCardioUInternaCurso__financiar-grid">
+                                <div class="seccionCardioUInternaCurso__financiar-titulo">
+                                    <?php if($titulo_financiar) { ?>
+                                    <h2 class="heading--24 color--002D72"><?php echo $titulo_financiar; ?></h2>
+                                    <?php } ?>
+                                    <?php if($descripcion_financiar) { ?>
+                                    <p class="heading--18 color--0C2448"><?php echo $descripcion_financiar; ?></p>
+                                    <?php } ?>
+
+                                    <?php if($cta_financiar) { ?>
+                                    <a href="<?php echo $cta_financiar['url']; ?>" class="boton-v2 boton-v2--blanco-rojo">
+                                        Financiar curso
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('icono-arrow-next-rojo'); 
+                                        ?>
+                                    </a>
+                                    <?php } ?>
+                                </div>
+                                <?php if($imagen_financiar) { ?>
+                                <img src="<?php echo $imagen_financiar; ?>" alt="">
+                                <?php } ?>
+                            </div>
+                        </section>
+                        <?php } ?>
                 
                         <?php if($faqs) : ?>
                         <!-- Preguntas frecuentes -->
@@ -179,80 +216,103 @@ set_query_var('grupo_cursos', $grupo_cursos);
                     </div>
                     <!-- Caja flotante -->
                     <div class="seccionCardioUInterna__flotante" id="seccionCardioUInterna__flotante">
-                        <h2 class="heading--24 color--002D72"><?php the_title(); ?></h2>
-                        <div>
-                            <p class="info heading--14 color--677283">
-                                <span>
-                                    <?php 
-                                        get_template_part('template-parts/content', 'icono');
-                                        display_icon('ico-calendario'); 
-                                    ?>
-                                </span>
-                                <strong>Duración:</strong> 
-                                <?php echo $duracion; ?>
-                            </p>
-                            <p class="info heading--14 color--677283">
-                                <span>
-                                    <?php 
-                                        get_template_part('template-parts/content', 'icono');
-                                        display_icon('ico-libro'); 
-                                    ?>
-                                </span>
-                                <strong>Modalidad:</strong> 
-                                <?php echo $modalidad; ?>
-                            </p>
-                            <p class="info heading--14 color--677283">
-                                <span>
-                                    <?php 
-                                        get_template_part('template-parts/content', 'icono');
-                                        display_icon('ico-check'); 
-                                    ?>
-                                </span>
-                                <strong>Tipo:</strong> 
-                                <?php echo $tipo_oferta; ?>
-                            </p>
-                            <p class="info heading--14 color--677283">
-                                <span>
-                                    <?php 
-                                        get_template_part('template-parts/content', 'icono');
-                                        display_icon('ico-reloj-2'); 
-                                    ?>
-                                </span>
-                                <strong>Horas certificables:</strong> 
-                                <?php echo $horas; ?>
-                            </p>
-							<?php if (!empty($fecha_inicio)): ?>
-								<p class="info heading--14 color--677283">
-									<span>
-										<?php 
-											get_template_part('template-pparts/content', 'icono');
-											display_icon('ico-calendario'); 
-										?>
-									</span>
-									<strong>Fecha de inicio:</strong> 
-									<?php echo $fecha_inicio; ?>
-								</p>
-							<?php endif; ?>
-
+                        <div class="seccionCardioUInterna__flotante-info">
+                            <h2 class="heading--18 color--002D72"><?php the_title(); ?></h2>
+                            <div>
+                                <p class="info heading--14 color--677283">
+                                    <span>
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('ico-calendario'); 
+                                        ?>
+                                    </span>
+                                    <strong>Duración:</strong> 
+                                    <?php echo $duracion; ?>
+                                </p>
+                                <p class="info heading--14 color--677283">
+                                    <span>
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('ico-libro'); 
+                                        ?>
+                                    </span>
+                                    <strong>Modalidad:</strong> 
+                                    <?php echo $modalidad; ?>
+                                </p>
+                                <p class="info heading--14 color--677283">
+                                    <span>
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('ico-check'); 
+                                        ?>
+                                    </span>
+                                    <strong>Tipo:</strong> 
+                                    <?php echo $tipo_oferta; ?>
+                                </p>
+                                <p class="info heading--14 color--677283">
+                                    <span>
+                                        <?php 
+                                            get_template_part('template-parts/content', 'icono');
+                                            display_icon('ico-reloj-2'); 
+                                        ?>
+                                    </span>
+                                    <strong>Horas certificables:</strong> 
+                                    <?php echo $horas; ?>
+                                </p>
+                                <?php if (!empty($fecha_inicio)): ?>
+                                    <p class="info heading--14 color--677283">
+                                        <span>
+                                            <?php 
+                                                get_template_part('template-pparts/content', 'icono');
+                                                display_icon('ico-calendario'); 
+                                            ?>
+                                        </span>
+                                        <strong>Fecha de inicio:</strong> 
+                                        <?php echo $fecha_inicio; ?>
+                                    </p>
+                                <?php endif; ?>
+    
+                            </div>
+                            <div class="seccionCardioUInterna__flotante-precio">
+                                <?php if($precio !== '$' || $precio == '#') : ?>
+                                    <h3 class="heading--14 color--677283">Precio inscripción:</h3>
+                                    <?php if ($precio) { ?>
+                                        <h4 class="heading--30 color--002D72"><?php echo $precio; ?></h4>
+                                    <?php } ?>
+                                <?php endif; ?>
+                                <!-- Si no hay precio envia al formulario de inscripcion -->
+                                 <?php if($boton_inscripcion['url'] == '#') : ?>
+                                        <button class="open-modal-form boton-v2 boton-v2--rojo-rojo" id="open-modal-form" type="button" aria-label="abrir modal">
+                                            <?php echo $boton_inscripcion['title']; ?>
+                                        </button>
+                                    <?php else: ?>
+                                        <a class="boton-v2 boton-v2--rojo-rojo" href="<?php echo $boton_inscripcion['url']; ?>" title="<?php echo $boton_inscripcion['title']; ?>" target="<?php echo $boton_inscripcion['target']; ?>">
+                                            <?php echo $boton_inscripcion['title']; ?>
+                                        </a>
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="seccionCardioUInterna__flotante-precio">
-                            <?php if($precio !== '$' || $precio == '#') : ?>
-                                <h3 class="heading--14 color--677283">Precio inscripción:</h3>
-                                <?php if ($precio) { ?>
-                                    <h4 class="heading--36 color--002D72"><?php echo $precio; ?></h4>
-                                <?php } ?>
-                            <?php endif; ?>
-                            <!-- Si no hay precio envia al formulario de inscripcion -->
-                             <?php if($boton_inscripcion['url'] == '#') : ?>
-                                    <button class="open-modal-form boton-v2 boton-v2--rojo-rojo" id="open-modal-form" type="button" aria-label="abrir modal">
-                                        <?php echo $boton_inscripcion['title']; ?>
-                                    </button>
-                                <?php else: ?>
-                                    <a class="boton-v2 boton-v2--rojo-rojo" href="<?php echo $boton_inscripcion['url']; ?>" title="<?php echo $boton_inscripcion['title']; ?>" target="<?php echo $boton_inscripcion['target']; ?>">
-                                        <?php echo $boton_inscripcion['title']; ?>
-                                    </a>
-                            <?php endif; ?>
+                        <div class="wompi">
+                            <p class="heading--18 color--002D72">
+                                Con <img src="/wp-content/uploads/2025/01/wompi.png" alt=""> financia tu curso y recibe aprobación inmediata. 
+                            </p> 
+                            <?php if($cta_financiar) { ?>
+                            <a href="<?php echo $cta_financiar['url']; ?>" class="boton-v2 boton-v2--blanco-rojo">
+                                Financiar curso
+                                <?php 
+                                    get_template_part('template-parts/content', 'icono');
+                                    display_icon('icono-arrow-next-rojo'); 
+                                ?>
+                            </a>
+                            <?php } ?>
                         </div>
+                        <a href="/cardio-u/" class="conoce heading--18 color--002D72">
+                            <img src="/wp-content/uploads/2025/01/icono-info.png" alt="">
+                            <span class="color--E40046">
+                                Conoce más
+                            </span>
+                            sobre como inscribirte a este curso
+                        </a>
                     </div>
                 </div>
             </div>
@@ -379,7 +439,7 @@ set_query_var('grupo_cursos', $grupo_cursos);
                             <div class="seccionCardioUFormularioContacto__img">
                                 <!-- Caja flotante -->
                                 <div class="seccionCardioUInterna__flotante" id="seccionCardioUInterna__flotante">
-                                    <h3 class="heading--24 color--002D72"><?php the_title(); ?></h3>
+                                    <h3 class="heading--18 color--002D72"><?php the_title(); ?></h3>
                                     <div>
                                         <p class="info heading--14 color--677283">
                                             <span>

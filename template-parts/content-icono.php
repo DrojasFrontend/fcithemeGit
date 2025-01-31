@@ -86,6 +86,9 @@ if (!function_exists('display_icon')) {
             case 'ico-mas-circulo':
                 echo '<img src="' . IMG_BASE . 'iconos/icono-mas-circulo-rojo.png" alt="mas circulo Icon">';
                 break;
+            case 'ico-buscar':
+                echo '<img src="' . IMG_BASE . 'iconos/icono-buscar.png" alt="mas circulo Icon">';
+                break;
         }
     }
 }

@@ -40,13 +40,6 @@ if ($filtro_aplicado) {
 }
 ?>
 
-<style>
-
-  .procedimientoFiltro__form form{
-    display: block;
-  }
-</style>
-
 <section class="procedimientoFiltro">
   <div class="container--large">
     <div class="procedimientoFiltro__titulo">
@@ -79,40 +72,38 @@ if ($filtro_aplicado) {
           ?>
         </button>
         <form method="GET" action="" id="filtro-form">
-          <!--
-          <select name="laboratorio" id="laboratorio">
-            <option value="">Seleccionar laboratorio clínico</option>
-            <?php
-            // Realiza una consulta para obtener todos los laboratorios clínicos
+          <?php
+            // Obtener todas las áreas únicas 
             $args = array(
               'post_type' => 'labs-clinicos',
-              'posts_per_page' => -1,
+              'posts_per_page' => -1
             );
+            $labs = get_posts($args);
+            $areas = array();
+            foreach($labs as $lab) {
+              $area = get_field('area', $lab->ID);
+                if($area) {
+                  $areas[$area] = $area;
+                }
+              }
+          ?>
 
-            $query = new WP_Query($args);
-
-            if ($query->have_posts()):
-              while ($query->have_posts()):
-                $query->the_post();
-                $laboratorio_id = get_the_ID(); // ID del laboratorio
-                ?>
-                <option value="<?php echo esc_attr($laboratorio_id); ?>" <?php selected($laboratorio_id, $laboratorio_seleccionado); ?>>
-                  <?php echo esc_html(get_the_title()); ?>
-                </option>
-                <?php
-              endwhile;
-            endif;
-            wp_reset_postdata();
-            ?>
+          <select name="area" id="area" class="area-dropdown">
+            <option value="">Seleccionar área</option>
+            <?php foreach($areas as $key => $value): ?>
+              <option value="<?php echo esc_attr($key); ?>">
+                <?php echo esc_html($value); ?>
+              </option>
+            <?php endforeach; ?>
           </select>
-          -->
+
           <div class="procedimientoFiltro__buscar">
             <input type="text" name="busqueda" id="busqueda" placeholder="Busca tu laboratorio"
               value="<?php echo esc_attr($busqueda); ?>">
             <button type="submit" id="buscar-btn">
               <?php
-              get_template_part('template-parts/content', 'icono');
-              display_icon('ico-search');
+                get_template_part('template-parts/content', 'icono');
+                display_icon('ico-buscar');
               ?>
               Buscar
             </button>
@@ -177,16 +168,17 @@ if ($filtro_aplicado) {
 
 <script>
   jQuery(document).ready(function ($) {
-    function cargarProcedimientos(especialidad, busqueda) {
+    function cargarProcedimientos(area, busqueda) {
+      $('#procedimientos-container').html('<div class="loader">Cargando resultados...</div>');
       $.ajax({
         url: '<?php echo admin_url('admin-ajax.php'); ?>',
         type: 'POST',
         data: {
           action: 'filtrar_laboratorios',
-          especialidad: especialidad,
+          area: area,
           busqueda: busqueda
         },
-        success: function (response) {
+        success: function(response) {
           $('#procedimientos-container').html(response);
           initProcedimientoClick();
         }
@@ -213,11 +205,16 @@ if ($filtro_aplicado) {
       });
     }
 
-    $('#filtro-form').on('submit', function (e) {
+    $('#filtro-form').on('submit', function(e) {
       e.preventDefault();
-      var especialidad = $('#especialidad').val();
+      var area = $('#area').val();
       var busqueda = $('#busqueda').val();
-      cargarProcedimientos(especialidad, busqueda);
+
+      if (window.innerWidth < 1024) {
+        toggleMenuFiltro("cerrar");
+      }
+
+      cargarProcedimientos(area, busqueda);
     });
 
     function toggleMenuFiltro(action) {

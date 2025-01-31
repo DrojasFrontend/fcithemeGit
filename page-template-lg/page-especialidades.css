@@ -1254,6 +1254,11 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	row-gap: 30px;
 }
 
+.procedimientoFiltro__form .loader {
+	margin-top: 24px;
+	padding: 0 24px;
+}
+
 .procedimientoFiltro__form input[type="text"],
 .procedimientoFiltro__form select {
 	font-family: var(--ff-sans);

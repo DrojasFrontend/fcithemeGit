@@ -9,7 +9,7 @@
 ?>
 
 <section class="<?php echo esc_attr($fondo); ?> py-5 px-12 text-md-center">
-    <div class="container position-relative">
+    <div class="position-relative">
         <?php if( $subtitulo ): ?>
             <p class="subheading color--002D72"><?php echo esc_html($subtitulo); ?></p>
         <?php endif; ?>
