@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Enfermería en la Atención Quirúrgica
+Template Name: Plantilla Especialidad | Métodos no invasivos
 */ 
 
 get_header();
