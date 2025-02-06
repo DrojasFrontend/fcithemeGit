@@ -2278,6 +2278,20 @@
                 "operator": "==",
                 "value": "24132"
             }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "24358"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "24386"
+            }
         ]
     ],
     "menu_order": 0,
@@ -2289,5 +2303,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738777670
+    "modified": 1738871782
 }

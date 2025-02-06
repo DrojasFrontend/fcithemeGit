@@ -162,7 +162,11 @@ function enqueue_scripts() {
         'page-template-lg/page-clinico.php',
         'page-template-lg/page-psiquiatria.php',
         'page-template-lg/page-proctologia.php',
-
+        'page-template-lg/page-cardiologia-pediatrica.php',
+        'page-template-lg/page-anestesiologia.php',
+        'page-template-lg/page-hemodinamia-pediatrica.php',
+        'page-template-lg/page-cirugia-cardiovascular-pediatrica.php',
+        'page-template-lg/page-ecocardiografia-pediatrica.php',
 
 
 

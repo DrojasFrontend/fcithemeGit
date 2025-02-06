@@ -180,6 +180,7 @@
 .etapaEspecialidadesTextoImagenCTA,
 .paginaInfectologia.etapaEspecialidadesTextoImagenCTA {
 	padding: 40px 0 0;
+	word-break: break-word;
 }
 
 .paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
@@ -521,9 +522,10 @@
 		padding-bottom: 20px;
 	}
 
-	.etapaEspecialidadesTextDescBanner__img {
+	.etapaEspecialidadesTextDescBanner__img, .etapaEspecialidadesTextDescBanner__desc-esp {
 		max-width: 990px;
 		height: auto;
+		margin: auto;
 	}
 
 	.etapaEspecialidadesTextDescBanner__desc {
@@ -728,6 +730,21 @@
 	row-gap: 12px;
 	padding: 0 0 30px;
 	text-align: left;
+}
+
+.paginaEcocardiografia .etapaEspecialidadesItemsIconos__titulo {
+	text-align: left;
+}
+
+.paginaEcocardiografia .etapaEspecialidadesItemsIconos__titulo .heading--48 {
+	text-align: left;
+}
+
+@media(min-width: 1024px) {
+	.paginaEcocardiografia .etapaEspecialidadesItemsIconos__titulo {
+		padding-left: 0;
+		padding-bottom: 40px;
+	}
 }
 
 .etapaEspecialidadesItemsIconos__titulo .heading--48 {
@@ -1825,6 +1842,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-top: 0 !important;
 }
 
+.br-especialidades {
+	border-radius: 6px !important;
+}
+
 .paddingBottom {
 	padding-bottom: 40px;
 }
@@ -2206,6 +2227,14 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	background-color: #fff;
 }
 
+.paginaHemodinamia.etapaEspecialidadesTextDescBanner {
+	background: rgba(170, 204, 255, 0.10);
+}
+
+.paginaHemodinamia .especialidadesExpertos__fondo {
+	background-color: rgba(170, 204, 255, 0.15);
+}
+
 .paginaCardiologiasClinicas .etapaEspecialidadesTextDescBanner__grid {
 	padding-bottom: 0px;
 }
@@ -2213,6 +2242,21 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .paginaCardiologiasClinicas.estilo-invertido
 	.etapaEspecialidadesImagenTextoCTA__flex {
 	flex-direction: row;
+}
+
+.etapaEspecialidadesTextDescBanner__info ul {
+	list-style: none;
+}
+
+.etapaEspecialidadesTextDescBanner__info ul li a {
+	font-family: "Open Sans";
+	color: #263956;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+	text-decoration: none;
 }
 
 .etapaEspecialidadesTextDescBanner__info li {
@@ -2224,10 +2268,11 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 10px;
-	right: -38px;
+	top: 50%;
+	right: -50px;
 	width: 20px;
 	height: 15px;
+	transform: translate(-50%, -50%);
 	background: none;
 	background-image: url(/wp-content/themes/fcitheme/assets/images/iconos/flecha.png);
 	background-size: contain;
