@@ -147,12 +147,26 @@ function enqueue_scripts() {
         'page-template-lg/page-cuidados-intensivos-pediatrica-cardiovascular.php',
         'page-template-lg/page-cuidados-intensivos-pediatrica.php',
         'page-template-lg/page-cuidados-intensivos-quirurgica-cardiovascular.php',
+        'page-template-lg/page-consulta-externa.php',
+        'page-template-lg/page-enfermeria-atencion-quirurgica.php',
+        'page-template-lg/page-metodos-no-invasivos.php',
 
         'page-template-lg/page-oftalmologia.php',
         'page-template-lg/page-reumatologia-pediatrica.php',
         'page-template-lg/page-dermatologia.php',
         'page-template-lg/page-urologia.php',
         'page-template-lg/page-electrofisiologia-adultos.php',
+        'page-template-lg/page-imagenes-diagnosticas.php',
+        'page-template-lg/page-neuropsicologia.php',
+        'page-template-lg/page-biologia-molecular.php',
+        'page-template-lg/page-clinico.php',
+        'page-template-lg/page-psiquiatria.php',
+        'page-template-lg/page-proctologia.php',
+
+
+
+
+
 
     );
 

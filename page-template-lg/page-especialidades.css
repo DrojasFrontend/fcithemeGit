@@ -68,6 +68,10 @@
 	background-color: var(--002D72);
 }
 
+.etapaEspecialidadesHero__textCenter {
+	justify-content: center;
+}
+
 .etapaEspecialidadesHero__text:before {
 	display: none;
 	content: "";
@@ -253,6 +257,10 @@
 .etapaEspecialidadesTextoImagenCTA__img img {
 	width: calc(100% - 20px);
 	border-radius: 6px 0px 0px 60px;
+}
+
+.etapaEspecialidadesRadius img {
+	border-radius: 6px 6px 6px 60px !important;
 }
 
 .estilo-2 .etapaEspecialidadesTextoImagenCTA__img img {
@@ -1817,6 +1825,24 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-top: 0 !important;
 }
 
+.paddingBottom {
+	padding-bottom: 40px;
+}
+
+.paddingLeft {
+	padding-left: 16px !important;
+}
+
+@media(min-width: 1024px) {
+	.paddingBottom {
+		padding-bottom: 84px;
+	}
+
+	.paddingLeft {
+		padding-left: 0 !important;
+	}
+}
+
 .especialidadesExpertos .container--large {
 	position: relative;
 }
@@ -1824,6 +1850,18 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .especialidadesExpertos__fondo {
 	padding: 40px 0;
 	background-color: rgb(199 218 239 / 15%);
+}
+
+.paginaEspecialidadesWhite .especialidadesExpertos__fondo {
+	padding: 40px 0;
+	background-color: rgb(255, 255, 255);
+}
+
+@media(min-width: 1024px) {
+	.paginaEspecialidadesWhite .especialidadesExpertos__fondo {
+		padding: 84px 0;
+		background-color: rgb(255, 255, 255);
+	}
 }
 
 .paginaOftalmologia .especialidadesExpertos__fondo {
@@ -2398,7 +2436,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .etapaEspecialidadesAccordion {
-	padding: 0 0 74px;
+	padding: 84px 0;
 }
 
 .etapaEspecialidadesAccordion__titulo {
@@ -2435,4 +2473,4 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesAccordion__titulo {
 		margin-bottom: 42px;
 	}
-}
+ }
