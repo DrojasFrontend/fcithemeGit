@@ -1,11 +1,7 @@
 <?php
 /* 
-<<<<<<< HEAD
-Template Name: Plantilla Especialidad | Neuropsicología
-=======
-Template Name: Plantilla Especialidad | Dolor y cuidados paliativos
+Template Name: Plantilla Especialidad | Cardiopatías congénitas del adulto
 
->>>>>>> 12e9111f0510244f705b1a992909b85c2534716f
 */ 
 
 get_header();
@@ -21,104 +17,6 @@ $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
 $mostrar_texto_imagen_fondo           = get_field('mostrar_texto_imagen_fondo');
 $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
-<<<<<<< HEAD
-$mostrar_acordion                     = get_field('mostrar_acordion');
-$mostrar_experto                      = get_field('mostrar_experto');
-$mostrar_ctas                         = get_field('mostrar_ctas');
-
-?>
-<!-- CONTENIDO -->
-<main class="paginaEtapaExpecialidades">
-<?php if($mostrar_hero) : ?>
-    <!-- Hero -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'hero-especialidades', array('class' => 'paginaCardiologiasClinicas') );?>
-    <!-- Fin Hero -->
-<?php endif; ?>
-
-<?php if($mostrar_texto_imagen_cta) : ?>
-    <!-- Texto Imagen CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
-    <!-- Fin Texto Imagen CTA -->
-<?php endif; ?>
-
-    <?php if($mostrar_imagen_texto_cta) : ?>
-    <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
-    <!-- Fin Imagen Texto CTA -->
-<?php endif; ?>
-
-<?php if($mostrar_imagen_texto_cta_invertido) : ?>
-    <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
-    <!-- Fin Imagen Texto CTA -->
-<?php endif; ?>
-
-<?php if($mostrar_bloque_texto) : ?>
-    <!-- Bloque Texto -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'bloque-texto', array('class' => '') );?>
-    <!-- Fin Bloque Texto -->
-<?php endif; ?>
-
-<?php if($mostrar_texto_desc_banner) : ?>
-    <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
-    <!-- Fin Texto Descripcion Banner -->
-<?php endif; ?>
-
-<?php if($mostrar_lista_numerada) : ?>
-    <!-- Lista Numerada -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'lista-numerada',  array('class' => '') );?>
-    <!-- Fin Lista Numerada -->
-<?php endif; ?>
-
-<?php if($mostrar_items_iconos) : ?>
-    <!-- Items Iconos -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos');?>
-    <!-- Fin Items Iconos -->
-<?php endif; ?>
-
-<?php if($mostrar_texto_imagen_cta_2) : ?>
-    <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-especialidades', array('class' =>'paginaCardiologiasClinicas'));?>
-    <!-- Fin Texto Imagen 2 -->
-<?php endif; ?>
-
-<?php if($mostrar_texto_imagen_fondo) : ?>
-    <!-- Texto Imagen Fondo -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-fondo-cta');?>
-    <!-- Fin Texto Imagen Fondo -->
-<?php endif; ?>
-
-<?php if($mostrar_targetas_grid) : ?>
-    <!-- Targetas Grid -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
-    <!-- Fin Targetas Grid -->
-<?php endif; ?>
-
-<?php if($mostrar_acordion) : ?>
-    <!-- Accordion -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'accordion');?>
-    <!-- Fin Accordion -->
-<?php endif; ?>
-
-<?php if($mostrar_experto) : ?>
-    <!-- Experto -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaEspecialidadesWhite"));?>
-    <!-- Fin Experto -->
-<?php endif; ?>
-
-<?php if($mostrar_ctas) : ?>
-    <!-- CTAS -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
-    <!-- Fin CTAS -->
-<?php endif; ?>
-
-<?php get_template_part('template-parts/especialidades/seccion', 'flotante-contacto');?>
-</main>
-<!-- CONTENIDO -->
-
-<?php get_footer(); ?>
-=======
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
 $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
@@ -216,4 +114,3 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
 
 
->>>>>>> 12e9111f0510244f705b1a992909b85c2534716f
