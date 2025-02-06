@@ -153,6 +153,12 @@ function enqueue_scripts() {
         'page-template-lg/page-dermatologia.php',
         'page-template-lg/page-urologia.php',
         'page-template-lg/page-electrofisiologia-adultos.php',
+        'page-template-lg/page-imagenes-diagnosticas.php',
+        'page-template-lg/page-neuropsicologia.php',
+        'page-template-lg/page-biologia-molecular.php',
+        'page-template-lg/page-clinico.php',
+        'page-template-lg/page-psiquiatria.php',
+        'page-template-lg/page-proctologia.php',
 
     );
 
