@@ -315,6 +315,20 @@ function enqueue_scripts() {
         wp_enqueue_script('directorio_especialidades_js');
     }
 
+    $pageCardiopatiasCongenitas = array(
+        'page-template-lg/page-cardiopatias-congenitas.php',
+    );
+    if(is_page_template($pageCardiopatiasCongenitas) ) {
+        $cardiopatiasCongenitasCssFileURI = get_template_directory_uri() . '/page-template-lg/page-cardiopatias-congenitas.css';
+        wp_enqueue_style('cardiopatiasCongenitas_css', $cardiopatiasCongenitasCssFileURI);
+
+        enqueue_swiper_assets();
+        
+        $cardiopatiasCongenitasJsFileURI = get_template_directory_uri() . '/page-template-lg/page-cardiopatias-congenitas.js';
+        wp_register_script('cardiopatiasCongenitas_js', $cardiopatiasCongenitasJsFileURI, array('jquery'), $version, true);
+        wp_enqueue_script('cardiopatiasCongenitas_js');
+    }
+
     // Localize Script
     wp_localize_script('main_js', 'lm_params', array(
         'ajaxurl' => admin_url('admin-ajax.php'),
