@@ -183,6 +183,12 @@
 	word-break: break-word;
 }
 
+.etapaEspecialidadesTextoImagenCTA .text p {
+	margin-bottom: 12px;
+}
+
+
+
 .paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
 	padding: 84px 0 84px;
 }

@@ -27,7 +27,7 @@ $imagen_id                = !empty($grupo_texto_imagen_cta["imagen"]['ID']) ? $g
             <?php endif; ?>
 
             <?php if($descripcion) : ?>
-                <div class="heading--18 color--263956">
+                <div class="heading--18 color--263956 text">
                 <?php echo $descripcion;?>
                 </div>
             <?php endif; ?>
