@@ -650,7 +650,7 @@
             ]
         },
         {
-            "key": "field_67a525d336dd6",
+            "key": "field_67a5596460fa9",
             "label": "Texto descripcion banner 2",
             "name": "",
             "aria-label": "",
@@ -667,8 +667,8 @@
             "endpoint": 0
         },
         {
-            "key": "field_67a525db36dd7",
-            "label": "Mostrar Texto Descripción",
+            "key": "field_67a5596960faa",
+            "label": "Mostrar Sección 2",
             "name": "mostrar_texto_desc_banner_2",
             "aria-label": "",
             "type": "true_false",
@@ -687,7 +687,7 @@
             "ui": 1
         },
         {
-            "key": "field_67a525e136dd8",
+            "key": "field_67a5597660fab",
             "label": "Grupo texto descripcion banner 2",
             "name": "grupo_texto_desc_banner_2",
             "aria-label": "",
@@ -697,7 +697,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_67a525db36dd7",
+                        "field": "field_67a5596960faa",
                         "operator": "==",
                         "value": "1"
                     }
@@ -711,7 +711,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_67a525e136dd9",
+                    "key": "field_67a5597660fac",
                     "label": "Posicion",
                     "name": "posicion",
                     "aria-label": "",
@@ -733,7 +733,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a525e136dda",
+                    "key": "field_67a5597660fad",
                     "label": "Subtitulo",
                     "name": "subtitulo",
                     "aria-label": "",
@@ -753,7 +753,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a525e136ddb",
+                    "key": "field_67a5597660fae",
                     "label": "Titulo",
                     "name": "titulo",
                     "aria-label": "",
@@ -773,7 +773,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a525e136ddc",
+                    "key": "field_67a5597660faf",
                     "label": "Descripcion",
                     "name": "descripcion",
                     "aria-label": "",
@@ -793,7 +793,7 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_67a525e136ddd",
+                    "key": "field_67a5597660fb0",
                     "label": "Imagen",
                     "name": "imagen",
                     "aria-label": "",
@@ -818,7 +818,7 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_67a525e136dde",
+                    "key": "field_67a5597660fb1",
                     "label": "Descripcion 2",
                     "name": "descripcion_2",
                     "aria-label": "",
@@ -840,7 +840,7 @@
             ]
         },
         {
-            "key": "field_67a52afaa9100",
+            "key": "field_67a55a00a5b08",
             "label": "Texto descripcion banner 3",
             "name": "",
             "aria-label": "",
@@ -857,8 +857,8 @@
             "endpoint": 0
         },
         {
-            "key": "field_67a52b01a9101",
-            "label": "Mostrar Texto Descripción 3",
+            "key": "field_67a55a07a5b09",
+            "label": "Mostrar Sección 3",
             "name": "mostrar_texto_desc_banner_3",
             "aria-label": "",
             "type": "true_false",
@@ -877,7 +877,7 @@
             "ui": 1
         },
         {
-            "key": "field_67a52b13a9102",
+            "key": "field_67a55a0da5b0a",
             "label": "Grupo texto descripcion banner 3",
             "name": "grupo_texto_desc_banner_3",
             "aria-label": "",
@@ -887,7 +887,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_67a52b01a9101",
+                        "field": "field_67a55a07a5b09",
                         "operator": "==",
                         "value": "1"
                     }
@@ -901,7 +901,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_67a52b13a9103",
+                    "key": "field_67a55a0da5b0b",
                     "label": "Posicion",
                     "name": "posicion",
                     "aria-label": "",
@@ -923,7 +923,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a52b13a9104",
+                    "key": "field_67a55a0da5b0c",
                     "label": "Subtitulo",
                     "name": "subtitulo",
                     "aria-label": "",
@@ -943,7 +943,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a52b13a9105",
+                    "key": "field_67a55a0da5b0d",
                     "label": "Titulo",
                     "name": "titulo",
                     "aria-label": "",
@@ -963,7 +963,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_67a52b13a9106",
+                    "key": "field_67a55a0da5b0e",
                     "label": "Descripcion",
                     "name": "descripcion",
                     "aria-label": "",
@@ -983,7 +983,7 @@
                     "new_lines": ""
                 },
                 {
-                    "key": "field_67a52b13a9107",
+                    "key": "field_67a55a0da5b0f",
                     "label": "Imagen",
                     "name": "imagen",
                     "aria-label": "",
@@ -1008,7 +1008,7 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_67a52b13a9108",
+                    "key": "field_67a55a0ea5b10",
                     "label": "Descripcion 2",
                     "name": "descripcion_2",
                     "aria-label": "",
@@ -1996,6 +1996,26 @@
                     "append": ""
                 },
                 {
+                    "key": "field_67703602eac88",
+                    "label": "Descripción",
+                    "name": "descripcion",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
                     "key": "field_66f4b1bc105b5",
                     "label": "Items",
                     "name": "items",
@@ -2084,217 +2104,6 @@
                             "placeholder": "",
                             "new_lines": "",
                             "parent_repeater": "field_66f4b1bc105b5"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "key": "field_67a148f2f861b",
-            "label": "Acordeón",
-            "name": "",
-            "aria-label": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_67a148fcf861c",
-            "label": "Mostrar Acordeón",
-            "name": "mostrar_acordion",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "Si",
-            "ui_off_text": "No",
-            "ui": 1
-        },
-        {
-            "key": "field_67a14904f861d",
-            "label": "Grupo Acordeón",
-            "name": "grupo_acordion",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_67a148fcf861c",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_67a14904f861e",
-                    "label": "Posicion",
-                    "name": "posicion",
-                    "aria-label": "",
-                    "type": "number",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "min": "",
-                    "max": "",
-                    "placeholder": "",
-                    "step": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_67a14904f8620",
-                    "label": "Subtitulo",
-                    "name": "subtitulo",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_67a14904f8621",
-                    "label": "Titulo",
-                    "name": "titulo",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_67a244d3587fe",
-                    "label": "Descripción",
-                    "name": "descripcion",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_67a14904f8622",
-                    "label": "Items",
-                    "name": "items",
-                    "aria-label": "",
-                    "type": "repeater",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "layout": "table",
-                    "pagination": 0,
-                    "min": 0,
-                    "max": 0,
-                    "collapsed": "",
-                    "button_label": "Agregar Fila",
-                    "rows_per_page": 20,
-                    "sub_fields": [
-                        {
-                            "key": "field_67a14904f8624",
-                            "label": "Titulo",
-                            "name": "titulo",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "parent_repeater": "field_67a14904f8622"
-                        },
-                        {
-                            "key": "field_67a14904f8625",
-                            "label": "Detalle",
-                            "name": "detalle",
-                            "aria-label": "",
-                            "type": "wysiwyg",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1,
-                            "delay": 0,
-                            "parent_repeater": "field_67a14904f8622"
                         }
                     ]
                 }
@@ -2988,8 +2797,8 @@
             ]
         },
         {
-            "key": "field_675c537c9679c",
-            "label": "Tarjetas imagen texto",
+            "key": "field_67633dd39f70f",
+            "label": "Tab tarjeta texto imagen",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -3005,9 +2814,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_675c53b19679d",
+            "key": "field_67633df39f710",
             "label": "Mostrar Sección",
-            "name": "mostrar_tarjeta_imagen_texto",
+            "name": "mostrar_tab_tarjeta_texto_imagen",
             "aria-label": "",
             "type": "true_false",
             "instructions": "",
@@ -3025,9 +2834,9 @@
             "ui": 1
         },
         {
-            "key": "field_675c53f8967a5",
-            "label": "Tarjetas Imagen Texto",
-            "name": "tarjetas_imagen_texto",
+            "key": "field_67633e129f711",
+            "label": "Grupo tab tarjeta texto imagen",
+            "name": "grupo_tab_tarjeta_texto_imagen",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -3035,7 +2844,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_675c53b19679d",
+                        "field": "field_67633df39f710",
                         "operator": "==",
                         "value": "1"
                     }
@@ -3049,7 +2858,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6763356679a49",
+                    "key": "field_67633e709f716",
                     "label": "Posicion",
                     "name": "posicion",
                     "aria-label": "",
@@ -3071,7 +2880,506 @@
                     "append": ""
                 },
                 {
-                    "key": "field_675c545e967ac",
+                    "key": "field_67633e459f712",
+                    "label": "Subtitulo",
+                    "name": "subtitulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67633e539f713",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67633e5b9f714",
+                    "label": "Descripción",
+                    "name": "descripcion",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_67633e689f715",
+                    "label": "Imagen",
+                    "name": "imagen",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6782b4b047d62",
+                    "label": "Especialidad",
+                    "name": "especialidad",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6782b4c447d63",
+                    "label": "Nombre pagina",
+                    "name": "nombre_pagina",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_677044c01ce84",
+            "label": "Acordion",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_677044d21ce85",
+            "label": "Mostrar Sección",
+            "name": "mostrar_acordion",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Si",
+            "ui_off_text": "No",
+            "ui": 1
+        },
+        {
+            "key": "field_677044ee1ce86",
+            "label": "Grupo acordion",
+            "name": "grupo_acordion",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_677044d21ce85",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6770455cbcff3",
+                    "label": "Posicion",
+                    "name": "posicion",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_677045001ce87",
+                    "label": "Subtitulo",
+                    "name": "subtitulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_677045071ce88",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_6770450c1ce89",
+                    "label": "Descripcion",
+                    "name": "descripcion",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_677045191ce8a",
+                    "label": "items",
+                    "name": "items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Agregar Fila",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_677045211ce8b",
+                            "label": "Titulo",
+                            "name": "titulo",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_677045191ce8a"
+                        },
+                        {
+                            "key": "field_6770452a1ce8c",
+                            "label": "Detalle",
+                            "name": "detalle",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "",
+                            "parent_repeater": "field_677045191ce8a"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_67708232a8389",
+            "label": "Targetas grid 3",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67708214a8388",
+            "label": "Mostrar Sección",
+            "name": "mostrar_targetas_grid_3",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Si",
+            "ui_off_text": "No",
+            "ui": 1
+        },
+        {
+            "key": "field_677081f6a837e",
+            "label": "Grupo targetas grid",
+            "name": "grupo_targetas_grid_3",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67708214a8388",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_677081f6a837f",
+                    "label": "Posicion",
+                    "name": "posicion",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_677081f6a8380",
+                    "label": "Fondo",
+                    "name": "fondo",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#ACF",
+                    "enable_opacity": 1,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_677081f7a8381",
+                    "label": "Subtitulo",
+                    "name": "subtitulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_677081f7a8382",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_677081f7a8383",
+                    "label": "Descripción",
+                    "name": "descripcion",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_677081f7a8384",
                     "label": "Items",
                     "name": "items",
                     "aria-label": "",
@@ -3093,7 +3401,33 @@
                     "rows_per_page": 20,
                     "sub_fields": [
                         {
-                            "key": "field_675c552aa8de1",
+                            "key": "field_677081f7a8385",
+                            "label": "Imagen",
+                            "name": "imagen",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "parent_repeater": "field_677081f7a8384"
+                        },
+                        {
+                            "key": "field_677081f7a8386",
                             "label": "Titulo",
                             "name": "titulo",
                             "aria-label": "",
@@ -3111,14 +3445,14 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": "",
-                            "parent_repeater": "field_675c545e967ac"
+                            "parent_repeater": "field_677081f7a8384"
                         },
                         {
-                            "key": "field_675c5541a8de2",
-                            "label": "content",
-                            "name": "content",
+                            "key": "field_677081f7a8387",
+                            "label": "Descripcion",
+                            "name": "descripcion",
                             "aria-label": "",
-                            "type": "relationship",
+                            "type": "textarea",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -3127,21 +3461,269 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": "",
-                            "post_status": "",
-                            "taxonomy": "",
-                            "filters": [
-                                "search",
-                                "post_type",
-                                "taxonomy"
-                            ],
-                            "return_format": "object",
-                            "min": "",
-                            "max": "",
-                            "elements": "",
-                            "parent_repeater": "field_675c545e967ac"
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "",
+                            "parent_repeater": "field_677081f7a8384"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "key": "field_67708e96916aa",
+            "label": "Contacto",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_67708e9e916ab",
+            "label": "Mostrar Sección",
+            "name": "mostrar_contacto",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "Si",
+            "ui_off_text": "No",
+            "ui": 1
+        },
+        {
+            "key": "field_67708ec0916ac",
+            "label": "Grupo contacto",
+            "name": "grupo_contacto",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_67708e9e916ab",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_67708ec0916ad",
+                    "label": "Posicion",
+                    "name": "posicion",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67708ec0916ae",
+                    "label": "Fondo",
+                    "name": "fondo",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#A7E6D7",
+                    "enable_opacity": 1,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_67708ec0916af",
+                    "label": "Subtitulo",
+                    "name": "subtitulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67708ec0916b0",
+                    "label": "Titulo",
+                    "name": "titulo",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_67708ec0916b1",
+                    "label": "items",
+                    "name": "items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Agregar Fila",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_67708f08916b4",
+                            "label": "Icono",
+                            "name": "icono",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium",
+                            "parent_repeater": "field_67708ec0916b1"
+                        },
+                        {
+                            "key": "field_67708f18916b5",
+                            "label": "Texto",
+                            "name": "texto",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_67708ec0916b1"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_67708ec0916b2",
+                    "label": "CTA",
+                    "name": "cta",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_67708ec0916b3",
+                    "label": "Imagen",
+                    "name": "imagen",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
                 }
             ]
         }
@@ -3149,289 +3731,366 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cardiologia-clinica-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cardiologia-clinica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cirugia-general.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cirugia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cirugia-plastica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cirugia-torax.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cuidados-intensivos-coronaria.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cuidados-intensivos-neonatal.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica-cardiovascular.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-cuidados-intensivos-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19732"
+                "value": "page-template-lg\/page-cuidados-intensivos-quirurgica-cardiovascular.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19777"
+                "value": "page-template-lg\/page-endocrinologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19787"
+                "value": "page-template-lg\/page-endocrinologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19797"
+                "value": "page-template-lg\/page-falla-cardiaca.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19822"
+                "value": "page-template-lg\/page-fisiatria.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gastroenterologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gastroenterologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-genetica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-genetica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-gerontologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19897"
+                "value": "page-template-lg\/page-ginecologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "19895"
+                "value": "page-template-lg\/page-hemato-oncologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-infectologia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-neurocirugia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-neurologia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-ortopedia-columna.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-ortopedia-hombro-codo.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-ortopedia-pediatrica.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-ortopedia-rodilla.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-ortopedia.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-otorrino.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-tecnologia-pet-ct.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "default"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "15626"
+                "value": "page-template-lg\/page-trasplante-corazon.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24404"
+                "value": "page-template-lg\/page-trasplante-renal.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24456"
+                "value": "page-template-lg\/page-trasplantes-corazon.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24468"
+                "value": "page-template-lg\/page-trasplantes-higado.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24170"
+                "value": "page-template-lg\/page-trasplantes-pancreas.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24132"
+                "value": "page-template-lg\/page-trasplantes-pulmon.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24358"
+                "value": "page-template-lg\/page-trasplantes-rinon.php"
             }
         ],
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "24386"
+                "value": "page-template-lg\/page-trasplantes.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-urgencias.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-banco-sangre.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neumologia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neurologia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-anestesiologia.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-imagenes-diagnosticas.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-neuropsicologia.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-cardiologia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-ecocardiografia-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-cirugia-cardiovascular-pediatrica.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-hemodinamia-pediatrica.php"
             }
         ]
     ],
@@ -3444,5 +4103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738885454
+    "modified": 1738889766
 }
