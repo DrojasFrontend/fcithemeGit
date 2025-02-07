@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Neuropsicología
+Template Name: Plantilla Especialidad | Cardiología pediátrica
 */ 
 
 get_header();
@@ -55,7 +55,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_texto_desc_banner) : ?>
     <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaHemodinamia'));?>
     <!-- Fin Texto Descripcion Banner -->
 <?php endif; ?>
 
@@ -73,7 +73,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_texto_imagen_cta_2) : ?>
     <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-especialidades', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas paddingBottom'));?>
     <!-- Fin Texto Imagen 2 -->
 <?php endif; ?>
 
@@ -97,7 +97,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_experto) : ?>
     <!-- Experto -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaEspecialidadesWhite"));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaHemodinamia"));?>
     <!-- Fin Experto -->
 <?php endif; ?>
 

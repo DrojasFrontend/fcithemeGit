@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Neuropsicología
+Template Name: Plantilla Especialidad | Anestesiología
 */ 
 
 get_header();

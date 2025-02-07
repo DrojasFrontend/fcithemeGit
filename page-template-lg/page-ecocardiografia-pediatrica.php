@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Neuropsicología
+Template Name: Plantilla Especialidad | Ecocardiografía pediátrica
 */ 
 
 get_header();
@@ -11,6 +11,8 @@ $mostrar_imagen_texto_cta             = get_field('mostrar_imagen_texto_cta');
 $mostrar_imagen_texto_cta_invertido   = get_field('mostrar_imagen_texto_cta_invertido');
 $mostrar_bloque_texto                 = get_field('mostrar_bloque_texto');
 $mostrar_texto_desc_banner            = get_field('mostrar_texto_desc_banner');
+$mostrar_texto_desc_banner_2          = get_field('mostrar_texto_desc_banner_2');
+$mostrar_texto_desc_banner_3          = get_field('mostrar_texto_desc_banner_3');
 $mostrar_lista_numerada               = get_field('mostrar_lista_numerada');
 $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
@@ -19,6 +21,7 @@ $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
 $mostrar_acordion                     = get_field('mostrar_acordion');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
+$mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
 
 ?>
 <!-- CONTENIDO -->
@@ -55,7 +58,19 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_texto_desc_banner) : ?>
     <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaHemodinamia'));?>
+    <!-- Fin Texto Descripcion Banner -->
+<?php endif; ?>
+
+<?php if($mostrar_texto_desc_banner_2) : ?>
+    <!-- Texto Descripcion Banner -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-especialidades', array('class' =>'paginaCardiologiasClinicas'));?>
+    <!-- Fin Texto Descripcion Banner -->
+<?php endif; ?>
+
+<?php if($mostrar_texto_desc_banner_3) : ?>
+    <!-- Texto Descripcion Banner -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-3', array('class' =>'paginaCardiologiasClinicas'));?>
     <!-- Fin Texto Descripcion Banner -->
 <?php endif; ?>
 
@@ -67,13 +82,13 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_items_iconos) : ?>
     <!-- Items Iconos -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos');?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos',  array('class' => 'paginaEcocardiografia') );?>
     <!-- Fin Items Iconos -->
 <?php endif; ?>
 
 <?php if($mostrar_texto_imagen_cta_2) : ?>
     <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-especialidades', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas paddingBottom'));?>
     <!-- Fin Texto Imagen 2 -->
 <?php endif; ?>
 
@@ -97,13 +112,19 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_experto) : ?>
     <!-- Experto -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaEspecialidadesWhite"));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaHemodinamia"));?>
     <!-- Fin Experto -->
 <?php endif; ?>
 
 <?php if($mostrar_ctas) : ?>
     <!-- CTAS -->
     <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
+    <!-- Fin CTAS -->
+<?php endif; ?>
+
+<?php if($mostrar_tarjetas_imagen_texto) : ?>
+    <!-- CTAS -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'tarjetas-imagen-texto');?>
     <!-- Fin CTAS -->
 <?php endif; ?>
 

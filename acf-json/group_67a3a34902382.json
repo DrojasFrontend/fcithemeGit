@@ -2241,13 +2241,6 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "24170"
-            }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
                 "value": "24179"
             }
         ],
@@ -2271,13 +2264,6 @@
                 "operator": "==",
                 "value": "24218"
             }
-        ],
-        [
-            {
-                "param": "page",
-                "operator": "==",
-                "value": "24132"
-            }
         ]
     ],
     "menu_order": 0,
@@ -2289,5 +2275,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1738777670
+    "modified": 1738885361
 }
