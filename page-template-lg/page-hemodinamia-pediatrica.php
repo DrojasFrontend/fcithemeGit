@@ -12,7 +12,6 @@ $mostrar_imagen_texto_cta_invertido   = get_field('mostrar_imagen_texto_cta_inve
 $mostrar_bloque_texto                 = get_field('mostrar_bloque_texto');
 $mostrar_texto_desc_banner            = get_field('mostrar_texto_desc_banner');
 $mostrar_texto_desc_banner_2          = get_field('mostrar_texto_desc_banner_2');
-$mostrar_texto_desc_banner_3          = get_field('mostrar_texto_desc_banner_3');
 $mostrar_lista_numerada               = get_field('mostrar_lista_numerada');
 $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
@@ -28,25 +27,25 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 <main class="paginaEtapaExpecialidades">
 <?php if($mostrar_hero) : ?>
     <!-- Hero -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'hero-especialidades', array('class' => 'paginaCardiologiasClinicas') );?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaHemodinamiaPed') );?>
     <!-- Fin Hero -->
 <?php endif; ?>
 
 <?php if($mostrar_texto_imagen_cta) : ?>
     <!-- Texto Imagen CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
     <!-- Fin Texto Imagen CTA -->
 <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta) : ?>
     <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
     <!-- Fin Imagen Texto CTA -->
 <?php endif; ?>
 
 <?php if($mostrar_imagen_texto_cta_invertido) : ?>
     <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
     <!-- Fin Imagen Texto CTA -->
 <?php endif; ?>
 
@@ -58,19 +57,13 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
 <?php if($mostrar_texto_desc_banner) : ?>
     <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaHemodinamiaTextDesBanner'));?>
     <!-- Fin Texto Descripcion Banner -->
 <?php endif; ?>
 
 <?php if($mostrar_texto_desc_banner_2) : ?>
     <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-especialidades', array('class' =>'paginaHemodinamia'));?>
-    <!-- Fin Texto Descripcion Banner -->
-<?php endif; ?>
-
-<?php if($mostrar_texto_desc_banner_3) : ?>
-    <!-- Texto Descripcion Banner -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-3', array('class' =>'paginaHemodinamia'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-especialidades', array('class' =>'paginaHemodinamiaTextDesBanner2'));?>
     <!-- Fin Texto Descripcion Banner -->
 <?php endif; ?>
 
@@ -88,7 +81,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
 <?php if($mostrar_texto_imagen_cta_2) : ?>
     <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas paddingBottom'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>' paddingBottom'));?>
     <!-- Fin Texto Imagen 2 -->
 <?php endif; ?>
 

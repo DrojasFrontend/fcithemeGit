@@ -6,6 +6,14 @@
 	display: none;
 }
 
+p:empty {
+	display: none;
+}
+
+li::marker {
+	font-size: 10px;
+}
+
 @media only screen and (min-width: 1024px) {
 	.desktop {
 		display: block;
@@ -128,8 +136,16 @@
 		padding: 70px 40px 64px 0;
 	}
 
+	.paginaCardiologiaPed .etapaEspecialidadesHero__text {
+		padding: 100px 40px 60px 0;
+	}
+
 	.paginaCardiopatia .etapaEspecialidadesHero__text {
 		padding: 76px 10px 76px 0;
+	}
+
+	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__text {
+		padding: 100px 30px 20px 0;
 	}
 
 	.paginaCardiopatia .etapaEspecialidadesHero__text .heading--64 {
@@ -159,8 +175,16 @@
 		column-gap: 229px;
 	}
 
-	.paginaCirugiaGeneral .etapaEspecialidadesHero__fondo {
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__fondo,
+	.paginaCardiologiaPed .etapaEspecialidadesHero__fondo,
+	.paginaEcocardiografiaPed .etapaEspecialidadesHero__fondo,
+	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__fondo,
+	.paginaHemodinamiaPed .etapaEspecialidadesHero__fondo {
 		column-gap: 0;
+	}
+
+	.paginaImagenesDC .etapaEspecialidadesHero__fondo {
+		column-gap: 73px;
 	}
 
 	.paginaOtorrino .etapaEspecialidadesHero__fondo {
@@ -171,7 +195,12 @@
 		grid-template-columns: 3fr 2fr;
 	}
 
-	.paginaCirugiaGeneral .etapaEspecialidadesHero__grid {
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__grid,
+	.paginaImagenesDC .etapaEspecialidadesHero__grid,
+	.paginaCardiologiaPed .etapaEspecialidadesHero__grid,
+	.paginaEcocardiografiaPed .etapaEspecialidadesHero__grid,
+	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__grid,
+	.paginaHemodinamiaPed .etapaEspecialidadesHero__grid {
 		grid-template-columns: 1fr 1fr;
 	}
 }
@@ -187,12 +216,6 @@
 	margin-bottom: 12px;
 }
 
-
-
-.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
-	padding: 84px 0 84px;
-}
-
 .paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
 .paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
 .paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
@@ -200,7 +223,8 @@
 .paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
 .paginaGinecologia.etapaEspecialidadesTextoImagenCTA,
 .paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA,
-.paginaInfectologia.etapaEspecialidadesTextoImagenCTA {
+.paginaInfectologia.etapaEspecialidadesTextoImagenCTA,
+.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
 	padding: 40px 0;
 }
 
@@ -239,6 +263,20 @@
 	margin: 0;
 	padding: 18px 0 18px 18px;
 	line-height: 24px;
+}
+
+.paginaConsultaExterna .etapaEspecialidadesTextoImagenCTA__info ul {
+	padding-top: 0;
+}
+
+.paginaConsultaExterna .etapaEspecialidadesTextoImagenCTA__info li {
+	color: var(--263956);
+	font-family: var(--ff-sans);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
 }
 
 .etapaEspecialidadesTextoImagenCTA__info li {
@@ -293,7 +331,8 @@
 	.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
 	.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
 	.paginaGinecologia.etapaEspecialidadesTextoImagenCTA,
-	.paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA {
+	.paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA,
+	.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0;
 	}
 
@@ -470,7 +509,8 @@
 }
 
 .paginaBancoSangre .etapaEspecialidadesTextDescBanner__grid,
-.paginaHematoOncologia .etapaEspecialidadesTextDescBanner__grid {
+.paginaHematoOncologia .etapaEspecialidadesTextDescBanner__grid,
+.paginaHemodinamiaTextDesBanner2 .etapaEspecialidadesTextDescBanner__grid {
 	padding-bottom: 0;
 }
 
@@ -503,7 +543,8 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	.etapaEspecialidadesTextDescBanner {
+	.etapaEspecialidadesTextDescBanner,
+	.paginaUCIPedCoronaria.etapaEspecialidadesTextDescBanner {
 		padding: 84px 0;
 	}
 
@@ -528,7 +569,8 @@
 		padding-bottom: 20px;
 	}
 
-	.etapaEspecialidadesTextDescBanner__img, .etapaEspecialidadesTextDescBanner__desc-esp {
+	.etapaEspecialidadesTextDescBanner__img,
+	.etapaEspecialidadesTextDescBanner__desc-esp {
 		max-width: 990px;
 		height: auto;
 		margin: auto;
@@ -746,7 +788,7 @@
 	text-align: left;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
 	.paginaEcocardiografia .etapaEspecialidadesItemsIconos__titulo {
 		padding-left: 0;
 		padding-bottom: 40px;
@@ -835,7 +877,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 		padding: 60px 0px 0px 0px;
 	}
 
-	.paginaElectroFisiologiaPediatrica .etapaEspecialidadesTextDescBanner__grid  {
+	.paginaElectroFisiologiaPediatrica .etapaEspecialidadesTextDescBanner__grid {
 		grid-template-columns: 1fr 1fr;
 		column-gap: 20px;
 		padding: 60px;
@@ -862,7 +904,8 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.paginaMedicinaNuclear ul.etapaEspecialidadesItemsIconos__items,
 	.paginaGastroenterologia ul.etapaEspecialidadesItemsIconos__items,
 	.paginaFallaCardiaca ul.etapaEspecialidadesItemsIconos__items,
-	.paginaInfectologia ul.etapaEspecialidadesItemsIconos__items {
+	.paginaInfectologia ul.etapaEspecialidadesItemsIconos__items,
+	.paginaCirugiaCardiovacularPed ul.etapaEspecialidadesItemsIconos__items {
 		column-gap: 60px;
 	}
 
@@ -1040,7 +1083,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	text-align: left;
 }
 
-.paginaReumatologiaPediatrica .etapaEspecialidadesTargetaGrid__titulo .heading--48 {
+.paginaReumatologiaPediatrica
+	.etapaEspecialidadesTargetaGrid__titulo
+	.heading--48 {
 	text-align: center;
 }
 
@@ -1836,6 +1881,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	margin-top: 50px;
 }
 
+.paginaOftalmologia.especialidadesExpertos {
+	margin-top: 0;
+}
+
 .especialidadesExpertos .swiperEspecialidadesExpertos {
 	display: none;
 }
@@ -1860,7 +1909,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	padding-left: 16px !important;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
 	.paddingBottom {
 		padding-bottom: 84px;
 	}
@@ -1879,23 +1928,18 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	background-color: rgb(199 218 239 / 15%);
 }
 
-.paginaEspecialidadesWhite .especialidadesExpertos__fondo {
-	padding: 40px 0;
-	background-color: rgb(255, 255, 255);
-}
-
-@media(min-width: 1024px) {
-	.paginaEspecialidadesWhite .especialidadesExpertos__fondo {
-		padding: 84px 0;
-		background-color: rgb(255, 255, 255);
-	}
-}
-
+.paginaEspecialidadesWhite .especialidadesExpertos__fondo,
 .paginaOftalmologia .especialidadesExpertos__fondo {
 	padding: 40px 0;
 	background-color: rgb(255, 255, 255);
 }
 
+@media (min-width: 1024px) {
+	.paginaEspecialidadesWhite .especialidadesExpertos__fondo,
+	.paginaOftalmologia .especialidadesExpertos__fondo {
+		padding: 84px 0;
+	}
+}
 
 .paginaFisiatria .especialidadesExpertos__fondo {
 	background-color: var(--fff);
@@ -2160,9 +2204,15 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .paginaCardiologiasClinicas .etapaEspecialidadesHero__text {
-	padding: 76px 10px 76px 0;
+	padding: 76px 16px 76px 0;
+}
 
-	padding-right: 16px;
+.paginaEcocardiografiaPed .etapaEspecialidadesHero__text {
+	padding: 100px 20px 60px 0;
+}
+
+.paginaHemodinamiaPed .etapaEspecialidadesHero__text {
+	padding: 100px 20px 30px 0;
 }
 
 .paginaCardiologiasClinicas .etapaEspecialidadesHero__text .heading--18 {
@@ -2174,7 +2224,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .paginaHematoOncologia.etapaEspecialidadesTextDescBanner,
-.paginaNeumologiaPediatrica.etapaEspecialidadesTextDescBanner {
+.paginaNeumologiaPediatrica.etapaEspecialidadesTextDescBanner,
+.paginaEcocardiografiaPed.etapaEspecialidadesTextDescBanner,
+.paginaCirugiaCardiovacularPed.etapaEspecialidadesTextDescBanner,
+.paginaHemodinamiaTextDesBanner2.etapaEspecialidadesTextDescBanner {
 	background-color: rgb(170 204 255 / 10%);
 }
 
@@ -2182,7 +2235,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	background-color: #fff;
 }
 
-.paginaCardiologiaClinicaPediatrica .etapaEspecialidadesTextDescBanner__grid {
+.paginaCardiologiaClinicaPediatrica .etapaEspecialidadesTextDescBanner__grid,
+.paginaEcocardiografiaPed .etapaEspecialidadesTextDescBanner__grid,
+.paginaCirugiaCardiovacularPed .etapaEspecialidadesTextDescBanner__grid,
+.paginaHemodinamia .etapaEspecialidadesTextDescBanner__grid {
 	padding-bottom: 0px;
 }
 
@@ -2233,8 +2289,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	background-color: #fff;
 }
 
-.paginaHemodinamia.etapaEspecialidadesTextDescBanner {
-	background: rgba(170, 204, 255, 0.10);
+.paginaHemodinamia.etapaEspecialidadesTextDescBanner,
+.paginaHemodinamiaTextDesBanner.etapaEspecialidadesTextDescBanner {
+	background: rgba(170, 204, 255, 0.1);
 }
 
 .paginaHemodinamia .especialidadesExpertos__fondo {
@@ -2266,19 +2323,19 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .etapaEspecialidadesTextDescBanner__info li {
+	display: flex;
+	align-items: center;
 	position: relative;
 	width: fit-content;
+	column-gap: 27px;
 }
 
 .etapaEspecialidadesTextDescBanner__info li:after {
 	content: "";
 	display: block;
-	position: absolute;
-	top: 50%;
-	right: -50px;
+	position: relative;
 	width: 20px;
 	height: 15px;
-	transform: translate(-50%, -50%);
 	background: none;
 	background-image: url(/wp-content/themes/fcitheme/assets/images/iconos/flecha.png);
 	background-size: contain;
@@ -2487,7 +2544,11 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .etapaEspecialidadesAccordion {
-	padding: 84px 0;
+	padding: 40px 0;
+}
+
+.paginaImagenesDC.etapaEspecialidadesAccordion {
+	padding: 40px 0 0;
 }
 
 .etapaEspecialidadesAccordion__titulo {
@@ -2516,6 +2577,14 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 @media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesAccordion {
+		padding: 84px 0;
+	}
+
+	.paginaImagenesDC.etapaEspecialidadesAccordion {
+		padding: 84px 0 0;
+	}
+
 	.etapaEspecialidadesAccordion__titulo,
 	.etapaEspecialidadesAccordion__titulo .heading--48 {
 		text-align: center;
@@ -2524,4 +2593,4 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesAccordion__titulo {
 		margin-bottom: 42px;
 	}
- }
+}

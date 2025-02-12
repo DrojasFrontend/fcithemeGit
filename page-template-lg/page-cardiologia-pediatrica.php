@@ -25,25 +25,25 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 <main class="paginaEtapaExpecialidades">
 <?php if($mostrar_hero) : ?>
     <!-- Hero -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'hero-especialidades', array('class' => 'paginaCardiologiasClinicas') );?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaCardiologiaPed') );?>
     <!-- Fin Hero -->
 <?php endif; ?>
 
 <?php if($mostrar_texto_imagen_cta) : ?>
     <!-- Texto Imagen CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
     <!-- Fin Texto Imagen CTA -->
 <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta) : ?>
     <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
     <!-- Fin Imagen Texto CTA -->
 <?php endif; ?>
 
 <?php if($mostrar_imagen_texto_cta_invertido) : ?>
     <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
     <!-- Fin Imagen Texto CTA -->
 <?php endif; ?>
 
@@ -73,7 +73,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_texto_imagen_cta_2) : ?>
     <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas paddingBottom'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>' paddingBottom'));?>
     <!-- Fin Texto Imagen 2 -->
 <?php endif; ?>
 

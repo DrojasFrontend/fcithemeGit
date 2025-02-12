@@ -35,12 +35,6 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
-     <?php if($mostrar_imagen_texto_cta) : ?>
-      <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaOftalmologia'));?>
-      <!-- Fin Imagen Texto CTA -->
-    <?php endif; ?>
-
     <?php if($mostrar_imagen_texto_cta_invertido) : ?>
       <!-- Imagen Texto CTA -->
         <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>

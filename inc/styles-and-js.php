@@ -167,11 +167,6 @@ function enqueue_scripts() {
         'page-template-lg/page-hemodinamia-pediatrica.php',
         'page-template-lg/page-cirugia-cardiovascular-pediatrica.php',
         'page-template-lg/page-ecocardiografia-pediatrica.php',
-
-
-
-
-
     );
 
     if(is_page_template($pageEspecialidades) ) {
