@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Imágenes Diagnósticas y Cardiovasculares
+Template Name: Plantilla Especialidad | Cirugía Vascular y Endovascular
 */ 
 
 get_header();
@@ -11,6 +11,7 @@ $mostrar_imagen_texto_cta             = get_field('mostrar_imagen_texto_cta');
 $mostrar_imagen_texto_cta_invertido   = get_field('mostrar_imagen_texto_cta_invertido');
 $mostrar_bloque_texto                 = get_field('mostrar_bloque_texto');
 $mostrar_texto_desc_banner            = get_field('mostrar_texto_desc_banner');
+$mostrar_texto_desc_banner_2          = get_field('mostrar_texto_desc_banner_2');
 $mostrar_lista_numerada               = get_field('mostrar_lista_numerada');
 $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
@@ -19,13 +20,14 @@ $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
 $mostrar_acordion                     = get_field('mostrar_acordion');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
+$mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
 
 ?>
 <!-- CONTENIDO -->
 <main class="paginaEtapaExpecialidades">
 <?php if($mostrar_hero) : ?>
     <!-- Hero -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaImagenesDC') );?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaCirugiaVascularEndovascular') );?>
     <!-- Fin Hero -->
 <?php endif; ?>
 
@@ -43,7 +45,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_imagen_texto_cta_invertido) : ?>
     <!-- Imagen Texto CTA -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCirugiaVascularEndovascular__fondoCTA'));?>
     <!-- Fin Imagen Texto CTA -->
 <?php endif; ?>
 
@@ -56,6 +58,12 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 <?php if($mostrar_texto_desc_banner) : ?>
     <!-- Texto Descripcion Banner -->
     <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
+    <!-- Fin Texto Descripcion Banner -->
+<?php endif; ?>
+
+<?php if($mostrar_texto_desc_banner_2) : ?>
+    <!-- Texto Descripcion Banner -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner-especialidades', array('class' =>''));?>
     <!-- Fin Texto Descripcion Banner -->
 <?php endif; ?>
 
@@ -73,7 +81,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_texto_imagen_cta_2) : ?>
     <!-- Texto Imagen 2 -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-especialidades', array('class' =>''));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>' '));?>
     <!-- Fin Texto Imagen 2 -->
 <?php endif; ?>
 
@@ -91,19 +99,25 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 
 <?php if($mostrar_acordion) : ?>
     <!-- Accordion -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'accordion', array('class' => 'paginaImagenesDC'));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'accordion');?>
     <!-- Fin Accordion -->
 <?php endif; ?>
 
 <?php if($mostrar_experto) : ?>
     <!-- Experto -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaEspecialidadesWhite"));?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaCirugiaVascularEndovascular__fondoCTA"));?>
     <!-- Fin Experto -->
 <?php endif; ?>
 
 <?php if($mostrar_ctas) : ?>
     <!-- CTAS -->
     <?php get_template_part('template-parts/especialidades/seccion', 'ctas');?>
+    <!-- Fin CTAS -->
+<?php endif; ?>
+
+<?php if($mostrar_tarjetas_imagen_texto) : ?>
+    <!-- CTAS -->
+    <?php get_template_part('template-parts/especialidades/seccion', 'tarjetas-imagen-texto');?>
     <!-- Fin CTAS -->
 <?php endif; ?>
 

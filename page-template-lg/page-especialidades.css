@@ -179,7 +179,8 @@ li::marker {
 	.paginaCardiologiaPed .etapaEspecialidadesHero__fondo,
 	.paginaEcocardiografiaPed .etapaEspecialidadesHero__fondo,
 	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__fondo,
-	.paginaHemodinamiaPed .etapaEspecialidadesHero__fondo {
+	.paginaHemodinamiaPed .etapaEspecialidadesHero__fondo,
+	.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__fondo {
 		column-gap: 0;
 	}
 
@@ -200,7 +201,8 @@ li::marker {
 	.paginaCardiologiaPed .etapaEspecialidadesHero__grid,
 	.paginaEcocardiografiaPed .etapaEspecialidadesHero__grid,
 	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__grid,
-	.paginaHemodinamiaPed .etapaEspecialidadesHero__grid {
+	.paginaHemodinamiaPed .etapaEspecialidadesHero__grid,
+	.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__grid {
 		grid-template-columns: 1fr 1fr;
 	}
 }
@@ -1910,6 +1912,7 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 @media (min-width: 1024px) {
+	
 	.paddingBottom {
 		padding-bottom: 84px;
 	}
@@ -2212,6 +2215,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .paginaHemodinamiaPed .etapaEspecialidadesHero__text {
+	padding: 100px 20px 30px 0;
+}
+
+.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__text {
 	padding: 100px 20px 30px 0;
 }
 
@@ -2593,4 +2600,10 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesAccordion__titulo {
 		margin-bottom: 42px;
 	}
+}
+
+/* Pagina Cirugia Vascular Endovascular */
+
+.paginaCirugiaVascularEndovascular__fondoCTA {
+	background: rgba(170, 204, 255, 0.15);
 }
