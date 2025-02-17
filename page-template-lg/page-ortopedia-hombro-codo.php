@@ -107,7 +107,7 @@ $nombrePagina = !empty($grupo_tab_tarjeta_texto_imagen['nombre_pagina']) ? esc_h
     <?php 
       get_template_part('template-parts/especialidades/seccion', 'tab-tarjeta-texto-imagen', 
         array(
-          'active' => 'Hombro y codo',
+          'active' => 'Ortopedia Hombro y Codo',
           'especialidad' => $especialidad,
           'nombrePagina' => $nombrePagina
         )
