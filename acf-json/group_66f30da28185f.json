@@ -4106,6 +4106,13 @@
                 "operator": "==",
                 "value": "page-template-lg\/page-cirugia-vascular-endovascular.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-template-lg\/page-radiologia-imagenes-diagnosticas.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -4117,5 +4124,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1739510663
+    "modified": 1739554510
 }
