@@ -1,29 +1,21 @@
 <?php 
 $sitename         = esc_html(get_bloginfo('name'));
-// $grupo_hero       = get_field("grupo_hero");
-// $imagen_id        = !empty($grupo_hero["imagen"]['ID']) ? $grupo_hero["imagen"]['ID'] : '';
-// $imagen_id_mobile = !empty($grupo_hero["imagen_mobile"]['ID']) ? $grupo_hero["imagen_mobile"]['ID'] : '';
-// $descripcion      = !empty($grupo_hero["descripcion"]) ? esc_html($grupo_hero["descripcion"]) : '';
-// $titulo           = !empty($grupo_hero["titulo"]) ? esc_html($grupo_hero["titulo"]) : '';
-// $descripcion      = !empty($grupo_hero["descripcion"]) ? $grupo_hero["descripcion"] : '';
-// $ctas             = !empty($grupo_hero["ctas"]) && is_array($grupo_hero["ctas"]) ? $grupo_hero["ctas"] : [];
-
-$imagen_id = "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/hero.png";
-$imagen_id_mobile = "";
-$titulo = "Cardiopatías congénitas";
-$descripcion = "Identificarlas a tiempo puede marcar la diferencia. Realiza los exámenes y recibe atención especializada.";
-
-$hero_cta_url      = "#";
-$hero_cta_titulo   = "Agenda tu cita ahora";
-$hero_cta_target   = "";
+$grupo_hero       = get_field("grupo_hero");
+$imagen_id        = !empty($grupo_hero["imagen"]) ? $grupo_hero["imagen"] : '';
+$imagen_id_mobile = !empty($grupo_hero["imagen_mobile"]) ? $grupo_hero["imagen_mobile"] : '';
+/*$descripcion      = !empty($grupo_hero["descripcion"]) ? esc_html($grupo_hero["descripcion"]) : '';*/
+$titulo           = !empty($grupo_hero["titulo"]) ? esc_html($grupo_hero["titulo"]) : '';
+$descripcion      = !empty($grupo_hero["descripcion"]) ? $grupo_hero["descripcion"] : '';
+$ctas             = !empty($grupo_hero["ctas"]) && is_array($grupo_hero["ctas"]) ? $grupo_hero["ctas"] : [];
 
 ?>
 
 <section class="seccionHero">
   <div class="seccionHero__img">
-    <!-- <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, 'visibleDesktop');?>
-    <?php echo generar_imagen_responsive($imagen_id_mobile, 'custom-size', $sitename, 'visibleMobile');?> -->
-    <img src="<?php echo $imagen_id; ?>" alt="">
+    <img src="<?php echo esc_url($imagen_id['url']); ?>" alt="">
+  </div>
+  <div class="seccionHero__img-mobile">
+    <img src="<?php echo esc_url($imagen_id_mobile['url']); ?>" alt="">
   </div>
   <div class="seccionHero__contenido">
     <div class="container--large">
@@ -37,11 +29,18 @@ $hero_cta_target   = "";
         <?php endif; ?>
       </div>
       <div class="seccionHero__ctas">
+        <?php
+            if (is_array($ctas) && isset($ctas['url'], $ctas['title'], $ctas['target'])) :
+                $url = $ctas['url'];
+                $texto = $ctas['title'];
+                $target = $ctas['target'] ? $ctas['target'] : '_self';
+        ?>
         <a class="boton-v2 boton-v2--rojo-rojo" 
-          href="<?php echo esc_url($hero_cta_url); ?>" 
-          title="<?php echo esc_attr($hero_cta_titulo); ?>">
-          <?php echo esc_html($hero_cta_titulo); ?>
+            href="<?php echo esc_url($url); ?>" 
+            target="<?php echo esc_attr($target); ?>">
+            <?php echo esc_html($texto); ?>
         </a>
+        <?php endif; ?>
       </div>
     </div>
   </div>

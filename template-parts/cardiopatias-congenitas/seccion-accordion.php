@@ -1,28 +1,9 @@
 <?php 
 $sitename       = esc_html(get_bloginfo('name'));
-// $grupo_acordion = get_field('grupo_acordion');
-// $posicion       = !empty($grupo_acordion['posicion']) ? esc_html($grupo_acordion['posicion']) : '';
-// $subtitulo      = !empty($grupo_acordion['subtitulo']) ? esc_html($grupo_acordion['subtitulo']) : '';
-// $titulo         = !empty($grupo_acordion['titulo']) ? esc_html($grupo_acordion['titulo']) : '';
-// $descripcion    = !empty($grupo_acordion['descripcion']) ? esc_html($grupo_acordion['descripcion']) : '';
-// $items          = !empty($grupo_acordion['items']) ? $grupo_acordion['items'] : [];
+  $grupo_acordion = get_field('grupo_acordeon');
+  $titulo         = !empty($grupo_acordion['titulo']) ? esc_html($grupo_acordion['titulo']) : '';
+  $items          = !empty($grupo_acordion['items']) ? $grupo_acordion['items'] : [];
 
-$titulo = "Problemas más frecuentes";
-
-$items = [
-  [
-    'titulo' => 'Título del primer acordeón',
-    'detalle' => 'Contenido detallado del primer acordeón. Aquí puedes poner todo el contenido que necesites mostrar.'
-  ],
-  [
-    'titulo' => 'Título del segundo acordeón',
-    'detalle' => 'Contenido detallado del segundo acordeón. Puede incluir texto formateado, HTML, etc.'
-  ],
-  [
-    'titulo' => 'Título del tercer acordeón',
-    'detalle' => 'Contenido detallado del tercer acordeón. Este es el contenido que se mostrará cuando se expanda.'
-  ]
-];
 ?>
 
 <section class="etapaEspecialidadesAccordion">

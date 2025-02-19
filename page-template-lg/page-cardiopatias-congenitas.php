@@ -26,11 +26,13 @@ get_header();
   <main class="paginaCentroInternacional">
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'hero'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'texto-imagen'); ?>
+    <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'texto-descripcion-tab'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'accordion'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'tarjetas-carusel'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'imagen-texto-cta'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'tarjetas-carusel-horizontal'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'texto-imagen-fondo-cta'); ?>
+    <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'texto-descripcion-items'); ?>
   </main>
 <!-- FIN CONTENIDO -->
 
