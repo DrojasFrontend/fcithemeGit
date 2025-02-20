@@ -29,6 +29,21 @@ $categorias = get_terms_enbotones(get_the_terms($post->id, 'diario_medico_catego
                     <div class="diario_medico_int--contenido__cont">
                         <?php the_content(); ?>
                     </div>
+					<div style="display: flex; align-items: center; justify-content: center;">
+
+															<p class="text-center py-4 m-1">
+									<a href="https://www.lacardio.org/citas-y-teleconsultas/" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
+										Solicitar Cita
+									</a>
+								</p>
+							
+															<p class="text-center py-4 m-1">
+									<a href="https://www.lacardio.org/servicio/cardiologia-pediatrica/" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
+										Conoce la especialidad
+									</a>
+								</p>
+							
+						</div>
                 </div>
             </div>
         </div>

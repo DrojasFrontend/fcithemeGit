@@ -241,6 +241,9 @@ margin: 0;padding: 15px;
     </div>
 -->
     <div >
+        <?php if ($titulo) { ?> 
+            <h1 class="sr-only"><?php echo $titulo ?></h1>
+        <?php } ?>
         <img src="<?= $imagen_banner ?>" alt="" style="width:100%;">
 
         <div class="contenedor-botones-banner">
@@ -264,7 +267,9 @@ margin: 0;padding: 15px;
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 p-5">
-                    <h2 style="color: #002D72;font-weight: 600;font-size: 26px;line-height: 30px;text-align: left;margin-bottom: 20px;"><?= $texto_reconocidos ?></h2>
+                    <?php if ($texto_reconocidos) { ?>
+                        <h2 style="color: #002D72;font-weight: 600;font-size: 26px;line-height: 30px;text-align: left;margin-bottom: 20px;"><?= $texto_reconocidos ?></h2>
+                    <?php } ?>
                     <img src="<?= $imagen_reconocidos ?>" alt="" style="border-radius: 0px 0px 70px 0px;">
                 </div>
                 <div class="col-12 col-md-6 p-5">
@@ -287,9 +292,9 @@ margin: 0;padding: 15px;
                     <div class="col-12 col-md-3 mt-2 mb-2">
                       <a style="text-decoration: none!important;" href="<?= $item_cursos["link_curso"]?>">
                         <div class="contenedor-curso">
-                            <p class="texto-curso">
+                            <h3 class="texto-curso">
                                 <?= $item_cursos["texto_curso"]?> 
-                            </p>
+                            </h3>
                         </div>
                       </a>
                     </div>
@@ -309,14 +314,18 @@ margin: 0;padding: 15px;
 
                     <div style="display: inline-flex; width: 100%;margin-top:20px;">
                         <div class=" contenedor-boton-banner" style="width: 50%;margin-right: 30px;">
-                            <a href="<?= $link_video_educa ?>" class="boton-educa">
-                                Videos Educativos
-                            </a>
+                            <h3>
+                                <a href="<?= $link_video_educa ?>" class="boton-educa">
+                                    Videos Educativos
+                                </a>
+                            </h3>
                         </div>
                         <div class=" contenedor-boton-banner" style="width: 50%;">
-                            <a href="<?= $link_charla_educa ?>" class="boton-educa">
-                                Charlas Educativas
-                            </a>
+                            <h3> 
+                                <a href="<?= $link_charla_educa ?>" class="boton-educa">
+                                    Charlas Educativas
+                                </a>
+                            </h3>
                         </div>
                     </div>
 
@@ -345,13 +354,13 @@ margin: 0;padding: 15px;
                     <div style="border-right: 2px solid #05C3DE;padding-right: 30px;">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header"  id="flush-headingOne">
+                            <h3 class="accordion-header"  id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <span style="color: #002D72;font-weight: 600;font-size: 26px;line-height: 30px;text-align: center;">
                                 Pretrasplante
                                 </span>    
                             </button>
-                            </h2>
+                            </h3>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body"> <?= $pretrasplante ?></div>
                             </div>
@@ -365,13 +374,13 @@ margin: 0;padding: 15px;
                     <div style="border-right: 2px solid #05C3DE;padding-right: 30px;">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header"  id="flush-headingTwo">
+                            <h3 class="accordion-header"  id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <span style="color: #002D72;font-weight: 600;font-size: 26px;line-height: 30px;text-align: center;">
                                 Trasplante
                                 </span>    
                             </button>
-                            </h2>
+                            </h3>
                             <div id="flush-collapseDos" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body"> <?= $trasplante ?></div>
                             </div>
@@ -385,13 +394,13 @@ margin: 0;padding: 15px;
                     <div style="border-right: 2px solid #05C3DE;padding-right: 30px;">
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header"  id="flush-headingTres">
+                            <h3 class="accordion-header"  id="flush-headingTres">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTres" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <span style="color: #002D72;font-weight: 600;font-size: 26px;line-height: 30px;text-align: center;">
                                 Postrasplante
                                 </span>    
                             </button>
-                            </h2>
+                            </h3>
                             <div id="flush-collapseTres" class="accordion-collapse collapse" aria-labelledby="flush-headingTres" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body"> <?= $postrasplante ?></div>
                             </div>

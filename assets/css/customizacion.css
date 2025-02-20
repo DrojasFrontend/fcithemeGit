@@ -870,6 +870,14 @@
 
 @media screen and (max-width: 768px) {
 
+    .visibleDesktop {
+        display: none !important;
+    }
+
+    .visibleMobile {
+        display: block !important;
+    }
+
     .visibleDesktopTwo {
         display: none !important;
     }
@@ -1022,6 +1030,12 @@
 
     
 
+}
+
+
+
+.visibleMobile {
+    display: none;
 }
 
 .visibleMobileTwo {

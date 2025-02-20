@@ -97,7 +97,7 @@ $ofertas       = !empty($grupo_ofertas['ofertas']) ? $grupo_ofertas['ofertas'] :
                                 <div>
                                     <h3 class="heading--30 color--263956">Proximamente</h3>
                                     <p class="heading--18 color--263956">Inscribete para conocer las fechas de lanzamiento y todo el detalle de los cursos</p>
-                                    <a href="" class="boton-v2 boton-v2--blanco-rojo">
+                                    <a href="https://www.lacardio.org/cardio-u-formulario-contacto/" class="boton-v2 boton-v2--blanco-rojo">
                                         Quiero inscribirme
                                     </a>
                                 </div>
@@ -180,7 +180,7 @@ $ofertas       = !empty($grupo_ofertas['ofertas']) ? $grupo_ofertas['ofertas'] :
                                     <div>
                                         <h3 class="heading--30 color--263956">Proximamente</h3>
                                         <p class="heading--18 color--263956">Inscribete para conocer las fechas de lanzaminetos y todo el detalle de los cursos</p>
-                                        <a href="" class="boton-v2 boton-v2--blanco-rojo">
+                                        <a href="https://www.lacardio.org/cardio-u-formulario-contacto/" class="boton-v2 boton-v2--blanco-rojo">
                                             Quiero inscribirme
                                         </a>
                                     </div>

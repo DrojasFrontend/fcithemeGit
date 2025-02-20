@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> style="margin: 0 !important;">
+
+<head>
+
+    <!-- Accessibility Code for "www.lacardio.org" 12/02/2024 -->
+    <script>
+        window.interdeal = {
+            "sitekey": "e25f48518c7c3c5b60f134432acd1ef9",
+            "Position": "left",
+            "Menulang": "ES",
+            "domains": {
+                "js": "https://cdn.equalweb.com/",
+                "acc": "https://access.equalweb.com/"
+            },
+            "btnStyle": {
+                "vPosition": [
+                    "80%",
+                    "80%"
+                ],
+                "scale": [
+                    "0.8",
+                    "0.8"
+                ],
+                "color": {
+                    "main": "#e6051f",
+                    "second": "#ffffff"
+                },
+                "icon": {
+                    "type": 11,
+                    "shape": "semicircle"
+                }
+            }
+        };
+        (function(doc, head, body) {
+            var coreCall = doc.createElement('script');
+            coreCall.src = interdeal.domains.js + 'core/4.6.3/accessibility.js';
+            coreCall.defer = true;
+            coreCall.integrity = 'sha512-+5lbZsIsOqyfEswqMIHyOrR4jrrBUQ0aVv0KYYoZ6/jTkKsTIqAHwkHgFEoRDM3NbjZ0lOxR0qSslbA3NIXrfw==';
+            coreCall.crossOrigin = 'anonymous';
+            coreCall.setAttribute('data-cfasync', true);
+            body ? body.appendChild(coreCall) : head.appendChild(coreCall);
+        })(document, document.head, document.body);
+    </script>
+
+
+    <!--  Código de seguimiento de Hotjar de fundación CardioInfantil Solicitud 12/03/2024 -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3806514,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+
+
+
+    <!-- Google Tag Manager  Solicitud 05/01/2024 -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WKHJZWRX');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!--  metricool // Solicitud 2/01/24 //-->
+    <script>
+        function loadScript(a) {
+            var b = document.getElementsByTagName("head")[0],
+                c = document.createElement("script");
+            c.type = "text/javascript", c.src = "https://tracker.metricool.com/resources/be.js", c.onreadystatechange = a, c.onload = a, b.appendChild(c)
+        }
+        loadScript(function() {
+            beTracker.t({
+                hash: "2e9b71f42dc6a9db06230ae871b7c98d"
+            })
+        });
+    </script>
+
+
+    <!--  hotjar // Solicitud 26/12/23 //-->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1618030,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Google Tag Manager // Solicitud 08/09/23 //-->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MKQWVF3');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- Meta Pixel Code Solicitud 05/02/2024-->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '383352663748884');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=383352663748884&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
+
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="<?php bloginfo('description') ?>">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/fuentes/gotham/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <?php if (is_front_page()) : ?>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/home.css">
+    <?php elseif (is_page_template('page-templates/page-noticias.php')) : ?>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/noticias.css">
+    <?php elseif (is_page_template('page-templates/page-buscador-servicios.php')) : ?>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/buscador-servicios.css">
+    <?php elseif (is_singular('noticias')) : ?>
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/css/noticias.css">
+    <?php endif ?>
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="
+https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css
+" rel="stylesheet">
+
+    <?php wp_head(); ?>
+
+</head>
+
+<body <?php body_class(); ?>>
+
+    <!-- Google Tag Manager (noscript) // Solicitud 05/01/2024 -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKHJZWRX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Google Tag Manager (noscript) // Solicitud 08/09/23 // -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKQWVF3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="fci">
+        <div class="fci__header">
+            <header>
+                <div class="container-fluid fci__header--top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-10 mb-3 mb-lg-0 fci__header--top__info">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-phone-volume"></i><span>Contáctanos:601 667 2720</span>
+                                    </li>
+                                    <li>
+                                        <i class="far fa-map-marker-alt"></i><span>Encuéntranos: Calle 163a #13b-60</span>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.elempleo.com/co/sitio-empresarial/cardio-infantil?v2=true" target="_blank">
+                                            <i class="fas fa-briefcase"></i><span>Trabaja con nosotros</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.lacardio.org/ley-de-transparencia/">
+                                            <i class="fas fa-check"></i><span>Ley de Transparencia</span>
+                                        </a>
+                                    </li>
+                                    <!--<li>
+                                        <a href="#" class="btn btn-top">Conócenos</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-2 fci__header--top__redes d-flex align-items-center justify-content-center justify-content-lg-end">
+                                <?php echo get_template_part('template-parts/content', 'social'); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-xxl fci__header--bottom">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="fci__header--bottom__barra">
+
+                                <div class="logo_fundacion">
+                                    <a href="<?php echo get_home_url(); ?>">
+                                        <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/general/logo_cardio.jpg" alt="laCardio">
+                                    </a>
+                                </div>
+
+                                <div class="menu-principal">
+                                    <?php
+                                    $menuToUse = 'main_menu';
+                                    if (has_nav_menu($menuToUse)) {
+                                        wp_nav_menu(array(
+                                            'theme_location'        => $menuToUse,
+                                            'container'             => 'nav',
+                                            'container_class'       => 'main-menu-cont',
+                                            'menu_class'            => 'main-menu d-none d-lg-flex',
+                                            'depth'                 => 0,
+                                            'walker'                => new Custom_Menu_Walker(), // Aquí se usa el walker personalizado
+                                        ));
+                                    }
+                                    ?>
+                                    <div class="menu-responsive d-flex d-lg-none">
+                                        <div class="menu_celulares w-100">
+                                            <nav class="navbar navbar-light justify-content-center">
+                                                <button class="navbar-toggler bg-light abrir_menu_cell" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                    <span class="navbar-toggler-icon"></span> Menu
+                                                </button>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="logo_50_fundacion_azul">
+                                    <a href="https://fundacion.cardioinfantil.org/">
+                                        <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/general/logo_50fundacion.jpg" alt="Fundación Cardioinfantil">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_responsive_cont d-flex d-lg-none">
+                    <a href="#" class="cerrar_menu_cell" aria-label="Cerrar menu"><i class="fas fa-times"></i></a>
+                    <?php
+                    if (has_nav_menu($menuToUse)) {
+                        wp_nav_menu(array(
+                            'theme_location'        => $menuToUse,
+                            'container'             => 'nav',
+                            'container_class'       => 'main-menu-cont',
+                            'menu_class'            => 'main-menu d-none d-lg-flex',
+                            'depth'                 => 0,
+                            'walker'                => new Custom_Menu_Walker(), // Aquí se usa el walker personalizado
+                        ));
+                    }
+                    ?>
+                </div>
+            </header>
+        </div>
+        <div class="fci__cuerpo">
+
+            <?php
+            class Custom_Menu_Walker extends Walker_Nav_Menu
+            {
+                function start_el(&$output, $item, $depth = 0, $args = null, $id = 0)
+                {
+                    $indent = ($depth) ? str_repeat("\t", $depth) : '';
+
+                    $classes = empty($item->classes) ? array() : (array) $item->classes;
+                    $classes[] = 'menu-item-' . $item->ID;
+
+                    $args = (object) $args;
+
+                    $attributes  = !empty($item->attr_title) ? ' title="'  . esc_attr($item->attr_title) . '"' : '';
+                    $attributes .= !empty($item->target)     ? ' target="' . esc_attr($item->target) . '"' : '';
+                    $attributes .= !empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn) . '"' : '';
+                    $attributes .= !empty($item->url)        ? ' href="'   . esc_attr($item->url) . '"' : ' href="#"';
+
+                    $item_output = $args->before;
+                    $item_output .= '<a' . $attributes . ' aria-label="' . esc_attr($item->title) . '">';
+                    $item_output .= $args->link_before . apply_filters('the_title', $item->title, $item->ID);
+                    $item_output .= $args->link_after;
+                    $item_output .= '</a>';
+                    $item_output .= $args->after;
+
+                    $output .= $indent . '<li id="menu-item-' . $item->ID . '" class="' . implode(' ', $classes) . '">';
+                    $output .= apply_filters('walker_nav_menu_start_el', $item_output, $item, $depth, $args);
+                }
+            }
+            ?>

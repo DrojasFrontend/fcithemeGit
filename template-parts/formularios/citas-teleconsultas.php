@@ -1,6 +1,6 @@
 <!-- Modal -->
-<section class="seccionCitasFormularioContacto__modal">
-    <button type="button" class="seccionCitasFormularioContacto__close" id="close-modal-form"
+<section class="seccionCitasFormularioContacto__modal" id="formCitaTeleC">
+    <button type="button" class="seccionCitasFormularioContacto__close" id="cerrarFormCitaTeleC"
         aria-label="cerrar modal">
         <?php
         get_template_part('template-parts/content', 'icono');

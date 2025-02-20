@@ -25,7 +25,7 @@ $mostrar_ctas                         = get_field('mostrar_ctas');
 <main class="paginaEtapaExpecialidades">
 <?php if($mostrar_hero) : ?>
     <!-- Hero -->
-    <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaImagenesDC') );?>
+    <?php get_template_part('template-parts/especialidades/seccion', 'hero-especialidades', array('class' => 'paginaImagenesDC') );?>
     <!-- Fin Hero -->
 <?php endif; ?>
 

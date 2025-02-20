@@ -104,9 +104,9 @@ jQuery(document).ready(function ($) {
 
 	/* swiperGaleria */
 	var swiper = new Swiper(".swiperGaleria", {
-		slidesPerView: 1,
-		centeredSlides: true,
-		loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
 		pagination: {
 			el: ".swiper-pagination-gal",
 			clickable: true,
@@ -116,7 +116,7 @@ jQuery(document).ready(function ($) {
 			prevEl: ".swiper-button-prev-gal",
 		},
 
-		breakpoints: {
+    breakpoints: {
 			680: {
 				slidesPerView: 1,
 				spaceBetween: 0,
@@ -143,8 +143,8 @@ jQuery(document).ready(function ($) {
 		$(".tab-content").removeClass("active");
 		$(`#${tabId}`).addClass("active");
 	});
-
-	$('a[href^="#formulario"]').click(function (e) {
+    
+    $('a[href^="#formulario"]').click(function (e) {
 		e.preventDefault();
 		$("#formulario").fadeIn();
 	});

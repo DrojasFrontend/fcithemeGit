@@ -8,7 +8,7 @@
       Pedir cita
     </a>
     <button class="customHeader__contacto heading--18 color--E40046" type="button" onclick="abrirMenuContacto()">
-      Contactanos
+      Contáctanos
       <?php 
         get_template_part('template-parts/content', 'icono');
         display_icon('arrow-down'); 

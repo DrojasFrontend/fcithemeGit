@@ -6,7 +6,6 @@ $subtitulo          = !empty($grupo_items_iconos['subtitulo']) ? esc_html($grupo
 $titulo             = !empty($grupo_items_iconos['titulo']) ? esc_html($grupo_items_iconos['titulo']) : '';
 $descripcion        = !empty($grupo_items_iconos['descripcion']) ? $grupo_items_iconos['descripcion'] : '';
 $items              = !empty($grupo_items_iconos['items']) ? $grupo_items_iconos['items'] : [];
-
 ?>
 
 <section class="etapaEspecialidadesItemsIconos <?php echo isset($args['class']) ? $args['class'] : ''; ?>" style="order: <?php echo $posicion; ?>">

@@ -47,7 +47,7 @@ $ubicacion = get_field('ubicacion');
             <div class="container">
                 <div class="row">
                     <div class="col-10" style="border-radius: 25px;border: 1px solid #D9D9D9;padding: 1.5rem; margin:0 auto;">
-                    <h2 style="color: #00266e;font-weight: bold;font-size: 1.7rem;margin-bottom: 1rem; text-align: center;">Solicite su chequeo médico personalizado</h2>
+                    <h2 id="formulario-chequeo" style="color: #00266e;font-weight: bold;font-size: 1.7rem;margin-bottom: 1rem; text-align: center;">Solicite su chequeo médico personalizado</h2>
                     <div class="chequeo_medico--contenido__columnader--descrp">
                             <p>Para iniciar la reserva de un Chequeo Médico personalizado en el horario que más le convenga, puede darnos sus datos y día de preferencia aquí o puede contactarnos directamente a:</p>
                             <p>Teléfono: <a href="tel:6014894486" data-wpel-link="internal">6014894486</a> <br>

@@ -1,0 +1,2193 @@
+.fw-400 {
+	font-weight: 400;
+}
+
+.desktop {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
+}
+
+.paginaEtapaExpecialidades {
+	display: flex;
+	flex-direction: column;
+}
+
+/* etapaEspecialidadesHero */
+.etapaEspecialidadesHero {
+	position: relative;
+}
+
+.etapaEspecialidadesHero .container--large {
+	padding: 0;
+}
+
+.etapaEspecialidadesHero__fondo {
+	display: none;
+	grid-template-columns: 1fr 1fr;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.etapaEspecialidadesHero__fondo img {
+	border-radius: 0 60px 0 0;
+}
+
+.etapaEspecialidadesHero__fondo div:nth-child(2) {
+	position: relative;
+}
+
+.etapaEspecialidadesHero__fondo div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.etapaEspecialidadesHero__grid {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.etapaEspecialidadesHero__text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 30px 24px 50px;
+	background-color: var(--002D72);
+}
+
+.etapaEspecialidadesHero__text:before {
+	display: none;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--002D72);
+}
+
+.etapaEspecialidadesHero__img img {
+	width: 100%;
+	border-radius: 0 60px 0 0;
+}
+
+.etapaEspecialidadesHero__text .boton-v2 {
+	margin-top: 12px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesHero .container--large {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesHero__fondo {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.etapaEspecialidadesHero__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.etapaEspecialidadesHero__text {
+		row-gap: 18px;
+		padding: 100px 100px 100px 0;
+		border-radius: 0 0 60px 0;
+		min-height: 444px;
+	}
+
+	.paginaOtorrino .etapaEspecialidadesHero__text {
+		padding: 100px 60px 100px 0;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__text {
+		padding: 70px 40px 64px 0;
+	}
+
+	.paginaCardiopatia .etapaEspecialidadesHero__text {
+		padding: 76px 10px 76px 0;
+	}
+
+	.paginaCardiopatia .etapaEspecialidadesHero__text .heading--64 {
+		letter-spacing: normal;
+	}
+
+	.paginaCardiopatia .etapaEspecialidadesHero__text .heading--18 {
+		padding-right: 30px;
+	}
+
+	.etapaEspecialidadesHero__text:before {
+		display: block;
+	}
+
+	.etapaEspecialidadesHero__text .boton-v2 {
+		margin-top: 24px;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__fondo div:nth-child(2) img {
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.etapaEspecialidadesHero__fondo {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 229px;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__fondo {
+		column-gap: 0;
+	}
+
+	.paginaOtorrino .etapaEspecialidadesHero__fondo {
+		column-gap: 238px;
+	}
+
+	.etapaEspecialidadesHero__grid { 
+		grid-template-columns: 3fr 2fr;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesHero__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* etapaEspecialidadesTextoImagenCTA */
+.etapaEspecialidadesTextoImagenCTA {
+	padding: 40px 0 0;
+}
+
+.paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
+.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
+.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
+.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
+.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
+.paginaGinecologia.etapaEspecialidadesTextoImagenCTA {
+	padding: 40px 0;
+}
+
+.etapaEspecialidadesTextoImagenCTA .container--large {
+	padding: 0;
+}
+
+.etapaEspecialidadesTextoImagenCTA__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.etapaEspecialidadesTextoImagenCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.etapaEspecialidadesTextoImagenCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.paginaMedicinaNuclear .etapaEspecialidadesTextoImagenCTA__info div p,
+.paginaGastro .etapaEspecialidadesTextoImagenCTA__info div p {
+	margin-bottom: 20px;
+}
+
+.etapaEspecialidadesTextoImagenCTA__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+	line-height: 24px;
+}
+
+.etapaEspecialidadesTextoImagenCTA__info li {
+	margin-bottom: 0 !important;
+}
+
+.paginaCirugia.estilo-2 .etapaEspecialidadesTextoImagenCTA__info li {
+	padding-bottom: 20px;
+}
+
+.etapaEspecialidadesTextoImagenCTA__img {
+	text-align: right;
+}
+
+.estilo-2 .etapaEspecialidadesTextoImagenCTA__img {
+	text-align: right;
+}
+
+.etapaEspecialidadesTextoImagenCTA__info .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesTextoImagenCTA__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.estilo-2 .etapaEspecialidadesTextoImagenCTA__img img {
+	border-radius: 60px 0 0 6px;
+}
+
+.etapaEspecialidadesTextoImagenCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTextoImagenCTA {
+		padding: 84px 0 0;
+	}
+
+	.paginaCirugia.etapaEspecialidadesTextoImagenCTA,
+	.paginaMedicinaNuclear.etapaEspecialidadesTextoImagenCTA,
+	.paginaGastro.etapaEspecialidadesTextoImagenCTA,
+	.paginaFisiatria.etapaEspecialidadesTextoImagenCTA,
+	.paginaFallaCardiaca.etapaEspecialidadesTextoImagenCTA,
+	.paginaBancoSangre.etapaEspecialidadesTextoImagenCTA,
+	.paginaGerontologia.etapaEspecialidadesTextoImagenCTA,
+	.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
+	.paginaGinecologia.etapaEspecialidadesTextoImagenCTA {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.estilo-2.etapaEspecialidadesTextoImagenCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.estilo-2 .etapaEspecialidadesTextoImagenCTA__flex {
+		flex-direction: row-reverse;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA .wrapper {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__col {
+		width: 50%;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.estilo-2 .etapaEspecialidadesTextoImagenCTA__info {
+		padding: 0 0 0 20px;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.estilo-2 .etapaEspecialidadesTextoImagenCTA__info .heading--48 {
+		padding-right: 40px;
+	}
+
+	.paginaCirugia.estilo-2
+		.etapaEspecialidadesTextoImagenCTA__info
+		.heading--48 {
+		margin-bottom: 0;
+		padding-right: 0;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__img {
+		padding: 0 0 0 84px;
+	}
+
+	.etapaEspecialidadesTextoImagenCTA__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+
+	.estilo-2 .etapaEspecialidadesTextoImagenCTA__img {
+		padding: 0 84px 0 0;
+	}
+
+	.estilo-2 .etapaEspecialidadesTextoImagenCTA__img img {
+		border-radius: 60px 6px 6px 6px;
+	}
+}
+
+/* etapaEspecialidadesBloqueTexto */
+.etapaEspecialidadesBloqueTexto {
+	margin-top: 40px;
+}
+
+.etapaEspecialidadesBloqueTexto__fondo {
+	background-color: rgb(170 204 255 / 20%);
+}
+
+.etapaEspecialidadesBloqueTexto__texto {
+	display: grid;
+	row-gap: 12px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.etapaEspecialidadesBloqueTexto__icon {
+	display: flex;
+	align-items: center;
+}
+
+.etapaEspecialidadesBloqueTexto__texto .heading--24 {
+	font-family: var(--ff-prompt);
+	border-left: 1px solid var(--002D72);
+	margin-left: 24px;
+	padding: 10px 0 10px 24px;
+	font-weight: 500;
+}
+
+.etapaEspecialidadesBloqueTexto__texto .heading--36 {
+	font-size: var(--24);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+	text-align: left;
+	letter-spacing: normal;
+	text-transform: math-auto;
+    text-align: center;
+}
+
+.etapaEspecialidadesBloqueTexto__texto .heading--36 strong {
+	font-weight: 500;
+}
+
+.paginaOtorrino .etapaEspecialidadesBloqueTexto__texto .heading--36 {
+	font-weight: 400;
+}
+
+.paginaOtorrino .etapaEspecialidadesBloqueTexto__texto strong {
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesBloqueTexto {
+		margin-top: 84px;
+	}
+
+	.etapaEspecialidadesBloqueTexto__texto {
+		row-gap: 24px;
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesBloqueTexto__texto .heading--36 {
+		font-size: var(--36);
+		line-height: 46px;
+	}
+}
+
+/* etapaEspecialidadesTextDescBanner */
+.etapaEspecialidadesTextDescBanner {
+	padding: 40px 0;
+}
+
+.paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
+	padding: 40px 0 0;
+}
+
+.etapaEspecialidadesTextDescBanner__container {
+	padding: 0 24px 0 0;
+}
+
+.etapaEspecialidadesTextDescBanner__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 20px;
+	padding-bottom: 40px;
+}
+
+.paginaCardiologiasClinicas .etapaEspecialidadesTextDescBanner__grid {
+	margin-bottom: 40px;
+}
+
+.etapaEspecialidadesTextDescBanner .subheading {
+	margin-bottom: 18px;
+}
+
+.etapaEspecialidadesTextDescBanner__title .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesTextDescBanner__img {
+	margin: 0 auto;
+	border-radius: 6px 60px 6px 6px;
+	overflow: hidden;
+}
+
+.etapaEspecialidadesTextDescBanner__desc {
+	margin-top: 24px;
+}
+
+.etapaEspecialidadesTextDescBanner__img {
+	height: 300px;
+}
+
+.etapaEspecialidadesTextDescBanner__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTextDescBanner {
+		padding: 84px 0;
+	}
+
+	.paginaGastroenterologia.etapaEspecialidadesTextDescBanner {
+		padding: 84px 0 0;
+	}
+
+	.etapaEspecialidadesTextDescBanner__container {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTextDescBanner__grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		padding-bottom: 60px;
+	}
+
+	.paginaCirugiaTorax .etapaEspecialidadesTextDescBanner__info {
+		display: flex;
+		align-items: flex-end;
+		padding-bottom: 20px;
+	}
+
+	.etapaEspecialidadesTextDescBanner__img {
+		max-width: 990px;
+		height: auto;
+	}
+
+	.etapaEspecialidadesTextDescBanner__desc {
+		margin-top: 60px;
+	}
+}
+
+/* etapaEspecialidadesListaNumerada */
+.etapaEspecialidadesListaNumerada__fondo {
+	padding: 40px 0 60px;
+	background-color: var(--0C2448);
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__fondo {
+	background-color: rgba(170, 204, 255, 0.1);
+}
+
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__fondo {
+	background-color: var(--fff);
+}
+
+.etapaEspecialidadesListaNumerada__titulo {
+	display: grid;
+	row-gap: 18px;
+	margin-bottom: 26px;
+}
+
+.etapaEspecialidadesListaNumerada__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .subheading,
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .heading--48,
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .heading--18,
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__titulo .subheading,
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__titulo .heading--48,
+.paginaCirugiaPediatrica
+	.etapaEspecialidadesListaNumerada__titulo
+	.heading--18 {
+	text-align: center;
+	color: #002d72;
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .heading--18,
+.paginaCirugiaPediatrica
+	.etapaEspecialidadesListaNumerada__titulo
+	.heading--18 {
+	text-align: center;
+	color: #263956;
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista .numero,
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista .heading--24,
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__lista .numero,
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__lista .heading--24 {
+	color: #002d72;
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista .heading--18,
+.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__lista .heading--18 {
+	color: #263956;
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista .heading--18,
+.paginaCirugiaPediatrica
+	.etapaEspecialidadesListaNumerada__lista
+	.heading--18
+	p {
+	font-family: var(--ff-sans);
+	color: var(--0c2448);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.etapaEspecialidadesListaNumerada__listas {
+	display: grid;
+	row-gap: 24px;
+}
+
+.etapaEspecialidadesListaNumerada__lista .numero {
+	font-family: var(--ff-prompt);
+	position: relative;
+	display: inline-block;
+	padding-bottom: 21px;
+	margin-bottom: 18px;
+	font-size: var(--46);
+	color: var(--ACF);
+	line-height: 49px;
+	letter-spacing: 0.69px;
+	font-weight: 200;
+}
+
+.etapaEspecialidadesListaNumerada__lista .heading--24 {
+	margin-bottom: 12px;
+	font-weight: 500;
+}
+
+.etapaEspecialidadesListaNumerada__lista .numero:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 47px;
+	height: 1px;
+	background-color: var(--ACF);
+	bottom: 0;
+}
+
+.etapaEspecialidadesListaNumerada__lista ul {
+	width: 100%;
+	margin-top: 24px;
+	padding: 0 0 0 30px;
+}
+
+.etapaEspecialidadesListaNumerada__lista ul li {
+	margin: 0 !important;
+}
+
+.etapaEspecialidadesListaNumerada__lista ul li::marker {
+	font-size: 10px;
+	color: var(--fff);
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista .numero:before,
+.paginaCirugiaPediatrica
+	.etapaEspecialidadesListaNumerada__lista
+	.numero:before {
+	background-color: var(--002D72);
+}
+
+.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__lista ul li::marker,
+.paginaCirugiaPediatrica
+	.etapaEspecialidadesListaNumerada__lista
+	ul
+	li::marker {
+	color: var(--263956);
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesListaNumerada__fondo {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesListaNumerada__titulo {
+		row-gap: 18px;
+		margin-bottom: 42px;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .heading--18,
+	.paginaCirugiaPediatrica .etapaEspecialidadesListaNumerada__titulo .heading--18 {
+		padding: 0 100px;
+	}
+
+	.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .subheading,
+	.paginaCirugiaGeneral .etapaEspecialidadesListaNumerada__titulo .heading--48,
+	.paginaCirugiaPediatrica
+		.etapaEspecialidadesListaNumerada__titulo
+		.subheading,
+	.paginaCirugiaPediatrica
+		.etapaEspecialidadesListaNumerada__titulo
+		.heading--48 {
+		text-align: center;
+	}
+
+	.etapaEspecialidadesListaNumerada__listas {
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+	}
+
+	.etapaEspecialidadesListaNumerada__lista .numero {
+		font-size: var(--46);
+		line-height: 49px;
+	}
+}
+
+/* etapaEspecialidadesItemsIconos */
+.etapaEspecialidadesItemsIconos__fondo {
+	padding: 40px 0;
+	background-color: rgb(170 204 255 / 10%);
+}
+
+.paginaGastroenterologia .etapaEspecialidadesItemsIconos__fondo,
+.paginaElectrofisiologia .etapaEspecialidadesItemsIconos__fondo {
+	padding: 0 0 40px;
+}
+
+.etapaEspecialidadesItemsIconos__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 0 0 30px;
+	text-align: left;
+}
+
+.etapaEspecialidadesItemsIconos__titulo .heading--48 {
+	text-align: left;
+}
+
+.paginaEndocrinologia .etapaEspecialidadesItemsIconos__titulo {
+    text-align: left;
+    padding: 0 0 42px 0
+}
+
+.paginaEndocrinologia .etapaEspecialidadesItemsIconos__titulo .heading--48 {
+    text-align: left
+}
+
+ul.etapaEspecialidadesItemsIconos__items {
+	display: grid;
+	row-gap: 16px;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 0 30px;
+}
+
+ul.etapaEspecialidadesItemsIconos__items li {
+	position: relative;
+	margin: 0;
+	list-style: none;
+}
+
+ul.etapaEspecialidadesItemsIconos__items li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -30px;
+	width: 24px;
+	height: 24px;
+	background: url(../assets/images/icon-check.svg);
+	background-size: contain;
+	margin: 0;
+}
+
+ul.etapaEspecialidadesItemsIconos__items li li:before {
+	display: none;
+}
+
+.etapaEspecialidadesItemsIconos__items ul {
+	padding: 10px 0 0 24px;
+}
+
+.etapaEspecialidadesItemsIconos__items ul li {
+	list-style: disc;
+}
+
+.etapaEspecialidadesItemsIconos__items li p {
+	font-family: var(--ff-sans);
+	color: var(--263956);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.etapaEspecialidadesItemsIconos__items ul li::marker {
+	font-size: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesItemsIconos__fondo {
+		padding: 80px 0;
+	}
+
+	.paginaGastroenterologia .etapaEspecialidadesItemsIconos__fondo,
+	.paginaElectrofisiologia .etapaEspecialidadesItemsIconos__fondo {
+		padding: 0 0 80px;
+	}
+
+	.etapaEspecialidadesItemsIconos__titulo {
+		row-gap: 18px;
+		padding: 0 100px 40px;
+		text-align: center;
+	}
+
+	.etapaEspecialidadesItemsIconos__titulo .heading--48 {
+		text-align: center;
+		margin-bottom: 12px;
+	}
+
+	ul.etapaEspecialidadesItemsIconos__items {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 104px;
+		row-gap: 30px;
+		padding: 0 0 0 24px;
+	}
+
+	.paginaMedicinaNuclear ul.etapaEspecialidadesItemsIconos__items,
+	.paginaGastroenterologia ul.etapaEspecialidadesItemsIconos__items {
+		column-gap: 60px;
+	}
+
+	.etapaEspecialidadesItemsIconos__items ul {
+		padding: 10px 0 0 30px;
+	}
+}
+
+/* etapaEspecialidadesTextoImagenFondoCTA */
+.etapaEspecialidadesTextoImagenFondoCTA {
+	padding: 40px 0 0;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA .container--large {
+	padding: 0;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__col:nth-child(1) {
+	background-color: #a7e6d7;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 30px 24px 42px;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__info ul {
+	margin: 0;
+	padding: 0 0 0 18px;
+	line-height: 24px;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__info li {
+	margin-bottom: 0 !important;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__img {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__info .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0 60px 0 0;
+}
+
+.etapaEspecialidadesTextoImagenFondoCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTextoImagenFondoCTA {
+		padding: 84px 0 0;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__flex {
+		display: flex;
+		flex-direction: row;
+		column-gap: 36px;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__col {
+		position: relative;
+		width: 50%;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__col:nth-child(1):before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -36px;
+		width: 36px;
+		height: 100%;
+		border-radius: 0 0 60px 0;
+		background-color: #a7e6d7;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 52px 0 54px 42px;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__img {
+		padding: 0;
+	}
+
+	.etapaEspecialidadesTextoImagenFondoCTA__img img {
+		width: auto;
+		border-radius: 0 60px 0 6px;
+	}
+}
+
+/* etapaEspecialidadesTargetaGrid */
+.etapaEspecialidadesTargetaGrid__fondo {
+	padding: 40px 0;
+}
+
+.etapaEspecialidadesTargetaGrid__titulo {
+	display: grid;
+	row-gap: 12px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.etapaEspecialidadesTargetaGrid__titulo .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesTargetaGrid__grid {
+	display: grid;
+	row-gap: 24px;
+}
+
+.etapaEspecialidadesTargetaGrid__col img {
+	width: 100%;
+	height: 203px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 6px;
+}
+
+.etapaEspecialidadesTargetaGrid__info {
+	display: grid;
+	row-gap: 12px;
+	padding: 18px 18px 0;
+}
+
+.etapaEspecialidadesTargetaGrid__info .heading--24 {
+	font-weight: 500;
+}
+
+.etapaEspecialidadesTargetaGrid__info ul li::marker {
+    font-size: 10px
+}
+
+.etapaEspecialidadesTargetaGrid__info ul li {
+    color: #263956;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTargetaGrid__fondo {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesTargetaGrid__grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 36px;
+	}
+
+	.etapaEspecialidadesTargetaGrid__info {
+		padding: 18px 30px 0;
+	}
+
+	.etapaEspecialidadesTargetaGrid__col img {
+		height: 203px;
+	}
+}
+
+/* etapaEspecialidadesCTAS */
+.etapaEspecialidadesCTAS {
+	padding: 54px 0;
+}
+
+.etapaEspecialidadesCTAS__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	padding: 0 0 42px;
+}
+
+.etapaEspecialidadesCTAS__titulo .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesCTAS__ctas {
+	display: grid;
+	row-gap: 12px;
+}
+
+.etapaEspecialidadesCTAS__cta {
+	display: flex;
+	justify-content: space-between;
+	padding: 21px 24px;
+	border-radius: 6px;
+	border: 1px solid #d5dbe7;
+	letter-spacing: normal;
+	text-decoration: none;
+	transition: box-shadow 0.3s ease-out, transform 0.3s ease-out,
+		opacity 0.2s ease-out;
+	transition-delay: 0.1s;
+	transform: translateZ(0);
+}
+
+.etapaEspecialidadesCTAS__cta:hover {
+	border-radius: 6px;
+	border: 1px solid var(--E40046);
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+	transform: translate(0, -4px);
+}
+
+.etapaEspecialidadesCTAS__cta path {
+	fill: var(--E40046);
+}
+
+@media only screen and (min-width: 680px) {
+	.etapaEspecialidadesCTAS__ctas {
+		grid-template-columns: 1fr 1fr;
+		gap: 18px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesCTAS {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesCTAS__ctas {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 36px;
+		row-gap: 30px;
+	}
+}
+
+/* procedimientoHero */
+.procedimientoHero__fondo {
+	position: relative;
+	padding: 60px 0;
+	overflow: hidden;
+}
+
+.procedimientoHero__fondo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.procedimientoHero__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
+	font-size: 37px;
+	position: relative;
+}
+
+.procedimientoHero__titulo .heading--64 {
+	text-align: center;
+	color: var(--fff);
+	font-size: 37px;
+	font-style: normal;
+	text-align: left;
+	font-weight: 400;
+	line-height: 45px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.procedimientoHero__fondo {
+		padding: 131px 0;
+		border-radius: 0 0 60px 0;
+	}
+
+	.procedimientoHero__titulo {
+		padding: 0 40px;
+		font-size: var(--64);
+		text-align: center;
+	}
+
+	.procedimientoHero__titulo .heading--64 {
+		text-align: center;
+		font-size: var(--64);
+		line-height: 74px;
+	}
+}
+/* procedimientoFiltro */
+.procedimientoFiltro {
+	padding: 40px 0;
+}
+
+.procedimientoFiltro__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 8px;
+}
+
+.procedimientoFiltro__titulo .heading--36 {
+	text-align: left;
+	text-transform: math-auto;
+	font-weight: 500;
+}
+
+.procedimientoFiltro__form {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.procedimientoFiltro__form .container--large {
+	padding: 0;
+}
+
+.procedimientoFiltro__form form {
+	display: grid;
+	row-gap: 30px;
+}
+
+.procedimientoFiltro__form input[type="text"],
+.procedimientoFiltro__form select {
+	font-family: var(--ff-sans);
+	width: 100%;
+	height: 56px;
+	padding: 0 18px;
+	font-size: var(--18);
+	color: var(--717C7D);
+	border-radius: 6px;
+	letter-spacing: 0.27px;
+	border: 1px solid var(--D5DBE7);
+	background: var(--fff);
+}
+
+.procedimientoFiltro__form input[type="text"]&::-webkit-input-placeholder {
+	font-family: var(--ff-sans);
+	color: var(--717C7D);
+}
+
+.procedimientoFiltro__form input[type="text"]&::-moz-placeholder {
+	font-family: var(--ff-sans);
+	color: var(--717C7D);
+}
+
+.procedimientoFiltro__form input[type="text"]&:-ms-input-placeholder {
+	font-family: var(--ff-sans);
+	color: var(--717C7D);
+}
+
+.procedimientoFiltro__form input[type="text"]&:-moz-placeholder {
+	font-family: var(--ff-sans);
+	color: var(--717C7D);
+}
+
+.procedimientoFiltro__form select {
+	padding: 0 54px 0 18px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M12.71 15.54L18.36 9.87998C18.4537 9.78702 18.5281 9.67642 18.5789 9.55456C18.6296 9.4327 18.6558 9.30199 18.6558 9.16998C18.6558 9.03797 18.6296 8.90726 18.5789 8.78541C18.5281 8.66355 18.4537 8.55294 18.36 8.45998C18.1726 8.27373 17.9191 8.16919 17.655 8.16919C17.3908 8.16919 17.1373 8.27373 16.95 8.45998L11.95 13.41L6.99996 8.45998C6.8126 8.27373 6.55915 8.16919 6.29496 8.16919C6.03078 8.16919 5.77733 8.27373 5.58996 8.45998C5.49548 8.5526 5.42031 8.66304 5.36881 8.78492C5.31731 8.90679 5.29051 9.03767 5.28996 9.16998C5.29051 9.30229 5.31731 9.43317 5.36881 9.55505C5.42031 9.67692 5.49548 9.78737 5.58996 9.87998L11.24 15.54C11.3336 15.6415 11.4473 15.7225 11.5738 15.7779C11.7003 15.8333 11.8369 15.8619 11.975 15.8619C12.1131 15.8619 12.2497 15.8333 12.3762 15.7779C12.5027 15.7225 12.6163 15.6415 12.71 15.54Z' fill='%23E40046'/%3E%3C/svg%3E");
+	background-position: calc(100% - 18px) center;
+	background-repeat: no-repeat;
+}
+
+.procedimientoFiltro__form input[type="text"] {
+	border-radius: 6px 0 0 6px;
+}
+
+.procedimientoFiltro__form button[type="submit"] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--ff-sans);
+	color: var(--fff);
+	font-size: 0;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 100%;
+	min-width: auto;
+	border: 0;
+	border-radius: 0px 6px 6px 0px;
+	background-color: var(--E40046);
+}
+
+.procedimientoFiltro__grid {
+	display: flex;
+	flex-direction: column-reverse;
+	row-gap: 30px;
+	padding: 0 24px;
+}
+
+.procedimientoFiltro__enlaces {
+	display: grid;
+	row-gap: 20px;
+	height: fit-content;
+}
+
+.procedimientoFiltro__enlaces a {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	column-gap: 6px;
+	font-size: var(--18);
+	font-weight: 500;
+	border-radius: 6px;
+	border: 1px solid var(--E40046);
+	padding: 16px 24px;
+	text-decoration: none;
+
+	transition: box-shadow 0.3s ease-out, transform 0.3s ease-out,
+		opacity 0.2s ease-out;
+	transition-delay: 0.1s;
+	transform: translateZ(0);
+}
+
+.procedimientoFiltro__enlaces h3 {
+	font-size: var(--18);
+}
+
+.procedimientoFiltro__enlaces a:hover {
+	border-radius: 6px;
+	border: 1px solid var(--E40046);
+	background: var(--fff);
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+	transform: translate(0, -4px);
+}
+
+.procedimientoFiltro__enlaces .heading--18 {
+	font-weight: 700;
+}
+
+.procedimientoFiltro__enlaces a span {
+	display: flex;
+	align-items: center;
+	font-size: 0;
+	font-weight: 400 !important;
+}
+
+#procedimientos-lista {
+	height: 370px;
+	overflow: auto;
+}
+
+.procedimientoFiltro__procedimientos {
+	display: grid;
+	row-gap: 24px;
+}
+
+.procedimiento {
+	position: relative;
+	padding: 18px 24px 18px 50px;
+	border-bottom: 1px solid #d5dbe7;
+	cursor: pointer;
+}
+
+.procedimiento.active {
+	border-bottom: 2px solid var(--002D72);
+}
+
+.procedimiento:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 14px;
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	border: 1px solid rgb(0 45 114 / 30%);
+}
+
+.procedimiento.active:before {
+	border: 2px solid var(--E40046);
+}
+
+.procedimiento.active:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	background-color: var(--E40046);
+}
+
+.procedimiento__detalle {
+	border-radius: 6px;
+	background: var(--fff);
+	box-shadow: 0px 4px 24px 0px rgba(103, 114, 131, 0.15);
+}
+
+.procedimientoFiltro__nombre {
+	padding: 18px;
+	border-radius: 6px;
+	background: rgb(154 219 232 / 30%);
+}
+
+.procedimientoFiltro__info {
+	display: flex;
+	column-gap: 30px;
+}
+
+.procedimientoFiltro__info p {
+	font-family: var(--ff-sans);
+	border: 1px solid #263956;
+	border-radius: 10px;
+	padding: 2px 12px;
+	font-weight: 400;
+}
+
+.procedimientoFiltro__nombre .heading--30 {
+	margin-bottom: 20px;
+}
+
+.procedimientoFiltro__recomendacion {
+	padding: 18px 10px 10px 18px;
+}
+
+.procedimientoFiltro__recomendacion .heading--24 {
+	font-family: var(--ff-prompt);
+	font-weight: 500;
+	margin-bottom: 18px;
+}
+
+.procedimientoFiltro__recomendacion .detalle {
+	padding: 0 0 0 10px;
+}
+
+.procedimientoFiltro__recomendacion p {
+	font-family: var(--ff-sans);
+	margin-bottom: 18px;
+	color: var(--263956);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.27px;
+}
+
+.resultados {
+	padding: 24px;
+	text-align: center;
+}
+
+.procedimientoFiltro__form-mobile {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+	background-color: var(--fff);
+	z-index: 1;
+}
+
+.procedimientoFiltro__form-mobile .cerrar-filtro {
+	display: block;
+	width: fit-content;
+	margin: 0 0 24px auto;
+	padding: 0;
+	color: var(--E40046);
+	border: 0;
+	text-align: right;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.procedimientoFiltro__form .abrir-filtro {
+	font-family: var(--ff-sans);
+	display: flex;
+	justify-content: center;
+	column-gap: 12px;
+	width: calc(100% - 48px);
+	margin: 42px auto;
+	padding: 17px 24px;
+	color: var(--E40046);
+	border: 1px solid var(--E40046);
+	border-radius: 6px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.procedimientoFiltro__buscar {
+	display: grid;
+	grid-template-columns: 1fr 56px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.procedimientoFiltro {
+		padding: 66px 0;
+	}
+
+	.procedimiento {
+		padding: 18px 0 18px 50px;
+	}
+
+	.procedimientoFiltro__titulo {
+		row-gap: 18px;
+		text-align: center;
+		padding: 0 100px 60px;
+	}
+
+	.procedimientoFiltro__titulo .heading--36 {
+		text-align: center;
+	}
+
+	.procedimientoFiltro__form .container--large {
+		padding: 0 24px;
+	}
+
+	.procedimientoFiltro__form form {
+		grid-template-columns: 2fr 3fr;
+		column-gap: 36px;
+	}
+
+	.procedimientoFiltro__grid {
+		display: grid;
+		grid-template-columns: 4fr 3fr;
+		column-gap: 14px;
+		padding: 60px 0 0;
+	}
+
+	.procedimientoFiltro__buscar {
+		display: grid;
+		grid-template-columns: 1fr 185px;
+	}
+
+	.procedimientoFiltro__enlaces {
+		row-gap: 30px;
+		padding: 0 90px 0 0;
+	}
+
+	.procedimientoFiltro__enlaces a {
+		column-gap: 6px;
+		font-size: var(--24);
+		padding: 26px 24px;
+		border: 1px solid var(--D5DBE7);
+	}
+
+	.procedimientoFiltro__enlaces h3 {
+		font-size: var(--24);
+	}
+
+	.procedimientoFiltro__enlaces a span {
+		font-size: var(--18);
+	}
+
+	.procedimientoFiltro__form-mobile {
+		display: block;
+		position: relative;
+		top: inherit;
+		left: inherit;
+		width: auto;
+		height: auto;
+		padding: 0;
+	}
+
+	.procedimientoFiltro__form button[type="submit"] {
+		column-gap: 6px;
+		font-size: var(--18);
+		line-height: 24px;
+		min-width: 185px;
+	}
+
+	.procedimientoFiltro__form input[type="text"] {
+		padding: 0 24px;
+	}
+
+	.procedimientoFiltro__form select {
+		padding: 0 54px 0 24px;
+		background-position: calc(100% - 24px) center;
+	}
+
+	.procedimientoFiltro__form-mobile .cerrar-filtro,
+	.procedimientoFiltro__form .abrir-filtro {
+		display: none;
+	}
+
+	.procedimientoFiltro__procedimientos {
+		grid-template-columns: 2fr 3fr;
+		column-gap: 36px;
+		padding-top: 60px;
+	}
+
+	.procedimiento__detalle {
+		padding: 12px;
+	}
+}
+
+/* flotanteContacto */
+.flotanteContacto {
+	position: fixed;
+	top: 50%;
+	right: 24px;
+	height: 66px;
+	border-radius: 6px 6px 6px 30px;
+	background: var(--fff);
+	box-shadow: 0px 6px 12px 0px rgba(108, 117, 125, 0.2);
+	overflow: hidden;
+	z-index: 10;
+}
+
+.flotanteContacto.active {
+	height: auto;
+}
+
+.flotanteContacto button {
+	position: absolute;
+	top: 20px;
+	right: 24px;
+	border: 0;
+	background-color: transparent;
+	transform: rotate(90deg);
+	color: var(--E40046);
+	padding: 0;
+	z-index: 1;
+	transition: transform 0.4s ease;
+}
+
+.flotanteContacto.active button {
+	transform: rotate(-90deg);
+}
+
+.flotanteContacto a {
+	position: relative;
+	font-family: var(--ff-prompt);
+	display: flex;
+	column-gap: 12px;
+	padding: 15px 24px 18px 24px;
+	text-decoration: none;
+}
+
+.flotanteContacto a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 24px;
+	bottom: 0;
+	width: calc(100% - 40px);
+	height: 1px;
+	border-bottom: 1px solid #d5dbe7;
+}
+
+.flotanteContacto a:last-child:before {
+	border: 0;
+}
+
+.flotanteContacto__img {
+	display: grid;
+	place-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 36px;
+	background-color: var(--E40046);
+}
+
+.flotanteContacto a .heading--14 {
+	font-family: var(--ff-prompt);
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.flotanteContacto a .heading--12 {
+	font-family: var(--ff-sans);
+	font-weight: 400;
+}
+
+@media only screen and (min-width: 1024px) {
+	.flotanteContacto {
+		right: 36px;
+	}
+}
+
+/* Base Swiper */
+.swiper-button-lock {
+	display: block !important;
+}
+
+.swiper-wrapper {
+	height: auto !important;
+}
+
+.swiper-custom-button {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+}
+
+[class*="swiper-button-prev"],
+[class*="swiper-button-next"] {
+	display: none !important;
+	position: absolute;
+	top: 52%;
+}
+
+[class*="swiper-button-prev"] {
+	left: -40px !important;
+	background: url(../assets/images/ico-chevron-rojo-redondo-ant.svg);
+}
+
+[class*="swiper-button-next"] {
+	right: -40px !important;
+	background: url(../assets/images/ico-chevron-rojo-redondo-sig.svg);
+}
+
+[class*="swiper-pagination"] {
+	display: flex;
+	justify-content: center;
+	position: relative !important;
+	bottom: inherit !important;
+	top: inherit !important;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.swiper-slide {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+
+.swiper-pagination-bullet {
+	background: rgb(228 0 70 / 30%) !important;
+}
+
+.swiper-pagination-bullet-active {
+	width: 24px !important;
+	border-radius: 6px !important;
+	opacity: 1 !important;
+	background: #e40046 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: none !important;
+}
+
+.swiper .swiper-slide-active {
+	transform: scale(1) !important;
+}
+
+@media only screen and (min-width: 1024px) {
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: flex !important;
+	}
+
+	[class*="swiper-button-prev"],
+	[class*="swiper-button-next"] {
+		display: inline-block !important;
+	}
+}
+
+/* especialidadesExpertos */
+.especialidadesExpertos {
+	margin-top: 50px;
+}
+
+.especialidadesExpertos .swiperEspecialidadesExpertos {
+	display: none;
+}
+
+.especialidadesExpertos .swiperEspecialidadesExpertos.swiper-initialized {
+	display: block;
+}
+
+.marginTop {
+	margin-top: 0 !important;
+}
+
+.especialidadesExpertos .container--large {
+	position: relative;
+}
+
+.especialidadesExpertos__fondo {
+	padding: 40px 0;
+	background-color: rgb(199 218 239 / 15%);
+}
+
+.paginaCirugiaGeneral .especialidadesExpertos__fondo,
+.paginaCirugiaPediatrica .especialidadesExpertos__fondo {
+	background-color: var(--fff);
+}
+
+.paginaCirugiaPediatrica .especialidadesExpertos__fondo {
+	padding-top: 0;
+}
+
+.especialidadesExpertos__titulo {
+	display: flex;
+	flex-direction: column;
+	row-gap: 18px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.especialidadesExpertos__titulo .heading--14,
+.especialidadesExpertos__titulo .heading--48 {
+	text-align: left;
+}
+
+@media only screen and (min-width: 1024px) {
+	.especialidadesExpertos {
+		margin-top: 84px;
+	}
+
+	.especialidadesExpertos__fondo {
+		padding: 84px 50px;
+	}
+
+	.especialidadesExpertos__titulo .heading--14,
+	.especialidadesExpertos__titulo .heading--48 {
+		text-align: center;
+	}
+
+	.especialidadesExpertos.hiden .swiper-custom-button,
+	.especialidadesExpertos.hiden .swiper-pagination-noti {
+		display: none !important;
+	}
+}
+
+.especialidadesExpertos__slide {
+	width: 100%;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.especialidadesExpertos__slide:hover .link-hover span:before {
+	width: 100%;
+}
+
+.especialidadesExpertos__img {
+	position: relative;
+	text-align: center;
+}
+.especialidadesExpertos__img:hover:before {
+	background-color: #aaccff;
+}
+
+.especialidadesExpertos__img:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 150px;
+	border-radius: 30px 0px 0px 0px;
+	background-color: rgb(170 204 255 / 40%);
+	overflow: hidden;
+	transition: color 0.4s ease;
+	z-index: -1;
+}
+
+.especialidadesExpertos__info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding: 18px 24px 24px 24px;
+	background-color: var(--fff);
+}
+
+.especialidadesExpertos__info {
+	box-shadow: 0px 2px 10px 0px rgba(103, 114, 131, 0.15);
+}
+
+.especialidadesExpertos__info .link-hover {
+	font-family: var(--ff-sans);
+	color: var(--E40046);
+	margin-top: 12px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.especialidadesExpertos .swiper-wrapper {
+	padding: 8px;
+}
+
+/* etapaEspecialidadesImagenTextoCTA */
+.etapaEspecialidadesImagenTextoCTA {
+	padding: 40px 0;
+}
+
+.etapaEspecialidadesImagenTextoCTA.estilo-invertido {
+	background-color: rgba(213, 219, 231, 0.1);
+}
+
+.etapaEspecialidadesImagenTextoCTA .container--large {
+	padding: 0;
+}
+
+.etapaEspecialidadesImagenTextoCTA__flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.etapaEspecialidadesImagenTextoCTA__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.etapaEspecialidadesImagenTextoCTA__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.etapaEspecialidadesImagenTextoCTA__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+	line-height: 24px;
+}
+
+.etapaEspecialidadesImagenTextoCTA__info li {
+	margin-bottom: 0 !important;
+}
+
+.etapaEspecialidadesImagenTextoCTA__img {
+	text-align: right;
+}
+
+.etapaEspecialidadesImagenTextoCTA__info .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesImagenTextoCTA__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.etapaEspecialidadesImagenTextoCTA__info .boton-v2 {
+	margin-top: 26px;
+}
+
+.paginaEndocrinologia .etapaEspecialidadesImagenTextoCTA__info ul {
+    padding: 0 0 0 30px;
+    font-family: var(--ff-sans);
+    font-size: var(--18);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesImagenTextoCTA {
+		padding: 84px 0;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA .container--large {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__flex {
+		display: flex;
+		flex-direction: row;
+		column-gap: 36px;
+	}
+
+	.estilo-invertido .etapaEspecialidadesImagenTextoCTA__flex {
+		flex-direction: row-reverse;
+	}
+    
+    .paginaEndocrinologia .etapaEspecialidadesImagenTextoCTA__flex {
+    	flex-direction: row;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA .wrapper {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__col {
+		width: 50%;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__img {
+		padding: 0;
+	}
+
+	.etapaEspecialidadesImagenTextoCTA__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+}
+
+
+.paginaCardiologiasClinicas .etapaEspecialidadesHero__text {
+
+	padding: 76px 10px 76px 0;
+
+	padding-right: 16px;
+
+}
+
+
+
+.paginaCardiologiasClinicas .etapaEspecialidadesHero__text .heading--18 {
+
+	padding-right: 16px;
+
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica.etapaEspecialidadesTextDescBanner {
+
+	background-color: rgb(170 204 255 / 20%);
+}
+
+.paginaOrtopediaRodilla.etapaEspecialidadesTextDescBanner {
+background-color: #fff
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica .etapaEspecialidadesTextDescBanner__grid {
+
+	padding-bottom: 0px;
+
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica.etapaEspecialidadesImagenTextoCTA__img img {
+
+	width: auto;
+
+	border-radius: 60px 6px 6px 6px;
+
+  }
+
+
+
+  .paginaCardiologiaClinicaPediatrica.estilo-invertido .etapaEspecialidadesImagenTextoCTA__flex {
+
+	flex-direction: row;
+
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica ul {
+
+	list-style-type: none;
+
+	padding: 0;
+
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica li a {
+
+	text-decoration: none;
+
+}
+
+
+
+.paginaCardiologiaClinicaPediatrica li a::after {
+
+	content: "";
+
+	display: inline-block;
+
+	width: 24px; 
+
+	height: 24px; 
+
+	margin-left: 5px;
+
+	background-image: url('../images/icons/ico-chevron-rojo.svg'); 
+
+	background-size: contain;
+
+	background-repeat: no-repeat;
+
+	position: relative;
+
+	top: 7px; 
+
+}
+
+.paginaCardiologiasClinicas.etapaEspecialidadesTextDescBanner {
+	background-color: #fff;
+}
+
+.paginaCardiologiasClinicas .etapaEspecialidadesTextDescBanner__grid {
+
+	padding-bottom: 0px;
+
+}
+
+.paginaCardiologiasClinicas.estilo-invertido .etapaEspecialidadesImagenTextoCTA__flex {
+
+	flex-direction: row;
+
+}
+
+.etapaEspecialidadesTextDescBanner__info li {
+	position: relative;
+	width: fit-content;
+  }
+  
+  .etapaEspecialidadesTextDescBanner__info li:after {
+	    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -38px;
+    width: 20px;
+    height: 15px;
+    background: none;
+    background-image: url(/wp-content/themes/fcitheme/assets/images/iconos/flecha.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+/* etapaEspecialidadesTabTarjetaTextoImagen */
+.etapaEspecialidadesTabTarjetaTextoImagen {
+	padding: 40px 0 0;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen .container--large {
+	padding: 0;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__flex {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	row-gap: 30px;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 12px;
+	padding: 0 24px;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__info ul {
+	margin: 0;
+	padding: 18px 0 18px 18px;
+	line-height: 24px;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__info li {
+	margin-bottom: 0 !important;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__img {
+	text-align: right;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__info .heading--48 {
+	text-align: left;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__img img {
+	width: calc(100% - 20px);
+	border-radius: 6px 0px 0px 60px;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__info .boton-v2 {
+	margin-top: 26px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTabTarjetaTextoImagen {
+		padding: 84px 0 0;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen .container--large {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__flex {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen .wrapper {
+		padding: 0 24px;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__col {
+		width: 50%;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__info {
+		row-gap: 16px;
+		height: 100%;
+		padding: 0 10px 0 0;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__info .heading--48 {
+		margin-bottom: 14px;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__img {
+		padding: 0 0 0 84px;
+	}
+
+	.etapaEspecialidadesTabTarjetaTextoImagen__img img {
+		width: auto;
+		border-radius: 6px 6px 6px 60px;
+	}
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__tab {
+	border-bottom: 1px solid #ffabc4;
+	margin-bottom: 84px;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__tab ul {
+	display: flex;
+	column-gap: 6px;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	width: auto;
+	overflow-x: scroll;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__tab li {
+	list-style: none;
+	margin-bottom: 0 !important;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__tab a {
+	font-family: var(--ff-sans);
+	display: block;
+	padding: 16px 18px;
+	color: var(--e40046);
+	font-size: var(--18);
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	border-radius: 6px 6px 0px 0px;
+	background-color: rgb(255 171 196 / 30%);
+	text-decoration: none;
+}
+
+.etapaEspecialidadesTabTarjetaTextoImagen__tab a.active {
+	color: var(--fff);
+	background-color: var(--e40046);
+}
+
+@media only screen and (min-width: 1024px) {
+	.etapaEspecialidadesTabTarjetaTextoImagen__tab ul {
+		width: auto;
+		overflow-x: inherit;
+	}
+}

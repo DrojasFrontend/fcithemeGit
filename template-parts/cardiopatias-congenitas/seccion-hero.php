@@ -14,9 +14,9 @@ $ctas             = !empty($grupo_hero["ctas"]) && is_array($grupo_hero["ctas"])
   <div class="seccionHero__img">
     <img src="<?php echo esc_url($imagen_id['url']); ?>" alt="">
   </div>
-  <div class="seccionHero__img-mobile">
-    <img src="<?php echo esc_url($imagen_id_mobile['url']); ?>" alt="">
-  </div>
+	<div class="seccionHero__img-mobile">
+		<img src="<?php echo esc_url($imagen_id_mobile['url']); ?>" alt="">
+  	</div>
   <div class="seccionHero__contenido">
     <div class="container--large">
       <div class="seccionHero__titulo">

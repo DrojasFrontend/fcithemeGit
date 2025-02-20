@@ -28,7 +28,7 @@ $mostrar_ctas               = get_field('mostrar_ctas');
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta',array('class' => 'paginaTecnologiaPetCt'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta',array('class' => 'paginaTecnologiaPetCt paddingBottom'));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
@@ -59,7 +59,7 @@ $mostrar_ctas               = get_field('mostrar_ctas');
 
     <?php if($mostrar_texto_imagen_fondo) : ?>
       <!-- Texto Imagen Fondo -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-fondo-cta', array('class' => 'paginaTecnologiaPetCt'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-fondo-cta', array('class' => 'paginaTecnologiaPetCt paddingBottom'));?>
       <!-- Fin Texto Imagen Fondo -->
     <?php endif; ?>
 

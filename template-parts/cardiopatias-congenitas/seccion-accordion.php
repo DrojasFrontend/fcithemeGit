@@ -28,11 +28,10 @@ $sitename       = esc_html(get_bloginfo('name'));
         </button>
         <div class="accordion__panel" <?php echo $key == 1 ? 'style="display:block;"' : ''; ?>>
           <div class="accordion__content">
-            <p><?php echo $item['detalle']; ?></p>
+          	<?php echo $item['detalle']; ?>
           </div>
         </div>
       </div>
     <?php } ?>
   </div>
 </section>
-        

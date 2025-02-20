@@ -271,7 +271,7 @@ jQuery(document).ready(function ($) {
 			speed: 400,
 			dots: true,
 			arrows: false,
-			adaptiveHeight: false,
+			adaptiveHeight: true,
 		});
 	});
 
@@ -640,7 +640,7 @@ jQuery(document).ready(function ($) {
 
 		// Construir los filtros seleccionados como HTML
 		if (author) {
-			filtrosAplicados += `<span class="filtro-chip">Dra. ${author} <button type="button" class="eliminar-filtro" data-filtro="author"></button></span>`;
+			filtrosAplicados += `<span class="filtro-chip">${author} <button type="button" class="eliminar-filtro" data-filtro="author"></button></span>`;
 		}
 
 		if (order === "last_week") {

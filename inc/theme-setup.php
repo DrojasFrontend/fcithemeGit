@@ -771,87 +771,18 @@ function display_search_form() {
     return ob_get_clean();
 }
 
-
-// Buscar departamentos
-add_action('wp_ajax_buscar_departamentos', 'buscar_departamentos');
-add_action('wp_ajax_nopriv_buscar_departamentos', 'buscar_departamentos');
-
-function buscar_departamentos() {
-    $letra = $_POST['letra'];
-    $contentGlobal = get_page_by_path('home-prueba')->ID;
-    $grupo_departamentos = get_field('grupo_departamentos', $contentGlobal);
-    $departamentos = $grupo_departamentos['departamentos'];
-    
-    ob_start();
-    ?>
-    <div class="paginaDirectorioExpecialidades__resultados">
-        <?php 
-        foreach ($departamentos as $depto) {
-            if (strtoupper(substr($depto['departamento'], 0, 1)) === $letra):
-        ?>
-            <div class="paginaDirectorioExpecialidades__tarjeta">
-                <img src="<?php echo IMG_BASE . 'tarjeta-directorio-especialidades.png'?>" alt="">
-                <div class="paginaDirectorioExpecialidades__info">
-                    <h3 class="heading--24 color--002D72 fw-500"><?php echo $depto['departamento']; ?></h3>
-                    <a href="#" class="ver-especialidades heading--18 color--E40046" data-depto="<?php echo esc_attr($depto['departamento']); ?>">
-                        Ver especialidades
-                        <?php 
-                            get_template_part('template-parts/content', 'icono');
-                            display_icon('icono-arrow-next-rojo'); 
-                        ?>
-                    </a>
-                </div>
-            </div>
-        <?php 
-            endif;
-        }
-        ?>
-    </div>
-    <?php
-    echo ob_get_clean();
-    die();
+// Asegurarse de que el script se cargue
+function register_search_scripts() {
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('custom-search', get_template_directory_uri() . '/js/custom-search.js', array('jquery'), '1.0.1', true);
+    wp_localize_script('custom-search', 'ajax_object', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce' => wp_create_nonce('search_nonce')
+    ));
 }
+add_action('wp_enqueue_scripts', 'register_search_scripts');
 
-// Buscar especialidades
-add_action('wp_ajax_buscar_especialidades', 'buscar_especialidades');
-add_action('wp_ajax_nopriv_buscar_especialidades', 'buscar_especialidades');
 
-function buscar_especialidades() {
-    $depto = $_POST['departamento'];
-    $contentGlobal = get_page_by_path('home-prueba')->ID;
-    $grupo_departamentos = get_field('grupo_departamentos', $contentGlobal);
-    $departamentos = $grupo_departamentos['departamentos'];
-    
-    ob_start();
-    ?>
-    <div class="mt-8">
-        <h2 class="text-xl font-bold mb-4"><?php echo htmlspecialchars($depto); ?></h2>
-        <div class="space-y-2">
-            <?php
-            foreach ($departamentos as $d) {
-                if ($d['departamento'] === $depto) {
-                    foreach ($d['especialidades'] as $esp) {
-                        $especialidad = $esp['especialidad'];
-            ?>
-                        <div class="p-3 border rounded">
-                            <a href="<?php echo esc_url($especialidad['url']); ?>" 
-                               class="text-pink-500"
-                               <?php echo $especialidad['target'] ? 'target="' . esc_attr($especialidad['target']) . '"' : ''; ?>>
-                                <?php echo esc_html($especialidad['title']); ?>
-                            </a>
-                        </div>
-            <?php
-                    }
-                }
-            }
-            ?>
-        </div>
-        <a href="#" class="">&lt; Volver</a>
-    </div>
-    <?php
-    echo ob_get_clean();
-    die();
-}
 
 function bloquear_api_users( $endpoints ) {
     if ( isset( $endpoints['/wp/v2/users'] ) ) {

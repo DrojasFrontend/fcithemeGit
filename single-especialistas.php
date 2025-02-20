@@ -18,7 +18,7 @@ $biografia = get_field('bio_doctor');
 $areas_interes = get_field('area_doctor');
 $sociedades_cientificas = get_field('sociedades_doctor');
 $publicaciones = get_field('publications_repeater_doctor');
-$servicios = formatear_servicios($doctores[$post->post_name]);
+$servicios = (isset($doctores[$post->post_name])) ? formatear_servicios($doctores[$post->post_name]) : "";
 
 ?>
 <?= get_template_part('template-parts/content', 'breadcrumbs'); ?>

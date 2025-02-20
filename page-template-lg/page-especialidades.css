@@ -180,7 +180,7 @@ li::marker {
 	.paginaEcocardiografiaPed .etapaEspecialidadesHero__fondo,
 	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__fondo,
 	.paginaHemodinamiaPed .etapaEspecialidadesHero__fondo,
-	.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__fondo {
+    .paginaCardiologiasClinicas .etapaEspecialidadesHero__fondo{
 		column-gap: 0;
 	}
 
@@ -202,7 +202,7 @@ li::marker {
 	.paginaEcocardiografiaPed .etapaEspecialidadesHero__grid,
 	.paginaCirugiaCardiovacularPed .etapaEspecialidadesHero__grid,
 	.paginaHemodinamiaPed .etapaEspecialidadesHero__grid,
-	.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__grid {
+    .paginaCardiologiasClinicas .etapaEspecialidadesHero__grid {
 		grid-template-columns: 1fr 1fr;
 	}
 }
@@ -226,7 +226,8 @@ li::marker {
 .paginaGinecologia.etapaEspecialidadesTextoImagenCTA,
 .paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA,
 .paginaInfectologia.etapaEspecialidadesTextoImagenCTA,
-.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
+.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA,
+.paginaHemodinamiaAdulto.etapaEspecialidadesTextoImagenCTA{
 	padding: 40px 0;
 }
 
@@ -334,7 +335,8 @@ li::marker {
 	.paginaMetodosInvasivos.etapaEspecialidadesTextoImagenCTA,
 	.paginaGinecologia.etapaEspecialidadesTextoImagenCTA,
 	.paginaNeurologiaPediatrica.etapaEspecialidadesTextoImagenCTA,
-	.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA {
+	.paginaOftalmologia.etapaEspecialidadesTextoImagenCTA,
+	.paginaHemodinamiaAdulto.etapaEspecialidadesTextoImagenCTA {
 		padding: 84px 0;
 	}
 
@@ -1912,7 +1914,6 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 @media (min-width: 1024px) {
-	
 	.paddingBottom {
 		padding-bottom: 84px;
 	}
@@ -2215,10 +2216,6 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 }
 
 .paginaHemodinamiaPed .etapaEspecialidadesHero__text {
-	padding: 100px 20px 30px 0;
-}
-
-.paginaCirugiaVascularEndovascular .etapaEspecialidadesHero__text {
 	padding: 100px 20px 30px 0;
 }
 
@@ -2600,16 +2597,4 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 	.etapaEspecialidadesAccordion__titulo {
 		margin-bottom: 42px;
 	}
-}
-
-/* Pagina Cirugia Vascular Endovascular */
-
-.paginaCirugiaVascularEndovascular__fondoCTA {
-	background: rgba(170, 204, 255, 0.15);
-}
-
-/* Pagina Radiología e imágenes diagnósticas */
-
-.paginaRadiologiaImagenesDiagnosticas__fondoExpertos {
-	background: rgba(170, 204, 255, 0.15);
 }

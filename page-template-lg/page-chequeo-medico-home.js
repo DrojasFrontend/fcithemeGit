@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+console.log('init');
     var swiper = new Swiper(".swiper-container", {
         slidesPerView: 1,
         centeredSlides: true,

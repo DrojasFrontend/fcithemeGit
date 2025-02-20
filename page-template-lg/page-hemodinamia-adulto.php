@@ -73,7 +73,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_imagen_cta_2) : ?>
       <!-- Texto Imagen 2 -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>''));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaHemodinamiaAdulto'));?>
       <!-- Fin Texto Imagen 2 -->
     <?php endif; ?>
 
@@ -109,7 +109,3 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 <!-- CONTENIDO -->
 
 <?php get_footer(); ?>
-
-
-
-

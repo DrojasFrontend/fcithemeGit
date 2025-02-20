@@ -58,7 +58,8 @@ get_header();
 
                     <div class="seccionInternaEntradaBanner__compartir">
                         <p class="heading--14 color--fff">Compartir en:</p>
-                        <?php get_template_part('template-parts/redes/content', 'compartir') ?>
+                        
+                        <?php echo do_shortcode('[addtoany]') ?>
                     </div>
                 </div>
             </div>
@@ -198,4 +199,3 @@ get_header();
 <!-- FIN CONTENIDO -->
 
 <?php get_footer(); ?>
-

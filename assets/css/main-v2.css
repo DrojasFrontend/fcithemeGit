@@ -57,6 +57,10 @@ a:hover {
 	color: var(--002D72);
 }
 
+main {
+	padding-top: 36px;
+}
+
 .link {
 	font-family: var(--ff-sans);
 	font-size: var(--14);
@@ -169,7 +173,7 @@ body.is-active {
 	.customHeader__wrapper {
 		align-items: center;
 		width: 1440px;
-		padding: 0 40px;
+		padding: 0 24px;
 	}
 
 	.customHeader__logo {
@@ -184,7 +188,7 @@ body.is-active {
 @media only screen and (min-width: 1440px) {
 	.customHeader__wrapper {
 		width: 1440px;
-		padding: 0 24px;
+		padding: 0 40px;
 	}
 
 	.customHeader__ul {
@@ -2225,8 +2229,12 @@ input[type="text"] {
 	display: block;
 }
 
+.slickNoticias {
+	padding-bottom: 84px
+}
+
 .seccionNoticias__fondo {
-	padding: 60px 0 76px;
+	padding: 60px 0 0;
 }
 
 .seccionNoticias__titulo {
@@ -2435,7 +2443,7 @@ body .seccionNoticias .slick-track {
 	}
 
 	.seccionNoticias__fondo {
-		padding: 84px 40px;
+		padding: 84px 40px 0;
 	}
 
 	.seccionNoticias__info .heading--11 {
@@ -2510,7 +2518,7 @@ body .seccionNoticias .slick-track {
 }
 
 .seccionInternaEntradaBanner__img {
-	height: 328px;
+
 	margin: 0;
 	overflow: hidden;
 	border-radius: 0 60px 0 0;
@@ -2535,7 +2543,7 @@ body .seccionNoticias .slick-track {
 	}
 
 	.seccionInternaEntradaBanner__img {
-		height: 328px;
+
 		border-radius: 0 0 60px 0;
 	}
 
@@ -2548,7 +2556,7 @@ body .seccionNoticias .slick-track {
 .seccionInternaEntradaBanner__img img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .seccionInternaEntradaBanner__info .heading--20 {
@@ -2761,6 +2769,18 @@ body .seccionNoticias .slick-track {
 /*--------- targetaEntradas ---------*/
 .targetaEntradas {
 	padding: 50px 0 0;
+}
+
+.slickNoticias {
+	display: none;
+}
+
+.slickNoticias.slick-initialized {
+	display: block;
+}
+
+.targetaEntradas img {
+  object-fit: cover;
 }
 
 .grupo-1 {
@@ -3653,7 +3673,7 @@ body .seccionEventos .slick-slide {
 
 /* seccionSomosLacardio */
 .seccionSomosLacardio {
-	padding: 53px 0 60px;
+	padding: 40px 0;
 }
 
 .seccionSomosLacardio__grid {
@@ -3752,7 +3772,7 @@ ul.seccionSomosLacardio__detalle .heading--48 {
 
 @media only screen and (min-width: 1024px) {
 	.seccionSomosLacardio {
-		padding: 0 0 84px 0;
+		padding: 84px 0;
 	}
 
 	.seccionSomosLacardio__grid {
@@ -3793,7 +3813,7 @@ ul.seccionSomosLacardio__detalle .heading--48 {
 
 /* seccionSedes */
 .seccionSedes {
-	padding: 60px 0 83px;
+	padding: 60px 0;
 }
 
 .seccionSedes__grid,
@@ -5161,9 +5181,6 @@ padding-bottom: 20px;
 }
 
 /* seccionTextoImagen */
-.seccionTextoImagen {
-	padding: 60px 0 0;
-}
 
 .seccionTextoImagen__grid {
 	display: flex;
@@ -5231,9 +5248,6 @@ padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
-	.seccionTextoImagen {
-		padding: 80px 0 0;
-	}
 
 	.seccionTextoImagen__grid {
 		display: grid;
@@ -7231,6 +7245,7 @@ article.seccionArticulosBuscados__articulo a {
 
 .seccionFormularioSolicitudCitas__form input[type="text"],
 .seccionFormularioSolicitudCitas__form input[type="email"],
+.seccionFormularioSolicitudCitas__form input[type="date"],
 .seccionFormularioSolicitudCitas__form input[type="tel"],
 .seccionFormularioSolicitudCitas__form select {
 	height: 56px;
@@ -7397,3 +7412,331 @@ article.seccionArticulosBuscados__articulo a {
  .slick-slide.slick-active {
     height: 100% !important;  
  }
+ 
+ /* seccionCitasFormularioContacto */
+
+  .seccionCitasFormularioContacto__form .boton-v2--rojo-rojo {
+
+    width: 212px;
+    height: 56px;
+    background: #E40046;
+    border-radius: 6px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    float: right;
+
+  }
+
+  .seccionCitasFormularioContacto__form .boton-v2--rojo-rojo:hover {
+    color: #FFFFFF !important;
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload {
+    position: relative;
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload input[type="file"] {
+    display: none;
+    /* Oculta el input original */
+  }
+
+  .seccionCitasFormularioContacto__form .custom-file-upload label {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px dashed #E40046;
+    box-shadow: 0px 4px 24px rgba(103, 114, 131, 0.15);
+    border-radius: 6px;
+    align-content: center;
+    justify-content: center;
+    color: #E40046;
+
+
+
+
+  }
+
+
+  .seccionCitasFormularioContacto__form .custom-file-upload .upload-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+
+  .seccionCitasFormularioContacto__form .autorizacionDocSoporte {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: #263956;
+    margin-bottom: 20px;
+
+  }
+
+
+  .seccionCitasFormularioContacto__form .field.FieldCyT,
+  .seccionCitasFormularioContacto__form .field {
+    margin-bottom: 20px;
+  }
+
+
+  .seccionCitasFormularioContacto__contenido {
+    padding: 40px 0 60px;
+  }
+
+  .seccionCitasFormularioContacto__titulo {
+    text-align: center;
+    display: grid;
+    row-gap: 12px;
+    padding-bottom: 20px;
+  }
+
+  .seccionCitasFormularioContacto__titulo .heading--64 {
+    font-weight: 400;
+  }
+
+  .seccionCitasFormularioContacto__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .seccionCitasFormularioContacto__form {
+    padding: 0;
+  }
+
+  .seccionCitasFormularioContacto__img {
+    display: none;
+    text-align: right;
+  }
+
+  .seccionCitasFormularioContacto__img img {
+    max-width: 479px;
+    margin: 0 0 0 auto;
+  }
+
+  .seccionCitasFormularioContacto__form label {
+    display: block;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"],
+  .seccionCitasFormularioContacto__form input[type="email"],
+  .seccionCitasFormularioContacto__form input[type="tel"],
+  .seccionCitasFormularioContacto__form select {
+    height: 56px;
+    border: 1px solid #d5dbe7;
+    box-shadow: none;
+    padding: 0 24px;
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border-radius: 6px;
+
+
+
+  }
+
+  /* Para navegadores WebKit (Chrome, Safari) */
+  .seccionCitasFormularioContacto__form input[type="text"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]::-webkit-input-placeholder,
+  .seccionCitasFormularioContacto__form select::-webkit-input-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+  /* Para Mozilla Firefox */
+  .seccionCitasFormularioContacto__form input[type="text"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]::-moz-placeholder,
+  .seccionCitasFormularioContacto__form select::-moz-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+  /* Para Microsoft Edge y IE */
+  .seccionCitasFormularioContacto__form input[type="text"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form input[type="tel"]:-ms-input-placeholder,
+  .seccionCitasFormularioContacto__form select:-ms-input-placeholder {
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.27px;
+    box-sizing: border-box;
+  }
+
+
+  .seccionCitasFormularioContacto__form select {
+    padding: 0 24px;
+  }
+
+  .seccionCitasFormularioContacto__form textarea {
+    border: 1px solid #d5dbe7;
+    border-radius: 6px;
+    padding: 24px;
+  }
+
+  .seccionCitasFormularioContacto__form .btn-guardar {
+    height: 56px;
+    border-radius: 6px !important;
+    font-family: var(--ff-sans) !important;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 24px;
+    margin: 0 !important;
+  }
+
+  .seccionCitasFormularioContacto__form .formulario__lateral .mb-2.text-center p {
+    text-align: left;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]::-webkit-input-placeholder,
+  /* Chrome/Opera/Safari */
+  .seccionCitasFormularioContacto__form input[type="email"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]::-moz-placeholder,
+  /* Firefox 19+ */
+  .seccionCitasFormularioContacto__form input[type="email"]::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]:-ms-input-placeholder,
+  /* IE 10+ */
+  .seccionCitasFormularioContacto__form input[type="email"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form input[type="text"]:-moz-placeholder,
+  .seccionCitasFormularioContacto__form input[type="email"]:-moz-placeholder {
+    /* Firefox 18- */
+    color: #677283;
+    font-family: var(--ff-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    letter-spacing: 0.27px;
+  }
+
+  .seccionCitasFormularioContacto__form .wpcf7-response-output {
+    display: none;
+  }
+
+  .seccionCitasFormularioContacto__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fff);
+    z-index: 999;
+    padding: 70px 0 0;
+    overflow: auto;
+  }
+
+
+  .seccionCitasFormularioContacto__close {
+    position: absolute;
+    top: 100px;
+    right: 24px;
+    color: var(--002D72);
+    border: 0;
+    background: transparent;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .seccionCitasFormularioContacto__contenido {
+      padding: 66px 100px;
+    }
+
+    .seccionCitasFormularioContacto__titulo {
+      row-gap: 12px;
+      padding-bottom: 40px;
+    }
+
+    .seccionCitasFormularioContacto__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .seccionCitasFormularioContacto__img {
+      display: block;
+    }
+
+    .seccionCitasFormularioContacto__modal .seccionCitasFormularioContacto__contenido {
+      padding: 66px 95px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .seccionCitasFormularioContacto__form {
+      padding: 0;
+    }
+  }

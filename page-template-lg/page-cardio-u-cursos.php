@@ -26,6 +26,7 @@ $modalidad                  = get_field('modalidad');
 $tipo_oferta                = get_field('tipo_oferta');
 $audiencia                  = get_field('audiencia');
 $duracion                   = get_field('duracion');
+$certificacion              = get_field('certificacion');
 $boton_inscripcion          = get_field('boton_inscripcion');
 $precio                     = get_field('precio');
 $docentes                   = get_field('docentes');
@@ -37,6 +38,7 @@ $descripcion_corta          = $grupo_informcion_adicional['descripcion_corta'];
 $descripcion_full           = $grupo_informcion_adicional['descripcion_full'];
 $resumen                    = $grupo_informcion_adicional['resumen'];
 $faqs                       = $grupo_informcion_adicional['preguntas_frecuentes'];
+$logos                       = $grupo_informcion_adicional['logos_de_apoyo'];
 
 $imagen_id                  = !empty($imagen_curso['ID']) ? $imagen_curso['ID'] : '';
 
@@ -158,8 +160,22 @@ set_query_var('grupo_cursos', $grupo_cursos);
                             </p>
                         </section>
                         <?php endif; ?>
+						
+                        <?php if ($logos) : ?>
+							<section class="seccionCardioUInternaCurso__detalle">
+								<h2 class="heading--36 color--002D72">Con el apoyo de:</h2>
+								<div class="heading--18 color--263956">
+									<div class="logos-apoyo">
+										<?php foreach ($logos as $logo) : ?>
+											<div class="logo-item">
+												<img src="<?php echo esc_url($logo['imagen']['url']); ?>" alt="<?php echo esc_attr($logo['imagen']['alt']); ?>">
+											</div>
+										<?php endforeach; ?>
+									</div>
+								</div>
+							</section>
+						<?php endif; ?>
 
-                        <?php if($cta_financiar) { ?>
                         <section class="seccionCardioUInternaCurso__financiar">
                             <?php if($fondo_financiar) { ?>
                             <img class="seccionCardioUInternaCurso__financiar-banner" class="" src="<?php echo $fondo_financiar; ?>" alt="">
@@ -188,7 +204,6 @@ set_query_var('grupo_cursos', $grupo_cursos);
                                 <?php } ?>
                             </div>
                         </section>
-                        <?php } ?>
                 
                         <?php if($faqs) : ?>
                         <!-- Preguntas frecuentes -->
@@ -259,6 +274,12 @@ set_query_var('grupo_cursos', $grupo_cursos);
                                     <strong>Horas certificables:</strong> 
                                     <?php echo $horas; ?>
                                 </p>
+								
+								<p class="info heading--14 color--677283">
+                                    <?php echo $certificacion; ?>
+                                </p>
+								
+								
                                 <?php if (!empty($fecha_inicio)): ?>
                                     <p class="info heading--14 color--677283">
                                         <span>

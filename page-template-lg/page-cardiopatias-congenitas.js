@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-  console.log("init");
 	/* swiperTarjetas */
 	var swiper = new Swiper(".swiperTarjetas", {
 		slidesPerView: 1.2,
@@ -32,27 +31,6 @@ jQuery(document).ready(function ($) {
 			},
 		},
 	});
-	function setEqualHeightTarjetas() {
-		var maxHeight24 = 0;
-
-		$(".swiperTarjetas .swiper-slide .heading--24").each(function () {
-			var itemHeight24 = $(this).outerHeight();
-			if (itemHeight24 > maxHeight24) {
-				maxHeight24 = itemHeight24;
-			}
-		});
-		$(".swiperTarjetas .swiper-slide .heading--24").css("height", maxHeight24);
-
-		var maxHeight18 = 0;
-		$(".swiperTarjetas .swiper-slide p.heading--18").each(function () {
-			var itemHeight18 = $(this).outerHeight();
-			if (itemHeight18 > maxHeight18) {
-				maxHeight18 = itemHeight18;
-			}
-		});
-		$(".swiperTarjetas .swiper-slide p.heading--18").css("height", maxHeight18);
-	}
-	setEqualHeightTarjetas();
 
 	/* swiperTarjetasGrandes */
 	var swiper = new Swiper(".swiperTarjetasGrandes", {
@@ -154,7 +132,7 @@ jQuery(document).ready(function ($) {
 		$("#formulario").fadeOut();
 	});
 
-  // Inicialización: asegurarse que el primer panel esté abierto
+	// Inicialización: asegurarse que el primer panel esté abierto
 	$(".accordion__panel:not(:first)").hide();
 	$(".accordion__trigger:first").addClass("is-active");
 
@@ -180,25 +158,34 @@ jQuery(document).ready(function ($) {
 
 		return false; // Prevenir comportamiento por defecto
 	});
+
+	$('a[href="#formCitaTeleC"]').click(function (e) {
+		e.preventDefault();
+		$("#formCitaTeleC").fadeIn();
+	});
+
+	$("#cerrarFormCitaTeleC").click(function (e) {
+		$("#formCitaTeleC").fadeOut();
+	});
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-	const tabs = document.querySelectorAll('.tab');
-	const contents = document.querySelectorAll('.tab-content');
+document.addEventListener("DOMContentLoaded", function () {
+	const tabs = document.querySelectorAll(".tab");
+	const contents = document.querySelectorAll(".tab-content");
 
-	tabs.forEach(tab => {
-		tab.addEventListener('click', function() {
-		tabs.forEach(t => t.classList.remove('active'));
-		this.classList.add('active');
+	tabs.forEach((tab) => {
+		tab.addEventListener("click", function () {
+			tabs.forEach((t) => t.classList.remove("active"));
+			this.classList.add("active");
 
-		const target = this.getAttribute('data-tab');
-		contents.forEach(content => {
-			if(content.id === target) {
-			content.style.display = 'grid';
-			} else {
-			content.style.display = 'none';
-			}
-		});
+			const target = this.getAttribute("data-tab");
+			contents.forEach((content) => {
+				if (content.id === target) {
+					content.style.display = "grid";
+				} else {
+					content.style.display = "none";
+				}
+			});
 		});
 	});
 });

@@ -11,6 +11,7 @@ set_query_var('autor', $autor);
 
 
 $nombre_doctor       = !empty(get_field('nombre_doctor')) ? get_field('nombre_doctor') : '';
+$apellido_doctor          = !empty(get_field('apellido_doctor')) ? get_field('apellido_doctor') : '';
 
 $foto_doctor_home    = !empty(get_field('foto_doctor_home')) ? get_field('foto_doctor_home') : '';
 set_query_var('foto_doctor_home', $foto_doctor_home);
@@ -99,7 +100,7 @@ get_header();
         <!-- Más de -->
         <div class="seccionInternaBlogInfo__caja-gris">
             <div class="container--large">
-                <h2 class="heading--48 seccionInternaBlogMasInfo__h2">Más de <?php echo $nombre_doctor; ?></h2>
+                <h2 class="heading--48 seccionInternaBlogMasInfo__h2">Más de <?php echo $nombre_doctor; ?> <?php echo $apellido_doctor ?></h2>
                 <div class="seccionInternaBlogMasInfo">
                     <?php 
                         $current_doctor_name = get_field('nombre_doctor', get_the_ID());

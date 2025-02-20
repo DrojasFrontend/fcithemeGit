@@ -223,6 +223,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+	
+	
+	document.addEventListener("DOMContentLoaded", function() {
+		const metaTags = [
+			{ name: "title", content: "Especialistas | Fundación Cardioinfantil-LaCardio" },
+			{ name: "description", content: "Conoce al equipo de especialistas en la Fundación Cardioinfantil-LaCardio, compuesto por expertos en diversas áreas de la medicina, dedicados a ofrecer la mejor atención a nuestros pacientes." },
+			{ name: "keywords", content: "Especialistas, Equipo médico, LaCardio, Fundación Cardioinfantil, Atención especializada" },
+			{ property: "og:title", content: "Especialistas | Fundación Cardioinfantil-LaCardio" },
+			{ property: "og:description", content: "Descubre al equipo de especialistas de LaCardio, comprometidos en brindar la mejor atención médica a nuestros pacientes con dedicación y profesionalismo." },
+			{ property: "og:type", content: "website" },
+			{ property: "og:url", content: "https://www.lacardio.org/especialistas/" }
+		];
+	
+		// Actualizar o añadir la etiqueta <title>
+		const pageTitle = metaTags.find(tag => tag.name === "title");
+		if (pageTitle) {
+			document.title = pageTitle.content;
+		}
+	
+		// Añadir o actualizar <meta> tags
+		metaTags.forEach(tag => {
+			let metaElement;
+	
+			if (tag.name) {
+				metaElement = document.querySelector(`meta[name="${tag.name}"]`);
+			} else if (tag.property) {
+				metaElement = document.querySelector(`meta[property="${tag.property}"]`);
+			}
+	
+			if (metaElement) {
+				// Si el meta ya existe, actualiza su contenido.
+				metaElement.setAttribute("content", tag.content);
+			} else {
+				// Si no existe, crea un nuevo meta.
+				metaElement = document.createElement("meta");
+				if (tag.name) metaElement.setAttribute("name", tag.name);
+				if (tag.property) metaElement.setAttribute("property", tag.property);
+				metaElement.setAttribute("content", tag.content);
+				document.head.appendChild(metaElement);
+			}
+		});
+	});
+
+	
+	
 </script>
 
 

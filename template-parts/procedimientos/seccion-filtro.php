@@ -42,7 +42,7 @@ if ($filtro_aplicado) {
   <div class="container--large">
     <div class="procedimientoFiltro__titulo">
       <?php if($info_titulo) : ?>
-        <h2 class="heading--36 color--002D72""><?php echo $info_titulo; ?></h2>
+        <h2 class="heading--36 color--002D72"><?php echo $info_titulo; ?></h2>
       <?php endif; ?>
 
       <?php if($info_descripcion) : ?>
@@ -102,14 +102,14 @@ if ($filtro_aplicado) {
           <div class="procedimientoFiltro__grid">
             <div class="procedimientoFiltro__enlaces">
               <?php if($info_subtitulo) : ?>
-                <p class="heading--18 color--002D72""><?php echo $info_subtitulo; ?></p>
+                <h2 class="heading--18 color--002D72"><?php echo $info_subtitulo; ?></h2>
                 <?php foreach ($info_enlaces as $key => $enlace) { 
                   $url    = !empty($enlace['enlace']['url']) ? esc_url($enlace['enlace']['url']) : '';
                   $target = !empty($enlace['enlace']['target']) ? esc_attr($enlace['enlace']['target']) : '';
                   $titulo = !empty($enlace['enlace']['title']) ? esc_html($enlace['enlace']['title']) : '';
                 ?>
-                <a href="<?php echo $url; ?>" target="<?php echo $target; ?>" title="mas sobre <?php echo $titulo; ?>">
-                  <?php echo $titulo; ?>
+                <a href="<?php echo $url; ?>" target="<?php echo $target; ?>" title="mas sobre <?php echo $titulo; ?>"> 
+                  <h3><?php echo $titulo; ?></h3>
                   <span class="heading--18 color--E40046">
                     Ver más
                     <?php 

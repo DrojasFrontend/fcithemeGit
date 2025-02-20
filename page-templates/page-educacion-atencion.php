@@ -71,8 +71,8 @@ endif;
             <?php the_content() ?>
         </div>
         <div class="noticiasgeneral__tituloh2">
-            <h2>A su ingreso al hospital</h2>
-            <p>Durante su ingreso y hospitalización recibirá temas claves como:</p>
+            <h2>A tu ingreso al hospital</h2>
+            <p>Durante tu ingreso y hospitalización recibirás temas claves como:</p>
         </div>
         <div class="noticiasgeneral__resultados mb-4">
             <?php $indicepubli = 0; foreach($publicaciones as $idPublicacion => $cadaPublicacion): ?>
@@ -102,7 +102,7 @@ endif;
         </div>
         <div class="noticiasgeneral__tituloh2">
             <h2>En la continuidad de la atención</h2>
-            <p>En la continuidad de su atención recibirá información por parte del personal de salud sobre:</p>
+            <p>En la continuidad de tu atención recibirás información por parte del personal de salud sobre:</p>
         </div>
         <div class="noticiasgeneral__resultados">
             <?php $indicepubli = 0; foreach($publicaciones as $idPublicacion => $cadaPublicacion): ?>

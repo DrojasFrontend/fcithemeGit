@@ -384,7 +384,7 @@ function jw_customizar_template($wp_customize)
         'capability' => 'edit_theme_options',
     ));
 
-    $color = array('slug' => '#ffffff');
+    $color = array();
     $wp_customize->add_control(new WP_Customize_Color_Control(
         $wp_customize,
         'estilos_seccion_colorcentral1',
@@ -2166,6 +2166,31 @@ add_filter("wpcf7_form_tag", function ($scanned_tag, $replace) {
         $scanned_tag['values'] = $pipes->collect_afters(); // Esto es el valor para cada opción
     endif;
     /* Termina el proceso individual de campos */
+
+    return $scanned_tag;
+}, 10, 2);
+
+
+
+
+add_filter("wpcf7_form_tag", function ($scanned_tag, $form) {
+    global $wpdb;
+
+    // Verifica si el campo es "evento"
+    if ($scanned_tag["name"] === "evento") {
+        // Obtener el título de la página
+        $titulo_pagina = get_the_title();
+
+        // Configurar valores y opciones del campo
+        $scanned_tag['raw_values'] = [$titulo_pagina];
+        $scanned_tag['options'][] = sprintf('default:%s', $titulo_pagina);
+
+        // Manejo de pipes
+        $pipes = new WPCF7_Pipes($scanned_tag['raw_values']);
+        $scanned_tag['labels'] = $pipes->collect_befores(); // HTML de las opciones
+        $scanned_tag['pipes'] = $pipes;                    // Separadores (si aplican)
+        $scanned_tag['values'] = $pipes->collect_afters(); // Valores de las opciones
+    }
 
     return $scanned_tag;
 }, 10, 2);

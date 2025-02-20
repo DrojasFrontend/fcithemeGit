@@ -15,7 +15,7 @@ $eventos_query = new WP_Query($args);
         <div class="container--large">
             <div class="seccionEventos__titulo">
                 <div>
-                    <p class="heading--14 color--002D72">PODCAST FELLOWS LACARDIO</p>
+                    <p class="heading--14 color--002D72">VIDEOPODCAST FELLOWS LACARDIO</p>
                     <h2>
                         <span class="heading--48" style="color:#002d72;font-weight:300;font-family:Prompt;">
                             Disfruta de nuestro contenido

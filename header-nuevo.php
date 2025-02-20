@@ -237,6 +237,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-    <?php get_template_part('template-parts/page/header/content', 'header') ?>
+    <?php get_template_part('template-parts/page/header/content', 'header-nuevo') ?>
     <div class="fci">
         <div class="fci__cuerpo">

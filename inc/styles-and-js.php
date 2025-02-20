@@ -90,7 +90,7 @@ function enqueue_scripts() {
 
       // Etapas Especialidades
     $pageEspecialidades = array(
-        'page-template-lg/page-urgencias.php',
+         	'page-template-lg/page-urgencias.php',
         'page-template-lg/page-otorrino.php',
         'page-template-lg/page-ginecologia.php',
         'page-template-lg/page-cirugia-plastica.php',
@@ -156,6 +156,7 @@ function enqueue_scripts() {
         'page-template-lg/page-dermatologia.php',
         'page-template-lg/page-urologia.php',
         'page-template-lg/page-electrofisiologia-adultos.php',
+        'page-template-lg/page-electrofisiologia-pediatrica.php',
         'page-template-lg/page-imagenes-diagnosticas.php',
         'page-template-lg/page-neuropsicologia.php',
         'page-template-lg/page-biologia-molecular.php',
@@ -167,7 +168,9 @@ function enqueue_scripts() {
         'page-template-lg/page-hemodinamia-pediatrica.php',
         'page-template-lg/page-cirugia-cardiovascular-pediatrica.php',
         'page-template-lg/page-ecocardiografia-pediatrica.php',
-        'page-template-lg/page-cirugia-vascular-endovascular.php',
+		'page-template-lg/page-cirugia-vascular-endovascular.php',
+		'page-template-lg/page-tecnologia-spect-ct.php',
+		'page-template-lg/page-tecnologia-pet-ct.php',
     );
 
     if(is_page_template($pageEspecialidades) ) {
@@ -221,7 +224,8 @@ function enqueue_scripts() {
         'page-template-lg/page-trasplantes-pulmon.php',
         'page-template-lg/page-trasplantes-corazon.php',
         'page-template-lg/page-trasplantes-pancreas.php',
-        'page-template-lg/page-trasplantes-renal.php',
+		'page-template-lg/page-trasplante-renal.php',
+		'page-template-lg/page-trasplante-corazon.php',
     );
 
     if(is_page_template($pageTrasplante) ) {
@@ -275,22 +279,6 @@ function enqueue_scripts() {
         wp_register_script('centro_investigacion_js', $investigacionJsFileURI, array('jquery'), $version, true);
         wp_enqueue_script('centro_investigacion_js');
     }
-    
-
-    $chequeMedico = array(
-        'page-template-lg/page-chequeo-medico.php',
-    );
-
-    if(is_page_template($chequeMedico) ) {
-        $chequeMedico = get_template_directory_uri() . '/page-template-lg/page-chequeo-medico.css';
-        wp_enqueue_style('chequeo_medico_css', $chequeMedico);
-        
-        enqueue_swiper_assets();
-    
-        $investigacionJsFileURI = get_template_directory_uri() . '/page-template-lg/page-chequeo-medico.js';
-        wp_register_script('chequeo_medico_js', $investigacionJsFileURI, array('jquery'), $version, true);
-        wp_enqueue_script('chequeo_medico_js');
-    }
 
     // Chequeo Medico
     $pageChequeoMedico = array(
@@ -317,7 +305,19 @@ function enqueue_scripts() {
 
     $directorioEspecialidades = array(
         'page-template-lg/page-buscador-servicios.php',
-        'page-template-lg/page-buscador-servicios-resultados.php',
+    );
+
+    if(is_page_template($directorioEspecialidades) ) {
+        $directorioEspecialidades = get_template_directory_uri() . '/page-template-lg/page-buscador-servicios.css';
+        wp_enqueue_style('directorio_especialidades_css', $directorioEspecialidades);
+    
+        $directorioEspecialidadesJsFileURI = get_template_directory_uri() . '/page-template-lg/page-buscador-servicios.js';
+        wp_register_script('directorio_especialidades_js', $directorioEspecialidadesJsFileURI, array('jquery'), $version, true);
+        wp_enqueue_script('directorio_especialidades_js');
+    }
+
+    $directorioEspecialidades = array(
+        'page-template-lg/page-buscador-servicios.php',
     );
 
     if(is_page_template($directorioEspecialidades) ) {
@@ -335,9 +335,9 @@ function enqueue_scripts() {
     if(is_page_template($pageCardiopatiasCongenitas) ) {
         $cardiopatiasCongenitasCssFileURI = get_template_directory_uri() . '/page-template-lg/page-cardiopatias-congenitas.css';
         wp_enqueue_style('cardiopatiasCongenitas_css', $cardiopatiasCongenitasCssFileURI);
-
+ 
         enqueue_swiper_assets();
-        
+       
         $cardiopatiasCongenitasJsFileURI = get_template_directory_uri() . '/page-template-lg/page-cardiopatias-congenitas.js';
         wp_register_script('cardiopatiasCongenitas_js', $cardiopatiasCongenitasJsFileURI, array('jquery'), $version, true);
         wp_enqueue_script('cardiopatiasCongenitas_js');
@@ -348,5 +348,5 @@ function enqueue_scripts() {
         'ajaxurl' => admin_url('admin-ajax.php'),
     ));
 }
-
+ 
 add_action('wp_enqueue_scripts', 'enqueue_scripts');

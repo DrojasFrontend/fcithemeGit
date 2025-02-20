@@ -180,7 +180,7 @@ get_header();
 
 		// Construir los filtros seleccionados como HTML
 		if (author) {
-			filtrosAplicados += `<span class="filtro-chip">Dra. ${author} <button type="button" class="eliminar-filtro" data-filtro="author"></button></span>`;
+			filtrosAplicados += `<span class="filtro-chip">${author} <button type="button" class="eliminar-filtro" data-filtro="author"></button></span>`;
 		}
 
 		if (order === "last_week") {

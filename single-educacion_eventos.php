@@ -50,22 +50,26 @@ $tabs = get_field('tabs-group');
                                 <?php endforeach ?>
                             </div>
 
-                            <div style="display: flex;align-items: center;justify-content: center;">
+                            <div style="display: flex; align-items: center; justify-content: center;">
 
-                                <p class="text-center py-4 m-1">
-                                    <a href="<?= $boton_inscribete ?>" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
-                                        Inscribete
-                                    </a>
-                                </p>
+							<?php if (!empty($boton_inscribete)): ?>
+								<p class="text-center py-4 m-1">
+									<a href="<?= htmlspecialchars($boton_inscribete, ENT_QUOTES, 'UTF-8') ?>" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
+										Inscríbete
+									</a>
+								</p>
+							<?php endif; ?>
 
+							<?php if (!empty($boton_conoce_programa)): ?>
+								<p class="text-center py-4 m-1">
+									<a href="<?= htmlspecialchars($boton_conoce_programa, ENT_QUOTES, 'UTF-8') ?>" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
+										Conoce el programa
+									</a>
+								</p>
+							<?php endif; ?>
 
-                                <p class="text-center py-4 m-1">
-                                    <a href="<?= $boton_conoce_programa ?>" class="btn btn-principal" data-wpel-link="internal" tabindex="0">
-                                        Conoce el programa
-                                    </a>
-                                </p>
+						</div>
 
-                            </div>
 
                         </div>
                     </div>

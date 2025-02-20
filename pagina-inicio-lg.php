@@ -29,6 +29,13 @@ $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_h
             <!-- Fin Carusel -->
         <?php } ?>
 
+<?php if($mostrar_servicios_medicos) { ?>
+            <!-- Servicios medicos -->
+            <?php get_template_part('template-parts/secciones/seccion', 'servicios-medicos-lg'); ?>
+            <!-- Fin Servicios medicos -->
+        <?php } ?>
+
+
         <?php if($mostrar_somos_lacardio) { ?>
             <!-- Servicios medicos -->
             <?php get_template_part('template-parts/secciones/seccion', 'somos-lacardio-lg'); ?>
@@ -49,11 +56,7 @@ $numero_entradas            = !empty($grupo_noticias['numero_entradas']) ? esc_h
             <!-- Fin Noticias -->
         <?php } ?>
 
-        <?php if($mostrar_servicios_medicos) { ?>
-            <!-- Servicios medicos -->
-            <?php get_template_part('template-parts/secciones/seccion', 'servicios-medicos-lg'); ?>
-            <!-- Fin Servicios medicos -->
-        <?php } ?>
+        
 
         <?php if($mostrar_nosotros) { ?>
             <!-- conoce más de nosotros -->

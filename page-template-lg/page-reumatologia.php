@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Reumatologia
+Template Name: Plantilla Especialidad | Reumatología
 */ 
 
 get_header();
@@ -25,25 +25,25 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
   <main class="paginaEtapaExpecialidades">
     <?php if($mostrar_hero) : ?>
       <!-- Hero -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => 'paginaCardiologiasClinicas') );?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'hero', array('class' => '') );?>
       <!-- Fin Hero -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaOftalmologia'));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
      <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaOftalmologia'));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta_invertido) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
@@ -55,7 +55,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaHematoOncologia'));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -67,13 +67,13 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_items_iconos) : ?>
       <!-- Items Iconos -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'items-iconos', array('class' => ''));?>
       <!-- Fin Items Iconos -->
     <?php endif; ?>
 
     <?php if($mostrar_texto_imagen_cta_2) : ?>
       <!-- Texto Imagen 2 -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>''));?>
       <!-- Fin Texto Imagen 2 -->
     <?php endif; ?>
 
@@ -85,7 +85,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_targetas_grid) : ?>
       <!-- Targetas Grid -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid', array("class" => "paginaReumatologiaPediatrica"));?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
 
@@ -109,7 +109,3 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 <!-- CONTENIDO -->
 
 <?php get_footer(); ?>
-
-
-
-

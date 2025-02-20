@@ -16,6 +16,7 @@ $mostrar_items_iconos                 = get_field('mostrar_items_iconos');
 $mostrar_texto_imagen_cta_2           = get_field('mostrar_texto_imagen_cta_2');
 $mostrar_texto_imagen_fondo           = get_field('mostrar_texto_imagen_fondo');
 $mostrar_targetas_grid                = get_field('mostrar_targetas_grid');
+$mostrar_acordion                     = get_field('mostrar_acordion');
 $mostrar_experto                      = get_field('mostrar_experto');
 $mostrar_ctas                         = get_field('mostrar_ctas');
 $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto');
@@ -88,6 +89,12 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
         <?php get_template_part('template-parts/especialidades/seccion', 'targetas-grid');?>
       <!-- Fin Targetas Grid -->
     <?php endif; ?>
+	  
+	<?php if($mostrar_acordion) : ?>
+	  <!-- Accordion -->
+	  	<?php get_template_part('template-parts/especialidades/seccion', 'accordion', array('class' => 'paginaImagenesDC'));?>
+	  <!-- Fin Accordion -->
+	 <?php endif; ?>
 
     <?php if($mostrar_experto) : ?>
       <!-- Experto -->
@@ -109,7 +116,3 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 <!-- CONTENIDO -->
 
 <?php get_footer(); ?>
-
-
-
-

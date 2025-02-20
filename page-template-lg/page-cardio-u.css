@@ -2393,3 +2393,15 @@
 		padding: 42px 52px 36px 0;
 	}
 }
+
+.logos-apoyo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.logos-apoyo .logo-item img {
+	width: 110px;
+}

@@ -109,7 +109,3 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 <!-- CONTENIDO -->
 
 <?php get_footer(); ?>
-
-
-
-

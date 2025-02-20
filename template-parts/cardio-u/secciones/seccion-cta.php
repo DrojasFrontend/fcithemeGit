@@ -4,7 +4,7 @@ $ctas = [
     [
         'imagen' => IMG_BASE . 'lacardio.svg',
         'alt' => 'lacardio',
-        'link' => 'http://www.lacardio.org/'
+        'link' => 'https://www.lacardio.org/'
     ],
     [
         'imagen' => IMG_BASE . 'fundacion-cardioinfantil.svg',

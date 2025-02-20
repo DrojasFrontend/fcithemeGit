@@ -47,7 +47,7 @@ $mostrar_videos           = get_field('mostrar_videos');
 
   <?php if ($mostrar_texto_imagen) : ?>        
     <!-- Texto Imagen -->    
-    <?php get_template_part('template-parts/trasplante/seccion', 'texto-imagen'); ?>        
+    <?php get_template_part('template-parts/trasplante/seccion', 'texto-imagen', array('class' => 'paginaRinon')); ?>        
     <!-- Fin Texto Imagen -->
   <?php endif; ?>    
 

@@ -49,18 +49,18 @@
         $first = false;
         endforeach; ?>
     <?php endif; ?>
-
-    <?php
-        if (is_array($cta) && isset($cta['url'], $cta['title'], $cta['target'])) :
-            $url = $cta['url'];
-            $texto = $cta['title'];
-            $target = $cta['target'] ? $cta['target'] : '_self';
-    ?>
+	
+<?php
+              if (is_array($cta) && isset($cta['url'], $cta['title'], $cta['target'])) :
+                  $url = $cta['url'];
+                  $texto = $cta['title'];
+                  $target = $cta['target'] ? $cta['target'] : '_self';
+          ?>
     <div class="cta-button">
       <a class="boton-v2 boton-v2--blanco-rojo" href="<?php echo esc_url($url); ?>" 
               target="<?php echo esc_attr($target); ?>">
               <?php echo esc_html($texto); ?></a>
     </div>
-	  <?php endif; ?>
+	<?php endif; ?>
     </div>
   </section>
