@@ -1,65 +1,21 @@
 <?php 
 $sitename                 = esc_html(get_bloginfo('name'));
-// $grupo_tarjetas_carusel   = get_field('grupo_tarjetas_carusel');
+  $grupo_tarjetas_carusel   = get_field('grupo_tarjetas_carusel');
 // $posicion                 = !empty($grupo_tarjetas_carusel['posicion']) ? esc_html($grupo_tarjetas_carusel['posicion']) : '';
-// $fondo                    = !empty($grupo_tarjetas_carusel['fondo']) ? $grupo_tarjetas_carusel['fondo'] : '';
-// $subtitulo                = !empty($grupo_tarjetas_carusel['subtitulo']) ? esc_html($grupo_tarjetas_carusel['subtitulo']) : '';
-// $titulo                   = !empty($grupo_tarjetas_carusel['titulo']) ? esc_html($grupo_tarjetas_carusel['titulo']) : '';
+  $fondo                    = !empty($grupo_tarjetas_carusel['fondo']) ? $grupo_tarjetas_carusel['fondo'] : '';
+  $subtitulo                = !empty($grupo_tarjetas_carusel['subtitulo']) ? esc_html($grupo_tarjetas_carusel['subtitulo']) : '';
+  $titulo                   = !empty($grupo_tarjetas_carusel['titulo']) ? esc_html($grupo_tarjetas_carusel['titulo']) : '';
 // $items                    = !empty($grupo_tarjetas_carusel['items']) ? $grupo_tarjetas_carusel['items'] : [];
 
-$subtitulo = "NOTICIAS Y RECURSOS";
-$titulo = "Nos mantenemos a la vanguardia";
+$args = array(
+  'post_type' => 'diario_medico',
+  'posts_per_page' => 10,
+  'post_status' => 'publish',
+  'orderby' => 'date',
+  'order' => 'ASC'
+);
 
-$items = [
-  [
-    'titulo' => 'Avances en el Diagnóstico de Cardiopatías Congénitas',
-    'descripcion' => 'Descubre cómo las nuevas tecnologías están revolucionando la detección temprana y el manejo de las cardiopatías congénitas, mejorando la calidad de vida de los pacientes.',
-    'cta' => [
-        'url' => '#',
-        'title' => 'Seguir leyendo',
-        'target' => '_blank'
-    ],
-    'imagen' => [
-      'ID' => "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png"
-    ]
-  ],
-  [
-    'titulo' => 'Avances en el Diagnóstico de Cardiopatías Congénitas',
-    'descripcion' => 'Descubre cómo las nuevas tecnologías están revolucionando la detección temprana y el manejo de las cardiopatías congénitas, mejorando la calidad de vida de los pacientes.',
-    'cta' => [
-        'url' => '#',
-        'title' => 'Seguir leyendo',
-        'target' => '_self'
-    ],
-    'imagen' => [
-      'ID' => "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png"
-    ]
-  ],
-  [
-    'titulo' => 'Avances en el Diagnóstico de Cardiopatías Congénitas',
-    'descripcion' => 'Descubre cómo las nuevas tecnologías están revolucionando la detección temprana y el manejo de las cardiopatías congénitas, mejorando la calidad de vida de los pacientes.',
-    'cta' => [
-        'url' => '#',
-        'title' => 'Seguir leyendo',
-        'target' => '_self'
-    ],
-    'imagen' => [
-      'ID' => "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png"
-    ]
-  ],
-  [
-    'titulo' => 'Avances en el Diagnóstico de Cardiopatías Congénitas',
-    'descripcion' => 'Descubre cómo las nuevas tecnologías están revolucionando la detección temprana y el manejo de las cardiopatías congénitas, mejorando la calidad de vida de los pacientes.',
-    'cta' => [
-        'url' => '#',
-        'title' => 'Seguir leyendo',
-        'target' => '_self'
-    ],
-    'imagen' => [
-      'ID' => "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png"
-    ]
-  ]
-];
+$query = new WP_Query($args); 
 ?>
 
 <section class="seccionTarjetasCarusel">
@@ -76,51 +32,38 @@ $items = [
       </div>
     </div>
 
-    <div class="container--large">
+    <div class="container--large"> 
       <div class="swiper swiperTarjetas">
-        <div class="swiper-wrapper seccionTarjetasCarusel__grid">
-          <?php foreach ($items as $key => $item) {
-            $targeta_titulo       = !empty($item['titulo']) ? esc_html($item['titulo']) : '';
-            $targeta_descripcion  = !empty($item['descripcion']) ? $item['descripcion'] : '';
-            $targeta_cta          = !empty($item['cta']) ? $item['cta'] : [];
-            $targeta_cta_url      = !empty($targeta_cta['url']) ? $targeta_cta['url'] : "";
-            $targeta_cta_titulo   = !empty($targeta_cta['title']) ? $targeta_cta['title'] : "";
-            $targeta_cta_target   = !empty($targeta_cta['target']) ? $targeta_cta['target'] : "";
-            $imagen_id            = !empty($item["imagen"]['ID']) ? $item["imagen"]['ID'] : '';
-          ?>
-            <div class="swiper-slide">
-              <a href="<?php echo $targeta_cta_url; ?>" class="seccionTarjetasCarusel__col">
-                <!-- <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?> -->
-                <img src="<?php echo $imagen_id; ?>" alt="">
-                <div class="seccionTarjetasCarusel__info">
-                  <?php if($targeta_titulo):?>
-                    <h3 class="heading--24 color--002D72"><?php echo $targeta_titulo; ?></h3>
-                  <?php endif; ?>
-        
-                  <?php if($targeta_descripcion):?>
-                    <p class="heading--18 color--677283">
-                      <?php echo $targeta_descripcion; ?>
-                    </p>
-                  <?php endif; ?>
-
-                  <?php if($targeta_cta_titulo) : ?>
-                    <span class="heading--18 color--E40046">
-                      <span class="link--hover"><?php echo $targeta_cta_titulo; ?></span>
-                      <?php 
-                        get_template_part('template-parts/content', 'icono');
-                        display_icon('icono-arrow-next-rojo'); 
-                      ?>
-                    </span>
-                  <?php endif; ?>
-                </div>
-              </a>
-            </div>
-          <?php }?>
-        </div>
+          <div class="swiper-wrapper seccionTarjetasCarusel__grid">
+              <?php while ($query->have_posts()) : $query->the_post(); 
+                  $imagen_id = get_post_thumbnail_id();
+                  $targeta_titulo = get_the_title();
+                  $targeta_descripcion = get_the_excerpt();
+                  $targeta_cta_url = get_permalink();
+                  $targeta_cta_titulo = 'Seguir leyendo';
+              ?>
+              <div class="swiper-slide">
+                  <a href="<?php echo esc_url($targeta_cta_url); ?>" class="seccionTarjetasCarusel__col">
+                      <img src="<?php echo wp_get_attachment_url($imagen_id); ?>" alt="">
+                      <div class="seccionTarjetasCarusel__info">
+                          <h3 class="heading--24 color--002D72"><?php echo esc_html($targeta_titulo); ?></h3>
+                          <p class="heading--18 color--677283"><?php echo wp_trim_words($targeta_descripcion, 20, '...'); ?></p>
+                          <span class="heading--18 color--E40046">
+                              <span class="link--hover"><?php echo esc_html($targeta_cta_titulo); ?></span>
+                              <?php 
+                                  get_template_part('template-parts/content', 'icono');
+                                  display_icon('icono-arrow-next-rojo'); 
+                              ?>
+                          </span>
+                      </div>
+                  </a>
+              </div>
+              <?php endwhile; wp_reset_postdata(); ?>
+          </div>
       </div>
       <div class="swiper-custom-button swiper-button-next"></div>
       <div class="swiper-custom-button swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
-    </div>
+  </div>
   </div>
 </section>

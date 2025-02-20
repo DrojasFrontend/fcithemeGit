@@ -181,3 +181,51 @@ jQuery(document).ready(function ($) {
 		return false; // Prevenir comportamiento por defecto
 	});
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+	const tabs = document.querySelectorAll('.tab');
+	const contents = document.querySelectorAll('.tab-content');
+
+	tabs.forEach(tab => {
+		tab.addEventListener('click', function() {
+		tabs.forEach(t => t.classList.remove('active'));
+		this.classList.add('active');
+
+		const target = this.getAttribute('data-tab');
+		contents.forEach(content => {
+			if(content.id === target) {
+			content.style.display = 'grid';
+			} else {
+			content.style.display = 'none';
+			}
+		});
+		});
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videoModal = document.getElementById("videoModal");
+    const videoIframe = document.getElementById("videoIframe");
+    const closeModal = document.querySelector(".video-modal__close");
+
+    document.querySelector(".video-thumbnail").addEventListener("click", function () {
+        let videoUrl = this.getAttribute("data-video");
+        if (videoUrl) {
+            let embedUrl = videoUrl.replace("watch?v=", "embed/");
+            videoIframe.src = embedUrl + "?autoplay=1";
+            videoModal.style.display = "block";
+        }
+    });
+
+    closeModal.addEventListener("click", function () {
+        videoModal.style.display = "none";
+        videoIframe.src = "";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === videoModal) {
+            videoModal.style.display = "none";
+            videoIframe.src = "";
+        }
+    });
+});

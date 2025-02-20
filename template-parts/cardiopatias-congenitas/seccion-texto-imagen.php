@@ -1,19 +1,13 @@
 <?php 
 // $sitename                 = esc_html(get_bloginfo('name'));
-// $grupo_texto_imagen       = get_field('grupo_texto_imagen');
-// $subtitulo                = !empty($grupo_texto_imagen['subtitulo']) ? esc_html($grupo_texto_imagen['subtitulo']) : '';
-// $titulo                   = !empty($grupo_texto_imagen['titulo']) ? esc_html($grupo_texto_imagen['titulo']) : '';
-// $descripcion              = !empty($grupo_texto_imagen['descripcion']) ? wp_kses_post($grupo_texto_imagen['descripcion']) : '';
-// $imagen_id                = !empty($grupo_texto_imagen["imagen"]['ID']) ? $grupo_texto_imagen["imagen"]['ID'] : '';
+  $grupo_texto_imagen       = get_field('grupo_texto_imagen');
+  $subtitulo                = !empty($grupo_texto_imagen['subtitulo']) ? esc_html($grupo_texto_imagen['subtitulo']) : '';
+  $titulo                   = !empty($grupo_texto_imagen['titulo']) ? esc_html($grupo_texto_imagen['titulo']) : '';
+  $descripcion              = !empty($grupo_texto_imagen['descripcion']) ? wp_kses_post($grupo_texto_imagen['descripcion']) : '';
+  $imagen_id                = !empty($grupo_texto_imagen["imagen"]) ? $grupo_texto_imagen["imagen"] : '';
+  $video_url                = !empty($grupo_texto_imagen["video_url"]) ? esc_url($grupo_texto_imagen["video_url"]) : '';
+  $cta                      = !empty($grupo_texto_imagen['cta']) ? $grupo_texto_imagen["cta"] : '';
 
-$imagen_id = "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png";
-$subtitulo = "SALVAMOS CORAZONES";
-$titulo = "Brigadas de salud: Regale una vida";
-$descripcion = "En el país 1 de cada 100 niños nace con una cardiopatía congénita, nuestra misión es realizar diagnósticos oportunos que puedan salvar el corazón de niños, niñas y adolescentes que por sus bajos recursos no pueden acceder a los servicios de salud.";
-
-$hero_cta_url      = "#";
-$hero_cta_titulo   = "Conoce más";
-$hero_cta_target   = "";
 ?>
 
 <section class="seccionTextoDescImagen">
@@ -34,19 +28,39 @@ $hero_cta_target   = "";
               <p><?php echo $descripcion;?></p>
             <?php endif; ?>
           </div>
-
+          <?php
+              if (is_array($cta) && isset($cta['url'], $cta['title'], $cta['target'])) :
+                  $url = $cta['url'];
+                  $texto = $cta['title'];
+                  $target = $cta['target'] ? $cta['target'] : '_self';
+          ?>
           <a class="boton-v2 boton-v2--rojo-rojo" 
-            href="<?php echo esc_url($hero_cta_url); ?>" 
-            title="<?php echo esc_attr($hero_cta_titulo); ?>">
-            <?php echo esc_html($hero_cta_titulo); ?>
+              href="<?php echo esc_url($url); ?>" 
+              target="<?php echo esc_attr($target); ?>">
+              <?php echo esc_html($texto); ?>
           </a>
+          <?php endif; ?>
         </div>
       </div>
-    <div class="seccionTextoDescImagen__col">
-      <div class="seccionTextoDescImagen__img">
-        <!-- <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?> -->
-        <img src="<?php echo $imagen_id; ?>" alt="">
+      <div class="seccionTextoDescImagen__col">
+        <div class="seccionTextoDescImagen__img">
+          <?php if (!empty($imagen_id)) : ?>
+            <img src="<?php echo esc_url($imagen_id['url']); ?>" alt=""
+                 class="video-thumbnail" 
+                 data-video="<?php echo esc_attr($video_url); ?>">
+          <?php endif; ?>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="videoModal" class="seccionTextoDescImagenModal">
+  <div class="video-modal__content">
+    <span class="video-modal__close">&times;</span>
+    <div class="video-modal__video">
+      <iframe id="videoIframe" width="700" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

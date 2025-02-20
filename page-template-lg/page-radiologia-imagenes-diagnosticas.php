@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: Plantilla Especialidad | Radiologia imágenes diagnosticas
+Template Name: Plantilla Especialidad | Radiología e imágenes diagnósticas
 */ 
 
 get_header();
@@ -31,19 +31,19 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_imagen_cta) : ?>
       <!-- Texto Imagen CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta', array('class' =>''));?>
       <!-- Fin Texto Imagen CTA -->
     <?php endif; ?>
 
-     <?php if($mostrar_imagen_texto_cta) : ?>
+    <?php if($mostrar_imagen_texto_cta) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
     <?php if($mostrar_imagen_texto_cta_invertido) : ?>
       <!-- Imagen Texto CTA -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'imagen-texto-cta_invertido', array('class' =>''));?>
       <!-- Fin Imagen Texto CTA -->
     <?php endif; ?>
 
@@ -55,7 +55,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_desc_banner) : ?>
       <!-- Texto Descripcion Banner -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-desc-banner', array('class' =>''));?>
       <!-- Fin Texto Descripcion Banner -->
     <?php endif; ?>
 
@@ -73,7 +73,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_texto_imagen_cta_2) : ?>
       <!-- Texto Imagen 2 -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paginaCardiologiasClinicas'));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'texto-imagen-cta-2', array('class' =>'paddingBottom'));?>
       <!-- Fin Texto Imagen 2 -->
     <?php endif; ?>
 
@@ -91,7 +91,7 @@ $mostrar_tarjetas_imagen_texto        = get_field('mostrar_tarjetas_imagen_texto
 
     <?php if($mostrar_experto) : ?>
       <!-- Experto -->
-        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop"));?>
+        <?php get_template_part('template-parts/especialidades/seccion', 'expertos', array("class" => "marginTop paginaRadiologiaImagenesDiagnosticas__fondoExpertos"));?>
       <!-- Fin Experto -->
     <?php endif; ?>
 

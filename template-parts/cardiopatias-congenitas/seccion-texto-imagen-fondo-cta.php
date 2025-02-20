@@ -1,23 +1,16 @@
 <?php 
-$sitename                       = esc_html(get_bloginfo('name'));
-// $grupo_texto_imagen_cta_fondo   = get_field('grupo_texto_imagen_cta_fondo');
-// $posicion                       = !empty($grupo_texto_imagen_cta_fondo['posicion']) ? esc_html($grupo_texto_imagen_cta_fondo['posicion']) : '';
-// $subtitulo                      = !empty($grupo_texto_imagen_cta_fondo['subtitulo']) ? esc_html($grupo_texto_imagen_cta_fondo['subtitulo']) : '';
-// $titulo                         = !empty($grupo_texto_imagen_cta_fondo['titulo']) ? esc_html($grupo_texto_imagen_cta_fondo['titulo']) : '';
-// $descripcion                    = !empty($grupo_texto_imagen_cta_fondo['descripcion']) ? esc_html($grupo_texto_imagen_cta_fondo['descripcion']) : '';
-// $cta                            = !empty($grupo_texto_imagen_cta_fondo['cta']) ? $grupo_texto_imagen_cta_fondo['cta'] : [];
-// $cta_url                        = !empty($cta['url']) ? esc_url($cta['url']) : '';
-// $cta_titulo                     = !empty($cta['title']) ? esc_html($cta['title']) : '';
-// $cta_target                     = !empty($cta['target']) ? $cta['target'] : '';
+  $sitename                       = esc_html(get_bloginfo('name'));
+  $grupo_texto_imagen_cta_fondo   = get_field('grupo_texto_imagen_cta_fondo');
+  // $posicion                       = !empty($grupo_texto_imagen_cta_fondo['posicion']) ? esc_html($grupo_texto_imagen_cta_fondo['posicion']) : '';
+  // $subtitulo                      = !empty($grupo_texto_imagen_cta_fondo['subtitulo']) ? esc_html($grupo_texto_imagen_cta_fondo['subtitulo']) : '';
+  $titulo                         = !empty($grupo_texto_imagen_cta_fondo['titulo']) ? esc_html($grupo_texto_imagen_cta_fondo['titulo']) : '';
+  $descripcion                    = !empty($grupo_texto_imagen_cta_fondo['descripcion']) ? esc_html($grupo_texto_imagen_cta_fondo['descripcion']) : '';
+  $cta                            = !empty($grupo_texto_imagen_cta_fondo['cta']) ? $grupo_texto_imagen_cta_fondo['cta'] : [];
+  $cta_url                        = !empty($cta['url']) ? esc_url($cta['url']) : '';
+  $cta_titulo                     = !empty($cta['title']) ? esc_html($cta['title']) : '';
+  $cta_target                     = !empty($cta['target']) ? $cta['target'] : '';
 
-// $imagen_id                      = !empty($grupo_texto_imagen_cta_fondo["imagen"]['ID']) ? $grupo_texto_imagen_cta_fondo["imagen"]['ID'] : '';
-
-$imagen_id = "/wp-content/themes/fcitheme/template-parts/cardiopatias-congenitas/img/text-img.png";
-$titulo = "¡Prioriza tu corazón!";
-$descripcion = "Realízate un examen para ti o tu hijo para prevenir cardiopatías congénitas. La detección temprana puede marcar la diferencia en tu salud cardiovascular. ¡Invierte en tu bienestar!";
-$cta_url     = "#";
-$cta_titulo  = "Solicitar cita";
-$cta_target  = "";
+  $imagen_id                      = !empty($grupo_texto_imagen_cta_fondo["imagen"]) ? $grupo_texto_imagen_cta_fondo["imagen"] : '';
 ?>
 
 <section class="etapaEspecialidadesTextoImagenFondoCTA">
@@ -46,7 +39,7 @@ $cta_target  = "";
     <div class="etapaEspecialidadesTextoImagenFondoCTA__col">
       <div class="etapaEspecialidadesTextoImagenFondoCTA__img">
         <!-- <?php echo generar_imagen_responsive($imagen_id, 'custom-size', $sitename, '');?> -->
-        <img src="<?php echo $imagen_id; ?>" alt="">
+        <img src="<?php echo esc_url($imagen_id['url']); ?>" alt="">
       </div>
     </div>
   </div>

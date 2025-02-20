@@ -2607,3 +2607,9 @@ ul.etapaEspecialidadesItemsIconos__items li li:before {
 .paginaCirugiaVascularEndovascular__fondoCTA {
 	background: rgba(170, 204, 255, 0.15);
 }
+
+/* Pagina Radiología e imágenes diagnósticas */
+
+.paginaRadiologiaImagenesDiagnosticas__fondoExpertos {
+	background: rgba(170, 204, 255, 0.15);
+}
