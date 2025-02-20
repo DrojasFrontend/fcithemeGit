@@ -31,6 +31,8 @@ get_header();
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'imagen-texto-cta'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'tarjetas-carusel-horizontal'); ?>
     <?php get_template_part('template-parts/cardiopatias-congenitas/seccion', 'texto-imagen-fondo-cta'); ?>
+    here:
+    <?php get_template_part('template-parts/formularios/citas', 'teleconsultas'); ?>
   </main>
 <!-- FIN CONTENIDO -->
 
